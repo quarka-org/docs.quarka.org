@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>QA ZERO Documentation Blog</title>
-        <link>https://docs.qazero.com/blog</link>
+        <link>https://docs.quarka.org/blog</link>
         <description>QA ZERO Documentation Blog</description>
         <lastBuildDate>Sun, 25 May 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[Welcome to QA ZERO Documentation]]></title>
-            <link>https://docs.qazero.com/blog/welcome</link>
-            <guid>https://docs.qazero.com/blog/welcome</guid>
+            <link>https://docs.quarka.org/blog/welcome</link>
+            <guid>https://docs.quarka.org/blog/welcome</guid>
             <pubDate>Sun, 25 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Welcome to the new documentation site for QA ZERO WordPress Analytics!]]></description>
             <content:encoded><![CDATA[<p>Welcome to the new documentation site for QA ZERO WordPress Analytics!</p>
