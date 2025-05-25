@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkqa_zero_documentation=self.webpackChunkqa_zero_documentation||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"QA ZERO\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u3078\u3088\u3046\u3053\u305d","permalink":"/ja/blog/welcome","unlisted":false,"date":"2025-05-25T00:00:00.000Z"}]}')}}]);
