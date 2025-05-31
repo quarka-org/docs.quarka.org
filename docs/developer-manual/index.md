@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Developer Manual
 
-Welcome to the QA ZERO Developer Manual. This section contains technical documentation for developers working with QA ZERO.
+Welcome to the QA Advisor Developer Manual. This section contains technical documentation for developers working with QA Advisor.
 
 **Coming Soon**
 

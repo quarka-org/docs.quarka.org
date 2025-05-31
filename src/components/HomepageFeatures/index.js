@@ -7,7 +7,7 @@ const FeatureList = [
     title: 'User Manual',
     description: (
       <>
-        Comprehensive guides for using QA ZERO WordPress Analytics.
+        Comprehensive guides for using QA Advisor WordPress Analytics.
         Learn how to track, analyze, and optimize your WordPress site.
       </>
     ),
@@ -16,7 +16,7 @@ const FeatureList = [
     title: 'Developer Manual',
     description: (
       <>
-        Technical documentation for developers working with QA ZERO.
+        Technical documentation for developers working with QA Advisor.
         API references, integration guides, and customization options.
       </>
     ),
@@ -25,7 +25,7 @@ const FeatureList = [
     title: 'Privacy-Focused',
     description: (
       <>
-        QA ZERO is designed with privacy in mind, providing analytics
+        QA Advisor is designed with privacy in mind, providing analytics
         without cookies and respecting user privacy.
       </>
     ),

@@ -6,25 +6,64 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Key Colors */
+  --ifm-color-primary: #3BAFDA;
+  --ifm-color-primary-dark: #326680;
+  --ifm-color-primary-darker: #2d5c73;
+  --ifm-color-primary-darkest: #254c5f;
+  --ifm-color-primary-light: #5CC4E5;
+  --ifm-color-primary-lighter: #6BCAE8;
+  --ifm-color-primary-lightest: #85D6ED;
+  
+  /* Base Colors */
+  --ifm-background-color: #f4f4f4;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-color-emphasis-300: #949494;
+  
+  /* Text Colors */
+  --ifm-color-content: #1e1e1e;
+  --ifm-color-content-secondary: #6e6e6e;
+  
+  /* Accent Colors */
+  --ifm-color-warning: #FF6F61;
+  --ifm-color-success: #4CAF50;
+  --ifm-color-info: #FFC107;
+  --ifm-color-danger: #F44336;
+  
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+/* Hero banner styling with darker blue background */
+.hero {
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary) 100%);
+  color: white;
+}
+
+.hero__title,
+.hero__subtitle {
+  color: white;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  /* Key Colors for Dark Mode */
+  --ifm-color-primary: #5CC4E5;
+  --ifm-color-primary-dark: #3BAFDA;
+  --ifm-color-primary-darker: #359FCA;
+  --ifm-color-primary-darkest: #2A85AA;
+  --ifm-color-primary-light: #6BCAE8;
+  --ifm-color-primary-lighter: #7AD0EA;
+  --ifm-color-primary-lightest: #98DCEF;
+  
+  /* Base Colors for Dark Mode */
+  --ifm-background-color: #1b1b1d;
+  --ifm-background-surface-color: #242526;
+  --ifm-color-emphasis-300: #606770;
+  
+  /* Text Colors for Dark Mode */
+  --ifm-color-content: #e3e3e3;
+  --ifm-color-content-secondary: #b0b3b8;
+  
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
