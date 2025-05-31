@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>QA ZERO Documentation Blog</title>
+        <title>QA Advisor Documentation Blog</title>
         <link>https://docs.quarka.org/blog</link>
-        <description>QA ZERO Documentation Blog</description>
+        <description>QA Advisor Documentation Blog</description>
         <lastBuildDate>Sun, 25 May 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Welcome to QA ZERO Documentation]]></title>
+            <title><![CDATA[Welcome to QA Advisor Documentation]]></title>
             <link>https://docs.quarka.org/blog/welcome</link>
             <guid>https://docs.quarka.org/blog/welcome</guid>
             <pubDate>Sun, 25 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Welcome to the new documentation site for QA ZERO WordPress Analytics!]]></description>
-            <content:encoded><![CDATA[<p>Welcome to the new documentation site for QA ZERO WordPress Analytics!</p>
-<p>This blog will contain updates about new features, tutorials, and best practices for using QA ZERO.</p>
+            <description><![CDATA[Welcome to the new documentation site for QA Advisor WordPress Analytics!]]></description>
+            <content:encoded><![CDATA[<p>Welcome to the new documentation site for QA Advisor WordPress Analytics!</p>
+<p>This blog will contain updates about new features, tutorials, and best practices for using QA Advisor.</p>
 <p>Stay tuned for more content coming soon.</p>]]></content:encoded>
             <category>hello</category>
             <category>docusaurus</category>

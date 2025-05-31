@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.quarka.org/ja/blog</id>
-    <title>QA ZERO Documentation Blog</title>
+    <title>QA Advisor Documentation Blog</title>
     <updated>2025-05-25T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.quarka.org/ja/blog"/>
-    <subtitle>QA ZERO Documentation Blog</subtitle>
+    <subtitle>QA Advisor Documentation Blog</subtitle>
     <icon>https://docs.quarka.org/ja/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[QA ZEROドキュメントへようこそ]]></title>
+        <title type="html"><![CDATA[QA Advisorドキュメントへようこそ]]></title>
         <id>https://docs.quarka.org/ja/blog/welcome</id>
         <link href="https://docs.quarka.org/ja/blog/welcome"/>
         <updated>2025-05-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[QA ZERO WordPress Analyticsの新しいドキュメントサイトへようこそ！]]></summary>
-        <content type="html"><![CDATA[<p>QA ZERO WordPress Analyticsの新しいドキュメントサイトへようこそ！</p>
-<p>このブログでは、新機能、チュートリアル、QA ZEROを使用するためのベストプラクティスに関する更新情報を提供します。</p>
+        <summary type="html"><![CDATA[QA Advisor WordPress Analyticsの新しいドキュメントサイトへようこそ！]]></summary>
+        <content type="html"><![CDATA[<p>QA Advisor WordPress Analyticsの新しいドキュメントサイトへようこそ！</p>
+<p>このブログでは、新機能、チュートリアル、QA Advisorを使用するためのベストプラクティスに関する更新情報を提供します。</p>
 <p>今後のコンテンツにご期待ください。</p>]]></content>
         <author>
-            <name>QA ZERO Team</name>
+            <name>QA Advisor Team</name>
             <uri>https://github.com/quarka-org</uri>
         </author>
         <category label="hello" term="hello"/>
