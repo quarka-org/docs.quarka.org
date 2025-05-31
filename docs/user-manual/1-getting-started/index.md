@@ -8,13 +8,13 @@ Welcome to QA Advisor! This section will guide you through the installation proc
 
 ## Quick Start Steps
 
-### 1️⃣ [Installation](./installation)
+### 1️⃣ [Installation](/docs/user-manual/getting-started/installation)
 Download and install QA Advisor on your WordPress site in just a few minutes.
 
-### 2️⃣ [Initial Setup](./initial-setup)  
+### 2️⃣ [Initial Setup](/docs/user-manual/getting-started/initial-setup)  
 Configure QA Advisor to match your needs with our easy setup wizard.
 
-### 3️⃣ [FAQs](./faqs)
+### 3️⃣ [FAQs](/docs/user-manual/getting-started/faqs)
 Find answers to common questions about getting started with QA Advisor.
 
 ## What You'll Learn
@@ -48,4 +48,4 @@ Make sure you have:
 
 ---
 
-Ready to begin? Start with the [Installation Guide](./installation) →
+Ready to begin? Start with the [Installation Guide](/docs/user-manual/getting-started/installation) →

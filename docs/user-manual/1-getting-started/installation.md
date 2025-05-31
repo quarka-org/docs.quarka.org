@@ -111,7 +111,7 @@ If your site slows down:
 
 Now that QA Advisor is installed, proceed to:
 - [Initial Setup](./initial-setup) - Configure your analytics preferences
-- [Dashboard Overview](../screens-and-operations/dashboard) - Learn about the interface
+- [Dashboard Overview](/docs/user-manual/screens-and-operations/dashboard) - Learn about the interface
 - [FAQs](./faqs) - Common questions and answers
 
 ---
