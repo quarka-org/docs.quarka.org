@@ -48,4 +48,4 @@ Make sure you have:
 
 ---
 
-Ready to begin? Start with the [Installation Guide](/docs/user-manual/getting-started/installation) →
+Ready to begin? Start with the [Installation Guide](./installation) →
