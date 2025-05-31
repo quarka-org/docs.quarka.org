@@ -1,6 +1,6 @@
-# QA ZERO Documentation
+# QA Advisor Documentation
 
-This repository contains the documentation website for QA ZERO WordPress Analytics, built with [Docusaurus](https://docusaurus.io/).
+This repository contains the documentation website for QA Advisor WordPress Analytics, built with [Docusaurus](https://docusaurus.io/).
 
 ## Local Development
 
@@ -49,7 +49,7 @@ This site uses docusaurus-lunr-search for search functionality, which supports b
 
 ## Custom Domain Setup
 
-The site is configured to use the custom domain `docs.qazero.com`. DNS settings should point to GitHub Pages.
+The site is configured to use the custom domain `docs.quarka.org`. DNS settings should point to GitHub Pages.
 
 ## Security Considerations
 

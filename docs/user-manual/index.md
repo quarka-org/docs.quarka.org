@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # User Manual
 
-Welcome to the QA ZERO User Manual. This section contains comprehensive guides for using QA ZERO WordPress Analytics.
+Welcome to the QA Advisor User Manual. This section contains comprehensive guides for using QA Advisor WordPress Analytics.
 
 **Coming Soon**
 

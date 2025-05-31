@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # ユーザーマニュアル
 
-QA ZEROユーザーマニュアルへようこそ。このセクションにはQA ZERO WordPress Analyticsの使用に関する包括的なガイドが含まれています。
+QA Advisorユーザーマニュアルへようこそ。このセクションにはQA Advisor WordPress Analyticsの使用に関する包括的なガイドが含まれています。
 
 **準備中**
 

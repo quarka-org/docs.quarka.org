@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Release Notes
 
-This section contains release notes for QA ZERO WordPress Analytics.
+This section contains release notes for QA Advisor WordPress Analytics.
 
 **Coming Soon**
 

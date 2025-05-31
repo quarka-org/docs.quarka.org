@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Frequently Asked Questions
 
-This section contains answers to frequently asked questions about QA ZERO WordPress Analytics.
+This section contains answers to frequently asked questions about QA Advisor WordPress Analytics.
 
 **Coming Soon**
 
