@@ -34,6 +34,17 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+/* Hero banner styling with darker blue background */
+.hero {
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary) 100%);
+  color: white;
+}
+
+.hero__title,
+.hero__subtitle {
+  color: white;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   /* Key Colors for Dark Mode */
