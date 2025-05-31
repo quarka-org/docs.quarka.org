@@ -19,13 +19,13 @@ QA Advisor (formerly QA Analytics) is a powerful WordPress analytics plugin that
 
 This manual is organized into the following sections:
 
-### 📚 [1. Getting Started](./1-getting-started)
+### 📚 [1. Getting Started](./getting-started)
 Everything you need to begin using QA Advisor:
 - Installation guide
 - Initial setup and configuration
 - Frequently asked questions for beginners
 
-### 🖥️ [2. Screens and Operations](./2-screens-and-operations)
+### 🖥️ [2. Screens and Operations](./screens-and-operations)
 Detailed guides for each feature:
 - Dashboard overview
 - Heatmap analytics
@@ -34,10 +34,10 @@ Detailed guides for each feature:
 
 ## Quick Links
 
-- 🚀 [Quick Start Guide](./1-getting-started/installation)
-- 🔧 [Configuration Settings](./1-getting-started/initial-setup)
-- ❓ [FAQs](./1-getting-started/faqs)
-- 📊 [Analytics Dashboard](./2-screens-and-operations/dashboard)
+- 🚀 [Quick Start Guide](./getting-started/installation)
+- 🔧 [Configuration Settings](./getting-started/initial-setup)
+- ❓ [FAQs](./getting-started/faqs)
+- 📊 [Analytics Dashboard](./screens-and-operations/dashboard)
 
 ## Support
 

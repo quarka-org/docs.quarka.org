@@ -8,7 +8,7 @@ Welcome to the QA Advisor release notes. Here you'll find information about new 
 
 ## Latest Release
 
-### [QA Advisor β (v4.9.0-beta) - June 5, 2025](./2025/qa-advisor-beta-4-9-0)
+### [QA Advisor β (v4.9.0-beta) - June 5, 2025](/docs/release-notes/2025/qa-advisor-beta-4-9-0)
 WordCamp Europe 2025 Special Beta Release featuring revolutionary heatmap analytics for WordPress.
 
 ---
@@ -17,8 +17,8 @@ WordCamp Europe 2025 Special Beta Release featuring revolutionary heatmap analyt
 
 Browse through our release history organized by year:
 
-- **[2025](./2025)** - Current year releases
-  - [v4.9.0-beta](./2025/qa-advisor-beta-4-9-0) - QA Advisor Beta (June 5, 2025)
+- **2025** - Current year releases
+  - [v4.9.0-beta](/docs/release-notes/2025/qa-advisor-beta-4-9-0) - QA Advisor Beta (June 5, 2025)
 
 ---
 

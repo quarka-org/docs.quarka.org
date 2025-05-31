@@ -226,9 +226,9 @@ Test site speed:
 
 Configuration complete! Now explore:
 
-- [Dashboard Overview](../2-screens-and-operations/dashboard) - Understanding your analytics
-- [Creating Your First Heatmap](../2-screens-and-operations/heatmaps) - Visual analytics
-- [FAQs](./faqs) - Common questions
+- [Dashboard Overview](/docs/user-manual/screens-and-operations/dashboard) - Understanding your analytics
+- [Creating Your First Heatmap](/docs/user-manual/screens-and-operations/heatmaps) - Visual analytics
+- [FAQs](/docs/user-manual/getting-started/faqs) - Common questions
 
 ---
 
