@@ -24,7 +24,7 @@ Common questions and answers for new QA Advisor users.
 
 **A:** QA Advisor is optimized for performance:
 - Asynchronous script loading
-- Minimal impact (typically <100ms)
+- Minimal impact (typically less than 100ms)
 - Smart caching system
 - CDN support for assets
 
