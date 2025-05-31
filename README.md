@@ -2,6 +2,13 @@
 
 This repository contains the documentation website for QA Advisor WordPress Analytics, built with [Docusaurus](https://docusaurus.io/).
 
+## Contributing
+
+We welcome your feedback!
+
+Please open an **Issue** or join the **Discussions** tab to share your thoughts or propose improvements.  
+We currently do not accept pull requests unless they are discussed beforehand.
+
 ## Local Development
 
 ```bash
