@@ -5,8 +5,9 @@
 ```
 release-notes/
 ├── index.md                 # Main index with latest releases
-├── TEMPLATE.md             # Template for new releases
-├── MAINTENANCE_GUIDE.md    # This file
+├── ../templates/           # Templates directory
+│   ├── release-note-template.md
+│   └── MAINTENANCE_GUIDE.md
 ├── 2025/                   # Year folders
 │   ├── _category_.json     # Year category configuration
 │   └── *.md               # Individual release notes
