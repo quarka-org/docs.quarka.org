@@ -17,7 +17,7 @@ Some optimization plugins or themes may interfere with tracking scripts by modif
 > ✅ Check your caching or optimization plugin settings  
 > ✅ Disable JS minification or defer/async for QA Advisor scripts
 
-For more technical background, see [When jQuery is Deferred](/docs/user-manual/1-getting-started/when-defer-jquery).
+For more technical background, see [When jQuery is Deferred](/docs/user-manual/getting-started/when-defer-jquery).
 
 ---
 
