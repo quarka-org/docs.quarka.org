@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'User Manual',
+    title: 'User Guide',
     description: (
       <>
         Comprehensive guides for using QA Advisor WordPress Analytics.
@@ -13,7 +13,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Developer Manual',
+    title: 'Developer Guide',
     description: (
       <>
         Technical documentation for developers working with QA Advisor.

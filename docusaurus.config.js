@@ -76,13 +76,13 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'userManualSidebar',
             position: 'left',
-            label: 'User Manual',
+            label: 'User Guide',
           },
           {
             type: 'docSidebar',
             sidebarId: 'developerManualSidebar',
             position: 'left',
-            label: 'Developer Manual',
+            label: 'Developer Guide',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -115,11 +115,11 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'User Manual',
+                label: 'User Guide',
                 to: '/docs/user-manual',
               },
               {
-                label: 'Developer Manual',
+                label: 'Developer Guide',
                 to: '/docs/developer-manual',
               },
               {

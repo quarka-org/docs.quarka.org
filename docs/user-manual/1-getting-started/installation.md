@@ -5,51 +5,44 @@ title: Installation
 
 # Installation Guide
 
-This guide will walk you through the process of installing QA Advisor on your WordPress website.
+QA Advisor is the new name and improved version of our WordPress plugin previously known as **QA Analytics**.  
+Currently available as a **public beta**, it introduces a redesigned interface and enhanced features -- while keeping the same plugin identifier: `qa-heatmap-analytics`.
+
+This guide will walk you through the steps to install the beta version on your WordPress site.
+
 
 ## Prerequisites
 
 Before installing QA Advisor, ensure your system meets the following requirements:
 
-- **WordPress**: Version 5.0 or higher
-- **PHP**: Version 7.4 or higher
+- **WordPress**: Version 5.9 or higher
+- **PHP**: Version 7.0 or higher
 - **MySQL**: Version 5.7 or higher
 - **Browser**: Modern browser (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+)
 
 ## Installation Methods
 
-### Method 1: WordPress Admin Dashboard (Recommended)
+### Step 1: Download the Plugin
 
-1. **Download the Plugin**
-   - Download `qa-heatmap-analytics.zip` from the [official website](/)
+Download the latest `qa-heatmap-analytics.zip` file from the top page of this documentation site.  
+[Go to Documentation Top](/)
 
-2. **Upload via WordPress Admin**
-   - Log in to your WordPress admin dashboard
-   - Navigate to **Plugins** → **Add New**
-   - Click **Upload Plugin** button at the top
-   - Choose the downloaded zip file
-   - Click **Install Now**
+### Step 2: Install via WordPress Admin (Recommended)
 
-3. **Activate the Plugin**
-   - After installation, click **Activate Plugin**
-   - You'll be redirected to the QA Advisor welcome page
+1. Log in to your WordPress admin dashboard
+2. Navigate to **Plugins** → **Add New**
+3. Click the **Upload Plugin** button
+4. Select the downloaded `qa-heatmap-analytics.zip` file
+5. Click **Install Now**
+6. Once installed, click **Activate Plugin**
 
-### Method 2: FTP Upload
+### (Optional) Install via FTP
 
-1. **Extract the Plugin**
-   - Unzip `qa-heatmap-analytics.zip` on your computer
+1. Extract the `qa-heatmap-analytics.zip` file on your computer
+2. Use an FTP client to upload the extracted folder to `/wp-content/plugins/`
+3. Activate the plugin from the WordPress admin → **Plugins**
 
-2. **Upload via FTP**
-   - Connect to your server using FTP client
-   - Navigate to `/wp-content/plugins/` directory
-   - Upload the extracted `qa-advisor` folder
-
-3. **Activate in WordPress**
-   - Log in to WordPress admin
-   - Go to **Plugins** page
-   - Find QA Advisor and click **Activate**
-
-### Method 3: WP-CLI (Advanced)
+### (Optional) Install via WP-CLI
 
 If you have WP-CLI installed:
 
@@ -57,8 +50,6 @@ If you have WP-CLI installed:
 # Install from local file
 wp plugin install qa-heatmap-analytics.zip --activate
 
-# Or if hosted on WordPress.org (future)
-wp plugin install qa-advisor --activate
 ```
 
 ## Post-Installation Steps
@@ -73,7 +64,7 @@ After activation, you'll see a setup wizard. If you skip it, go to:
 Check that QA Advisor is working:
 1. Visit your site's frontend
 2. Return to WordPress admin
-3. Go to **QA Advisor** → **Dashboard**
+3. Go to **QA Advisor** → **Realtime**
 4. You should see initial tracking data
 
 ### 3. Configure Tracking
@@ -85,34 +76,34 @@ Set up basic tracking options:
 
 ## Troubleshooting
 
-### Plugin Won't Activate
+### Plugin Won’t Activate?
 
-**Error: "Plugin could not be activated because it triggered a fatal error"**
-- Check PHP version (must be 7.4+)
-- Ensure WordPress is up to date
-- Check for conflicts with other plugins
+If the plugin fails to activate, please check the following:
 
-### No Data Showing
+- Make sure PHP version is 7.0 or higher  
+- Ensure WordPress is up to date  
+- Disable other plugins to test for conflicts
 
-If the dashboard shows no data:
-1. Clear your browser cache
-2. Check if tracking script is loaded (View Page Source)
-3. Ensure you're not logged in as admin (if admin tracking is disabled)
-4. Wait 5-10 minutes for initial data collection
+### No Data Showing?
+
+If no data appears after installation, please consider the following:
+
+- Tracking data in the **Dashboard** (available in Advanced Mode) is updated only once a day, typically overnight.
+- To check if tracking is working immediately, go to **QA Advisor** → **Realtime** in the admin menu.
+- Logged-in WordPress users are not tracked by default.
+- Clear your browser cache and wait 5–10 minutes after activation to allow the first data to appear.
+- If no activity is shown even in the **Realtime** view after visiting your site, the tracking script might not be loading correctly.
 
 ### Performance Issues
 
 If your site slows down:
 1. Check server resources
 2. Optimize database tables
-3. Adjust data collection frequency in settings
 
-## Next Steps
 
-Now that QA Advisor is installed, proceed to:
-- [Initial Setup](./initial-setup) - Configure your analytics preferences
+## Related Pages
+
 - [Dashboard Overview](/docs/user-manual/screens-and-operations/dashboard) - Learn about the interface
-- [FAQs](./faqs) - Common questions and answers
 
 ---
 
