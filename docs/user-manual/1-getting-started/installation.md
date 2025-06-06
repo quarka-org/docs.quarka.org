@@ -54,12 +54,7 @@ wp plugin install qa-heatmap-analytics.zip --activate
 
 ## Post-Installation Steps
 
-### 1. Initial Configuration
-
-After activation, you'll see a setup wizard. If you skip it, go to:
-- **Settings** → **QA Advisor**
-
-### 2. Verify Installation
+### Verify Installation
 
 Check that QA Advisor is working:
 1. Visit your site's frontend
@@ -67,12 +62,14 @@ Check that QA Advisor is working:
 3. Go to **QA Advisor** → **Realtime**
 4. You should see initial tracking data
 
-### 3. Configure Tracking
+### Enable Advanced Mode (Optional)
 
-Set up basic tracking options:
-- Enable/disable specific tracking features
-- Set user role permissions
-- Configure data retention policies
+QA Advisor offers an **Advanced Mode** that unlocks additional features such as Audience insights, Acquisition reports, and Goal tracking.  
+To enable it:
+
+1. Go to **Settings** → **QA Advisor**  
+2. Check the **Advanced Mode** option  
+3. Click **Save Changes**
 
 ## Troubleshooting
 
