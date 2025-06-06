@@ -67,7 +67,7 @@ Check that QA Advisor is working:
 QA Advisor offers an **Advanced Mode** that unlocks additional features such as Audience insights, Acquisition reports, and Goal tracking.  
 To enable it:
 
-1. Go to **Settings** → **QA Advisor**  
+1. Go to **QA Advisor** → **Settings**  
 2. Check the **Advanced Mode** option  
 3. Click **Save Changes**
 
