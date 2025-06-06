@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# User Manual
+# User Guide
 
 Welcome to the QA Advisor User Manual. This comprehensive guide will help you get the most out of QA Advisor WordPress Analytics, from installation to advanced features.
 
@@ -25,26 +25,18 @@ Everything you need to begin using QA Advisor:
 - Initial setup and configuration
 - Frequently asked questions for beginners
 
-### 🖥️ [2. Screens and Operations](/docs/user-manual/screens-and-operations)
+### 🖥️ [2. Using QA Advisor](/docs/user-manual/screens-and-operations)
 Detailed guides for each feature:
-- Dashboard overview
-- Heatmap analytics
-- User behavior tracking
+- Dashboard
+- Heatmap
+- Session Replay
 - Reports and insights
 
 ## Quick Links
 
-- 🚀 [Quick Start Guide](/docs/user-manual/getting-started/installation)
-- 🔧 [Configuration Settings](/docs/user-manual/getting-started/initial-setup)
-- ❓ [FAQs](/docs/user-manual/getting-started/faqs)
+- 🚀 [Installation Guide](/docs/user-manual/getting-started/installation)
 - 📊 [Analytics Dashboard](/docs/user-manual/screens-and-operations/dashboard)
 
-## Support
-
-If you need help:
-- 📧 Email: support@quarka.org
-- 💬 [Community Forum](#)
-- 🐛 [Report a Bug](https://github.com/qa-advisor/issues)
 
 ---
 

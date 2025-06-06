@@ -38,13 +38,13 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/user-manual">
-            User Manual
+            User Guide
           </Link>
           <Link
             className="button button--secondary button--lg"
             to="/docs/developer-manual"
             style={{marginLeft: '10px'}}>
-            Developer Manual
+            Developer Guide
           </Link>
         </div>
       </div>
