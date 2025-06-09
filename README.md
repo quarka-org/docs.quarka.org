@@ -9,6 +9,21 @@ We welcome your feedback!
 Please open an **Issue** or join the **Discussions** tab to share your thoughts or propose improvements.  
 We currently do not accept pull requests unless they are discussed beforehand.
 
+### Branch Naming Convention
+
+When working on branches, please use the following naming format:
+`<type>/<summary>/<YYYYMMDD>`
+
+- `type`: Purpose of the change (e.g., `add`, `fix`, `update`)
+- `summary`: Short description in kebab-case
+- `YYYYMMDD`: Date the branch was created
+
+#### Examples:
+- `add/config-pv-limit/20250609`
+- `fix/broken-links/20250610`
+- `update/sidebar-order/20250611`
+
+
 ## Local Development
 
 ```bash

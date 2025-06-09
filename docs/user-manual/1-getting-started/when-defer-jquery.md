@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 11
 title: When jQuery is Deferred
 id: when-defer-jquery
 ---
