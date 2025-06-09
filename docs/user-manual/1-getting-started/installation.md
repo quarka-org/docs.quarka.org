@@ -71,6 +71,13 @@ To enable it:
 2. Check the **Advanced Mode** option  
 3. Click **Save Changes**
 
+### (Optional) Customize Monthly Data Collection Limit
+
+By default, QA Advisor collects up to **3,000 pageviews per month**.  
+You can change this limit by adding a line to your `wp-config.php` file.  
+[Learn how to configure the limit →](/docs/user-manual/getting-started/set-data-limit-wpconfig)
+
+
 ## Troubleshooting
 
 ### Plugin Won’t Activate?

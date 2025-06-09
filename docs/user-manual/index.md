@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # User Guide
 
-Welcome to the QA Advisor User Manual. This comprehensive guide will help you get the most out of QA Advisor WordPress Analytics, from installation to advanced features.
+Welcome to the QA Advisor User Guide. This comprehensive guide will help you get the most out of QA Advisor WordPress Analytics, from installation to advanced features.
 
 ## What is QA Advisor?
 
@@ -15,9 +15,9 @@ QA Advisor (formerly QA Analytics) is a powerful WordPress analytics plugin that
 - **Detailed Reports**: Comprehensive analytics and user journey mapping
 - **Privacy-Focused**: GDPR compliant with user privacy in mind
 
-## Manual Structure
+## Guide Structure
 
-This manual is organized into the following sections:
+This guide is organized into the following sections:
 
 ### 📚 [1. Getting Started](/docs/user-manual/getting-started)
 Everything you need to begin using QA Advisor:
