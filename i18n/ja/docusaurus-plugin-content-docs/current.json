@@ -1,0 +1,20 @@
+{
+  "version.label": {
+    "message": "次へ"
+  },
+  "sidebar.userManualSidebar.category.Getting Started": {
+    "message": "はじめに"
+  },
+  "sidebar.userManualSidebar.category.Screens and Operations": {
+    "message": "画面と操作"
+  },
+  "sidebar.faqSidebar.category.FAQ": {
+    "message": "よくある質問"
+  },
+  "sidebar.developerManualSidebar.category.Developer Guide": {
+    "message": "開発者ガイド"
+  },
+  "sidebar.releaseNotesSidebar.category.Release Notes": {
+    "message": "リリースノート"
+  }
+}

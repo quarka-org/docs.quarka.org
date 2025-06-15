@@ -1,0 +1,32 @@
+{
+  "link.title.Docs": {
+    "message": "ドキュメント"
+  },
+  "link.title.Community": {
+    "message": "コミュニティ"
+  },
+  "link.title.More": {
+    "message": "その他"
+  },
+  "link.item.label.User Guide": {
+    "message": "ユーザーガイド"
+  },
+  "link.item.label.Developer Guide": {
+    "message": "開発者ガイド"
+  },
+  "link.item.label.FAQ": {
+    "message": "よくある質問"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub"
+  },
+  "link.item.label.Blog": {
+    "message": "ブログ"
+  },
+  "link.item.label.Release Notes": {
+    "message": "リリースノート"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 Quarka Organization. Docusaurus で構築されています。"
+  }
+}
