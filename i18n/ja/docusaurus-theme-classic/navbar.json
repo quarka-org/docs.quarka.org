@@ -1,0 +1,23 @@
+{
+  "title": {
+    "message": "QA Advisor ドキュメント"
+  },
+  "item.label.User Guide": {
+    "message": "ユーザーガイド"
+  },
+  "item.label.Developer Guide": {
+    "message": "開発者ガイド"
+  },
+  "item.label.Blog": {
+    "message": "ブログ"
+  },
+  "item.label.Release Notes": {
+    "message": "リリースノート"
+  },
+  "item.label.FAQ": {
+    "message": "よくある質問"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub"
+  }
+}
