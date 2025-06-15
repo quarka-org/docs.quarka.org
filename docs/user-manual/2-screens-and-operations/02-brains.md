@@ -104,6 +104,6 @@ The Brains screen features:
 - **Check**: Ensure your hosting environment meets the plugin's system requirements
 
 ## Related Documentation
-- [Dashboard](./01-dashboard.md) - Main analytics overview
-- [Goals](./09-goals.md) - Set up conversion tracking for better AI insights
-- [Settings](./11-settings.md) - Configure AI analysis preferences
+- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Main analytics overview
+- [Goals](/docs/user-manual/screens-and-operations/goals) - Set up conversion tracking for better AI insights
+- [Settings](/docs/user-manual/screens-and-operations/settings) - Configure AI analysis preferences

@@ -123,6 +123,6 @@ The License Activation screen displays:
 - **Check**: Ensure that your hosting provider allows outbound connections to license servers
 
 ## Related Documentation
-- [Settings](./11-settings.md) - General plugin configuration
-- [Help](./12-help.md) - Support and troubleshooting resources
-- [Dashboard](./01-dashboard.md) - Access premium dashboard features
+- [Settings](/docs/user-manual/screens-and-operations/settings) - General plugin configuration
+- [Help](/docs/user-manual/screens-and-operations/help) - Support and troubleshooting resources
+- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Access premium dashboard features

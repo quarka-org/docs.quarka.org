@@ -116,7 +116,7 @@ The Top Growing screen displays:
 - **Check**: Ensure that new content is being properly tracked and indexed
 
 ## Related Documentation
-- [All Pages](./08-all-pages.md) - Comprehensive page performance analysis
-- [Dashboard](./01-dashboard.md) - Overall site performance trends
-- [Brains](./02-brains.md) - AI-powered content insights
-- [Settings](./11-settings.md) - Configure growth tracking parameters
+- [All Pages](/docs/user-manual/screens-and-operations/all-pages) - Comprehensive page performance analysis
+- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Overall site performance trends
+- [Brains](/docs/user-manual/screens-and-operations/brains) - AI-powered content insights
+- [Settings](/docs/user-manual/screens-and-operations/settings) - Configure growth tracking parameters

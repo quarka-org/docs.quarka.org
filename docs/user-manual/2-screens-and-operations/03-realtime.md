@@ -116,6 +116,6 @@ The Realtime screen displays:
 - **Check**: Verify that location services are not being blocked by privacy settings
 
 ## Related Documentation
-- [Dashboard](./01-dashboard.md) - Overall analytics overview
-- [Audience](./04-audience.md) - Detailed visitor demographics
-- [Settings](./11-settings.md) - Configure real-time tracking options
+- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Overall analytics overview
+- [Audience](/docs/user-manual/screens-and-operations/audience) - Detailed visitor demographics
+- [Settings](/docs/user-manual/screens-and-operations/settings) - Configure real-time tracking options

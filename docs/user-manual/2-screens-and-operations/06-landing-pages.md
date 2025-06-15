@@ -116,7 +116,7 @@ The Landing Pages screen features:
 - **Check**: Ensure that traffic source attribution is consistent across all reports
 
 ## Related Documentation
-- [Acquisition](./05-acquisition.md) - Traffic source analysis
-- [All Pages](./08-all-pages.md) - Comprehensive page performance
-- [Goals](./09-goals.md) - Conversion tracking setup
-- [Settings](./11-settings.md) - Configure landing page tracking options
+- [Acquisition](/docs/user-manual/screens-and-operations/acquisition) - Traffic source analysis
+- [All Pages](/docs/user-manual/screens-and-operations/all-pages) - Comprehensive page performance
+- [Goals](/docs/user-manual/screens-and-operations/goals) - Conversion tracking setup
+- [Settings](/docs/user-manual/screens-and-operations/settings) - Configure landing page tracking options

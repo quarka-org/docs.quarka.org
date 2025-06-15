@@ -116,7 +116,7 @@ The Acquisition screen displays:
 - **Check**: Ensure that campaign parameters are properly formatted and not being stripped
 
 ## Related Documentation
-- [Dashboard](./01-dashboard.md) - Overall traffic overview
-- [Landing Pages](./06-landing-pages.md) - Entry point performance
-- [Goals](./09-goals.md) - Conversion tracking by traffic source
-- [Settings](./11-settings.md) - Configure acquisition tracking settings
+- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Overall traffic overview
+- [Landing Pages](/docs/user-manual/screens-and-operations/landing-pages) - Entry point performance
+- [Goals](/docs/user-manual/screens-and-operations/goals) - Conversion tracking by traffic source
+- [Settings](/docs/user-manual/screens-and-operations/settings) - Configure acquisition tracking settings

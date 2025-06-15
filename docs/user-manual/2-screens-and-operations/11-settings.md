@@ -134,7 +134,7 @@ The Settings screen is organized into several configuration sections:
 - **Check**: Verify that WordPress user has sufficient permissions to modify plugin settings
 
 ## Related Documentation
-- [License Activation](./10-license-activation.md) - Manage plugin licensing and activation
-- [Dashboard](./01-dashboard.md) - View the impact of settings changes on data collection
-- [Goals](./09-goals.md) - Configure conversion tracking settings
-- [Help](./12-help.md) - Get support for configuration issues
+- [License Activation](/docs/user-manual/screens-and-operations/license-activation) - Manage plugin licensing and activation
+- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - View the impact of settings changes on data collection
+- [Goals](/docs/user-manual/screens-and-operations/goals) - Configure conversion tracking settings
+- [Help](/docs/user-manual/screens-and-operations/help) - Get support for configuration issues
