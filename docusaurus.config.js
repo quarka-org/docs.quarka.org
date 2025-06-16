@@ -19,7 +19,7 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja'],
+    locales: ['en', 'ja', 'es'],
     localeConfigs: {
       en: {
         htmlLang: 'en-US',
@@ -27,6 +27,10 @@ const config = {
       ja: {
         htmlLang: 'ja',
         label: '日本語',
+      },
+      es: {
+        htmlLang: 'es',
+        label: 'Español',
       },
     },
   },
@@ -57,7 +61,7 @@ const config = {
     [
       require.resolve('docusaurus-lunr-search'),
       {
-        languages: ['en', 'ja']
+        languages: ['en', 'ja', 'es']
       }
     ]
   ],

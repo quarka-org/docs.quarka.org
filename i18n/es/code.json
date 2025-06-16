@@ -1,0 +1,20 @@
+{
+  "theme.ErrorPageContent.title": {
+    "message": "Esta página se ha bloqueado."
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Inténtalo de nuevo"
+  },
+  "theme.NotFound.title": {
+    "message": "Página no encontrada"
+  },
+  "theme.NotFound.p1": {
+    "message": "No pudimos encontrar lo que estabas buscando."
+  },
+  "theme.NotFound.p2": {
+    "message": "Póngase en contacto con el propietario del sitio que le proporcionó el enlace original."
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Volver al inicio de la página"
+  }
+}
