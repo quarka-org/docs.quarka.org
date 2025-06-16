@@ -1,0 +1,23 @@
+{
+  "title": {
+    "message": "QA Advisor Dokumentation"
+  },
+  "item.label.User Guide": {
+    "message": "Benutzerhandbuch"
+  },
+  "item.label.Developer Guide": {
+    "message": "Entwicklerhandbuch"
+  },
+  "item.label.Blog": {
+    "message": "Blog"
+  },
+  "item.label.Release Notes": {
+    "message": "Versionshinweise"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub"
+  }
+}
