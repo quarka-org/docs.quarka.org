@@ -1,0 +1,142 @@
+{
+  "homepage.wordcamp.title": {
+    "message": "🎉 Speciale WordCamp Europe 2025 Editie",
+    "description": "WordCamp Europe 2025 announcement title"
+  },
+  "homepage.wordcamp.excited": {
+    "message": "We zijn enthousiast om de QA Advisor bèta versie te presenteren op WordCamp Europe 2025!",
+    "description": "WordCamp Europe 2025 excitement message"
+  },
+  "homepage.wordcamp.join": {
+    "message": "Kom naar ons op WordCamp Europe 2025 en ontdek hoe QA Advisor uw WordPress analytics kan transformeren.",
+    "description": "WordCamp Europe 2025 join message"
+  },
+  "homepage.hero.title": {
+    "message": "QA Advisor Documentatie",
+    "description": "Homepage hero title"
+  },
+  "homepage.hero.subtitle": {
+    "message": "Uitgebreide gebruikers- en ontwikkelaarsgidsen voor QA Advisor WordPress Analytics Plugin",
+    "description": "Homepage hero subtitle"
+  },
+  "homepage.hero.getStarted": {
+    "message": "Aan de slag",
+    "description": "Get started button text"
+  },
+  "homepage.features.title": {
+    "message": "Waarom QA Advisor?",
+    "description": "Features section title"
+  },
+  "homepage.features.analytics.title": {
+    "message": "Geavanceerde Analytics",
+    "description": "Advanced analytics feature title"
+  },
+  "homepage.features.analytics.description": {
+    "message": "Krijg diepgaande inzichten in uw website prestaties met real-time analytics en uitgebreide rapportage.",
+    "description": "Advanced analytics feature description"
+  },
+  "homepage.features.heatmaps.title": {
+    "message": "Heatmap Visualisatie",
+    "description": "Heatmap visualization feature title"
+  },
+  "homepage.features.heatmaps.description": {
+    "message": "Visualiseer gebruikersinteracties met krachtige heatmaps om uw website-ervaring te optimaliseren.",
+    "description": "Heatmap visualization feature description"
+  },
+  "homepage.features.privacy.title": {
+    "message": "Privacy-First Benadering",
+    "description": "Privacy-first approach feature title"
+  },
+  "homepage.features.privacy.description": {
+    "message": "Volledig GDPR/AVG-compliant met lokale gegevensopslag en geen externe tracking.",
+    "description": "Privacy-first approach feature description"
+  },
+  "homepage.features.ai.title": {
+    "message": "AI-Aangedreven Inzichten",
+    "description": "AI-powered insights feature title"
+  },
+  "homepage.features.ai.description": {
+    "message": "Intelligente aanbevelingen en geautomatiseerde analyses om uw website prestaties te verbeteren.",
+    "description": "AI-powered insights feature description"
+  },
+  "homepage.features.realtime.title": {
+    "message": "Real-time Monitoring",
+    "description": "Real-time monitoring feature title"
+  },
+  "homepage.features.realtime.description": {
+    "message": "Monitor uw website activiteit in real-time met live dashboards en instant meldingen.",
+    "description": "Real-time monitoring feature description"
+  },
+  "homepage.features.integration.title": {
+    "message": "Naadloze Integratie",
+    "description": "Seamless integration feature title"
+  },
+  "homepage.features.integration.description": {
+    "message": "Eenvoudige installatie en configuratie met uw bestaande WordPress setup en workflows.",
+    "description": "Seamless integration feature description"
+  },
+  "homepage.cta.title": {
+    "message": "Klaar om te beginnen?",
+    "description": "Call to action title"
+  },
+  "homepage.cta.description": {
+    "message": "Ontdek hoe QA Advisor uw WordPress analytics kan transformeren met onze uitgebreide documentatie.",
+    "description": "Call to action description"
+  },
+  "homepage.cta.button": {
+    "message": "Bekijk Documentatie",
+    "description": "Call to action button text"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Deze pagina is gecrasht.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll terug naar boven",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archief",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archief",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog lijst pagina navigatie",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Nieuwere berichten",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Oudere berichten",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog bericht pagina navigatie",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Nieuwer bericht",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Ouder bericht",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Eén bericht|{count} berichten",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} getagd met \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Bekijk alle tags",
+    "description": "The label of the link targeting the tag list page"
+  }
+}

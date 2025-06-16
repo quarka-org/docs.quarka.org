@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Prossima",
+    "description": "The label for version current"
+  },
+  "sidebar.userManualSidebar.category.Getting Started": {
+    "message": "Iniziare",
+    "description": "The label for category Getting Started in sidebar userManualSidebar"
+  },
+  "sidebar.userManualSidebar.category.Screens and Operations": {
+    "message": "Schermate e Operazioni",
+    "description": "The label for category Screens and Operations in sidebar userManualSidebar"
+  },
+  "sidebar.releaseNotesSidebar.category.Release Notes": {
+    "message": "Note di Rilascio",
+    "description": "The label for category Release Notes in sidebar releaseNotesSidebar"
+  },
+  "sidebar.faqSidebar.category.FAQ": {
+    "message": "FAQ",
+    "description": "The label for category FAQ in sidebar faqSidebar"
+  },
+  "sidebar.developerManualSidebar.category.Developer Manual": {
+    "message": "Manuale Sviluppatore",
+    "description": "The label for category Developer Manual in sidebar developerManualSidebar"
+  }
+}

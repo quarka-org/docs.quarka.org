@@ -1,0 +1,94 @@
+{
+  "homepage.wordcamp.title": {
+    "message": "🎉 Edizione Speciale WordCamp Europe 2025",
+    "description": "WordCamp Europe 2025 announcement title"
+  },
+  "homepage.wordcamp.excited": {
+    "message": "Siamo entusiasti di presentare la versione beta di QA Advisor al WordCamp Europe 2025!",
+    "description": "WordCamp Europe 2025 excitement message"
+  },
+  "homepage.wordcamp.join": {
+    "message": "Unisciti a noi per scoprire come QA Advisor può trasformare la tua analisi WordPress.",
+    "description": "WordCamp Europe 2025 join message"
+  },
+  "homepage.hero.title": {
+    "message": "Documentazione QA Advisor",
+    "description": "The title of the homepage hero section"
+  },
+  "homepage.hero.tagline": {
+    "message": "Documentazione completa per utenti e sviluppatori per QA Advisor WordPress Analytics",
+    "description": "The tagline of the homepage hero section"
+  },
+  "homepage.hero.getStarted": {
+    "message": "Inizia",
+    "description": "Get started button text"
+  },
+  "homepage.features.title": {
+    "message": "Perché scegliere QA Advisor?",
+    "description": "Features section title"
+  },
+  "homepage.features.analytics.title": {
+    "message": "Analytics Avanzate",
+    "description": "Advanced Analytics feature title"
+  },
+  "homepage.features.analytics.description": {
+    "message": "Ottieni insights approfonditi sul comportamento degli utenti con heatmap, tracciamento dei visitatori e analisi delle conversioni.",
+    "description": "Advanced Analytics feature description"
+  },
+  "homepage.features.ai.title": {
+    "message": "Insights Alimentati da IA",
+    "description": "AI-Powered Insights feature title"
+  },
+  "homepage.features.ai.description": {
+    "message": "I moduli 'Brains' di QA Advisor analizzano automaticamente i tuoi dati e forniscono raccomandazioni di ottimizzazione intelligenti.",
+    "description": "AI-Powered Insights feature description"
+  },
+  "homepage.features.privacy.title": {
+    "message": "Conforme alla Privacy",
+    "description": "Privacy Compliant feature title"
+  },
+  "homepage.features.privacy.description": {
+    "message": "Completamente conforme a GDPR/LGPD con archiviazione locale dei dati e controllo completo sui tuoi dati di analytics.",
+    "description": "Privacy Compliant feature description"
+  },
+  "homepage.features.realtime.title": {
+    "message": "Monitoraggio in Tempo Reale",
+    "description": "Real-time Monitoring feature title"
+  },
+  "homepage.features.realtime.description": {
+    "message": "Monitora l'attività del tuo sito web in tempo reale con dashboard live e notifiche istantanee.",
+    "description": "Real-time Monitoring feature description"
+  },
+  "homepage.features.multilingual.title": {
+    "message": "Supporto Multilingue",
+    "description": "Multilingual Support feature title"
+  },
+  "homepage.features.multilingual.description": {
+    "message": "Documentazione completa disponibile in più lingue per supportare utenti globali.",
+    "description": "Multilingual Support feature description"
+  },
+  "homepage.features.opensource.title": {
+    "message": "Open Source",
+    "description": "Open Source feature title"
+  },
+  "homepage.features.opensource.description": {
+    "message": "Sviluppato apertamente con contributi della comunità e trasparenza completa nello sviluppo.",
+    "description": "Open Source feature description"
+  },
+  "homepage.cta.title": {
+    "message": "Pronto per iniziare?",
+    "description": "Call to action section title"
+  },
+  "homepage.cta.description": {
+    "message": "Scarica QA Advisor oggi e trasforma il modo in cui analizzi il tuo sito WordPress.",
+    "description": "Call to action section description"
+  },
+  "homepage.cta.download": {
+    "message": "Scarica Ora",
+    "description": "Download now button text"
+  },
+  "homepage.cta.documentation": {
+    "message": "Visualizza Documentazione",
+    "description": "View documentation button text"
+  }
+}

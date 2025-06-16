@@ -1,0 +1,46 @@
+{
+  "link.title.Dokumentacja": {
+    "message": "Dokumentacja",
+    "description": "The title of the footer links column with title=Dokumentacja in the footer"
+  },
+  "link.title.Społeczność": {
+    "message": "Społeczność",
+    "description": "The title of the footer links column with title=Społeczność in the footer"
+  },
+  "link.title.Więcej": {
+    "message": "Więcej",
+    "description": "The title of the footer links column with title=Więcej in the footer"
+  },
+  "link.item.label.Podręcznik Użytkownika": {
+    "message": "Podręcznik Użytkownika",
+    "description": "The label of footer link with label=Podręcznik Użytkownika linking to /docs/user-manual"
+  },
+  "link.item.label.Podręcznik Programisty": {
+    "message": "Podręcznik Programisty",
+    "description": "The label of footer link with label=Podręcznik Programisty linking to /docs/developer-manual"
+  },
+  "link.item.label.FAQ": {
+    "message": "FAQ",
+    "description": "The label of footer link with label=FAQ linking to /docs/faq"
+  },
+  "link.item.label.Informacje o Wydaniach": {
+    "message": "Informacje o Wydaniach",
+    "description": "The label of footer link with label=Informacje o Wydaniach linking to /docs/release-notes"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/quarka-org/qa-advisor"
+  },
+  "link.item.label.Wsparcie": {
+    "message": "Wsparcie",
+    "description": "The label of footer link with label=Wsparcie linking to https://github.com/quarka-org/qa-advisor/issues"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 Zespół QA Advisor. Zbudowane z Docusaurus.",
+    "description": "The footer copyright"
+  }
+}
