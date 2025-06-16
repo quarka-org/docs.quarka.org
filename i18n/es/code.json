@@ -16,44 +16,5 @@
   },
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "Volver al inicio de la página"
-  },
-  "homepage.wordcamp.title": {
-    "message": "🎉 Lanzamiento Especial WordCamp Europe 2025"
-  },
-  "homepage.wordcamp.announcement": {
-    "message": "¡Estamos emocionados de presentar la versión beta de QA Advisor en WordCamp Europe 2025!"
-  },
-  "homepage.wordcamp.description": {
-    "message": "QA Advisor es una potente herramienta de análisis que le ayuda a comprender el comportamiento del usuario a través de mapas de calor y seguimiento de interacciones."
-  },
-  "homepage.wordcamp.coming": {
-    "message": "¡Versión completa llegando en verano de 2025!"
-  },
-  "homepage.download.button": {
-    "message": "🚀 Descargar QA Advisor (β)"
-  },
-  "homepage.userGuide.button": {
-    "message": "Guía del Usuario"
-  },
-  "homepage.developerGuide.button": {
-    "message": "Guía del Desarrollador"
-  },
-  "homepage.features.userGuide.title": {
-    "message": "Guía del Usuario"
-  },
-  "homepage.features.userGuide.description": {
-    "message": "Guías completas para usar QA Advisor WordPress Analytics. Aprenda a rastrear, analizar y optimizar su sitio de WordPress."
-  },
-  "homepage.features.developerGuide.title": {
-    "message": "Guía del Desarrollador"
-  },
-  "homepage.features.developerGuide.description": {
-    "message": "Documentación técnica para desarrolladores que trabajan con QA Advisor. Referencias de API, guías de integración y opciones de personalización."
-  },
-  "homepage.features.privacy.title": {
-    "message": "Enfocado en la Privacidad"
-  },
-  "homepage.features.privacy.description": {
-    "message": "QA Advisor está diseñado pensando en la privacidad, proporcionando análisis sin cookies y respetando la privacidad del usuario."
   }
 }
