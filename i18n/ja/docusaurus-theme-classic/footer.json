@@ -1,32 +1,42 @@
 {
   "link.title.Docs": {
-    "message": "ドキュメント"
+    "message": "ドキュメント",
+    "description": "The title of the footer links column with title=Docs in the footer"
   },
   "link.title.Community": {
-    "message": "コミュニティ"
+    "message": "コミュニティ",
+    "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
-    "message": "その他"
+    "message": "その他",
+    "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.User Guide": {
-    "message": "ユーザーガイド"
+    "message": "ユーザーガイド",
+    "description": "The label of footer link with label=User Guide linking to /docs/user-manual"
   },
   "link.item.label.Developer Guide": {
-    "message": "開発者ガイド"
+    "message": "開発者ガイド",
+    "description": "The label of footer link with label=Developer Guide linking to /docs/developer-manual"
   },
   "link.item.label.FAQ": {
-    "message": "よくある質問"
+    "message": "よくある質問",
+    "description": "The label of footer link with label=FAQ linking to /docs/faq"
   },
   "link.item.label.GitHub": {
-    "message": "GitHub"
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/quarka-org"
   },
   "link.item.label.Blog": {
-    "message": "ブログ"
+    "message": "ブログ",
+    "description": "The label of footer link with label=Blog linking to /blog"
   },
   "link.item.label.Release Notes": {
-    "message": "リリースノート"
+    "message": "リリースノート",
+    "description": "The label of footer link with label=Release Notes linking to /docs/release-notes"
   },
   "copyright": {
-    "message": "Copyright © 2025 Quarka Organization. Docusaurus で構築されています。"
+    "message": "Copyright © 2025 Quarka Organization. Docusaurus で構築されています。",
+    "description": "The footer copyright"
   }
 }
