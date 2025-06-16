@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="fr" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-user-manual/screens-and-operations/brains" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Brains (Intelligence Artificielle) | QA Advisor Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.quarka.org/fr/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.quarka.org/fr/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.quarka.org/fr/docs/user-manual/screens-and-operations/brains"><meta data-rh="true" property="og:locale" content="fr"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" name="docusaurus_locale" content="fr"><meta data-rh="true" name="docsearch:language" content="fr"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Brains (Intelligence Artificielle) | QA Advisor Documentation"><meta data-rh="true" name="description" content="Les modules Brains de QA Advisor utilisent l&#x27;intelligence artificielle pour analyser automatiquement le comportement des utilisateurs et fournir des recommandations actionables pour optimiser votre site WordPress."><meta data-rh="true" property="og:description" content="Les modules Brains de QA Advisor utilisent l&#x27;intelligence artificielle pour analyser automatiquement le comportement des utilisateurs et fournir des recommandations actionables pour optimiser votre site WordPress."><link data-rh="true" rel="icon" href="/fr/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.quarka.org/fr/docs/user-manual/screens-and-operations/brains"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/docs/user-manual/screens-and-operations/brains" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/ja/docs/user-manual/screens-and-operations/brains" hreflang="ja"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/es/docs/user-manual/screens-and-operations/brains" hreflang="es"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/fr/docs/user-manual/screens-and-operations/brains" hreflang="fr"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/docs/user-manual/screens-and-operations/brains" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/fr/blog/rss.xml" title="QA Advisor Documentation RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/fr/blog/atom.xml" title="QA Advisor Documentation Atom Feed"><link rel="stylesheet" href="/fr/assets/css/styles.91fd5d29.css">
+<script src="/fr/assets/js/runtime~main.60e68c5d.js" defer="defer"></script>
+<script src="/fr/assets/js/main.d7cb6c18.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/fr/img/qa-new-logo.png"><div role="region" aria-label="Aller au contenu principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Aller au contenu principal</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Ouvrir/fermer la barre de navigation" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/fr/"><div class="navbar__logo"><img src="/fr/img/qa-new-logo.png" alt="QA Advisor Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/fr/img/qa-new-logo.png" alt="QA Advisor Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Documentation QA Advisor</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/fr/docs/user-manual">Guide Utilisateur</a><a class="navbar__item navbar__link" href="/fr/docs/developer-manual">Guide Développeur</a><a class="navbar__item navbar__link" href="/fr/blog">Blog</a><a class="navbar__item navbar__link" href="/fr/docs/release-notes/2025/qa-advisor-beta-4-9-0">Notes de Version</a><a class="navbar__item navbar__link" href="/fr/docs/faq">FAQ</a></div><div class="navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>Français</a><ul class="dropdown__menu"><li><a href="/docs/user-manual/screens-and-operations/brains" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en-US">English</a></li><li><a href="/ja/docs/user-manual/screens-and-operations/brains" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja">日本語</a></li><li><a href="/es/docs/user-manual/screens-and-operations/brains" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/fr/docs/user-manual/screens-and-operations/brains" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="fr">Français</a></li></ul></div><a href="https://github.com/quarka-org/docs.quarka.org" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Basculer entre le mode sombre et clair (actuellement mode clair)" aria-label="Basculer entre le mode sombre et clair (actuellement mode clair)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Retour en haut de la page" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/fr/docs/user-manual">Guide Utilisateur</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/fr/docs/user-manual/getting-started">Premiers Pas</a><button aria-label="Réduire la catégorie &#x27;Premiers Pas&#x27; de la barre latérale" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/getting-started/installation">Installation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/getting-started/environment-setup">Configuration de l&#x27;Environnement</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/getting-started/set-data-limit-wpconfig">Configuration des Limites de Données</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/getting-started/when-defer-jquery">Quand Différer jQuery</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/fr/docs/category/using-qa-advisor">Utiliser QA Advisor</a><button aria-label="Réduire la catégorie &#x27;Utiliser QA Advisor&#x27; de la barre latérale" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/dashboard">Tableau de Bord (Dashboard)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/brains">Brains (Intelligence Artificielle)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations">Écrans et Opérations</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/realtime">Temps Réel</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/audience">Audience</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/acquisition">Acquisition</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/landing-pages">Pages d&#x27;Atterrissage (Landing Pages)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/top-growing">Top Growing (Pages en Croissance)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/all-pages">Toutes les Pages</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/goals">Objectifs (Goals)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/license-activation">Activation de Licence</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/settings">Paramètres (Settings)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/help">Aide (Help)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/fr/docs/user-manual/screens-and-operations/heatmaps">Cartes de Chaleur (Heatmaps)</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Fil d&#x27;Ariane"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Page d&#x27;accueil" class="breadcrumbs__link" href="/fr/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/fr/docs/category/using-qa-advisor"><span itemprop="name">Utiliser QA Advisor</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Brains (Intelligence Artificielle)</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Sur cette page</button></div><div class="theme-doc-markdown markdown"><header><h1>Brains (Intelligence Artificielle)</h1></header>
+<p>Les modules Brains de QA Advisor utilisent l&#x27;intelligence artificielle pour analyser automatiquement le comportement des utilisateurs et fournir des recommandations actionables pour optimiser votre site WordPress.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="vue-densemble">Vue d&#x27;ensemble<a href="#vue-densemble" class="hash-link" aria-label="Lien direct vers Vue d&#x27;ensemble" title="Lien direct vers Vue d&#x27;ensemble">​</a></h2>
+<p>Les Brains sont des modules d&#x27;IA spécialisés qui :</p>
+<ul>
+<li><strong>Analysent automatiquement</strong> les données de comportement utilisateur</li>
+<li><strong>Identifient des patterns</strong> et des opportunités d&#x27;optimisation</li>
+<li><strong>Génèrent des recommandations</strong> spécifiques et actionables</li>
+<li><strong>Prédisent les tendances</strong> et alertent sur les problèmes potentiels</li>
+<li><strong>Apprennent continuellement</strong> de vos données pour améliorer leurs suggestions</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="modules-brains-disponibles">Modules Brains Disponibles<a href="#modules-brains-disponibles" class="hash-link" aria-label="Lien direct vers Modules Brains Disponibles" title="Lien direct vers Modules Brains Disponibles">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="landing-page-advisor-conseiller-pages-datterrissage">Landing Page Advisor (Conseiller Pages d&#x27;Atterrissage)<a href="#landing-page-advisor-conseiller-pages-datterrissage" class="hash-link" aria-label="Lien direct vers Landing Page Advisor (Conseiller Pages d&#x27;Atterrissage)" title="Lien direct vers Landing Page Advisor (Conseiller Pages d&#x27;Atterrissage)">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fonctionnalités">Fonctionnalités<a href="#fonctionnalités" class="hash-link" aria-label="Lien direct vers Fonctionnalités" title="Lien direct vers Fonctionnalités">​</a></h4>
+<ul>
+<li>Analyse de la performance des pages d&#x27;atterrissage</li>
+<li>Identification des éléments qui convertissent le mieux</li>
+<li>Recommandations pour améliorer les taux de conversion</li>
+<li>Optimisation des call-to-action (CTA)</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="métriques-analysées">Métriques Analysées<a href="#métriques-analysées" class="hash-link" aria-label="Lien direct vers Métriques Analysées" title="Lien direct vers Métriques Analysées">​</a></h4>
+<ul>
+<li>Taux de rebond par page d&#x27;atterrissage</li>
+<li>Temps passé sur la page</li>
+<li>Interactions avec les éléments (clics, défilements)</li>
+<li>Parcours de conversion</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="recommandations-typiques">Recommandations Typiques<a href="#recommandations-typiques" class="hash-link" aria-label="Lien direct vers Recommandations Typiques" title="Lien direct vers Recommandations Typiques">​</a></h4>
+<ul>
+<li>Repositionnement des CTA</li>
+<li>Optimisation du contenu au-dessus de la ligne de flottaison</li>
+<li>Amélioration de la vitesse de chargement</li>
+<li>Personnalisation selon la source de trafic</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="content-performance-brain-cerveau-performance-contenu">Content Performance Brain (Cerveau Performance Contenu)<a href="#content-performance-brain-cerveau-performance-contenu" class="hash-link" aria-label="Lien direct vers Content Performance Brain (Cerveau Performance Contenu)" title="Lien direct vers Content Performance Brain (Cerveau Performance Contenu)">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fonctionnalités-1">Fonctionnalités<a href="#fonctionnalités-1" class="hash-link" aria-label="Lien direct vers Fonctionnalités" title="Lien direct vers Fonctionnalités">​</a></h4>
+<ul>
+<li>Évaluation de l&#x27;engagement du contenu</li>
+<li>Identification des sujets qui résonnent avec votre audience</li>
+<li>Suggestions d&#x27;amélioration du contenu existant</li>
+<li>Recommandations pour nouveau contenu</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="métriques-analysées-1">Métriques Analysées<a href="#métriques-analysées-1" class="hash-link" aria-label="Lien direct vers Métriques Analysées" title="Lien direct vers Métriques Analysées">​</a></h4>
+<ul>
+<li>Temps de lecture moyen</li>
+<li>Taux de défilement</li>
+<li>Interactions sociales</li>
+<li>Taux de partage</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="recommandations-typiques-1">Recommandations Typiques<a href="#recommandations-typiques-1" class="hash-link" aria-label="Lien direct vers Recommandations Typiques" title="Lien direct vers Recommandations Typiques">​</a></h4>
+<ul>
+<li>Optimisation de la longueur des articles</li>
+<li>Amélioration de la structure du contenu</li>
+<li>Ajout d&#x27;éléments interactifs</li>
+<li>Optimisation des titres et sous-titres</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="user-journey-optimizer-optimiseur-parcours-utilisateur">User Journey Optimizer (Optimiseur Parcours Utilisateur)<a href="#user-journey-optimizer-optimiseur-parcours-utilisateur" class="hash-link" aria-label="Lien direct vers User Journey Optimizer (Optimiseur Parcours Utilisateur)" title="Lien direct vers User Journey Optimizer (Optimiseur Parcours Utilisateur)">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fonctionnalités-2">Fonctionnalités<a href="#fonctionnalités-2" class="hash-link" aria-label="Lien direct vers Fonctionnalités" title="Lien direct vers Fonctionnalités">​</a></h4>
+<ul>
+<li>Analyse des parcours utilisateur complets</li>
+<li>Identification des points de friction</li>
+<li>Optimisation des tunnels de conversion</li>
+<li>Personnalisation des expériences</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="métriques-analysées-2">Métriques Analysées<a href="#métriques-analysées-2" class="hash-link" aria-label="Lien direct vers Métriques Analysées" title="Lien direct vers Métriques Analysées">​</a></h4>
+<ul>
+<li>Chemins de navigation les plus fréquents</li>
+<li>Points d&#x27;abandon dans les tunnels</li>
+<li>Temps entre les actions</li>
+<li>Séquences d&#x27;actions optimales</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="recommandations-typiques-2">Recommandations Typiques<a href="#recommandations-typiques-2" class="hash-link" aria-label="Lien direct vers Recommandations Typiques" title="Lien direct vers Recommandations Typiques">​</a></h4>
+<ul>
+<li>Simplification des parcours complexes</li>
+<li>Réduction des étapes dans les formulaires</li>
+<li>Amélioration de la navigation</li>
+<li>Personnalisation des recommandations</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technical-performance-brain-cerveau-performance-technique">Technical Performance Brain (Cerveau Performance Technique)<a href="#technical-performance-brain-cerveau-performance-technique" class="hash-link" aria-label="Lien direct vers Technical Performance Brain (Cerveau Performance Technique)" title="Lien direct vers Technical Performance Brain (Cerveau Performance Technique)">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fonctionnalités-3">Fonctionnalités<a href="#fonctionnalités-3" class="hash-link" aria-label="Lien direct vers Fonctionnalités" title="Lien direct vers Fonctionnalités">​</a></h4>
+<ul>
+<li>Surveillance automatique des performances techniques</li>
+<li>Détection des problèmes de vitesse</li>
+<li>Optimisation des ressources</li>
+<li>Alertes proactives</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="métriques-analysées-3">Métriques Analysées<a href="#métriques-analysées-3" class="hash-link" aria-label="Lien direct vers Métriques Analysées" title="Lien direct vers Métriques Analysées">​</a></h4>
+<ul>
+<li>Temps de chargement des pages</li>
+<li>Core Web Vitals</li>
+<li>Erreurs JavaScript</li>
+<li>Utilisation des ressources</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="recommandations-typiques-3">Recommandations Typiques<a href="#recommandations-typiques-3" class="hash-link" aria-label="Lien direct vers Recommandations Typiques" title="Lien direct vers Recommandations Typiques">​</a></h4>
+<ul>
+<li>Optimisation des images</li>
+<li>Minification des ressources</li>
+<li>Amélioration du cache</li>
+<li>Optimisation de la base de données</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-des-brains">Configuration des Brains<a href="#configuration-des-brains" class="hash-link" aria-label="Lien direct vers Configuration des Brains" title="Lien direct vers Configuration des Brains">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="activation-des-modules">Activation des Modules<a href="#activation-des-modules" class="hash-link" aria-label="Lien direct vers Activation des Modules" title="Lien direct vers Activation des Modules">​</a></h3>
+<ol>
+<li><strong>Accédez</strong> à QA Advisor → Brains dans votre admin WordPress</li>
+<li><strong>Sélectionnez</strong> les modules que vous souhaitez activer</li>
+<li><strong>Configurez</strong> les paramètres spécifiques à chaque module</li>
+<li><strong>Définissez</strong> la fréquence d&#x27;analyse</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="paramètres-généraux">Paramètres Généraux<a href="#paramètres-généraux" class="hash-link" aria-label="Lien direct vers Paramètres Généraux" title="Lien direct vers Paramètres Généraux">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fréquence-danalyse">Fréquence d&#x27;Analyse<a href="#fréquence-danalyse" class="hash-link" aria-label="Lien direct vers Fréquence d&#x27;Analyse" title="Lien direct vers Fréquence d&#x27;Analyse">​</a></h4>
+<ul>
+<li><strong>Temps réel</strong> : Analyse continue (recommandé pour les sites à fort trafic)</li>
+<li><strong>Horaire</strong> : Analyse toutes les heures</li>
+<li><strong>Quotidienne</strong> : Analyse une fois par jour</li>
+<li><strong>Hebdomadaire</strong> : Analyse hebdomadaire</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="seuils-dalerte">Seuils d&#x27;Alerte<a href="#seuils-dalerte" class="hash-link" aria-label="Lien direct vers Seuils d&#x27;Alerte" title="Lien direct vers Seuils d&#x27;Alerte">​</a></h4>
+<ul>
+<li><strong>Critique</strong> : Problèmes nécessitant une action immédiate</li>
+<li><strong>Important</strong> : Opportunités d&#x27;amélioration significatives</li>
+<li><strong>Informatif</strong> : Suggestions d&#x27;optimisation mineures</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-avancée">Configuration Avancée<a href="#configuration-avancée" class="hash-link" aria-label="Lien direct vers Configuration Avancée" title="Lien direct vers Configuration Avancée">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="apprentissage-automatique">Apprentissage Automatique<a href="#apprentissage-automatique" class="hash-link" aria-label="Lien direct vers Apprentissage Automatique" title="Lien direct vers Apprentissage Automatique">​</a></h4>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-php codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">// Configuration dans wp-config.php</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">define(&#x27;QAHM_BRAINS_LEARNING_MODE&#x27;, &#x27;adaptive&#x27;);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">define(&#x27;QAHM_BRAINS_CONFIDENCE_THRESHOLD&#x27;, 0.8);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">define(&#x27;QAHM_BRAINS_UPDATE_FREQUENCY&#x27;, &#x27;daily&#x27;);</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copier le code" title="Copier" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="intégrations">Intégrations<a href="#intégrations" class="hash-link" aria-label="Lien direct vers Intégrations" title="Lien direct vers Intégrations">​</a></h4>
+<ul>
+<li><strong>Google Analytics</strong> : Enrichissement des données</li>
+<li><strong>Search Console</strong> : Données de recherche</li>
+<li><strong>CRM</strong> : Données de conversion</li>
+<li><strong>E-commerce</strong> : Données de vente</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="utilisation-des-recommandations">Utilisation des Recommandations<a href="#utilisation-des-recommandations" class="hash-link" aria-label="Lien direct vers Utilisation des Recommandations" title="Lien direct vers Utilisation des Recommandations">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="interface-des-recommandations">Interface des Recommandations<a href="#interface-des-recommandations" class="hash-link" aria-label="Lien direct vers Interface des Recommandations" title="Lien direct vers Interface des Recommandations">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tableau-de-bord-brains">Tableau de Bord Brains<a href="#tableau-de-bord-brains" class="hash-link" aria-label="Lien direct vers Tableau de Bord Brains" title="Lien direct vers Tableau de Bord Brains">​</a></h4>
+<ul>
+<li><strong>Vue d&#x27;ensemble</strong> de toutes les recommandations actives</li>
+<li><strong>Priorisation</strong> par impact potentiel</li>
+<li><strong>Statut</strong> de mise en œuvre</li>
+<li><strong>Historique</strong> des recommandations précédentes</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="détails-des-recommandations">Détails des Recommandations<a href="#détails-des-recommandations" class="hash-link" aria-label="Lien direct vers Détails des Recommandations" title="Lien direct vers Détails des Recommandations">​</a></h4>
+<ul>
+<li><strong>Description</strong> détaillée du problème ou de l&#x27;opportunité</li>
+<li><strong>Impact estimé</strong> sur les métriques clés</li>
+<li><strong>Étapes d&#x27;implémentation</strong> spécifiques</li>
+<li><strong>Ressources</strong> et outils nécessaires</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mise-en-œuvre">Mise en Œuvre<a href="#mise-en-œuvre" class="hash-link" aria-label="Lien direct vers Mise en Œuvre" title="Lien direct vers Mise en Œuvre">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="processus-recommandé">Processus Recommandé<a href="#processus-recommandé" class="hash-link" aria-label="Lien direct vers Processus Recommandé" title="Lien direct vers Processus Recommandé">​</a></h4>
+<ol>
+<li><strong>Évaluez</strong> l&#x27;impact potentiel de chaque recommandation</li>
+<li><strong>Priorisez</strong> selon vos objectifs business</li>
+<li><strong>Planifiez</strong> la mise en œuvre</li>
+<li><strong>Implémentez</strong> les changements</li>
+<li><strong>Mesurez</strong> les résultats</li>
+<li><strong>Ajustez</strong> si nécessaire</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="suivi-des-résultats">Suivi des Résultats<a href="#suivi-des-résultats" class="hash-link" aria-label="Lien direct vers Suivi des Résultats" title="Lien direct vers Suivi des Résultats">​</a></h4>
+<ul>
+<li><strong>Métriques avant/après</strong> pour chaque recommandation</li>
+<li><strong>Tests A/B</strong> pour valider l&#x27;impact</li>
+<li><strong>Rapports d&#x27;efficacité</strong> des Brains</li>
+<li><strong>ROI</strong> des optimisations implémentées</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="exemples-de-recommandations">Exemples de Recommandations<a href="#exemples-de-recommandations" class="hash-link" aria-label="Lien direct vers Exemples de Recommandations" title="Lien direct vers Exemples de Recommandations">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="optimisation-de-page-datterrissage">Optimisation de Page d&#x27;Atterrissage<a href="#optimisation-de-page-datterrissage" class="hash-link" aria-label="Lien direct vers Optimisation de Page d&#x27;Atterrissage" title="Lien direct vers Optimisation de Page d&#x27;Atterrissage">​</a></h3>
+<p><strong>Problème Identifié :</strong>
+&quot;La page d&#x27;atterrissage &#x27;/landing-page-produit&#x27; a un taux de rebond de 78%, supérieur à la moyenne du site (45%)&quot;</p>
+<p><strong>Recommandations :</strong></p>
+<ol>
+<li>Déplacer le CTA principal au-dessus de la ligne de flottaison</li>
+<li>Réduire le temps de chargement (actuellement 4.2s)</li>
+<li>Simplifier le formulaire de contact (passer de 8 à 4 champs)</li>
+<li>Ajouter des témoignages clients près du CTA</li>
+</ol>
+<p><strong>Impact Estimé :</strong></p>
+<ul>
+<li>Réduction du taux de rebond : -25%</li>
+<li>Augmentation des conversions : +15%</li>
+<li>Amélioration de l&#x27;engagement : +30%</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="optimisation-de-contenu">Optimisation de Contenu<a href="#optimisation-de-contenu" class="hash-link" aria-label="Lien direct vers Optimisation de Contenu" title="Lien direct vers Optimisation de Contenu">​</a></h3>
+<p><strong>Problème Identifié :</strong>
+&quot;Les articles de blog ont un temps de lecture moyen de 45 secondes, indiquant un faible engagement&quot;</p>
+<p><strong>Recommandations :</strong></p>
+<ol>
+<li>Ajouter des sous-titres tous les 200-300 mots</li>
+<li>Intégrer des éléments visuels (images, graphiques)</li>
+<li>Créer des résumés en début d&#x27;article</li>
+<li>Ajouter des liens internes pertinents</li>
+</ol>
+<p><strong>Impact Estimé :</strong></p>
+<ul>
+<li>Augmentation du temps de lecture : +60%</li>
+<li>Amélioration du taux de défilement : +40%</li>
+<li>Réduction du taux de rebond : -20%</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="personnalisation-des-brains">Personnalisation des Brains<a href="#personnalisation-des-brains" class="hash-link" aria-label="Lien direct vers Personnalisation des Brains" title="Lien direct vers Personnalisation des Brains">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="création-de-règles-personnalisées">Création de Règles Personnalisées<a href="#création-de-règles-personnalisées" class="hash-link" aria-label="Lien direct vers Création de Règles Personnalisées" title="Lien direct vers Création de Règles Personnalisées">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="règles-métier">Règles Métier<a href="#règles-métier" class="hash-link" aria-label="Lien direct vers Règles Métier" title="Lien direct vers Règles Métier">​</a></h4>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-php codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">// Exemple de règle personnalisée</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">add_filter(&#x27;qahm_brains_custom_rules&#x27;, function($rules) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    $rules[&#x27;ecommerce_cart_abandonment&#x27;] = array(</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &#x27;condition&#x27; =&gt; &#x27;cart_page_exit_without_purchase&#x27;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &#x27;threshold&#x27; =&gt; 0.7,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &#x27;action&#x27; =&gt; &#x27;recommend_cart_optimization&#x27;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    );</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    return $rules;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">});</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copier le code" title="Copier" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="seuils-personnalisés">Seuils Personnalisés<a href="#seuils-personnalisés" class="hash-link" aria-label="Lien direct vers Seuils Personnalisés" title="Lien direct vers Seuils Personnalisés">​</a></h4>
+<ul>
+<li><strong>Taux de rebond</strong> : Définir ce qui constitue un taux élevé pour votre secteur</li>
+<li><strong>Temps sur site</strong> : Adapter selon le type de contenu</li>
+<li><strong>Conversions</strong> : Personnaliser selon vos objectifs</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="intégration-avec-vos-outils">Intégration avec Vos Outils<a href="#intégration-avec-vos-outils" class="hash-link" aria-label="Lien direct vers Intégration avec Vos Outils" title="Lien direct vers Intégration avec Vos Outils">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="apis-disponibles">APIs Disponibles<a href="#apis-disponibles" class="hash-link" aria-label="Lien direct vers APIs Disponibles" title="Lien direct vers APIs Disponibles">​</a></h4>
+<ul>
+<li><strong>REST API</strong> pour récupérer les recommandations</li>
+<li><strong>Webhooks</strong> pour les alertes en temps réel</li>
+<li><strong>Intégrations</strong> avec Slack, email, SMS</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="automatisation">Automatisation<a href="#automatisation" class="hash-link" aria-label="Lien direct vers Automatisation" title="Lien direct vers Automatisation">​</a></h4>
+<ul>
+<li><strong>Actions automatiques</strong> basées sur les recommandations</li>
+<li><strong>Tests A/B</strong> automatisés</li>
+<li><strong>Rapports</strong> programmés</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mesure-de-lefficacité">Mesure de l&#x27;Efficacité<a href="#mesure-de-lefficacité" class="hash-link" aria-label="Lien direct vers Mesure de l&#x27;Efficacité" title="Lien direct vers Mesure de l&#x27;Efficacité">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="métriques-de-performance-des-brains">Métriques de Performance des Brains<a href="#métriques-de-performance-des-brains" class="hash-link" aria-label="Lien direct vers Métriques de Performance des Brains" title="Lien direct vers Métriques de Performance des Brains">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="précision-des-prédictions">Précision des Prédictions<a href="#précision-des-prédictions" class="hash-link" aria-label="Lien direct vers Précision des Prédictions" title="Lien direct vers Précision des Prédictions">​</a></h4>
+<ul>
+<li><strong>Taux de réussite</strong> des recommandations implémentées</li>
+<li><strong>Amélioration moyenne</strong> des métriques ciblées</li>
+<li><strong>Temps de détection</strong> des problèmes</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="impact-business">Impact Business<a href="#impact-business" class="hash-link" aria-label="Lien direct vers Impact Business" title="Lien direct vers Impact Business">​</a></h4>
+<ul>
+<li><strong>ROI</strong> des optimisations suggérées</li>
+<li><strong>Économies</strong> réalisées grâce aux alertes préventives</li>
+<li><strong>Amélioration</strong> des KPI principaux</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="rapports-defficacité">Rapports d&#x27;Efficacité<a href="#rapports-defficacité" class="hash-link" aria-label="Lien direct vers Rapports d&#x27;Efficacité" title="Lien direct vers Rapports d&#x27;Efficacité">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="rapport-mensuel">Rapport Mensuel<a href="#rapport-mensuel" class="hash-link" aria-label="Lien direct vers Rapport Mensuel" title="Lien direct vers Rapport Mensuel">​</a></h4>
+<ul>
+<li>Résumé des recommandations générées</li>
+<li>Taux d&#x27;implémentation</li>
+<li>Impact mesuré sur les performances</li>
+<li>Suggestions d&#x27;amélioration des Brains</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="analyse-trimestrielle">Analyse Trimestrielle<a href="#analyse-trimestrielle" class="hash-link" aria-label="Lien direct vers Analyse Trimestrielle" title="Lien direct vers Analyse Trimestrielle">​</a></h4>
+<ul>
+<li>Évolution de la précision des Brains</li>
+<li>Tendances dans les types de recommandations</li>
+<li>Optimisation des paramètres d&#x27;IA</li>
+<li>Planification des améliorations</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="résolution-de-problèmes">Résolution de Problèmes<a href="#résolution-de-problèmes" class="hash-link" aria-label="Lien direct vers Résolution de Problèmes" title="Lien direct vers Résolution de Problèmes">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="recommandations-inexactes">Recommandations Inexactes<a href="#recommandations-inexactes" class="hash-link" aria-label="Lien direct vers Recommandations Inexactes" title="Lien direct vers Recommandations Inexactes">​</a></h3>
+<p>Si les Brains génèrent des recommandations non pertinentes :</p>
+<ol>
+<li><strong>Vérifiez</strong> la qualité des données d&#x27;entrée</li>
+<li><strong>Ajustez</strong> les seuils de confiance</li>
+<li><strong>Affinez</strong> les paramètres de contexte</li>
+<li><strong>Fournissez</strong> des retours sur les recommandations</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="performance-des-brains">Performance des Brains<a href="#performance-des-brains" class="hash-link" aria-label="Lien direct vers Performance des Brains" title="Lien direct vers Performance des Brains">​</a></h3>
+<p>Si l&#x27;analyse est lente :</p>
+<ol>
+<li><strong>Optimisez</strong> la fréquence d&#x27;analyse</li>
+<li><strong>Réduisez</strong> la période d&#x27;analyse</li>
+<li><strong>Vérifiez</strong> les ressources serveur</li>
+<li><strong>Configurez</strong> la mise en cache appropriée</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="étapes-suivantes">Étapes Suivantes<a href="#étapes-suivantes" class="hash-link" aria-label="Lien direct vers Étapes Suivantes" title="Lien direct vers Étapes Suivantes">​</a></h2>
+<p>Une fois les Brains configurés :</p>
+<ol>
+<li><a href="/fr/docs/user-manual/screens-and-operations/heatmaps">Analysez vos heatmaps</a></li>
+<li><a href="/fr/docs/user-manual/screens-and-operations/realtime">Surveillez l&#x27;activité en temps réel</a></li>
+<li><a href="/fr/docs/user-manual/screens-and-operations/goals">Configurez vos objectifs</a></li>
+<li><a href="/fr/docs/user-manual/screens-and-operations/landing-pages">Optimisez vos pages d&#x27;atterrissage</a></li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/quarka-org/docs.quarka.org/tree/main/docs/user-manual/2-screens-and-operations/02-brains.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Éditer cette page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Pages de documentation"><a class="pagination-nav__link pagination-nav__link--prev" href="/fr/docs/user-manual/screens-and-operations/dashboard"><div class="pagination-nav__sublabel">Précédent</div><div class="pagination-nav__label">Tableau de Bord (Dashboard)</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/fr/docs/user-manual/screens-and-operations"><div class="pagination-nav__sublabel">Suivant</div><div class="pagination-nav__label">Écrans et Opérations</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#vue-densemble" class="table-of-contents__link toc-highlight">Vue d&#39;ensemble</a></li><li><a href="#modules-brains-disponibles" class="table-of-contents__link toc-highlight">Modules Brains Disponibles</a><ul><li><a href="#landing-page-advisor-conseiller-pages-datterrissage" class="table-of-contents__link toc-highlight">Landing Page Advisor (Conseiller Pages d&#39;Atterrissage)</a></li><li><a href="#content-performance-brain-cerveau-performance-contenu" class="table-of-contents__link toc-highlight">Content Performance Brain (Cerveau Performance Contenu)</a></li><li><a href="#user-journey-optimizer-optimiseur-parcours-utilisateur" class="table-of-contents__link toc-highlight">User Journey Optimizer (Optimiseur Parcours Utilisateur)</a></li><li><a href="#technical-performance-brain-cerveau-performance-technique" class="table-of-contents__link toc-highlight">Technical Performance Brain (Cerveau Performance Technique)</a></li></ul></li><li><a href="#configuration-des-brains" class="table-of-contents__link toc-highlight">Configuration des Brains</a><ul><li><a href="#activation-des-modules" class="table-of-contents__link toc-highlight">Activation des Modules</a></li><li><a href="#paramètres-généraux" class="table-of-contents__link toc-highlight">Paramètres Généraux</a></li><li><a href="#configuration-avancée" class="table-of-contents__link toc-highlight">Configuration Avancée</a></li></ul></li><li><a href="#utilisation-des-recommandations" class="table-of-contents__link toc-highlight">Utilisation des Recommandations</a><ul><li><a href="#interface-des-recommandations" class="table-of-contents__link toc-highlight">Interface des Recommandations</a></li><li><a href="#mise-en-œuvre" class="table-of-contents__link toc-highlight">Mise en Œuvre</a></li></ul></li><li><a href="#exemples-de-recommandations" class="table-of-contents__link toc-highlight">Exemples de Recommandations</a><ul><li><a href="#optimisation-de-page-datterrissage" class="table-of-contents__link toc-highlight">Optimisation de Page d&#39;Atterrissage</a></li><li><a href="#optimisation-de-contenu" class="table-of-contents__link toc-highlight">Optimisation de Contenu</a></li></ul></li><li><a href="#personnalisation-des-brains" class="table-of-contents__link toc-highlight">Personnalisation des Brains</a><ul><li><a href="#création-de-règles-personnalisées" class="table-of-contents__link toc-highlight">Création de Règles Personnalisées</a></li><li><a href="#intégration-avec-vos-outils" class="table-of-contents__link toc-highlight">Intégration avec Vos Outils</a></li></ul></li><li><a href="#mesure-de-lefficacité" class="table-of-contents__link toc-highlight">Mesure de l&#39;Efficacité</a><ul><li><a href="#métriques-de-performance-des-brains" class="table-of-contents__link toc-highlight">Métriques de Performance des Brains</a></li><li><a href="#rapports-defficacité" class="table-of-contents__link toc-highlight">Rapports d&#39;Efficacité</a></li></ul></li><li><a href="#résolution-de-problèmes" class="table-of-contents__link toc-highlight">Résolution de Problèmes</a><ul><li><a href="#recommandations-inexactes" class="table-of-contents__link toc-highlight">Recommandations Inexactes</a></li><li><a href="#performance-des-brains" class="table-of-contents__link toc-highlight">Performance des Brains</a></li></ul></li><li><a href="#étapes-suivantes" class="table-of-contents__link toc-highlight">Étapes Suivantes</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/fr/docs/user-manual">Guide Utilisateur</a></li><li class="footer__item"><a class="footer__link-item" href="/fr/docs/developer-manual">Guide Développeur</a></li><li class="footer__item"><a class="footer__link-item" href="/fr/docs/faq">FAQ</a></li></ul></div><div class="col footer__col"><div class="footer__title">Communauté</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/quarka-org" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Plus</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/fr/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/fr/docs/release-notes">Notes de Version</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Quarka Organization. Construit avec Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
