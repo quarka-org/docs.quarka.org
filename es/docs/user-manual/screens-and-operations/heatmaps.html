@@ -3,24 +3,306 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
-<title data-rh="true">Heatmaps | QA Advisor Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.quarka.org/es/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.quarka.org/es/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.quarka.org/es/docs/user-manual/screens-and-operations/heatmaps"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Heatmaps | QA Advisor Documentation"><meta data-rh="true" name="description" content="Learn how to create and analyze heatmaps to understand user behavior on your WordPress site."><meta data-rh="true" property="og:description" content="Learn how to create and analyze heatmaps to understand user behavior on your WordPress site."><link data-rh="true" rel="icon" href="/es/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.quarka.org/es/docs/user-manual/screens-and-operations/heatmaps"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/docs/user-manual/screens-and-operations/heatmaps" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/ja/docs/user-manual/screens-and-operations/heatmaps" hreflang="ja"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/es/docs/user-manual/screens-and-operations/heatmaps" hreflang="es"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/docs/user-manual/screens-and-operations/heatmaps" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/es/blog/rss.xml" title="QA Advisor Documentation RSS Feed">
+<title data-rh="true">Mapas de Calor | QA Advisor Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.quarka.org/es/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.quarka.org/es/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.quarka.org/es/docs/user-manual/screens-and-operations/heatmaps"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" property="og:locale:alternate" content="ja"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Mapas de Calor | QA Advisor Documentation"><meta data-rh="true" name="description" content="Los Mapas de Calor de QA Advisor proporcionan visualización del comportamiento de usuarios en sus páginas web, mostrando dónde hacen clic, cómo se desplazan y con qué elementos interactúan más."><meta data-rh="true" property="og:description" content="Los Mapas de Calor de QA Advisor proporcionan visualización del comportamiento de usuarios en sus páginas web, mostrando dónde hacen clic, cómo se desplazan y con qué elementos interactúan más."><link data-rh="true" rel="icon" href="/es/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.quarka.org/es/docs/user-manual/screens-and-operations/heatmaps"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/docs/user-manual/screens-and-operations/heatmaps" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/ja/docs/user-manual/screens-and-operations/heatmaps" hreflang="ja"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/es/docs/user-manual/screens-and-operations/heatmaps" hreflang="es"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/docs/user-manual/screens-and-operations/heatmaps" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/es/blog/rss.xml" title="QA Advisor Documentation RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/es/blog/atom.xml" title="QA Advisor Documentation Atom Feed"><link rel="stylesheet" href="/es/assets/css/styles.91fd5d29.css">
-<script src="/es/assets/js/runtime~main.1cd605c9.js" defer="defer"></script>
-<script src="/es/assets/js/main.b0046743.js" defer="defer"></script>
+<script src="/es/assets/js/runtime~main.bd6a7a26.js" defer="defer"></script>
+<script src="/es/assets/js/main.18cc1836.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/es/img/qa-new-logo.png"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/es/"><div class="navbar__logo"><img src="/es/img/qa-new-logo.png" alt="QA Advisor Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/es/img/qa-new-logo.png" alt="QA Advisor Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Documentación de QA Advisor</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/es/docs/user-manual">Guía del Usuario</a><a class="navbar__item navbar__link" href="/es/docs/developer-manual">Guía del Desarrollador</a><a class="navbar__item navbar__link" href="/es/blog">Blog</a><a class="navbar__item navbar__link" href="/es/docs/release-notes/2025/qa-advisor-beta-4-9-0">Notas de la Versión</a><a class="navbar__item navbar__link" href="/es/docs/faq">Preguntas Frecuentes</a></div><div class="navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>Español</a><ul class="dropdown__menu"><li><a href="/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en-US">English</a></li><li><a href="/ja/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja">日本語</a></li><li><a href="/es/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="es">Español</a></li></ul></div><a href="https://github.com/quarka-org/docs.quarka.org" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Cambiar entre modo oscuro y claro (actualmente modo claro)" aria-label="Cambiar entre modo oscuro y claro (actualmente modo claro)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al inicio de la página" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/es/docs/user-manual">User Guide</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/es/docs/user-manual/getting-started">Getting Started</a><button aria-label="Colapsar categoría &#x27;Getting Started&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/getting-started/installation">Installation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/getting-started/environment-setup">Environment Setup</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/getting-started/set-data-limit-wpconfig">Configure Monthly Limit</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/getting-started/when-defer-jquery">When jQuery is Deferred</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/es/docs/category/using-qa-advisor">Using QA Advisor</a><button aria-label="Colapsar categoría &#x27;Using QA Advisor&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/dashboard">Dashboard</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/brains">Brains</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/es/docs/user-manual/screens-and-operations/heatmaps">Heatmaps</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations">Screens and Operations</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/realtime">Realtime</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/audience">Audience</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/acquisition">Acquisition</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/landing-pages">Landing Pages</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/top-growing">Top Growing</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/all-pages">All Pages</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/goals">Goals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/license-activation">License Activation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/settings">Settings</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/help">Help</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/es/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/es/docs/category/using-qa-advisor"><span itemprop="name">Using QA Advisor</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Heatmaps</span><meta itemprop="position" content="2"></li></ul></nav><div class="theme-doc-markdown markdown"><header><h1>Heatmap Analytics</h1></header>
-<p>Learn how to create and analyze heatmaps to understand user behavior on your WordPress site.</p>
-<p><strong>Coming Soon</strong></p>
-<p>This section is currently being developed. It will include:</p>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/es/img/qa-new-logo.png"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/es/"><div class="navbar__logo"><img src="/es/img/qa-new-logo.png" alt="QA Advisor Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/es/img/qa-new-logo.png" alt="QA Advisor Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Documentación de QA Advisor</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/es/docs/user-manual">Guía del Usuario</a><a class="navbar__item navbar__link" href="/es/docs/developer-manual">Guía del Desarrollador</a><a class="navbar__item navbar__link" href="/es/blog">Blog</a><a class="navbar__item navbar__link" href="/es/docs/release-notes">Notas de la Versión</a><a class="navbar__item navbar__link" href="/es/docs/faq">Preguntas Frecuentes</a></div><div class="navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>Español</a><ul class="dropdown__menu"><li><a href="/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en-US">English</a></li><li><a href="/ja/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja">日本語</a></li><li><a href="/es/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="es">Español</a></li></ul></div><a href="https://github.com/quarka-org/docs.quarka.org" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Cambiar entre modo oscuro y claro (actualmente modo claro)" aria-label="Cambiar entre modo oscuro y claro (actualmente modo claro)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al inicio de la página" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/es/docs/user-manual">Guía del Usuario</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/es/docs/user-manual/getting-started">Getting Started</a><button aria-label="Colapsar categoría &#x27;Getting Started&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/getting-started/installation">Instalación</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/getting-started/environment-setup">Configuración del Entorno</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/getting-started/when-defer-jquery">Cuando jQuery está Diferido</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/getting-started/set-data-limit-wpconfig">Configurar Límite de Datos en wp-config.php</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/es/docs/category/using-qa-advisor">Using QA Advisor</a><button aria-label="Colapsar categoría &#x27;Using QA Advisor&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/dashboard">Panel de Control</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/brains">Brains</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations">Usar QA Advisor</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/realtime">Tiempo Real</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/audience">Audiencia</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/acquisition">Adquisición</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/landing-pages">Páginas de Destino</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/top-growing">Más Populares</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/all-pages">Todas las Páginas</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/goals">Objetivos</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/es/docs/user-manual/screens-and-operations/heatmaps">Mapas de Calor</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/license-activation">Activación de Licencia</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/settings">Configuración</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/es/docs/user-manual/screens-and-operations/help">Ayuda</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/es/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/es/docs/category/using-qa-advisor"><span itemprop="name">Using QA Advisor</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Mapas de Calor</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Mapas de Calor</h1></header>
+<p>Los Mapas de Calor de QA Advisor proporcionan visualización del comportamiento de usuarios en sus páginas web, mostrando dónde hacen clic, cómo se desplazan y con qué elementos interactúan más.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="qué-son-los-mapas-de-calor">¿Qué son los Mapas de Calor?<a href="#qué-son-los-mapas-de-calor" class="hash-link" aria-label="Enlace directo al ¿Qué son los Mapas de Calor?" title="Enlace directo al ¿Qué son los Mapas de Calor?">​</a></h2>
+<p>Los Mapas de Calor son representaciones visuales del comportamiento del usuario que muestran:</p>
 <ul>
-<li>Creating your first heatmap</li>
-<li>Understanding heatmap types (click, scroll, movement)</li>
-<li>Filtering and segmenting data</li>
-<li>Exporting heatmap reports</li>
-<li>Best practices for heatmap analysis</li>
+<li><strong>Mapas de Clics</strong>: Dónde hacen clic los usuarios</li>
+<li><strong>Mapas de Desplazamiento</strong>: Hasta dónde se desplazan los usuarios</li>
+<li><strong>Mapas de Movimiento</strong>: Patrones de movimiento del mouse</li>
+<li><strong>Mapas de Atención</strong>: Áreas que reciben más atención visual</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tipos-de-mapas-de-calor">Tipos de Mapas de Calor<a href="#tipos-de-mapas-de-calor" class="hash-link" aria-label="Enlace directo al Tipos de Mapas de Calor" title="Enlace directo al Tipos de Mapas de Calor">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mapas-de-clics">Mapas de Clics<a href="#mapas-de-clics" class="hash-link" aria-label="Enlace directo al Mapas de Clics" title="Enlace directo al Mapas de Clics">​</a></h3>
+<p><strong>Visualización de Clics</strong></p>
+<ul>
+<li>Puntos calientes donde los usuarios hacen clic más</li>
+<li>Intensidad de color indica frecuencia de clics</li>
+<li>Identificación de elementos más atractivos</li>
+<li>Detección de clics en elementos no interactivos</li>
+</ul>
+<p><strong>Insights Proporcionados</strong>:</p>
+<ul>
+<li>Efectividad de llamadas a la acción</li>
+<li>Elementos que confunden a usuarios</li>
+<li>Áreas de mayor interés visual</li>
+<li>Oportunidades de optimización de diseño</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mapas-de-desplazamiento">Mapas de Desplazamiento<a href="#mapas-de-desplazamiento" class="hash-link" aria-label="Enlace directo al Mapas de Desplazamiento" title="Enlace directo al Mapas de Desplazamiento">​</a></h3>
+<p><strong>Visualización de Scroll</strong></p>
+<ul>
+<li>Porcentaje de usuarios que llegan a cada sección</li>
+<li>Puntos donde los usuarios abandonan</li>
+<li>Contenido más y menos visto</li>
+<li>Efectividad de longitud de página</li>
+</ul>
+<p><strong>Insights Proporcionados</strong>:</p>
+<ul>
+<li>Contenido above-the-fold vs. below-the-fold</li>
+<li>Puntos de abandono en la página</li>
+<li>Efectividad de contenido por sección</li>
+<li>Optimización de longitud de contenido</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mapas-de-movimiento">Mapas de Movimiento<a href="#mapas-de-movimiento" class="hash-link" aria-label="Enlace directo al Mapas de Movimiento" title="Enlace directo al Mapas de Movimiento">​</a></h3>
+<p><strong>Patrones de Mouse</strong></p>
+<ul>
+<li>Rutas de movimiento del cursor</li>
+<li>Áreas de mayor actividad del mouse</li>
+<li>Patrones de exploración visual</li>
+<li>Correlación entre movimiento y atención</li>
+</ul>
+<p><strong>Insights Proporcionados</strong>:</p>
+<ul>
+<li>Patrones de lectura y exploración</li>
+<li>Elementos que atraen atención</li>
+<li>Flujo visual de la página</li>
+<li>Optimización de layout</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generación-de-mapas-de-calor">Generación de Mapas de Calor<a href="#generación-de-mapas-de-calor" class="hash-link" aria-label="Enlace directo al Generación de Mapas de Calor" title="Enlace directo al Generación de Mapas de Calor">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="requisitos-de-datos">Requisitos de Datos<a href="#requisitos-de-datos" class="hash-link" aria-label="Enlace directo al Requisitos de Datos" title="Enlace directo al Requisitos de Datos">​</a></h3>
+<p><strong>Volumen Mínimo</strong></p>
+<ul>
+<li>Al menos 30-50 interacciones para mapas básicos</li>
+<li>100+ interacciones para mapas confiables</li>
+<li>500+ interacciones para análisis detallado</li>
+<li>Datos de múltiples días para patrones estables</li>
+</ul>
+<p><strong>Calidad de Datos</strong></p>
+<ul>
+<li>Tráfico real de usuarios (no bots)</li>
+<li>Diversidad de dispositivos y navegadores</li>
+<li>Representatividad de audiencia objetivo</li>
+<li>Exclusión de tráfico interno si es necesario</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuración-de-seguimiento">Configuración de Seguimiento<a href="#configuración-de-seguimiento" class="hash-link" aria-label="Enlace directo al Configuración de Seguimiento" title="Enlace directo al Configuración de Seguimiento">​</a></h3>
+<p><strong>Páginas a Rastrear</strong></p>
+<ul>
+<li>Páginas de mayor tráfico</li>
+<li>Páginas críticas para conversión</li>
+<li>Páginas con problemas identificados</li>
+<li>Landing pages de campañas</li>
+</ul>
+<p><strong>Segmentación</strong></p>
+<ul>
+<li>Por tipo de dispositivo (móvil, desktop, tablet)</li>
+<li>Por fuente de tráfico</li>
+<li>Por tipo de usuario (nuevo vs. recurrente)</li>
+<li>Por ubicación geográfica</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="análisis-e-interpretación">Análisis e Interpretación<a href="#análisis-e-interpretación" class="hash-link" aria-label="Enlace directo al Análisis e Interpretación" title="Enlace directo al Análisis e Interpretación">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lectura-de-mapas-de-calor">Lectura de Mapas de Calor<a href="#lectura-de-mapas-de-calor" class="hash-link" aria-label="Enlace directo al Lectura de Mapas de Calor" title="Enlace directo al Lectura de Mapas de Calor">​</a></h3>
+<p><strong>Escala de Colores</strong></p>
+<ul>
+<li><strong>Rojo/Naranja</strong>: Alta actividad/interacción</li>
+<li><strong>Amarillo</strong>: Actividad moderada</li>
+<li><strong>Verde/Azul</strong>: Actividad baja</li>
+<li><strong>Sin color</strong>: Sin actividad registrada</li>
+</ul>
+<p><strong>Patrones Comunes</strong></p>
+<ul>
+<li>Patrón F: Lectura en forma de F</li>
+<li>Patrón Z: Exploración en zigzag</li>
+<li>Concentración en esquina superior izquierda</li>
+<li>Atención a imágenes y elementos visuales</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="identificación-de-problemas">Identificación de Problemas<a href="#identificación-de-problemas" class="hash-link" aria-label="Enlace directo al Identificación de Problemas" title="Enlace directo al Identificación de Problemas">​</a></h3>
+<p><strong>Problemas de Usabilidad</strong></p>
+<ul>
+<li>Clics en elementos no interactivos</li>
+<li>Ignorancia de CTAs importantes</li>
+<li>Abandono temprano en formularios</li>
+<li>Confusión en navegación</li>
+</ul>
+<p><strong>Oportunidades de Mejora</strong></p>
+<ul>
+<li>Elementos populares que podrían optimizarse</li>
+<li>Áreas subutilizadas con potencial</li>
+<li>Contenido ignorado que podría reubicarse</li>
+<li>CTAs que necesitan mayor prominencia</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="optimización-basada-en-mapas-de-calor">Optimización Basada en Mapas de Calor<a href="#optimización-basada-en-mapas-de-calor" class="hash-link" aria-label="Enlace directo al Optimización Basada en Mapas de Calor" title="Enlace directo al Optimización Basada en Mapas de Calor">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mejoras-de-diseño">Mejoras de Diseño<a href="#mejoras-de-diseño" class="hash-link" aria-label="Enlace directo al Mejoras de Diseño" title="Enlace directo al Mejoras de Diseño">​</a></h3>
+<p><strong>Reubicación de Elementos</strong></p>
+<ul>
+<li>Mover CTAs a áreas de mayor actividad</li>
+<li>Reposicionar contenido importante</li>
+<li>Optimizar ubicación de formularios</li>
+<li>Mejorar jerarquía visual</li>
+</ul>
+<p><strong>Mejoras Visuales</strong></p>
+<ul>
+<li>Aumentar contraste de elementos importantes</li>
+<li>Mejorar tamaño y visibilidad de botones</li>
+<li>Optimizar uso de espacios en blanco</li>
+<li>Mejorar señales visuales</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="optimización-de-contenido">Optimización de Contenido<a href="#optimización-de-contenido" class="hash-link" aria-label="Enlace directo al Optimización de Contenido" title="Enlace directo al Optimización de Contenido">​</a></h3>
+<p><strong>Estructura de Información</strong></p>
+<ul>
+<li>Reorganizar contenido basado en patrones de lectura</li>
+<li>Acortar o expandir secciones según engagement</li>
+<li>Mejorar títulos y encabezados</li>
+<li>Optimizar llamadas a la acción</li>
+</ul>
+<p><strong>Contenido Multimedia</strong></p>
+<ul>
+<li>Optimizar ubicación de imágenes</li>
+<li>Mejorar relevancia de elementos visuales</li>
+<li>Ajustar tamaño de multimedia</li>
+<li>Optimizar carga de contenido visual</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="análisis-por-dispositivo">Análisis por Dispositivo<a href="#análisis-por-dispositivo" class="hash-link" aria-label="Enlace directo al Análisis por Dispositivo" title="Enlace directo al Análisis por Dispositivo">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mapas-de-calor-móviles">Mapas de Calor Móviles<a href="#mapas-de-calor-móviles" class="hash-link" aria-label="Enlace directo al Mapas de Calor Móviles" title="Enlace directo al Mapas de Calor Móviles">​</a></h3>
+<p><strong>Consideraciones Específicas</strong></p>
+<ul>
+<li>Patrones de toque vs. clics de mouse</li>
+<li>Áreas de fácil alcance con el pulgar</li>
+<li>Comportamiento de scroll en móvil</li>
+<li>Interacciones táctiles específicas</li>
+</ul>
+<p><strong>Optimizaciones Móviles</strong></p>
+<ul>
+<li>Botones de tamaño apropiado para toques</li>
+<li>Ubicación accesible de elementos importantes</li>
+<li>Optimización para navegación con una mano</li>
+<li>Reducción de elementos que requieren precisión</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mapas-de-calor-desktop">Mapas de Calor Desktop<a href="#mapas-de-calor-desktop" class="hash-link" aria-label="Enlace directo al Mapas de Calor Desktop" title="Enlace directo al Mapas de Calor Desktop">​</a></h3>
+<p><strong>Patrones Desktop</strong></p>
+<ul>
+<li>Uso de mouse para exploración</li>
+<li>Patrones de lectura más complejos</li>
+<li>Mayor precisión en interacciones</li>
+<li>Uso de hover states</li>
+</ul>
+<p><strong>Optimizaciones Desktop</strong></p>
+<ul>
+<li>Aprovechamiento de espacio de pantalla</li>
+<li>Elementos de navegación más complejos</li>
+<li>Uso efectivo de sidebar y áreas laterales</li>
+<li>Optimización para múltiples monitores</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="casos-de-uso-específicos">Casos de Uso Específicos<a href="#casos-de-uso-específicos" class="hash-link" aria-label="Enlace directo al Casos de Uso Específicos" title="Enlace directo al Casos de Uso Específicos">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="páginas-de-producto">Páginas de Producto<a href="#páginas-de-producto" class="hash-link" aria-label="Enlace directo al Páginas de Producto" title="Enlace directo al Páginas de Producto">​</a></h3>
+<p><strong>Análisis Específico</strong></p>
+<ul>
+<li>Interacción con imágenes de producto</li>
+<li>Uso de botones de compra</li>
+<li>Exploración de descripciones</li>
+<li>Interacción con reviews y ratings</li>
+</ul>
+<p><strong>Optimizaciones Típicas</strong></p>
+<ul>
+<li>Mejora de galería de imágenes</li>
+<li>Optimización de botón &quot;Agregar al carrito&quot;</li>
+<li>Reorganización de información de producto</li>
+<li>Mejora de elementos de confianza</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="landing-pages">Landing Pages<a href="#landing-pages" class="hash-link" aria-label="Enlace directo al Landing Pages" title="Enlace directo al Landing Pages">​</a></h3>
+<p><strong>Análisis Específico</strong></p>
+<ul>
+<li>Efectividad de headline principal</li>
+<li>Interacción con formularios</li>
+<li>Uso de CTAs primarios y secundarios</li>
+<li>Exploración de beneficios y características</li>
+</ul>
+<p><strong>Optimizaciones Típicas</strong></p>
+<ul>
+<li>Mejora de propuesta de valor</li>
+<li>Optimización de formularios</li>
+<li>Reubicación de elementos de conversión</li>
+<li>Reducción de distracciones</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="páginas-de-blog">Páginas de Blog<a href="#páginas-de-blog" class="hash-link" aria-label="Enlace directo al Páginas de Blog" title="Enlace directo al Páginas de Blog">​</a></h3>
+<p><strong>Análisis Específico</strong></p>
+<ul>
+<li>Patrones de lectura de contenido</li>
+<li>Interacción con elementos sociales</li>
+<li>Uso de navegación interna</li>
+<li>Engagement con CTAs de suscripción</li>
+</ul>
+<p><strong>Optimizaciones Típicas</strong></p>
+<ul>
+<li>Mejora de legibilidad</li>
+<li>Optimización de elementos sociales</li>
+<li>Mejora de navegación relacionada</li>
+<li>Optimización de CTAs de conversión</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="integración-con-otras-métricas">Integración con Otras Métricas<a href="#integración-con-otras-métricas" class="hash-link" aria-label="Enlace directo al Integración con Otras Métricas" title="Enlace directo al Integración con Otras Métricas">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="correlación-con-conversiones">Correlación con Conversiones<a href="#correlación-con-conversiones" class="hash-link" aria-label="Enlace directo al Correlación con Conversiones" title="Enlace directo al Correlación con Conversiones">​</a></h3>
+<p><strong>Análisis Combinado</strong></p>
+<ul>
+<li>Correlación entre áreas de alta actividad y conversiones</li>
+<li>Identificación de elementos que contribuyen a conversión</li>
+<li>Análisis de barreras visuales para conversión</li>
+<li>Optimización basada en datos combinados</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="integración-con-ab-testing">Integración con A/B Testing<a href="#integración-con-ab-testing" class="hash-link" aria-label="Enlace directo al Integración con A/B Testing" title="Enlace directo al Integración con A/B Testing">​</a></h3>
+<p><strong>Testing Informado</strong></p>
+<ul>
+<li>Hipótesis basadas en insights de mapas de calor</li>
+<li>Testing de reubicación de elementos</li>
+<li>Validación de cambios de diseño</li>
+<li>Medición de impacto de optimizaciones</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="herramientas-y-configuración">Herramientas y Configuración<a href="#herramientas-y-configuración" class="hash-link" aria-label="Enlace directo al Herramientas y Configuración" title="Enlace directo al Herramientas y Configuración">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuración-avanzada">Configuración Avanzada<a href="#configuración-avanzada" class="hash-link" aria-label="Enlace directo al Configuración Avanzada" title="Enlace directo al Configuración Avanzada">​</a></h3>
+<p><strong>Filtros de Datos</strong></p>
+<ul>
+<li>Exclusión de tráfico interno</li>
+<li>Filtrado por fuente de tráfico</li>
+<li>Segmentación por comportamiento</li>
+<li>Filtros de calidad de datos</li>
+</ul>
+<p><strong>Configuración de Visualización</strong></p>
+<ul>
+<li>Ajuste de sensibilidad de mapas</li>
+<li>Personalización de escalas de color</li>
+<li>Configuración de overlays</li>
+<li>Opciones de exportación</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="automatización">Automatización<a href="#automatización" class="hash-link" aria-label="Enlace directo al Automatización" title="Enlace directo al Automatización">​</a></h3>
+<p><strong>Generación Automática</strong></p>
+<ul>
+<li>Mapas de calor automáticos para páginas principales</li>
+<li>Alertas de cambios significativos en patrones</li>
+<li>Reportes regulares de insights</li>
+<li>Integración con dashboards principales</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mejores-prácticas">Mejores Prácticas<a href="#mejores-prácticas" class="hash-link" aria-label="Enlace directo al Mejores Prácticas" title="Enlace directo al Mejores Prácticas">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="recolección-de-datos">Recolección de Datos<a href="#recolección-de-datos" class="hash-link" aria-label="Enlace directo al Recolección de Datos" title="Enlace directo al Recolección de Datos">​</a></h3>
+<p><strong>Calidad sobre Cantidad</strong></p>
+<ul>
+<li>Asegurar representatividad de datos</li>
+<li>Excluir sesiones anómalas</li>
+<li>Mantener consistencia en configuración</li>
+<li>Validar calidad de datos regularmente</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="análisis-e-interpretación-1">Análisis e Interpretación<a href="#análisis-e-interpretación-1" class="hash-link" aria-label="Enlace directo al Análisis e Interpretación" title="Enlace directo al Análisis e Interpretación">​</a></h3>
+<p><strong>Contexto es Clave</strong></p>
+<ul>
+<li>Considerar objetivos de página específicos</li>
+<li>Analizar en contexto de user journey</li>
+<li>Combinar con otras métricas</li>
+<li>Validar insights con usuarios reales</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementación-de-cambios">Implementación de Cambios<a href="#implementación-de-cambios" class="hash-link" aria-label="Enlace directo al Implementación de Cambios" title="Enlace directo al Implementación de Cambios">​</a></h3>
+<p><strong>Enfoque Iterativo</strong></p>
+<ul>
+<li>Implementar cambios gradualmente</li>
+<li>Medir impacto de cada cambio</li>
+<li>Mantener versiones de control</li>
+<li>Documentar aprendizajes</li>
 </ul>
 <hr>
-<p>Need help? Contact <a href="mailto:support@quarka.org" target="_blank" rel="noopener noreferrer">support@quarka.org</a></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/quarka-org/docs.quarka.org/tree/main/docs/user-manual/2-screens-and-operations/heatmaps.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar esta página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/es/docs/user-manual/screens-and-operations/brains"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Brains</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/es/docs/user-manual/screens-and-operations"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">Screens and Operations</div></a></nav></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Documentación</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/es/docs/user-manual">Guía del Usuario</a></li><li class="footer__item"><a class="footer__link-item" href="/es/docs/developer-manual">Guía del Desarrollador</a></li><li class="footer__item"><a class="footer__link-item" href="/es/docs/faq">Preguntas Frecuentes</a></li></ul></div><div class="col footer__col"><div class="footer__title">Comunidad</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/quarka-org" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Más</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/es/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/es/docs/release-notes">Notas de la Versión</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Quarka Organization. Construido con Docusaurus.</div></div></div></footer></div>
+<p>Los Mapas de Calor proporcionan insights únicos sobre el comportamiento real de usuarios, complementando métricas cuantitativas con comprensión visual del uso de su sitio.</p>
+<p><strong>Próximo paso</strong>: Configure las opciones del sistema en <a href="/es/docs/user-manual/screens-and-operations/settings">Configuración</a>.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/quarka-org/docs.quarka.org/tree/main/docs/user-manual/2-screens-and-operations/heatmaps.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar esta página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/es/docs/user-manual/screens-and-operations/goals"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Objetivos</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/es/docs/user-manual/screens-and-operations/license-activation"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">Activación de Licencia</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#qué-son-los-mapas-de-calor" class="table-of-contents__link toc-highlight">¿Qué son los Mapas de Calor?</a></li><li><a href="#tipos-de-mapas-de-calor" class="table-of-contents__link toc-highlight">Tipos de Mapas de Calor</a><ul><li><a href="#mapas-de-clics" class="table-of-contents__link toc-highlight">Mapas de Clics</a></li><li><a href="#mapas-de-desplazamiento" class="table-of-contents__link toc-highlight">Mapas de Desplazamiento</a></li><li><a href="#mapas-de-movimiento" class="table-of-contents__link toc-highlight">Mapas de Movimiento</a></li></ul></li><li><a href="#generación-de-mapas-de-calor" class="table-of-contents__link toc-highlight">Generación de Mapas de Calor</a><ul><li><a href="#requisitos-de-datos" class="table-of-contents__link toc-highlight">Requisitos de Datos</a></li><li><a href="#configuración-de-seguimiento" class="table-of-contents__link toc-highlight">Configuración de Seguimiento</a></li></ul></li><li><a href="#análisis-e-interpretación" class="table-of-contents__link toc-highlight">Análisis e Interpretación</a><ul><li><a href="#lectura-de-mapas-de-calor" class="table-of-contents__link toc-highlight">Lectura de Mapas de Calor</a></li><li><a href="#identificación-de-problemas" class="table-of-contents__link toc-highlight">Identificación de Problemas</a></li></ul></li><li><a href="#optimización-basada-en-mapas-de-calor" class="table-of-contents__link toc-highlight">Optimización Basada en Mapas de Calor</a><ul><li><a href="#mejoras-de-diseño" class="table-of-contents__link toc-highlight">Mejoras de Diseño</a></li><li><a href="#optimización-de-contenido" class="table-of-contents__link toc-highlight">Optimización de Contenido</a></li></ul></li><li><a href="#análisis-por-dispositivo" class="table-of-contents__link toc-highlight">Análisis por Dispositivo</a><ul><li><a href="#mapas-de-calor-móviles" class="table-of-contents__link toc-highlight">Mapas de Calor Móviles</a></li><li><a href="#mapas-de-calor-desktop" class="table-of-contents__link toc-highlight">Mapas de Calor Desktop</a></li></ul></li><li><a href="#casos-de-uso-específicos" class="table-of-contents__link toc-highlight">Casos de Uso Específicos</a><ul><li><a href="#páginas-de-producto" class="table-of-contents__link toc-highlight">Páginas de Producto</a></li><li><a href="#landing-pages" class="table-of-contents__link toc-highlight">Landing Pages</a></li><li><a href="#páginas-de-blog" class="table-of-contents__link toc-highlight">Páginas de Blog</a></li></ul></li><li><a href="#integración-con-otras-métricas" class="table-of-contents__link toc-highlight">Integración con Otras Métricas</a><ul><li><a href="#correlación-con-conversiones" class="table-of-contents__link toc-highlight">Correlación con Conversiones</a></li><li><a href="#integración-con-ab-testing" class="table-of-contents__link toc-highlight">Integración con A/B Testing</a></li></ul></li><li><a href="#herramientas-y-configuración" class="table-of-contents__link toc-highlight">Herramientas y Configuración</a><ul><li><a href="#configuración-avanzada" class="table-of-contents__link toc-highlight">Configuración Avanzada</a></li><li><a href="#automatización" class="table-of-contents__link toc-highlight">Automatización</a></li></ul></li><li><a href="#mejores-prácticas" class="table-of-contents__link toc-highlight">Mejores Prácticas</a><ul><li><a href="#recolección-de-datos" class="table-of-contents__link toc-highlight">Recolección de Datos</a></li><li><a href="#análisis-e-interpretación-1" class="table-of-contents__link toc-highlight">Análisis e Interpretación</a></li><li><a href="#implementación-de-cambios" class="table-of-contents__link toc-highlight">Implementación de Cambios</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Documentación</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/es/docs/user-manual">Guía del Usuario</a></li><li class="footer__item"><a class="footer__link-item" href="/es/docs/developer-manual">Guía del Desarrollador</a></li><li class="footer__item"><a class="footer__link-item" href="/es/docs/faq">Preguntas Frecuentes</a></li></ul></div><div class="col footer__col"><div class="footer__title">Comunidad</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/quarka-org" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Más</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/es/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/es/docs/release-notes">Notas de la Versión</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Quarka Organization. Construido con Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
