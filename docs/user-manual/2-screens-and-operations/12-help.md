@@ -125,8 +125,8 @@ The Help screen includes:
 - **Check**: Ensure that search indexing is up to date and functioning properly
 
 ## Related Documentation
-- [Settings](./11-settings.md) - Configure plugin settings and preferences
-- [License Activation](./10-license-activation.md) - Manage licensing and support access
-- [Dashboard](./01-dashboard.md) - Main plugin interface and overview
+- [Settings](/docs/user-manual/screens-and-operations/settings) - Configure plugin settings and preferences
+- [License Activation](/docs/user-manual/screens-and-operations/license-activation) - Manage licensing and support access
+- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Main plugin interface and overview
 - External: Official QA Advisor documentation website
 - External: Community forums and knowledge base

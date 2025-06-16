@@ -26,6 +26,7 @@ const config = {
       },
       ja: {
         htmlLang: 'ja',
+        label: '日本語',
       },
     },
   },

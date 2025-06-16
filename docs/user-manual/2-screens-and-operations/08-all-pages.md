@@ -116,7 +116,7 @@ The All Pages screen includes:
 - **Check**: Verify that the export format is supported and data size is within limits
 
 ## Related Documentation
-- [Dashboard](./01-dashboard.md) - Overall site performance overview
-- [Landing Pages](./06-landing-pages.md) - Entry point analysis
-- [Top Growing](./07-top-growing.md) - Trending content identification
-- [Settings](./11-settings.md) - Configure page tracking and display options
+- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Overall site performance overview
+- [Landing Pages](/docs/user-manual/screens-and-operations/landing-pages) - Entry point analysis
+- [Top Growing](/docs/user-manual/screens-and-operations/top-growing) - Trending content identification
+- [Settings](/docs/user-manual/screens-and-operations/settings) - Configure page tracking and display options
