@@ -116,7 +116,7 @@ The Audience screen includes:
 - **Check**: Ensure that VPN and proxy traffic is being handled appropriately
 
 ## Related Documentation
-- [Dashboard](./01-dashboard.md) - Overall visitor metrics
-- [Acquisition](./05-acquisition.md) - How visitors find your site
-- [All Pages](./08-all-pages.md) - Content performance analysis
-- [Settings](./11-settings.md) - Configure audience tracking options
+- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Overall visitor metrics
+- [Acquisition](/docs/user-manual/screens-and-operations/acquisition) - How visitors find your site
+- [All Pages](/docs/user-manual/screens-and-operations/all-pages) - Content performance analysis
+- [Settings](/docs/user-manual/screens-and-operations/settings) - Configure audience tracking options

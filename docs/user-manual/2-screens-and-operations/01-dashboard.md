@@ -85,6 +85,6 @@ The Dashboard screen itself has minimal configuration options, but you can:
 - **Check**: Verify that filters or segments are not affecting the data display
 
 ## Related Documentation
-- [Settings](./11-settings.md) - Configure general plugin settings
-- [Realtime](./03-realtime.md) - View live visitor activity
-- [Audience](./04-audience.md) - Detailed visitor demographics and behavior
+- [Settings](/docs/user-manual/screens-and-operations/settings) - Configure general plugin settings
+- [Realtime](/docs/user-manual/screens-and-operations/realtime) - View live visitor activity
+- [Audience](/docs/user-manual/screens-and-operations/audience) - Detailed visitor demographics and behavior
