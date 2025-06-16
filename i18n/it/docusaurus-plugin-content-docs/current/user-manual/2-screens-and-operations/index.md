@@ -10,84 +10,84 @@ Questa sezione fornisce una guida completa a tutte le schermate e operazioni dis
 
 QA Advisor organizza le sue funzionalità in schermate specializzate, ognuna focalizzata su aspetti specifici dell'analisi del tuo sito web:
 
-### 📊 [Dashboard](./01-dashboard.md)
+### 📊 [Dashboard](./01-dashboard)
 La schermata principale che fornisce una panoramica completa delle performance del tuo sito:
 - Metriche chiave in tempo reale
 - Grafici di tendenza
 - Riassunto delle performance
 - Avvisi e notifiche importanti
 
-### 🧠 [Brains](./02-brains.md)
+### 🧠 [Brains](./02-brains)
 Moduli di intelligenza artificiale che analizzano automaticamente i tuoi dati:
 - Insights automatici
 - Raccomandazioni di ottimizzazione
 - Analisi predittive
 - Identificazione opportunità
 
-### ⚡ [Tempo Reale](./03-realtime.md)
+### ⚡ [Tempo Reale](./03-realtime)
 Monitoraggio live dell'attività del tuo sito:
 - Visitatori attivi in tempo reale
 - Pagine visualizzate al momento
 - Sorgenti di traffico live
 - Eventi in corso
 
-### 👥 [Pubblico](./04-audience.md)
+### 👥 [Pubblico](./04-audience)
 Analisi dettagliata dei tuoi visitatori:
 - Demografia e interessi
 - Comportamento degli utenti
 - Segmentazione del pubblico
 - Percorsi di navigazione
 
-### 📈 [Acquisizione](./05-acquisition.md)
+### 📈 [Acquisizione](./05-acquisition)
 Comprendi da dove arrivano i tuoi visitatori:
 - Sorgenti di traffico
 - Canali di marketing
 - Campagne pubblicitarie
 - Referral e link in entrata
 
-### 🎯 [Landing Pages](./06-landing-pages.md)
+### 🎯 [Landing Pages](./06-landing-pages)
 Analisi delle performance delle tue pagine di destinazione:
 - Tassi di conversione per pagina
 - Tempo di permanenza
 - Frequenza di rimbalzo
 - Ottimizzazioni suggerite
 
-### 📊 [Top Growing](./07-top-growing.md)
+### 📊 [Top Growing](./07-top-growing)
 Identifica contenuti e pagine in crescita:
 - Pagine con crescita rapida
 - Contenuti trending
 - Opportunità emergenti
 - Analisi delle tendenze
 
-### 📋 [Tutte le Pagine](./08-all-pages.md)
+### 📋 [Tutte le Pagine](./08-all-pages)
 Vista completa di tutte le pagine del tuo sito:
 - Performance per pagina
 - Metriche comparative
 - Filtri e ordinamento
 - Esportazione dati
 
-### 🎯 [Obiettivi](./09-goals.md)
+### 🎯 [Obiettivi](./09-goals)
 Configurazione e monitoraggio degli obiettivi di business:
 - Definizione obiettivi
 - Tracciamento conversioni
 - Funnel di conversione
 - ROI e metriche business
 
-### 🔑 [Attivazione Licenza](./10-license-activation.md)
+### 🔑 [Attivazione Licenza](./10-license-activation)
 Gestione della tua licenza QA Advisor:
 - Attivazione licenza
 - Stato abbonamento
 - Upgrade e downgrade
 - Gestione domini
 
-### 🔥 [Heatmap](./heatmaps.md)
+### 🔥 [Heatmap](./heatmaps)
 Visualizzazioni avanzate delle interazioni degli utenti:
 - Heatmap click, scroll, move
 - Filtri avanzati
 - Analisi comportamentale
 - Insights UX/UI
 
-### ❓ [Aiuto](./12-help.md)
+### ❓ [Aiuto](./12-help)
 Centro di supporto e risorse:
 - Documentazione integrata
 - Tutorial interattivi
@@ -226,9 +226,9 @@ Notifiche automatiche per eventi importanti:
 
 Per iniziare ad esplorare QA Advisor:
 
-1. **[Dashboard](./01-dashboard.md)** - Inizia con la panoramica generale
-2. **[Configurazione Obiettivi](./09-goals.md)** - Definisci cosa misurare
-3. **[Heatmap](./heatmaps.md)** - Comprendi il comportamento degli utenti
-4. **[Brains](./02-brains.md)** - Ottieni insights automatici
+1. **[Dashboard](./01-dashboard)** - Inizia con la panoramica generale
+2. **[Configurazione Obiettivi](./09-goals)** - Definisci cosa misurare
+3. **[Heatmap](./heatmaps)** - Comprendi il comportamento degli utenti
+4. **[Brains](./02-brains)** - Ottieni insights automatici
 
 Ogni schermata è progettata per essere intuitiva e fornire valore immediato. Esplora le diverse sezioni per scoprire tutti gli insights che QA Advisor può fornire sul tuo sito WordPress!

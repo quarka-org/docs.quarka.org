@@ -339,9 +339,9 @@ add_action('qahm_critical_insight', function($insight) {
 
 Dopo aver configurato e utilizzato i Brains:
 
-1. **[Dashboard](./01-dashboard.md)** - Visualizza insights nel dashboard principale
-2. **[Heatmap](./heatmaps.md)** - Correla insights con dati comportamentali
-3. **[Obiettivi](./09-goals.md)** - Imposta KPI per misurare miglioramenti
-4. **[Tempo Reale](./03-realtime.md)** - Monitora impatto modifiche in tempo reale
+1. **[Dashboard](./01-dashboard)** - Visualizza insights nel dashboard principale
+2. **[Heatmap](./heatmaps)** - Correla insights con dati comportamentali
+3. **[Obiettivi](./09-goals)** - Imposta KPI per misurare miglioramenti
+4. **[Tempo Reale](./03-realtime)** - Monitora impatto modifiche in tempo reale
 
 I Brains di QA Advisor trasformano i dati grezzi in intelligence actionable, permettendoti di prendere decisioni informate e ottimizzare continuamente le performance del tuo sito WordPress!

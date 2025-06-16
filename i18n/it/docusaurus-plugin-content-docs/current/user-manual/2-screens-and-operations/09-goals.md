@@ -618,9 +618,9 @@ Tactical Goals (Livello 3):
 
 Dalla sezione Obiettivi puoi:
 
-1. **[Dashboard](./01-dashboard.md)** - Visualizza performance obiettivi aggregate
-2. **[Funnel Analysis](./funnel-analysis.md)** - Analizza percorsi conversione dettagliati
-3. **[A/B Testing](./ab-testing.md)** - Ottimizza conversioni con test
-4. **[Brains](./02-brains.md)** - Ottieni raccomandazioni IA per obiettivi
+1. **[Dashboard](./01-dashboard)** - Visualizza performance obiettivi aggregate
+2. **[Funnel Analysis](./funnel-analysis)** - Analizza percorsi conversione dettagliati
+3. **[A/B Testing](./ab-testing)** - Ottimizza conversioni con test
+4. **[Brains](./02-brains)** - Ottieni raccomandazioni IA per obiettivi
 
 La sezione Obiettivi di QA Advisor trasforma il tuo sito WordPress in una macchina di conversione data-driven, permettendoti di misurare, ottimizzare e massimizzare ogni aspetto importante per il successo del tuo business!

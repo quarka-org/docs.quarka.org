@@ -662,9 +662,9 @@ await syncToCRM(audienceData);
 
 Dalla sezione Pubblico puoi:
 
-1. **[Acquisizione](./05-acquisition.md)** - Analizza da dove arrivano i tuoi segmenti
-2. **[Obiettivi](./09-goals.md)** - Imposta KPI specifici per segmento
-3. **[Heatmap](./heatmaps.md)** - Analizza comportamento per tipo utente
-4. **[Brains](./02-brains.md)** - Ottieni insights IA sui tuoi segmenti
+1. **[Acquisizione](./05-acquisition)** - Analizza da dove arrivano i tuoi segmenti
+2. **[Obiettivi](./09-goals)** - Imposta KPI specifici per segmento
+3. **[Heatmap](./heatmaps)** - Analizza comportamento per tipo utente
+4. **[Brains](./02-brains)** - Ottieni insights IA sui tuoi segmenti
 
 La sezione Pubblico di QA Advisor ti fornisce una comprensione profonda dei tuoi visitatori, permettendoti di creare esperienze personalizzate e strategie di marketing mirate per massimizzare engagement e conversioni!

@@ -240,16 +240,16 @@ define('QAHM_CENTRALIZED_DATA', false); // Dati separati per sito
 
 Dopo l'installazione riuscita:
 
-1. **[Configurazione Ambiente](./environment-setup.md)** - Ottimizza il tuo server
-2. **[Dashboard](../2-screens-and-operations/01-dashboard.md)** - Esplora l'interfaccia principale
-3. **[Impostazioni Avanzate](./when-defer-jquery.md)** - Risolvi problemi di compatibilità
+1. **[Configurazione Ambiente](./environment-setup)** - Ottimizza il tuo server
+2. **[Dashboard](../2-screens-and-operations/01-dashboard)** - Esplora l'interfaccia principale
+3. **[Impostazioni Avanzate](./when-defer-jquery)** - Risolvi problemi di compatibilità
 
 ## Supporto Installazione
 
 Se incontri problemi durante l'installazione:
 
 - **[FAQ](../../faq/)** - Domande frequenti e soluzioni
-- **[Supporto Community](../2-screens-and-operations/12-help.md)** - Forum e discussioni
+- **[Supporto Community](../2-screens-and-operations/12-help)** - Forum e discussioni
 - **Supporto Premium** - Per licenze a pagamento
 
 L'installazione di QA Advisor è progettata per essere semplice e diretta. Seguendo questa guida, dovresti avere il plugin funzionante in pochi minuti!

@@ -199,9 +199,9 @@ Metriche Monitoraggio:
 
 Dalla schermata Top Growing puoi facilmente navigare verso:
 
-1. **[Dashboard](./01-dashboard.md)** - Panoramica performance generale
-2. **[Landing Pages](./06-landing-pages.md)** - Analisi pagine specifiche
-3. **[Heatmap](./heatmaps.md)** - Comportamento utenti su pagine vincenti
-4. **[Obiettivi](./09-goals.md)** - Tracking conversioni
+1. **[Dashboard](./01-dashboard)** - Panoramica performance generale
+2. **[Landing Pages](./06-landing-pages)** - Analisi pagine specifiche
+3. **[Heatmap](./heatmaps)** - Comportamento utenti su pagine vincenti
+4. **[Obiettivi](./09-goals)** - Tracking conversioni
 
 La funzionalità Top Growing di QA Advisor ti permette di identificare e amplificare i tuoi contenuti di maggior successo, massimizzando il ROI dei tuoi sforzi di content marketing!

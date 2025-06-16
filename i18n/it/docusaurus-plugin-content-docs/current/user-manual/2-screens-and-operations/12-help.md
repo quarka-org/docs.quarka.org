@@ -229,9 +229,9 @@ Sì, vai in Impostazioni > Privacy e aggiungi il tuo IP agli indirizzi esclusi.
 
 Dalla sezione Aiuto puoi facilmente:
 
-1. **[Dashboard](./01-dashboard.md)** - Tornare all'analisi dati
-2. **[Impostazioni](./11-settings.md)** - Configurare il plugin
-3. **[Attivazione Licenza](./10-license-activation.md)** - Gestire la tua licenza
+1. **[Dashboard](./01-dashboard)** - Tornare all'analisi dati
+2. **[Impostazioni](./11-settings)** - Configurare il plugin
+3. **[Attivazione Licenza](./10-license-activation)** - Gestire la tua licenza
 4. **Documentazione Esterna** - Accedere a risorse complete online
 
 La sezione Aiuto di QA Advisor è progettata per fornirti tutto il supporto necessario per utilizzare al meglio il plugin e raggiungere i tuoi obiettivi di analytics e ottimizzazione!

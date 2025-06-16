@@ -181,9 +181,9 @@ Configurazione Esempio:
 
 Dall'A/B Testing puoi facilmente navigare verso:
 
-1. **[Landing Pages](./06-landing-pages.md)** - Analisi performance pagine testate
-2. **[Obiettivi](./09-goals.md)** - Configurazione metriche conversione
-3. **[Heatmap](./heatmaps.md)** - Analisi comportamento per variante
-4. **[Dashboard](./01-dashboard.md)** - Panoramica risultati test
+1. **[Landing Pages](./06-landing-pages)** - Analisi performance pagine testate
+2. **[Obiettivi](./09-goals)** - Configurazione metriche conversione
+3. **[Heatmap](./heatmaps)** - Analisi comportamento per variante
+4. **[Dashboard](./01-dashboard)** - Panoramica risultati test
 
 L'A/B Testing di QA Advisor ti permette di ottimizzare il tuo sito basandoti su dati concreti, massimizzando conversioni e performance attraverso sperimentazione scientifica!

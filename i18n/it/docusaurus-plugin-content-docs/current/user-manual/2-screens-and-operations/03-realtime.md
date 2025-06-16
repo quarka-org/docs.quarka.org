@@ -396,9 +396,9 @@ define('QAHM_REALTIME_MAX_VISITORS_DISPLAY', 100);
 
 Dal monitoraggio Tempo Reale puoi:
 
-1. **[Dashboard](./01-dashboard.md)** - Visualizza trend storici
-2. **[Heatmap](./heatmaps.md)** - Analizza comportamento dettagliato
-3. **[Brains](./02-brains.md)** - Ottieni insights automatici
-4. **[Obiettivi](./09-goals.md)** - Configura tracking conversioni
+1. **[Dashboard](./01-dashboard)** - Visualizza trend storici
+2. **[Heatmap](./heatmaps)** - Analizza comportamento dettagliato
+3. **[Brains](./02-brains)** - Ottieni insights automatici
+4. **[Obiettivi](./09-goals)** - Configura tracking conversioni
 
 Il monitoraggio Tempo Reale di QA Advisor ti permette di avere il polso costante del tuo sito WordPress, reagire immediatamente a opportunità e problemi, e ottimizzare le performance in tempo reale!

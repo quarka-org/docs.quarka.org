@@ -226,9 +226,9 @@ Categorie Consenso:
 
 Dal Centro Privacy puoi facilmente navigare verso:
 
-1. **[Impostazioni](./11-settings.md)** - Configurazione privacy generale
-2. **[Dashboard](./01-dashboard.md)** - Monitoraggio conformità
-3. **[Aiuto](./12-help.md)** - Supporto questioni privacy
+1. **[Impostazioni](./11-settings)** - Configurazione privacy generale
+2. **[Dashboard](./01-dashboard)** - Monitoraggio conformità
+3. **[Aiuto](./12-help)** - Supporto questioni privacy
 4. **Documentazione Legale** - Template e guide conformità
 
 Il Centro Privacy di QA Advisor ti fornisce tutti gli strumenti necessari per mantenere la conformità alle normative privacy e proteggere i dati dei tuoi utenti!

@@ -38,18 +38,18 @@ Dopo l'installazione, QA Advisor inizierà automaticamente a raccogliere dati. E
 ## Sezioni Principali
 
 ### [Iniziare](./1-getting-started/)
-- [Installazione](./1-getting-started/installation.md)
-- [Configurazione Ambiente](./1-getting-started/environment-setup.md)
-- [Configurazioni Avanzate](./1-getting-started/when-defer-jquery.md)
+- [Installazione](./1-getting-started/installation) - Guida completa all'installazione
+- [Configurazione Ambiente](./1-getting-started/environment-setup) - Ottimizzazione ambiente WordPress
+- [Configurazioni Avanzate](./1-getting-started/when-defer-jquery) - Risoluzione conflitti jQuery
 
 ### [Schermate e Operazioni](./2-screens-and-operations/)
-- [Dashboard](./2-screens-and-operations/01-dashboard.md) - Panoramica principale
-- [Brains](./2-screens-and-operations/02-brains.md) - Moduli IA
-- [Tempo Reale](./2-screens-and-operations/03-realtime.md) - Monitoraggio live
-- [Pubblico](./2-screens-and-operations/04-audience.md) - Analisi visitatori
-- [Acquisizione](./2-screens-and-operations/05-acquisition.md) - Sorgenti traffico
-- [Landing Pages](./2-screens-and-operations/06-landing-pages.md) - Performance pagine
-- [Heatmap](./2-screens-and-operations/heatmaps.md) - Mappe di calore interattive
+- [Dashboard](./2-screens-and-operations/01-dashboard) - Panoramica principale
+- [Brains](./2-screens-and-operations/02-brains) - Moduli IA
+- [Tempo Reale](./2-screens-and-operations/03-realtime) - Monitoraggio live
+- [Pubblico](./2-screens-and-operations/04-audience) - Analisi visitatori
+- [Acquisizione](./2-screens-and-operations/05-acquisition) - Sorgenti traffico
+- [Landing Pages](./2-screens-and-operations/06-landing-pages) - Performance pagine
+- [Heatmap](./2-screens-and-operations/heatmaps) - Mappe di calore interattive
 
 ## Caratteristiche Chiave
 
@@ -87,4 +87,4 @@ I moduli Brains di QA Advisor utilizzano l'intelligenza artificiale per:
 3. **Analizza le Heatmap**: Comprendi il comportamento degli utenti
 4. **Ottimizza**: Implementa le raccomandazioni dei Brains
 
-Inizia il tuo viaggio con QA Advisor esplorando la [Guida all'Installazione](./1-getting-started/installation.md) o vai direttamente al [Dashboard](./2-screens-and-operations/01-dashboard.md) per iniziare ad analizzare i tuoi dati.
+Inizia il tuo viaggio con QA Advisor esplorando la [Guida all'Installazione](./1-getting-started/installation) o vai direttamente al [Dashboard](./2-screens-and-operations/01-dashboard) per iniziare ad analizzare i tuoi dati.

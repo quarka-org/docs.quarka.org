@@ -715,9 +715,9 @@ Conversion Optimization:
 
 Dalle Heatmap puoi:
 
-1. **[A/B Testing](./ab-testing.md)** - Testa ottimizzazioni basate su insights
-2. **[Obiettivi](./09-goals.md)** - Misura impatto ottimizzazioni su conversioni
-3. **[Pubblico](./04-audience.md)** - Segmenta heatmap per tipo utente
-4. **[Dashboard](./01-dashboard.md)** - Monitora KPI post-ottimizzazione
+1. **[A/B Testing](./ab-testing)** - Testa ottimizzazioni basate su insights
+2. **[Obiettivi](./09-goals)** - Misura impatto ottimizzazioni su conversioni
+3. **[Pubblico](./04-audience)** - Segmenta heatmap per tipo utente
+4. **[Dashboard](./01-dashboard)** - Monitora KPI post-ottimizzazione
 
 Le Heatmap di QA Advisor trasformano il comportamento invisibile degli utenti in insights visivi actionable, permettendoti di ottimizzare sistematicamente l'esperienza utente e massimizzare le conversioni del tuo sito WordPress!

@@ -736,9 +736,9 @@ Trimestrale:
 
 Dalle Impostazioni puoi:
 
-1. **[Dashboard](./01-dashboard.md)** - Visualizza l'impatto delle configurazioni
-2. **[Privacy Center](./privacy-center.md)** - Gestisci conformità GDPR
-3. **[API Documentation](./api-docs.md)** - Integra con sistemi esterni
-4. **[Help](./12-help.md)** - Ottieni supporto per configurazioni
+1. **[Dashboard](./01-dashboard)** - Visualizza l'impatto delle configurazioni
+2. **[Privacy Center](./privacy-center)** - Gestisci conformità GDPR
+3. **[API Documentation](./api-docs)** - Integra con sistemi esterni
+4. **[Help](./12-help)** - Ottieni supporto per configurazioni
 
 Le Impostazioni di QA Advisor ti forniscono il controllo completo su ogni aspetto del plugin, permettendoti di configurare un sistema di analytics potente, sicuro e conforme alle normative per il tuo sito WordPress!

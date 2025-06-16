@@ -289,9 +289,9 @@ Analisi Abbandono Checkout:
 
 Dall'Analisi Funnel puoi facilmente navigare verso:
 
-1. **[Obiettivi](./09-goals.md)** - Configurazione obiettivi funnel
-2. **[A/B Testing](./ab-testing.md)** - Test ottimizzazioni
-3. **[Heatmap](./heatmaps.md)** - Analisi comportamento step
-4. **[Dashboard](./01-dashboard.md)** - Panoramica performance
+1. **[Obiettivi](./09-goals)** - Configurazione obiettivi funnel
+2. **[A/B Testing](./ab-testing)** - Test ottimizzazioni
+3. **[Heatmap](./heatmaps)** - Analisi comportamento step
+4. **[Dashboard](./01-dashboard)** - Panoramica performance
 
 L'Analisi Funnel di QA Advisor ti permette di ottimizzare sistematicamente ogni aspetto del percorso di conversione, massimizzando il ROI e migliorando l'esperienza utente!

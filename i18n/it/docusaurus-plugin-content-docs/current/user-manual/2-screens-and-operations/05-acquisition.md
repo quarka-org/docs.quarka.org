@@ -457,9 +457,9 @@ fetch('/wp-json/qahm/v1/acquisition/channels')
 
 Dalla sezione Acquisizione puoi:
 
-1. **[Dashboard](./01-dashboard.md)** - Visualizza metriche aggregate
-2. **[Obiettivi](./09-goals.md)** - Configura tracking conversioni
-3. **[Pubblico](./04-audience.md)** - Analizza caratteristiche visitatori
-4. **[Landing Pages](./06-landing-pages.md)** - Ottimizza pagine di destinazione
+1. **[Dashboard](./01-dashboard)** - Visualizza metriche aggregate
+2. **[Obiettivi](./09-goals)** - Configura tracking conversioni
+3. **[Pubblico](./04-audience)** - Analizza caratteristiche visitatori
+4. **[Landing Pages](./06-landing-pages)** - Ottimizza pagine di destinazione
 
 La sezione Acquisizione di QA Advisor ti fornisce tutti gli strumenti necessari per comprendere, ottimizzare e massimizzare l'efficacia dei tuoi canali di marketing e acquisizione traffico!

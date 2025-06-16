@@ -26,15 +26,15 @@ Prima di installare, assicurati che il tuo sistema soddisfi i requisiti minimi:
 
 ### 2. Metodi di Installazione
 Scegli il metodo che preferisci:
-- **[Installazione Standard](./installation.md)** - Metodo raccomandato tramite WordPress Admin
-- **[Installazione Manuale](./installation.md#installazione-manuale)** - Per utenti avanzati
-- **[Installazione via WP-CLI](./installation.md#wp-cli)** - Per sviluppatori
+- **[Installazione Standard](./installation)** - Metodo raccomandato tramite WordPress Admin
+- **[Installazione Manuale](./installation#installazione-manuale)** - Per utenti avanzati
+- **[Installazione via WP-CLI](./installation#wp-cli)** - Per sviluppatori
 
 ### 3. Configurazione Post-Installazione
 Dopo l'installazione:
-- **[Configurazione Ambiente](./environment-setup.md)** - Ottimizza le impostazioni del server
-- **[Configurazioni Avanzate](./when-defer-jquery.md)** - Risolvi problemi di compatibilità
-- **[Limiti Dati](./set-data-limit-wpconfig.md)** - Configura limiti di raccolta dati
+- **[Configurazione Ambiente](./environment-setup)** - Ottimizza le impostazioni del server
+- **[Configurazioni Avanzate](./when-defer-jquery)** - Risolvi problemi di compatibilità
+- **[Limiti Dati](./set-data-limit-wpconfig)** - Configura limiti di raccolta dati
 
 ## Configurazione Iniziale
 
@@ -114,8 +114,8 @@ Una volta completata l'installazione e la configurazione iniziale:
 
 ## Risorse Aggiuntive
 
-- **[FAQ](../../faq/)** - Risposte alle domande più comuni
-- **[Note di Rilascio](../../release-notes/)** - Ultime funzionalità e aggiornamenti
-- **[Supporto](../2-screens-and-operations/12-help.md)** - Come ottenere aiuto
+- **[FAQ](../../faq)** - Risposte alle domande più comuni
+- **[Note di Rilascio](../../release-notes)** - Ultime funzionalità e aggiornamenti
+- **[Supporto](../2-screens-and-operations/12-help)** - Come ottenere aiuto
 
-Sei pronto per iniziare! Procedi con la [Guida all'Installazione](./installation.md) per installare QA Advisor sul tuo sito WordPress.
+Sei pronto per iniziare! Procedi con la [Guida all'Installazione](./installation) per installare QA Advisor sul tuo sito WordPress.

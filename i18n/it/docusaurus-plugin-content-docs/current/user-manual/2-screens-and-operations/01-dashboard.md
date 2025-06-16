@@ -310,9 +310,9 @@ Benchmark Blog/Content:
 
 Dal Dashboard puoi facilmente navigare verso:
 
-1. **[Brains](./02-brains.md)** - Insights automatici IA
-2. **[Tempo Reale](./03-realtime.md)** - Monitoraggio live
-3. **[Heatmap](./heatmaps.md)** - Analisi comportamento utenti
-4. **[Obiettivi](./09-goals.md)** - Configurazione KPI
+1. **[Brains](./02-brains)** - Insights automatici IA
+2. **[Tempo Reale](./03-realtime)** - Monitoraggio live
+3. **[Heatmap](./heatmaps)** - Analisi comportamento utenti
+4. **[Obiettivi](./09-goals)** - Configurazione KPI
 
 Il Dashboard di QA Advisor è progettato per fornire il massimo valore con il minimo sforzo - tutto ciò di cui hai bisogno per comprendere e ottimizzare le performance del tuo sito WordPress!

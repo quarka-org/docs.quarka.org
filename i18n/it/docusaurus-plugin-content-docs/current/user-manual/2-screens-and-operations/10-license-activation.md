@@ -181,9 +181,9 @@ Ultimo Aggiornamento: 16 Giugno 2025
 
 Dopo aver attivato la licenza, puoi:
 
-1. **[Dashboard](./01-dashboard.md)** - Esplorare tutte le funzionalità sbloccate
-2. **[Impostazioni](./11-settings.md)** - Configurare funzionalità premium
-3. **[Heatmap](./heatmaps.md)** - Accedere ad analytics avanzate
-4. **[Aiuto](./12-help.md)** - Ottenere supporto per funzionalità premium
+1. **[Dashboard](./01-dashboard)** - Esplorare tutte le funzionalità sbloccate
+2. **[Impostazioni](./11-settings)** - Configurare funzionalità premium
+3. **[Heatmap](./heatmaps)** - Accedere ad analytics avanzate
+4. **[Aiuto](./12-help)** - Ottenere supporto per funzionalità premium
 
 L'attivazione corretta della licenza QA Advisor garantisce l'accesso completo a tutte le potenti funzionalità di analytics e ottimizzazione per il tuo sito WordPress!

@@ -465,9 +465,9 @@ fetch('/wp-json/qahm/v1/pages/all', {
 
 Dalla sezione Tutte le Pagine puoi:
 
-1. **[Heatmap](./heatmaps.md)** - Analizza comportamento dettagliato per pagina
-2. **[Obiettivi](./09-goals.md)** - Imposta tracking conversioni specifiche
-3. **[Brains](./02-brains.md)** - Ottieni raccomandazioni IA automatiche
-4. **[Dashboard](./01-dashboard.md)** - Visualizza metriche aggregate
+1. **[Heatmap](./heatmaps)** - Analizza comportamento dettagliato per pagina
+2. **[Obiettivi](./09-goals)** - Imposta tracking conversioni specifiche
+3. **[Brains](./02-brains)** - Ottieni raccomandazioni IA automatiche
+4. **[Dashboard](./01-dashboard)** - Visualizza metriche aggregate
 
 La sezione Tutte le Pagine di QA Advisor ti fornisce il controllo completo su ogni aspetto del contenuto del tuo sito WordPress, permettendoti di ottimizzare sistematicamente ogni pagina per massimizzare performance e conversioni!

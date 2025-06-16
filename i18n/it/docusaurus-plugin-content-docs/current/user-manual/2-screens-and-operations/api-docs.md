@@ -500,9 +500,9 @@ function verifyWebhookSignature(payload, signature, secret) {
 
 Dalla Documentazione API puoi:
 
-1. **[Impostazioni](./11-settings.md)** - Configurare accesso API
-2. **[Dashboard](./01-dashboard.md)** - Visualizzare dati via API
-3. **[Aiuto](./12-help.md)** - Supporto tecnico API
+1. **[Impostazioni](./11-settings)** - Configurare accesso API
+2. **[Dashboard](./01-dashboard)** - Visualizzare dati via API
+3. **[Aiuto](./12-help)** - Supporto tecnico API
 4. **Playground** - Testare API in tempo reale
 
 La Documentazione API di QA Advisor ti fornisce tutti gli strumenti per integrare potenti analytics nel tuo ecosistema tecnologico!

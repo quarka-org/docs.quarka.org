@@ -442,9 +442,9 @@ fetch('/wp-json/qahm/v1/landing-pages/export', {
 
 Dalla sezione Landing Pages puoi:
 
-1. **[Heatmap](./heatmaps.md)** - Analizza comportamento visivo dettagliato
-2. **[Obiettivi](./09-goals.md)** - Configura tracking conversioni specifiche
-3. **[A/B Testing](./ab-testing.md)** - Imposta test per ottimizzazione
-4. **[Brains](./02-brains.md)** - Ottieni raccomandazioni IA automatiche
+1. **[Heatmap](./heatmaps)** - Analizza comportamento visivo dettagliato
+2. **[Obiettivi](./09-goals)** - Configura tracking conversioni specifiche
+3. **[A/B Testing](./ab-testing)** - Imposta test per ottimizzazione
+4. **[Brains](./02-brains)** - Ottieni raccomandazioni IA automatiche
 
 La sezione Landing Pages di QA Advisor ti fornisce tutti gli strumenti necessari per trasformare le tue pagine di destinazione in macchine di conversione ad alta performance!
