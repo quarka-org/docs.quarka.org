@@ -1,0 +1,34 @@
+{
+  "version.label": {
+    "message": "Suivant",
+    "description": "The label for version current"
+  },
+  "sidebar.userManualSidebar.category.Getting Started": {
+    "message": "Premiers Pas",
+    "description": "The label for category Getting Started in sidebar userManualSidebar"
+  },
+  "sidebar.userManualSidebar.category.Screens and Operations": {
+    "message": "Écrans et Opérations"
+  },
+  "sidebar.faqSidebar.category.FAQ": {
+    "message": "FAQ"
+  },
+  "sidebar.developerManualSidebar.category.Developer Guide": {
+    "message": "Guide Développeur"
+  },
+  "sidebar.releaseNotesSidebar.category.Release Notes": {
+    "message": "Notes de Version"
+  },
+  "sidebar.userManualSidebar.category.Using QA Advisor": {
+    "message": "Utiliser QA Advisor",
+    "description": "The label for category Using QA Advisor in sidebar userManualSidebar"
+  },
+  "sidebar.userManualSidebar.category.Using QA Advisor.link.generated-index.description": {
+    "message": "Guide détaillé de l'interface QA Advisor et comment utiliser chaque fonctionnalité.",
+    "description": "The generated-index page description for category Using QA Advisor in sidebar userManualSidebar"
+  },
+  "sidebar.releaseNotesSidebar.category.2025": {
+    "message": "2025",
+    "description": "The label for category 2025 in sidebar releaseNotesSidebar"
+  }
+}

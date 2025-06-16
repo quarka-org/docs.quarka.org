@@ -1,0 +1,32 @@
+{
+  "link.title.Docs": {
+    "message": "Documentation"
+  },
+  "link.title.Community": {
+    "message": "Communauté"
+  },
+  "link.title.More": {
+    "message": "Plus"
+  },
+  "link.item.label.User Guide": {
+    "message": "Guide Utilisateur"
+  },
+  "link.item.label.Developer Guide": {
+    "message": "Guide Développeur"
+  },
+  "link.item.label.FAQ": {
+    "message": "FAQ"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog"
+  },
+  "link.item.label.Release Notes": {
+    "message": "Notes de Version"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 Quarka Organization. Construit avec Docusaurus."
+  }
+}
