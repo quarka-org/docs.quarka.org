@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkqa_advisor_documentation=self.webpackChunkqa_advisor_documentation||[]).push([[1710],{5387:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/pt/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog QA Advisor - \xdaltimas atualiza\xe7\xf5es, tutoriais e insights","blogTitle":"Blog"}}')}}]);
