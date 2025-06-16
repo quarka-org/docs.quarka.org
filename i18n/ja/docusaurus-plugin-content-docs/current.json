@@ -1,9 +1,11 @@
 {
   "version.label": {
-    "message": "次へ"
+    "message": "次へ",
+    "description": "The label for version current"
   },
   "sidebar.userManualSidebar.category.Getting Started": {
-    "message": "はじめに"
+    "message": "はじめに",
+    "description": "The label for category Getting Started in sidebar userManualSidebar"
   },
   "sidebar.userManualSidebar.category.Screens and Operations": {
     "message": "画面と操作"
@@ -16,5 +18,17 @@
   },
   "sidebar.releaseNotesSidebar.category.Release Notes": {
     "message": "リリースノート"
+  },
+  "sidebar.userManualSidebar.category.Using QA Advisor": {
+    "message": "Using QA Advisor",
+    "description": "The label for category Using QA Advisor in sidebar userManualSidebar"
+  },
+  "sidebar.userManualSidebar.category.Using QA Advisor.link.generated-index.description": {
+    "message": "Detailed guide to the QA Advisor interface and how to use each feature.",
+    "description": "The generated-index page description for category Using QA Advisor in sidebar userManualSidebar"
+  },
+  "sidebar.releaseNotesSidebar.category.2025": {
+    "message": "2025",
+    "description": "The label for category 2025 in sidebar releaseNotesSidebar"
   }
 }
