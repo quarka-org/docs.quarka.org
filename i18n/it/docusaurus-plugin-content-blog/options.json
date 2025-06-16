@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Blog",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "Blog ufficiale di QA Advisor con aggiornamenti, tutorial e insights dalla comunità.",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Post Recenti",
+    "description": "The label for the left sidebar"
+  },
+  "sidebar.readMore": {
+    "message": "Leggi di più",
+    "description": "The ARIA label for the link to full blog posts list"
+  },
+  "sidebar.readMorePosts": {
+    "message": "Visualizza tutti i {count} post",
+    "description": "The ARIA label for the link to full blog posts list"
+  }
+}
