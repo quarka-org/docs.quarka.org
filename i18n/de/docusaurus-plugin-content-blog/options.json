@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "Blog",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "QA Advisor Blog - Neueste Updates, Tutorials und Erkenntnisse",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Neueste Beiträge",
+    "description": "The label for the left sidebar"
+  },
+  "sidebar.blogTitle": {
+    "message": "QA Advisor Blog",
+    "description": "The blog page title in the sidebar"
+  }
+}
