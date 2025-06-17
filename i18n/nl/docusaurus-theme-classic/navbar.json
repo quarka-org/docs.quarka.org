@@ -1,0 +1,23 @@
+{
+  "title": {
+    "message": "QA Advisor Documentatie"
+  },
+  "item.label.User Guide": {
+    "message": "Gebruikershandleiding"
+  },
+  "item.label.Developer Guide": {
+    "message": "Ontwikkelaarshandleiding"
+  },
+  "item.label.Blog": {
+    "message": "Blog"
+  },
+  "item.label.Release Notes": {
+    "message": "Release Notes"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub"
+  }
+}

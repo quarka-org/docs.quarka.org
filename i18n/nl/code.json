@@ -1,0 +1,72 @@
+{
+  "homepage.wordcamp.title": {
+    "message": "🎉 Speciale WordCamp Europe 2025 Versie",
+    "description": "WordCamp Europe 2025 announcement title"
+  },
+  "homepage.wordcamp.excited": {
+    "message": "We zijn enthousiast om de QA Advisor bèta versie te presenteren op WordCamp Europe 2025!",
+    "description": "WordCamp Europe 2025 excitement message"
+  },
+  "homepage.wordcamp.description": {
+    "message": "QA Advisor is een krachtige analytics tool die helpt gebruikersgedrag te begrijpen door middel van heatmaps en interactie tracking.",
+    "description": "QA Advisor description"
+  },
+  "homepage.wordcamp.fullVersion": {
+    "message": "Volledige versie gepland voor zomer 2025!",
+    "description": "Full version release announcement"
+  },
+  "homepage.download.button": {
+    "message": "🚀 Download QA Advisor (β)",
+    "description": "Download QA Advisor beta button"
+  },
+  "homepage.userGuide.button": {
+    "message": "Gebruikershandleiding",
+    "description": "User Guide button"
+  },
+  "homepage.developerGuide.button": {
+    "message": "Ontwikkelaarshandleiding",
+    "description": "Developer Guide button"
+  },
+  "homepage.features.userGuide.title": {
+    "message": "Gebruikershandleiding",
+    "description": "User Guide feature title"
+  },
+  "homepage.features.userGuide.description": {
+    "message": "Uitgebreide handleidingen voor het gebruik van QA Advisor WordPress Analytics. Leer hoe je je WordPress site kunt volgen, analyseren en optimaliseren.",
+    "description": "User Guide feature description"
+  },
+  "homepage.features.developerGuide.title": {
+    "message": "Ontwikkelaarshandleiding",
+    "description": "Developer Guide feature title"
+  },
+  "homepage.features.developerGuide.description": {
+    "message": "Technische documentatie voor ontwikkelaars die werken met QA Advisor. API referenties, integratie handleidingen en aanpassingsopties.",
+    "description": "Developer Guide feature description"
+  },
+  "homepage.features.privacyFocused.title": {
+    "message": "Privacy-gericht",
+    "description": "Privacy-Focused feature title"
+  },
+  "homepage.features.privacyFocused.description": {
+    "message": "QA Advisor is ontworpen met privacy in gedachten, biedt cookieloze analytics en respecteert gebruikersprivacy.",
+    "description": "Privacy-Focused feature description"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Deze pagina is gecrasht."
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Probeer opnieuw"
+  },
+  "theme.NotFound.title": {
+    "message": "Pagina niet gevonden"
+  },
+  "theme.NotFound.p1": {
+    "message": "We konden niet vinden wat u zocht."
+  },
+  "theme.NotFound.p2": {
+    "message": "Neem contact op met de eigenaar van de site die u de oorspronkelijke link heeft gegeven."
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Terug naar boven"
+  }
+}
