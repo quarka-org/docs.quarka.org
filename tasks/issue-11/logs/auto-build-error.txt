@@ -1,0 +1,140 @@
+> qa-advisor-documentation@0.1.0 build
+> docusaurus build
+
+[INFO] Website will be built for all these locales:
+- en
+- ja
+[INFO] [en] Creating an optimized production build...
+Warning:  Some blog authors used in "2025-05-25-welcome.md" are not defined in "authors.yml":
+- {"name":"QA Advisor Team","title":"Documentation Team","url":"https://github.com/quarka-org","image_url":"https://github.com/quarka-org.png","imageURL":"https://github.com/quarka-org.png","socials":{},"key":null,"page":null}
+
+Note that we recommend to declare authors once in a "authors.yml" file and reference them by key in blog posts front matter to avoid author info duplication.
+But if you want to allow inline blog authors, you can disable this message by setting onInlineAuthors: 'ignore' in your blog plugin options.
+More info at https://docusaurus.io/docs/blog
+
+Warning:  Docusaurus found blog posts without truncation markers:
+- "blog/2025-05-25-welcome.md"
+
+We recommend using truncation markers (`<!-- truncate -->` or `{/* truncate */}`) in blog posts to create shorter previews on blog paginated lists.
+Tip: turn this security off with the `onUntruncatedBlogPosts: 'ignore'` blog plugin option.
+[info] [webpackbar] Compiling Client
+[info] [webpackbar] Compiling Server
+[success] [webpackbar] Server: Compiled successfully in 20.29s
+[success] [webpackbar] Client: Compiled successfully in 29.46s
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (503kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (132kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (503kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (132kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (503kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (132kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+docusaurus-lunr-search:: Building search docs and lunr index file
+docusaurus-lunr-search:: Start scanning documents in 4 threads
+docusaurus-lunr-search:: Indexing time: 672.97ms
+docusaurus-lunr-search:: indexed 25 documents out of 31
+docusaurus-lunr-search:: writing search-doc.json
+docusaurus-lunr-search:: writing search-doc-1749990762718.json
+docusaurus-lunr-search:: writing lunr-index.json
+docusaurus-lunr-search:: writing lunr-index-1749990762718.json
+docusaurus-lunr-search:: End of process
+[SUCCESS] Generated static files in "build".
+[INFO] [ja] Creating an optimized production build...
+Warning:  Some blog authors used in "2025-05-25-welcome.md" are not defined in "authors.yml":
+- {"name":"QA Advisor Team","title":"Documentation Team","url":"https://github.com/quarka-org","image_url":"https://github.com/quarka-org.png","imageURL":"https://github.com/quarka-org.png","socials":{},"key":null,"page":null}
+
+Note that we recommend to declare authors once in a "authors.yml" file and reference them by key in blog posts front matter to avoid author info duplication.
+But if you want to allow inline blog authors, you can disable this message by setting onInlineAuthors: 'ignore' in your blog plugin options.
+More info at https://docusaurus.io/docs/blog
+
+Warning:  Docusaurus found blog posts without truncation markers:
+- "i18n/ja/docusaurus-plugin-content-blog/2025-05-25-welcome.md"
+
+We recommend using truncation markers (`<!-- truncate -->` or `{/* truncate */}`) in blog posts to create shorter previews on blog paginated lists.
+Tip: turn this security off with the `onUntruncatedBlogPosts: 'ignore'` blog plugin option.
+Overwriting existing registered function: stemmer-ja
+Overwriting existing registered function: trimmer-ja
+Overwriting existing registered function: stopWordFilter-ja
+Overwriting existing registered function: stemmer-jp
+Overwriting existing registered function: trimmer-jp
+Overwriting existing registered function: stopWordFilter-jp
+Overwriting existing registered function: lunr-multi-trimmer-en-ja
+[info] [webpackbar] Compiling Client
+[info] [webpackbar] Compiling Server
+Warning:  Docs markdown link couldn't be resolved: (./11-settings.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/12-help.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./01-dashboard.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/12-help.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./11-settings.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/10-license-activation.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./01-dashboard.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/10-license-activation.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./01-dashboard.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/09-goals.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./05-acquisition.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/09-goals.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./06-landing-pages.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/09-goals.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./11-settings.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/09-goals.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./11-settings.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/12-help.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./01-dashboard.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/12-help.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./11-settings.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/10-license-activation.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./01-dashboard.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/10-license-activation.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./01-dashboard.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/09-goals.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./05-acquisition.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/09-goals.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./06-landing-pages.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/09-goals.md" for version current
+Warning:  Docs markdown link couldn't be resolved: (./11-settings.md) in source file "/home/runner/work/docs.quarka.org/docs.quarka.org/docs/user-manual/2-screens-and-operations/09-goals.md" for version current
+[success] [webpackbar] Server: Compiled successfully in 19.04s
+[success] [webpackbar] Client: Compiled successfully in 28.31s
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (503kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (132kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (503kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (132kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (503kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (132kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+docusaurus-lunr-search:: Building search docs and lunr index file
+docusaurus-lunr-search:: Start scanning documents in 4 threads
+docusaurus-lunr-search:: Indexing time: 735.81ms
+docusaurus-lunr-search:: indexed 25 documents out of 31
+docusaurus-lunr-search:: writing search-doc.json
+docusaurus-lunr-search:: writing search-doc-1749990798190.json
+docusaurus-lunr-search:: writing lunr-index.json
+docusaurus-lunr-search:: writing lunr-index-1749990798190.json
+docusaurus-lunr-search:: End of process
+
+Error:  Error: Unable to build website for locale ja.
+    at tryToBuildLocale (/home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/commands/build/build.js:78:15)
+[INFO] Docusaurus version: 3.7.0
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Node version: v18.20.8
+    at async /home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/commands/build/build.js:34:9
+    ... 4 lines matching cause stack trace ...
+    at async file:///home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3 {
+  [cause]: Error: Docusaurus found broken links!
+
+  Please check the pages of your site in the list below, and make sure you don't reference any path that does not exist.
+  Note: it's possible to ignore broken links with the 'onBrokenLinks' Docusaurus configuration, and let the build pass.
+
+  Exhaustive list of all broken links found:
+  - Broken link on source page path = /ja/docs/user-manual/screens-and-operations/goals:
+     -> linking to ./01-dashboard.md (resolved as: /ja/docs/user-manual/screens-and-operations/01-dashboard.md)
+     -> linking to ./05-acquisition.md (resolved as: /ja/docs/user-manual/screens-and-operations/05-acquisition.md)
+     -> linking to ./06-landing-pages.md (resolved as: /ja/docs/user-manual/screens-and-operations/06-landing-pages.md)
+     -> linking to ./11-settings.md (resolved as: /ja/docs/user-manual/screens-and-operations/11-settings.md)
+  - Broken link on source page path = /ja/docs/user-manual/screens-and-operations/help:
+     -> linking to ./11-settings.md (resolved as: /ja/docs/user-manual/screens-and-operations/11-settings.md)
+     -> linking to ./01-dashboard.md (resolved as: /ja/docs/user-manual/screens-and-operations/01-dashboard.md)
+  - Broken link on source page path = /ja/docs/user-manual/screens-and-operations/license-activation:
+     -> linking to ./11-settings.md (resolved as: /ja/docs/user-manual/screens-and-operations/11-settings.md)
+     -> linking to ./01-dashboard.md (resolved as: /ja/docs/user-manual/screens-and-operations/01-dashboard.md)
+
+      at throwError (/home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/logger/lib/logger.js:80:11)
+      at reportBrokenLinks (/home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/server/brokenLinks.js:250:47)
+      at handleBrokenLinks (/home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/server/brokenLinks.js:282:5)
+      at executeBrokenLinksCheck (/home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/commands/build/buildLocale.js:91:47)
+      at /home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/commands/build/buildLocale.js:70:67
+      at Object.async (/home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/logger/lib/perfLogger.js:42:47)
+      at buildLocale (/home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/commands/build/buildLocale.js:70:31)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async runBuildLocaleTask (/home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/commands/build/build.js:93:5)
+      at async /home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/commands/build/build.js:74:13
+      at async tryToBuildLocale (/home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/commands/build/build.js:70:9)
+      at async /home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/commands/build/build.js:34:9
+      at async mapAsyncSequential (/home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/utils/lib/jsUtils.js:21:24)
+      at async Command.build (/home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/commands/build/build.js:33:5)
+      at async Promise.all (index 0)
+      at async runCLI (/home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/lib/commands/cli.js:56:5)
+      at async file:///home/runner/work/docs.quarka.org/docs.quarka.org/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3
+}
+Error: Process completed with exit code 1.
