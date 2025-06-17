@@ -5,144 +5,179 @@ title: 環境セットアップ
 
 # 環境セットアップ
 
-QA Advisor が正確にデータを追跡するために、WordPress 環境を適切に設定することが重要です。このガイドでは、最適な追跡パフォーマンスを確保するための設定手順をご説明します。
+QA Advisor が正確にデータを追跡し、最適なパフォーマンスを発揮するために、WordPress 環境を適切に設定することが重要です。このガイドでは、サーバー、WordPress、プラグインの設定について説明します。
 
-## サーバー要件の確認
+## システム要件
+
+### 最小要件
+- **WordPress**: バージョン 5.9 以上
+- **PHP**: バージョン 7.4 以上
+- **MySQL**: バージョン 5.7 以上（または MariaDB 10.2+）
+- **メモリ**: 最低 128MB の PHP メモリ制限
+- **ディスク容量**: 50MB の利用可能領域
+
+### 推奨仕様
+- **WordPress**: 最新の安定版
+- **PHP**: バージョン 8.0 以上
+- **MySQL**: バージョン 8.0 以上
+- **メモリ**: 256MB 以上の PHP メモリ制限
+- **ディスク容量**: 200MB 以上の利用可能領域
+
+## サーバー設定
 
 ### PHP 設定
 
-以下の PHP 設定を確認してください：
+最適なパフォーマンスのために、以下の PHP 設定を行ってください：
 
-- **PHP バージョン**: 7.0 以上（推奨：7.4 以上）
-- **メモリ制限**: 最低 128MB（推奨：256MB 以上）
-- **実行時間制限**: 最低 30秒
-- **ファイルアップロード**: 有効
+```php
+memory_limit = 256M
+max_execution_time = 300
+max_input_vars = 3000
+post_max_size = 64M
+upload_max_filesize = 64M
+```
 
-### データベース設定
+### JavaScript の圧縮・最小化
 
-- **MySQL**: バージョン 5.7 以上
-- **文字セット**: utf8mb4（推奨）
-- **照合順序**: utf8mb4_unicode_ci
+QA Advisor で使用される JavaScript ファイルを圧縮、最小化、または結合**しないでください**。  
+一部の最適化プラグインやテーマは、追跡スクリプトの実行を変更または遅延させることで干渉する可能性があります。
 
-## WordPress 設定の最適化
+> ✅ キャッシュまたは最適化プラグインの設定を確認してください  
+> ✅ QA Advisor スクリプトの JS 最小化や defer/async を無効にしてください
 
-### プラグインの競合チェック
+技術的な背景については、[jQuery が遅延される場合](/docs/user-manual/getting-started/when-defer-jquery)を参照してください。
 
-以下のプラグインタイプとの競合を確認してください：
+### データベース最適化
 
-1. **キャッシュプラグイン**
-   - WP Rocket
-   - W3 Total Cache
-   - WP Super Cache
-   - LiteSpeed Cache
+データベースパフォーマンスの向上のために：
 
-2. **セキュリティプラグイン**
-   - Wordfence
-   - Sucuri Security
-   - iThemes Security
+```sql
+SET GLOBAL innodb_buffer_pool_size = 256M;
+SET GLOBAL query_cache_size = 64M;
+SET GLOBAL query_cache_type = 1;
+```
 
-3. **最適化プラグイン**
-   - Autoptimize
-   - WP Optimize
-   - Smush
+## WordPress 設定
 
-### キャッシュ設定の調整
+### wp-config.php 設定
 
-QA Advisor の追跡スクリプトが正しく動作するように：
+`wp-config.php` ファイルに以下の設定を追加してください：
 
-1. **JavaScript の最適化を除外**
-   - QA Advisor のスクリプト（`qahm` または `qahmz`）をキャッシュプラグインの JavaScript 最適化から除外してください
+```php
+define('WP_MEMORY_LIMIT', '256M');
+define('WP_MAX_MEMORY_LIMIT', '512M');
 
-2. **ページキャッシュの設定**
-   - ログインユーザーのページキャッシュを無効にしてください
-   - 動的コンテンツが含まれるページのキャッシュを適切に設定してください
+define('WP_CACHE', true);
 
-## 追跡精度の向上
+define('QAHM_LIMIT_PV_MONTH', 50000);
+define('QAHM_LIMIT_SESSION_MONTH', 5000);
+define('QAHM_DATA_RETENTION_DAYS', 90);
+```
 
-### jQuery の読み込み順序
+## プラグインとテーマの互換性
 
-QA Advisor は jQuery に依存しています。以下を確認してください：
+QA Advisor は主要なプラグインやテーマと連携しますが、以下を推奨します：
 
-1. **jQuery の遅延読み込み**
-   - jQuery を遅延読み込み（defer）している場合は、QA Advisor スクリプトも同様に遅延させてください
-   - [jQuery 遅延読み込み時の対応](/docs/user-manual/getting-started/when-defer-jquery)
+- 重要なスクリプトの JavaScript defer/async を無効にする
+- キャッシュプラグインが `qa-heatmap-analytics` からの出力を許可することを確認する
+- グローバルイベントを変更する他の追跡ツールとの重複を避ける
 
-2. **スクリプトの読み込み順序**
-   - jQuery が QA Advisor スクリプトより先に読み込まれることを確認してください
+### キャッシュプラグイン設定
 
-### データ収集の最適化
+**WP Rocket**: QA Advisor スクリプトを最適化から除外
+```
+/wp-content/plugins/qa-heatmap-analytics/js/qahm
+/wp-content/plugins/qa-heatmap-analytics/js/qahmz
+```
 
-1. **日次集計処理**
-   - サーバーリソースが限られている場合、日次集計処理の時間を調整してください
-   - 大量のトラフィックがある場合は、処理時間を分散させることを検討してください
+**W3 Total Cache**: JavaScript 除外に追加  
+**WP Super Cache**: 追加設定なしで互換
 
-2. **データ保存期間**
-   - 必要に応じてデータ保存期間を調整してください
-   - 古いデータの自動削除を設定してください
+## CDN とサーバー移行
 
-## セキュリティとプライバシー
+CDN（例：Cloudflare）を使用している場合、またはサーバーを最近移行した場合：
 
-### GDPR コンプライアンス
+- すべてのキャッシュをクリアする（ブラウザ、プラグイン、CDN）
+- QA Advisor スクリプトがブロックまたは遅延されていないことを確認する
+- サーバーのタイムゾーンが正しいことを確認する（データのグループ化に使用）
 
-1. **プライバシーポリシーの更新**
-   - QA Advisor によるデータ収集について記載してください
-   - ユーザーの同意取得プロセスを実装してください
+### Cloudflare 設定
 
-2. **データ匿名化**
-   - 個人を特定できる情報の収集を避けてください
-   - IP アドレスの匿名化を有効にしてください
+```
+URL: *yoursite.com/wp-content/plugins/qa-heatmap-analytics/*
+設定:
+- Cache Level: Cache Everything
+- Edge Cache TTL: 1 month
+```
 
-### アクセス制御
+## セキュリティ設定
 
-1. **管理者権限の制限**
-   - QA Advisor の管理画面へのアクセスを適切なユーザーに制限してください
+### ファイル権限
 
-2. **データエクスポートの制御**
-   - データエクスポート機能の使用を制限してください
+適切なファイル権限を設定してください：
+
+```bash
+chmod 755 wp-content/plugins/qa-heatmap-analytics/
+chmod 644 wp-content/plugins/qa-heatmap-analytics/*.php
+```
+
+### ファイアウォール設定
+
+以下のエンドポイントがアクセス可能であることを確認してください：
+- `/wp-admin/admin-ajax.php`（AJAX リクエスト用）
+- `/wp-content/plugins/qa-heatmap-analytics/assets/`（静的ファイル用）
 
 ## パフォーマンス監視
 
-### サーバーリソースの監視
+### 監視すべき主要メトリクス
 
-定期的に以下を確認してください：
+- **メモリ使用量**: 制限の 80% 未満に保つ
+- **ページ読み込み時間**: 3 秒未満を目標
+- **データベースクエリ**: 遅いクエリを監視
+- **ディスク容量**: QA Advisor データの増加を確認
 
-1. **CPU 使用率**
-2. **メモリ使用量**
-3. **ディスク容量**
-4. **データベースパフォーマンス**
+### 監視ツール
 
-### 追跡データの確認
-
-1. **リアルタイムデータ**
-   - **QA Advisor** → **リアルタイム** で即座にデータが表示されることを確認
-
-2. **ダッシュボードデータ**
-   - 日次更新されるダッシュボードデータが正常に表示されることを確認
+- **Query Monitor** - デバッグ用 WordPress プラグイン
+- **New Relic** - APM 監視
+- **GTmetrix** - フロントエンドパフォーマンステスト
 
 ## トラブルシューティング
 
 ### よくある問題
 
-1. **追跡スクリプトが読み込まれない**
-   - ブラウザの開発者ツールでコンソールエラーを確認
-   - キャッシュプラグインの設定を確認
+**メモリエラー**:
+```php
+ini_set('memory_limit', '512M');
+```
 
-2. **データが表示されない**
-   - ログインユーザーの除外設定を確認
-   - JavaScript エラーの有無を確認
+**タイムアウト問題**:
+```php
+set_time_limit(300);
+```
 
-3. **パフォーマンスの低下**
-   - サーバーリソースの使用状況を確認
-   - データベースの最適化を実行
+**スクリプト読み込み問題**:
+1. ブラウザコンソールで JavaScript エラーを確認
+2. キャッシュプラグインの除外設定を確認
+3. ファイアウォール設定を確認
 
-### サポートリソース
+### スクリプト確認
 
-問題が解決しない場合：
+追跡スクリプトが正しく読み込まれていることを確認するには：
 
-- [よくある質問](/docs/faq) を確認してください
-- support@quarka.org までお問い合わせください
-- [GitHub Issues](https://github.com/qa-advisor/issues) でバグ報告を行ってください
+1. **ログインしていない状態**でウェブサイトにアクセス
+2. 右クリックして「ページのソースを表示」を選択
+3. HTML で `qahm` または `qahmz` を検索
+
+> これらの文字列が見つからない場合、スクリプトがブロックされているか読み込まれていない可能性があります。  
+> JavaScript エラーやプラグインの競合を確認してください。
+
+## 次のステップ
+
+環境セットアップ後：
+
+1. [データ制限の設定](/docs/user-manual/getting-started/set-data-limit-wpconfig)
+2. [jQuery 競合の処理](/docs/user-manual/getting-started/when-defer-jquery)
+3. [ダッシュボードの探索](/docs/user-manual/screens-and-operations/dashboard)
 
 ---
-
-環境セットアップが完了したら、[基本的な使い方](/docs/user-manual/screens-and-operations) を学びましょう。

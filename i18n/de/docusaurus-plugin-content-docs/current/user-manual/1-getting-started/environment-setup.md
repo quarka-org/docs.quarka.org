@@ -1,10 +1,11 @@
 ---
 sidebar_position: 2
+title: Umgebungseinrichtung
 ---
 
 # Umgebungseinrichtung
 
-Dieser Leitfaden hilft Ihnen dabei, Ihre Server-Umgebung für optimale Leistung mit QA Advisor zu konfigurieren.
+Um eine genaue Verfolgung und optimale Leistung mit QA Advisor zu gewährleisten, empfehlen wir, Ihre WordPress-Umgebung ordnungsgemäß zu konfigurieren. Dieser Leitfaden behandelt Server-, WordPress- und Plugin-Konfigurationen für optimale Leistung.
 
 ## Systemanforderungen
 
@@ -13,216 +14,170 @@ Dieser Leitfaden hilft Ihnen dabei, Ihre Server-Umgebung für optimale Leistung 
 - **PHP**: Version 7.4 oder höher
 - **MySQL**: Version 5.7 oder höher (oder MariaDB 10.2+)
 - **Speicher**: Mindestens 128MB PHP-Speicherlimit
-- **Festplattenspeicher**: 50MB verfügbarer Speicherplatz
+- **Festplattenspeicher**: 50MB verfügbarer Speicher
 
 ### Empfohlene Spezifikationen
 - **WordPress**: Neueste stabile Version
 - **PHP**: Version 8.0 oder höher
 - **MySQL**: Version 8.0 oder höher
 - **Speicher**: 256MB oder mehr PHP-Speicherlimit
-- **Festplattenspeicher**: 200MB oder mehr verfügbarer Speicherplatz
-
-## PHP-Konfiguration
-
-### Speicherlimit erhöhen
-
-Für Websites mit hohem Traffic empfehlen wir, das PHP-Speicherlimit zu erhöhen:
-
-```php
-// In wp-config.php hinzufügen
-ini_set('memory_limit', '256M');
-```
-
-Oder in Ihrer `.htaccess` Datei:
-
-```apache
-php_value memory_limit 256M
-```
-
-### Ausführungszeit konfigurieren
-
-Für große Datenverarbeitungen:
-
-```php
-// In wp-config.php
-ini_set('max_execution_time', 300);
-```
-
-### Upload-Limits
-
-Für Datenimporte und -exporte:
-
-```php
-// In wp-config.php
-ini_set('upload_max_filesize', '64M');
-ini_set('post_max_size', '64M');
-```
-
-## Datenbank-Optimierung
-
-### MySQL-Konfiguration
-
-Empfohlene MySQL-Einstellungen für QA Advisor:
-
-```sql
--- Erhöhen Sie die maximale Verbindungsanzahl
-SET GLOBAL max_connections = 200;
-
--- Optimieren Sie den Query-Cache
-SET GLOBAL query_cache_size = 64M;
-SET GLOBAL query_cache_type = ON;
-
--- Erhöhen Sie die InnoDB-Pufferpool-Größe
-SET GLOBAL innodb_buffer_pool_size = 256M;
-```
-
-### Datenbank-Wartung
-
-Regelmäßige Wartungsaufgaben:
-
-1. **Tabellen optimieren**:
-   ```sql
-   OPTIMIZE TABLE wp_qa_advisor_data;
-   OPTIMIZE TABLE wp_qa_advisor_sessions;
-   ```
-
-2. **Alte Daten bereinigen**:
-   - QA Advisor bietet automatische Datenbereinigung
-   - Konfigurierbar in den Plugin-Einstellungen
-
-## Caching-Konfiguration
-
-### WordPress-Cache
-
-QA Advisor ist kompatibel mit den meisten Caching-Plugins:
-
-- **WP Rocket**: Automatische Kompatibilität
-- **W3 Total Cache**: Erfordert Ausschluss von QA Advisor JavaScript
-- **WP Super Cache**: Funktioniert ohne zusätzliche Konfiguration
-
-### Cache-Ausschlüsse
-
-Fügen Sie diese zu Ihren Cache-Ausschlüssen hinzu:
-
-```
-/wp-content/plugins/qa-advisor/assets/js/
-/wp-admin/admin-ajax.php?action=qa_advisor_*
-```
+- **Festplattenspeicher**: 200MB oder mehr verfügbarer Speicher
 
 ## Server-Konfiguration
 
-### Apache-Konfiguration
+### PHP-Einstellungen
 
-Empfohlene `.htaccess` Regeln:
+Für optimale Leistung konfigurieren Sie diese PHP-Einstellungen:
 
-```apache
-# QA Advisor Optimierungen
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresByType application/javascript "access plus 1 month"
-    ExpiresByType text/css "access plus 1 month"
-</IfModule>
-
-# Komprimierung aktivieren
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/css
-    AddOutputFilterByType DEFLATE application/javascript
-</IfModule>
+```php
+memory_limit = 256M
+max_execution_time = 300
+max_input_vars = 3000
+post_max_size = 64M
+upload_max_filesize = 64M
 ```
 
-### Nginx-Konfiguration
+### JavaScript-Komprimierung & Minifizierung
 
-Für Nginx-Server:
+Komprimieren, minifizieren oder kombinieren Sie **keine** JavaScript-Dateien, die von QA Advisor verwendet werden.  
+Einige Optimierungs-Plugins oder Themes können mit Tracking-Skripten interferieren, indem sie deren Ausführung modifizieren oder verzögern.
 
-```nginx
-# QA Advisor Optimierungen
-location ~* \.(js|css)$ {
-    expires 1M;
-    add_header Cache-Control "public, immutable";
-}
+> ✅ Überprüfen Sie Ihre Cache- oder Optimierungs-Plugin-Einstellungen  
+> ✅ Deaktivieren Sie JS-Minifizierung oder defer/async für QA Advisor-Skripte
 
-# Gzip-Komprimierung
-gzip on;
-gzip_types text/css application/javascript;
+Für weitere technische Hintergründe siehe [Wenn jQuery verzögert wird](/docs/user-manual/getting-started/when-defer-jquery).
+
+### Datenbankoptimierung
+
+Für bessere Datenbankleistung:
+
+```sql
+SET GLOBAL innodb_buffer_pool_size = 256M;
+SET GLOBAL query_cache_size = 64M;
+SET GLOBAL query_cache_type = 1;
 ```
 
-## Sicherheitseinstellungen
+## WordPress-Konfiguration
+
+### wp-config.php Einstellungen
+
+Fügen Sie diese Konfigurationen zu Ihrer `wp-config.php`-Datei hinzu:
+
+```php
+define('WP_MEMORY_LIMIT', '256M');
+define('WP_MAX_MEMORY_LIMIT', '512M');
+
+define('WP_CACHE', true);
+
+define('QAHM_LIMIT_PV_MONTH', 50000);
+define('QAHM_LIMIT_SESSION_MONTH', 5000);
+define('QAHM_DATA_RETENTION_DAYS', 90);
+```
+
+## Plugin- & Theme-Kompatibilität
+
+QA Advisor funktioniert mit den meisten großen Plugins und Themes. Wir empfehlen jedoch:
+
+- JavaScript defer/async für kritische Skripte zu deaktivieren
+- Sicherzustellen, dass Ihr Cache-Plugin Ausgaben von `qa-heatmap-analytics` zulässt
+- Duplikation mit anderen Tracking-Tools zu vermeiden, die globale Events modifizieren
+
+### Cache-Plugin-Konfiguration
+
+**WP Rocket**: QA Advisor-Skripte von der Optimierung ausschließen
+```
+/wp-content/plugins/qa-heatmap-analytics/js/qahm
+/wp-content/plugins/qa-heatmap-analytics/js/qahmz
+```
+
+**W3 Total Cache**: Zu JavaScript-Ausschlüssen hinzufügen  
+**WP Super Cache**: Kompatibel ohne zusätzliche Konfiguration
+
+## CDN & Server-Migration
+
+Wenn Sie ein CDN verwenden (z.B. Cloudflare) oder kürzlich Ihren Server migriert haben:
+
+- Alle Caches löschen (Browser, Plugin, CDN)
+- Bestätigen, dass QA Advisor-Skripte nicht blockiert oder verzögert werden
+- Sicherstellen, dass die Server-Zeitzone korrekt ist (wird für Datengruppierung verwendet)
+
+### Cloudflare-Konfiguration
+
+```
+URL: *ihreseite.com/wp-content/plugins/qa-heatmap-analytics/*
+Einstellungen:
+- Cache Level: Cache Everything
+- Edge Cache TTL: 1 Monat
+```
+
+## Sicherheitskonfiguration
 
 ### Dateiberechtigungen
 
-Empfohlene Berechtigungen:
+Setzen Sie angemessene Dateiberechtigungen:
 
 ```bash
-# Plugin-Verzeichnis
-chmod 755 /wp-content/plugins/qa-advisor/
-chmod 644 /wp-content/plugins/qa-advisor/*.php
-
-# Upload-Verzeichnis (falls verwendet)
-chmod 755 /wp-content/uploads/qa-advisor/
-chmod 644 /wp-content/uploads/qa-advisor/*
+chmod 755 wp-content/plugins/qa-heatmap-analytics/
+chmod 644 wp-content/plugins/qa-heatmap-analytics/*.php
 ```
 
-### Firewall-Konfiguration
+### Firewall-Einstellungen
 
 Stellen Sie sicher, dass diese Endpunkte zugänglich sind:
-
 - `/wp-admin/admin-ajax.php` (für AJAX-Anfragen)
-- `/wp-content/plugins/qa-advisor/assets/` (für statische Dateien)
+- `/wp-content/plugins/qa-heatmap-analytics/assets/` (für statische Dateien)
 
 ## Leistungsüberwachung
 
+### Wichtige zu überwachende Metriken
+
+- **Speicherverbrauch**: Unter 80% des Limits halten
+- **Seitenladezeit**: Ziel < 3 Sekunden
+- **Datenbankabfragen**: Langsame Abfragen überwachen
+- **Festplattenspeicher**: QA Advisor-Datenwachstum prüfen
+
 ### Überwachungstools
 
-Empfohlene Tools zur Leistungsüberwachung:
-
-1. **Query Monitor** (WordPress Plugin)
-2. **New Relic** (Server-Monitoring)
-3. **GTmetrix** (Website-Geschwindigkeit)
-
-### Leistungsmetriken
-
-Überwachen Sie diese Schlüsselmetriken:
-
-- **Seitenladezeit**: < 3 Sekunden
-- **Datenbankabfragen**: < 50 pro Seite
-- **Speicherverbrauch**: < 80% des verfügbaren Speichers
-- **CPU-Auslastung**: < 70% während Spitzenzeiten
+- **Query Monitor** - WordPress-Plugin für Debugging
+- **New Relic** - APM-Überwachung
+- **GTmetrix** - Frontend-Leistungstests
 
 ## Fehlerbehebung
 
 ### Häufige Probleme
 
-**Problem**: Langsame Dashboard-Ladezeiten
-**Lösung**: Erhöhen Sie das PHP-Speicherlimit und optimieren Sie die Datenbank
-
-**Problem**: JavaScript-Fehler
-**Lösung**: Überprüfen Sie Cache-Ausschlüsse und Plugin-Konflikte
-
-**Problem**: Fehlende Tracking-Daten
-**Lösung**: Überprüfen Sie Firewall-Einstellungen und AJAX-Endpunkte
-
-### Debug-Modus
-
-Aktivieren Sie den Debug-Modus für detaillierte Fehlerprotokolle:
-
+**Speicherfehler**:
 ```php
-// In wp-config.php
-define('WP_DEBUG', true);
-define('WP_DEBUG_LOG', true);
-define('QA_ADVISOR_DEBUG', true);
+ini_set('memory_limit', '512M');
 ```
+
+**Timeout-Probleme**:
+```php
+set_time_limit(300);
+```
+
+**Skript-Ladeprobleme**:
+1. Browser-Konsole auf JavaScript-Fehler prüfen
+2. Cache-Plugin-Ausschlüsse verifizieren
+3. Firewall-Einstellungen bestätigen
+
+### Skript-Verifizierung
+
+Um zu verifizieren, dass das Tracking-Skript korrekt geladen wird:
+
+1. Besuchen Sie Ihre Website, während Sie **nicht eingeloggt** sind
+2. Rechtsklick und "Seitenquelltext anzeigen" wählen
+3. Im HTML nach `qahm` oder `qahmz` suchen
+
+> Wenn diese Strings nicht gefunden werden, könnte das Skript blockiert sein oder nicht laden.  
+> Prüfen Sie auf JavaScript-Fehler oder Plugin-Konflikte.
 
 ## Nächste Schritte
 
 Nach der Umgebungseinrichtung:
 
-1. [Konfigurieren Sie Datenlimits](/docs/user-manual/getting-started/set-data-limit-wpconfig)
-2. [Verstehen Sie jQuery-Verzögerung](/docs/user-manual/getting-started/when-defer-jquery)
-3. [Erkunden Sie das Dashboard](/docs/user-manual/screens-and-operations/dashboard)
+1. [Datenlimits konfigurieren](/docs/user-manual/getting-started/set-data-limit-wpconfig)
+2. [jQuery-Konflikte behandeln](/docs/user-manual/getting-started/when-defer-jquery)
+3. [Dashboard erkunden](/docs/user-manual/screens-and-operations/dashboard)
 
-## Support
-
-Für weitere Unterstützung bei der Umgebungseinrichtung:
-- Konsultieren Sie unsere [FAQ](/docs/faq)
-- Kontaktieren Sie unser technisches Support-Team
-- Besuchen Sie unsere [Community-Foren](https://github.com/quarka-org)
+---
