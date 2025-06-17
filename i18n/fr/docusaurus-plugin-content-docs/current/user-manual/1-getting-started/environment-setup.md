@@ -1,192 +1,69 @@
 ---
 sidebar_position: 2
+title: Configuration de l'Environnement
 ---
 
 # Configuration de l'Environnement
 
-Cette page vous guide dans l'optimisation de votre environnement WordPress pour QA Advisor afin d'assurer des performances optimales et une collecte de données fiable.
+Pour assurer un suivi précis et des performances fluides avec QA Advisor, nous recommandons d'ajuster les paramètres de serveur et de plugin suivants.
 
-## Configuration du Serveur
+---
 
-### Exigences PHP
+## 1. Compression et Minification JavaScript
 
-QA Advisor nécessite PHP 7.4 ou supérieur, mais nous recommandons PHP 8.0+ pour de meilleures performances :
+Ne compressez, ne minifiez ou ne combinez **pas** les fichiers JavaScript utilisés par QA Advisor.  
+Certains plugins d'optimisation ou thèmes peuvent interférer avec les scripts de suivi en modifiant ou retardant leur exécution.
 
-```php
-// Paramètres PHP recommandés
-memory_limit = 256M
-max_execution_time = 300
-post_max_size = 64M
-upload_max_filesize = 64M
-```
+> ✅ Vérifiez les paramètres de votre plugin de cache ou d'optimisation  
+> ✅ Désactivez la minification JS ou defer/async pour les scripts QA Advisor
 
-### Configuration de la Base de Données
+Pour plus d'informations techniques, voir [Quand jQuery est Différé](/docs/user-manual/getting-started/when-defer-jquery).
 
-Assurez-vous que votre base de données MySQL/MariaDB est optimisée :
+---
 
-```sql
--- Paramètres MySQL recommandés
-innodb_buffer_pool_size = 256M
-max_connections = 200
-query_cache_size = 64M
-```
+## 2. Limite de Mémoire PHP et Temps d'Exécution
 
-## Configuration WordPress
+QA Advisor traite les données de suivi lors de l'agrégation quotidienne, ce qui peut être intensif en mémoire sur les sites plus importants.
 
-### wp-config.php
+Nous recommandons les paramètres PHP suivants :
 
-Ajoutez ces constantes à votre fichier `wp-config.php` pour optimiser QA Advisor :
+- `memory_limit` : **1024M** ou plus  
+- `max_execution_time` : **240** secondes ou plus
 
-```php
-// Activer le mode debug pour le développement
-define('WP_DEBUG', true);
-define('WP_DEBUG_LOG', true);
+> 💡 Ces paramètres peuvent généralement être ajustés via `php.ini`, `.htaccess` ou votre panneau de contrôle d'hébergement.  
+> Si vous n'êtes pas sûr, demandez à votre fournisseur d'hébergement.
 
-// Optimisations QA Advisor
-define('QAHM_DEBUG', false);
-define('QAHM_DATA_RETENTION_DAYS', 90);
-define('QAHM_MAX_HEATMAP_PV', 10000);
-```
+---
 
-### Paramètres de Cache
+## 3. Compatibilité Plugin et Thème
 
-QA Advisor fonctionne avec la plupart des plugins de cache, mais nécessite une configuration appropriée :
+QA Advisor fonctionne avec la plupart des plugins et thèmes majeurs. Cependant, nous recommandons :
 
-#### WP Rocket
-```javascript
-// Exclure les scripts QA Advisor du cache
-/wp-content/plugins/qa-advisor/js/qahm.js
-```
+- Désactiver JavaScript defer/async pour les scripts critiques
+- S'assurer que votre plugin de cache autorise la sortie de `qa-heatmap-analytics`
+- Éviter la duplication avec d'autres outils de suivi qui modifient les événements globaux
 
-#### W3 Total Cache
-- Exclure `/wp-admin/admin-ajax.php` de la mise en cache
-- Ajouter `qahm_` aux cookies exclus
+---
 
-#### WP Super Cache
-- Ajouter `qahm_session` aux cookies rejetés
+## 4. CDN et Migration de Serveur
 
-## Configuration du CDN
+Si vous utilisez un CDN (ex. Cloudflare) ou avez récemment migré votre serveur :
 
-Si vous utilisez un CDN, assurez-vous que les fichiers QA Advisor sont correctement servis :
+- Videz tous les caches (navigateur, plugin, CDN)
+- Confirmez que les scripts QA Advisor ne sont pas bloqués ou retardés
+- Assurez-vous que le fuseau horaire de votre serveur est correct (utilisé pour le regroupement des données)
 
-### Cloudflare
-```javascript
-// Règles de page Cloudflare
-/wp-content/plugins/qa-advisor/js/* - Cache Level: Standard
-/wp-admin/admin-ajax.php?action=qahm_* - Cache Level: Bypass
-```
+---
 
-### MaxCDN/StackPath
-- Exclure `/wp-admin/admin-ajax.php` de la mise en cache
-- Inclure les fichiers CSS/JS de QA Advisor dans le CDN
+## 5. Optionnel : Confirmer la Sortie du Script
 
-## Optimisation des Performances
+Pour vérifier que le script de suivi se charge correctement :
 
-### Paramètres de Collecte de Données
+1. Visitez votre site web en étant **non connecté**
+2. Clic droit et choisissez "Afficher le code source de la page"
+3. Recherchez dans le HTML `qahm` ou `qahmz`
 
-Configurez la collecte de données selon vos besoins :
+> Si ces chaînes ne sont pas trouvées, le script peut être bloqué ou ne pas se charger.  
+> Vérifiez les erreurs JavaScript ou les conflits de plugins.
 
-```php
-// Dans wp-config.php
-define('QAHM_SAMPLING_RATE', 100); // 100% des visiteurs
-define('QAHM_SESSION_TIMEOUT', 1800); // 30 minutes
-define('QAHM_HEATMAP_RESOLUTION', 'high'); // high, medium, low
-```
-
-### Nettoyage Automatique
-
-Configurez le nettoyage automatique des anciennes données :
-
-```php
-// Rétention des données (en jours)
-define('QAHM_DATA_RETENTION_DAYS', 90);
-
-// Nettoyage automatique
-define('QAHM_AUTO_CLEANUP', true);
-define('QAHM_CLEANUP_INTERVAL', 'daily');
-```
-
-## Configuration de Sécurité
-
-### Permissions de Fichiers
-
-Assurez-vous que les permissions de fichiers sont correctement définies :
-
-```bash
-# Permissions recommandées
-chmod 755 /wp-content/plugins/qa-advisor/
-chmod 644 /wp-content/plugins/qa-advisor/js/qahm.js
-chmod 644 /wp-content/plugins/qa-advisor/css/qahm.css
-```
-
-### Sécurité des Données
-
-Configurez la sécurité des données utilisateur :
-
-```php
-// Anonymisation IP (RGPD)
-define('QAHM_ANONYMIZE_IP', true);
-
-// Chiffrement des données sensibles
-define('QAHM_ENCRYPT_DATA', true);
-
-// Durée de conservation des données personnelles
-define('QAHM_PERSONAL_DATA_RETENTION', 30);
-```
-
-## Surveillance et Maintenance
-
-### Logs de Debug
-
-Activez les logs pour surveiller les performances :
-
-```php
-// Activer les logs QA Advisor
-define('QAHM_DEBUG_LOG', true);
-define('QAHM_LOG_LEVEL', 'info'); // error, warning, info, debug
-```
-
-### Surveillance des Performances
-
-Surveillez régulièrement :
-
-- Utilisation de la mémoire PHP
-- Temps de réponse des pages
-- Taille de la base de données
-- Logs d'erreur
-
-### Maintenance Régulière
-
-Effectuez ces tâches de maintenance :
-
-1. **Hebdomadaire** : Vérifiez les logs d'erreur
-2. **Mensuel** : Optimisez la base de données
-3. **Trimestriel** : Révisez les paramètres de rétention des données
-
-## Résolution de Problèmes
-
-### Problèmes de Performance
-
-Si vous rencontrez des problèmes de performance :
-
-1. Vérifiez l'utilisation de la mémoire PHP
-2. Optimisez les paramètres de base de données
-3. Configurez la mise en cache appropriée
-4. Réduisez le taux d'échantillonnage si nécessaire
-
-### Problèmes de Collecte de Données
-
-Si les données ne sont pas collectées :
-
-1. Vérifiez que JavaScript est activé
-2. Contrôlez les paramètres de cache
-3. Vérifiez les logs d'erreur
-4. Testez avec les outils de développement du navigateur
-
-## Étapes Suivantes
-
-Une fois votre environnement configuré :
-
-1. [Configurez les limites de données](/docs/user-manual/getting-started/set-data-limit-wpconfig)
-2. [Explorez le tableau de bord](/docs/user-manual/screens-and-operations/dashboard)
-3. [Configurez vos premiers objectifs](/docs/user-manual/screens-and-operations/goals)
+---
