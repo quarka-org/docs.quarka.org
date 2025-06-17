@@ -1,0 +1,32 @@
+{
+  "link.title.Docs": {
+    "message": "Documentatie"
+  },
+  "link.title.Community": {
+    "message": "Community"
+  },
+  "link.title.More": {
+    "message": "Meer"
+  },
+  "link.item.label.User Guide": {
+    "message": "Gebruikershandleiding"
+  },
+  "link.item.label.Developer Guide": {
+    "message": "Ontwikkelaarshandleiding"
+  },
+  "link.item.label.FAQ": {
+    "message": "FAQ"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog"
+  },
+  "link.item.label.Release Notes": {
+    "message": "Release Notes"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 Quarka Organization. Gebouwd met Docusaurus."
+  }
+}
