@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkqa_advisor_documentation=self.webpackChunkqa_advisor_documentation||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Najnowsze posty","items":[{"title":"Witamy w Dokumentacji QA Advisor","permalink":"/pl/blog/witamy","unlisted":false,"date":"2025-05-25T00:00:00.000Z"}]}')}}]);
