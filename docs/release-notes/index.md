@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Release Notes
 
-Welcome to the QA Advisor release notes. Here you'll find information about new features, improvements, and bug fixes in each version.
+Welcome to the QA Assistant release notes. Here you'll find information about new features, improvements, and bug fixes in each version.
 
 ## Latest Release
 

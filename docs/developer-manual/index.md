@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Developer Manual
 
-Welcome to the QA Advisor Developer Manual. This section contains technical documentation for developers working with QA Advisor.
+Welcome to the QA Assistant Developer Manual. This section contains technical documentation for developers working with QA Assistant.
 
 **Coming Soon**
 
