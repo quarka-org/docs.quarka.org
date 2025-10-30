@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkqa_advisor_documentation=self.webpackChunkqa_advisor_documentation||[]).push([[3816],{5182:a=>{a.exports=JSON.parse('{"tags":[{"label":"bem-vindo","permalink":"/pt/blog/tags/bem-vindo","count":1},{"label":"analytics","permalink":"/pt/blog/tags/analytics","count":1},{"label":"wordpress","permalink":"/pt/blog/tags/wordpress","count":1}]}')}}]);

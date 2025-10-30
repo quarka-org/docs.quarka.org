@@ -3,24 +3,282 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
-<title data-rh="true">Heatmaps | QA Assistant Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.quarka.org/ja/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.quarka.org/ja/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.quarka.org/ja/docs/user-manual/screens-and-operations/heatmaps"><meta data-rh="true" property="og:locale" content="ja"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" property="og:locale:alternate" content="es"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="de"><meta data-rh="true" property="og:locale:alternate" content="pt"><meta data-rh="true" property="og:locale:alternate" content="it"><meta data-rh="true" property="og:locale:alternate" content="pl"><meta data-rh="true" property="og:locale:alternate" content="nl"><meta data-rh="true" name="docusaurus_locale" content="ja"><meta data-rh="true" name="docsearch:language" content="ja"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Heatmaps | QA Assistant Documentation"><meta data-rh="true" name="description" content="Learn how to create and analyze heatmaps to understand user behavior on your WordPress site."><meta data-rh="true" property="og:description" content="Learn how to create and analyze heatmaps to understand user behavior on your WordPress site."><link data-rh="true" rel="icon" href="/ja/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.quarka.org/ja/docs/user-manual/screens-and-operations/heatmaps"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/docs/user-manual/screens-and-operations/heatmaps" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/ja/docs/user-manual/screens-and-operations/heatmaps" hreflang="ja"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/es/docs/user-manual/screens-and-operations/heatmaps" hreflang="es"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/fr/docs/user-manual/screens-and-operations/heatmaps" hreflang="fr"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/de/docs/user-manual/screens-and-operations/heatmaps" hreflang="de"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/pt/docs/user-manual/screens-and-operations/heatmaps" hreflang="pt"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/it/docs/user-manual/screens-and-operations/heatmaps" hreflang="it"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/pl/docs/user-manual/screens-and-operations/heatmaps" hreflang="pl"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/nl/docs/user-manual/screens-and-operations/heatmaps" hreflang="nl"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/docs/user-manual/screens-and-operations/heatmaps" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/ja/blog/rss.xml" title="QA Assistant Documentation RSS Feed">
+<title data-rh="true">ヒートマップ | QA Assistant Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.quarka.org/ja/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.quarka.org/ja/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.quarka.org/ja/docs/user-manual/screens-and-operations/heatmaps"><meta data-rh="true" property="og:locale" content="ja"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" name="docusaurus_locale" content="ja"><meta data-rh="true" name="docsearch:language" content="ja"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="ヒートマップ | QA Assistant Documentation"><meta data-rh="true" name="description" content="QA Advisor のヒートマップ機能は、ウェブサイト上でのユーザーの行動を視覚的に表示する強力な分析ツールです。クリック、スクロール、マウス移動などのユーザーインタラクションを色分けされたマップで表示し、ユーザーエクスペリエンスの改善に役立つインサイトを提供します。"><meta data-rh="true" property="og:description" content="QA Advisor のヒートマップ機能は、ウェブサイト上でのユーザーの行動を視覚的に表示する強力な分析ツールです。クリック、スクロール、マウス移動などのユーザーインタラクションを色分けされたマップで表示し、ユーザーエクスペリエンスの改善に役立つインサイトを提供します。"><link data-rh="true" rel="icon" href="/ja/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.quarka.org/ja/docs/user-manual/screens-and-operations/heatmaps"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/docs/user-manual/screens-and-operations/heatmaps" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/ja/docs/user-manual/screens-and-operations/heatmaps" hreflang="ja"><link data-rh="true" rel="alternate" href="https://docs.quarka.org/docs/user-manual/screens-and-operations/heatmaps" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/ja/blog/rss.xml" title="QA Assistant Documentation RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/ja/blog/atom.xml" title="QA Assistant Documentation Atom Feed"><link rel="stylesheet" href="/ja/assets/css/styles.b3844c2e.css">
-<script src="/ja/assets/js/runtime~main.fcc0aef9.js" defer="defer"></script>
-<script src="/ja/assets/js/main.60358575.js" defer="defer"></script>
+<script src="/ja/assets/js/runtime~main.2d1a837f.js" defer="defer"></script>
+<script src="/ja/assets/js/main.221a8799.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/ja/img/qa-new-logo.png"><div role="region" aria-label="メインコンテンツまでスキップ"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">メインコンテンツまでスキップ</a></div><nav aria-label="ナビゲーション" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="ナビゲーションバーを開く" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ja/"><div class="navbar__logo"><img src="/ja/img/qa-new-logo.png" alt="QA Advisor Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/ja/img/qa-new-logo.png" alt="QA Advisor Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">QA Advisor ドキュメント</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ja/docs/user-manual">ユーザーガイド</a><a class="navbar__item navbar__link" href="/ja/docs/developer-manual">開発者ガイド</a><a class="navbar__item navbar__link" href="/ja/blog">ブログ</a><a class="navbar__item navbar__link" href="/ja/docs/release-notes/2025/qa-advisor-beta-4-9-0">リリースノート</a><a class="navbar__item navbar__link" href="/ja/docs/faq">よくある質問</a></div><div class="navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>日本語</a><ul class="dropdown__menu"><li><a href="/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en-US">English</a></li><li><a href="/ja/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="ja">日本語</a></li><li><a href="/es/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="es">Español</a></li><li><a href="/fr/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/de/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="de">Deutsch</a></li><li><a href="/pt/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="pt">Português</a></li><li><a href="/it/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="it">Italiano</a></li><li><a href="/pl/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="pl">Polski</a></li><li><a href="/nl/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="nl">Nederlands</a></li></ul></div><a href="https://github.com/quarka-org/docs.quarka.org" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="ダークモードを切り替える(現在はライトモード)" aria-label="ダークモードを切り替える(現在はライトモード)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="先頭へ戻る" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="ドキュメントのサイドバー" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ja/docs/user-manual">ユーザーガイド</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/ja/docs/user-manual/getting-started">はじめに</a><button aria-label="&#x27;はじめに&#x27;の目次を隠す" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/getting-started/installation">インストール</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/getting-started/environment-setup">環境セットアップ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/getting-started/when-defer-jquery">jQuery 遅延読み込み時の対応</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/getting-started/set-data-limit-wpconfig">データ制限の設定</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/ja/docs/category/using-qa-advisor">Using QA Advisor</a><button aria-label="&#x27;Using QA Advisor&#x27;の目次を隠す" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/dashboard">ダッシュボード</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/brains">ブレインズ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/heatmaps">Heatmaps</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations">画面と操作</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/realtime">リアルタイム</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/audience">オーディエンス</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/acquisition">獲得</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/landing-pages">ランディングページ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/top-growing">トップ成長</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/all-pages">全ページ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/goals">Goals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/license-activation">License Activation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/settings">設定</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/help">Help</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="パンくずリストのナビゲーション"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="ホームページ" class="breadcrumbs__link" href="/ja/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/ja/docs/category/using-qa-advisor"><span itemprop="name">Using QA Advisor</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Heatmaps</span><meta itemprop="position" content="2"></li></ul></nav><div class="theme-doc-markdown markdown"><header><h1>Heatmap Analytics</h1></header>
-<p>Learn how to create and analyze heatmaps to understand user behavior on your WordPress site.</p>
-<p><strong>Coming Soon</strong></p>
-<p>This section is currently being developed. It will include:</p>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/ja/img/qa-new-logo.png"><div role="region" aria-label="メインコンテンツまでスキップ"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">メインコンテンツまでスキップ</a></div><nav aria-label="ナビゲーション" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="ナビゲーションバーを開く" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ja/"><div class="navbar__logo"><img src="/ja/img/qa-new-logo.png" alt="QA Advisor Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/ja/img/qa-new-logo.png" alt="QA Advisor Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">QA Advisor ドキュメント</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ja/docs/user-manual">ユーザーガイド</a><a class="navbar__item navbar__link" href="/ja/docs/developer-manual">開発者ガイド</a><a class="navbar__item navbar__link" href="/ja/blog">ブログ</a><a class="navbar__item navbar__link" href="/ja/docs/release-notes/2025/qa-advisor-beta-4-9-0">リリースノート</a><a class="navbar__item navbar__link" href="/ja/docs/faq">よくある質問</a></div><div class="navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>日本語</a><ul class="dropdown__menu"><li><a href="/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en-US">English</a></li><li><a href="/ja/docs/user-manual/screens-and-operations/heatmaps" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="ja">日本語</a></li></ul></div><a href="https://github.com/quarka-org/docs.quarka.org" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="ダークモードを切り替える(現在はライトモード)" aria-label="ダークモードを切り替える(現在はライトモード)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="先頭へ戻る" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="ドキュメントのサイドバー" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ja/docs/user-manual">ユーザーガイド</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/ja/docs/user-manual/getting-started">はじめに</a><button aria-label="&#x27;はじめに&#x27;の目次を隠す" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/getting-started/installation">インストール</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/getting-started/environment-setup">環境セットアップ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/getting-started/when-defer-jquery">jQuery 遅延読み込み時の対応</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/getting-started/set-data-limit-wpconfig">データ制限の設定</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/ja/docs/category/using-qa-advisor">Using QA Advisor</a><button aria-label="&#x27;Using QA Advisor&#x27;の目次を隠す" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/dashboard">ダッシュボード</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/brains">ブレインズ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations">画面と操作</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/realtime">リアルタイム</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/audience">オーディエンス</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/acquisition">獲得</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/landing-pages">ランディングページ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/top-growing">トップ成長</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/all-pages">全ページ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/heatmaps">ヒートマップ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/goals">ゴール</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/settings">設定</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/license-activation">ライセンス有効化</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ja/docs/user-manual/screens-and-operations/help">ヘルプ</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="パンくずリストのナビゲーション"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="ホームページ" class="breadcrumbs__link" href="/ja/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/ja/docs/category/using-qa-advisor"><span itemprop="name">Using QA Advisor</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">ヒートマップ</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">このページの見出し</button></div><div class="theme-doc-markdown markdown"><header><h1>ヒートマップ (Heatmaps)</h1></header>
+<p>QA Advisor のヒートマップ機能は、ウェブサイト上でのユーザーの行動を視覚的に表示する強力な分析ツールです。クリック、スクロール、マウス移動などのユーザーインタラクションを色分けされたマップで表示し、ユーザーエクスペリエンスの改善に役立つインサイトを提供します。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ヒートマップへのアクセス">ヒートマップへのアクセス<a href="#ヒートマップへのアクセス" class="hash-link" aria-label="ヒートマップへのアクセス への直接リンク" title="ヒートマップへのアクセス への直接リンク">​</a></h2>
+<ol>
+<li>WordPress 管理画面にログイン</li>
+<li><strong>QA Advisor</strong> メニューをクリック</li>
+<li><strong>ヒートマップ (Heatmaps)</strong> を選択</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="主要な機能">主要な機能<a href="#主要な機能" class="hash-link" aria-label="主要な機能 への直接リンク" title="主要な機能 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ヒートマップの種類">ヒートマップの種類<a href="#ヒートマップの種類" class="hash-link" aria-label="ヒートマップの種類 への直接リンク" title="ヒートマップの種類 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="クリックヒートマップ-click-heatmap">クリックヒートマップ (Click Heatmap)<a href="#クリックヒートマップ-click-heatmap" class="hash-link" aria-label="クリックヒートマップ (Click Heatmap) への直接リンク" title="クリックヒートマップ (Click Heatmap) への直接リンク">​</a></h4>
 <ul>
-<li>Creating your first heatmap</li>
-<li>Understanding heatmap types (click, scroll, movement)</li>
-<li>Filtering and segmenting data</li>
-<li>Exporting heatmap reports</li>
-<li>Best practices for heatmap analysis</li>
+<li><strong>クリック分布</strong>: ページ上でのクリック位置の分布</li>
+<li><strong>クリック密度</strong>: 各エリアのクリック密度</li>
+<li><strong>人気要素</strong>: 最もクリックされている要素</li>
+<li><strong>未使用エリア</strong>: クリックされていないエリア</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="スクロールヒートマップ-scroll-heatmap">スクロールヒートマップ (Scroll Heatmap)<a href="#スクロールヒートマップ-scroll-heatmap" class="hash-link" aria-label="スクロールヒートマップ (Scroll Heatmap) への直接リンク" title="スクロールヒートマップ (Scroll Heatmap) への直接リンク">​</a></h4>
+<ul>
+<li><strong>スクロール深度</strong>: ユーザーがページをどこまでスクロールしているか</li>
+<li><strong>離脱ポイント</strong>: ユーザーがスクロールを停止する地点</li>
+<li><strong>コンテンツ到達率</strong>: 各コンテンツエリアへの到達率</li>
+<li><strong>フォールドライン</strong>: ページの折り返し地点の分析</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="マウス移動ヒートマップ-mouse-movement-heatmap">マウス移動ヒートマップ (Mouse Movement Heatmap)<a href="#マウス移動ヒートマップ-mouse-movement-heatmap" class="hash-link" aria-label="マウス移動ヒートマップ (Mouse Movement Heatmap) への直接リンク" title="マウス移動ヒートマップ (Mouse Movement Heatmap) への直接リンク">​</a></h4>
+<ul>
+<li><strong>マウストラッキング</strong>: マウスカーソルの移動軌跡</li>
+<li><strong>ホバーエリア</strong>: マウスが停滞するエリア</li>
+<li><strong>注目度</strong>: ユーザーの注目度の高いエリア</li>
+<li><strong>視線予測</strong>: マウス移動から推測される視線パターン</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="アテンションヒートマップ-attention-heatmap">アテンションヒートマップ (Attention Heatmap)<a href="#アテンションヒートマップ-attention-heatmap" class="hash-link" aria-label="アテンションヒートマップ (Attention Heatmap) への直接リンク" title="アテンションヒートマップ (Attention Heatmap) への直接リンク">​</a></h4>
+<ul>
+<li><strong>滞在時間</strong>: 各エリアでの滞在時間</li>
+<li><strong>エンゲージメント</strong>: ユーザーエンゲージメントの高いエリア</li>
+<li><strong>読了率</strong>: コンテンツの読了率</li>
+<li><strong>興味度</strong>: ユーザーの興味度の分布</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="デバイス別分析">デバイス別分析<a href="#デバイス別分析" class="hash-link" aria-label="デバイス別分析 への直接リンク" title="デバイス別分析 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="デスクトップヒートマップ">デスクトップヒートマップ<a href="#デスクトップヒートマップ" class="hash-link" aria-label="デスクトップヒートマップ への直接リンク" title="デスクトップヒートマップ への直接リンク">​</a></h4>
+<ul>
+<li><strong>大画面での行動</strong>: デスクトップユーザーの行動パターン</li>
+<li><strong>マウス操作</strong>: 精密なマウス操作の分析</li>
+<li><strong>キーボード操作</strong>: キーボードショートカットの使用</li>
+<li><strong>マルチタスク</strong>: 複数ウィンドウでの行動</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="モバイルヒートマップ">モバイルヒートマップ<a href="#モバイルヒートマップ" class="hash-link" aria-label="モバイルヒートマップ への直接リンク" title="モバイルヒートマップ への直接リンク">​</a></h4>
+<ul>
+<li><strong>タッチ操作</strong>: タッチスクリーンでの操作パターン</li>
+<li><strong>スワイプ動作</strong>: スワイプやピンチ操作の分析</li>
+<li><strong>画面サイズ</strong>: 小画面での表示最適化</li>
+<li><strong>縦横切り替え</strong>: 画面向きの変更による影響</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="タブレットヒートマップ">タブレットヒートマップ<a href="#タブレットヒートマップ" class="hash-link" aria-label="タブレットヒートマップ への直接リンク" title="タブレットヒートマップ への直接リンク">​</a></h4>
+<ul>
+<li><strong>中間サイズ</strong>: タブレット特有の操作パターン</li>
+<li><strong>タッチ精度</strong>: タッチ操作の精度分析</li>
+<li><strong>両手操作</strong>: 両手での操作パターン</li>
+<li><strong>アプリ切り替え</strong>: アプリ間の切り替え行動</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="詳細分析機能">詳細分析機能<a href="#詳細分析機能" class="hash-link" aria-label="詳細分析機能 への直接リンク" title="詳細分析機能 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="セグメント別分析">セグメント別分析<a href="#セグメント別分析" class="hash-link" aria-label="セグメント別分析 への直接リンク" title="セグメント別分析 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ユーザーセグメント">ユーザーセグメント<a href="#ユーザーセグメント" class="hash-link" aria-label="ユーザーセグメント への直接リンク" title="ユーザーセグメント への直接リンク">​</a></h4>
+<ul>
+<li><strong>新規 vs リピーター</strong>: 新規ユーザーとリピーターの行動比較</li>
+<li><strong>流入元別</strong>: トラフィックソース別の行動分析</li>
+<li><strong>地域別</strong>: 地理的な違いによる行動パターン</li>
+<li><strong>デモグラフィック</strong>: 年齢・性別による行動の違い</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="時間軸分析">時間軸分析<a href="#時間軸分析" class="hash-link" aria-label="時間軸分析 への直接リンク" title="時間軸分析 への直接リンク">​</a></h4>
+<ul>
+<li><strong>時間帯別</strong>: 時間帯による行動パターンの違い</li>
+<li><strong>曜日別</strong>: 曜日による行動の変化</li>
+<li><strong>季節別</strong>: 季節による行動パターンの変化</li>
+<li><strong>期間比較</strong>: 異なる期間での行動比較</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="コンバージョン分析">コンバージョン分析<a href="#コンバージョン分析" class="hash-link" aria-label="コンバージョン分析 への直接リンク" title="コンバージョン分析 への直接リンク">​</a></h4>
+<ul>
+<li><strong>コンバーター vs 非コンバーター</strong>: コンバージョンした/しなかったユーザーの行動比較</li>
+<li><strong>ファネル段階別</strong>: コンバージョンファネルの各段階での行動</li>
+<li><strong>ゴール別</strong>: 設定されたゴール別の行動分析</li>
+<li><strong>価値別</strong>: ユーザー価値による行動の違い</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ab-テスト分析">A/B テスト分析<a href="#ab-テスト分析" class="hash-link" aria-label="A/B テスト分析 への直接リンク" title="A/B テスト分析 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="バリエーション比較">バリエーション比較<a href="#バリエーション比較" class="hash-link" aria-label="バリエーション比較 への直接リンク" title="バリエーション比較 への直接リンク">​</a></h4>
+<ul>
+<li><strong>デザイン比較</strong>: 異なるデザインでの行動比較</li>
+<li><strong>レイアウト比較</strong>: レイアウト変更による影響</li>
+<li><strong>コンテンツ比較</strong>: コンテンツ変更による行動変化</li>
+<li><strong>機能比較</strong>: 新機能追加による影響</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="統計的分析">統計的分析<a href="#統計的分析" class="hash-link" aria-label="統計的分析 への直接リンク" title="統計的分析 への直接リンク">​</a></h4>
+<ul>
+<li><strong>有意性検定</strong>: 変化の統計的有意性</li>
+<li><strong>信頼区間</strong>: 結果の信頼区間</li>
+<li><strong>効果サイズ</strong>: 変更による効果の大きさ</li>
+<li><strong>推奨事項</strong>: データに基づく推奨事項</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ユーザビリティ分析">ユーザビリティ分析<a href="#ユーザビリティ分析" class="hash-link" aria-label="ユーザビリティ分析 への直接リンク" title="ユーザビリティ分析 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ナビゲーション分析">ナビゲーション分析<a href="#ナビゲーション分析" class="hash-link" aria-label="ナビゲーション分析 への直接リンク" title="ナビゲーション分析 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="メニュー使用状況">メニュー使用状況<a href="#メニュー使用状況" class="hash-link" aria-label="メニュー使用状況 への直接リンク" title="メニュー使用状況 への直接リンク">​</a></h4>
+<ul>
+<li><strong>メインメニュー</strong>: メインナビゲーションの使用状況</li>
+<li><strong>サブメニュー</strong>: サブメニューの利用率</li>
+<li><strong>フッターメニュー</strong>: フッターナビゲーションの効果</li>
+<li><strong>ブレッドクラム</strong>: パンくずナビゲーションの利用</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="検索機能">検索機能<a href="#検索機能" class="hash-link" aria-label="検索機能 への直接リンク" title="検索機能 への直接リンク">​</a></h4>
+<ul>
+<li><strong>検索ボックス</strong>: 検索機能の使用状況</li>
+<li><strong>検索結果</strong>: 検索結果ページでの行動</li>
+<li><strong>フィルター</strong>: 検索フィルターの使用</li>
+<li><strong>並び替え</strong>: 検索結果の並び替え使用状況</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="内部リンク">内部リンク<a href="#内部リンク" class="hash-link" aria-label="内部リンク への直接リンク" title="内部リンク への直接リンク">​</a></h4>
+<ul>
+<li><strong>リンククリック</strong>: 内部リンクのクリック率</li>
+<li><strong>関連記事</strong>: 関連記事リンクの効果</li>
+<li><strong>CTA ボタン</strong>: Call to Action ボタンの効果</li>
+<li><strong>画像リンク</strong>: 画像リンクのクリック状況</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="フォーム分析">フォーム分析<a href="#フォーム分析" class="hash-link" aria-label="フォーム分析 への直接リンク" title="フォーム分析 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="フォーム要素">フォーム要素<a href="#フォーム要素" class="hash-link" aria-label="フォーム要素 への直接リンク" title="フォーム要素 への直接リンク">​</a></h4>
+<ul>
+<li><strong>入力フィールド</strong>: 各入力フィールドの使用状況</li>
+<li><strong>必須項目</strong>: 必須項目での離脱状況</li>
+<li><strong>選択項目</strong>: ドロップダウンやチェックボックスの使用</li>
+<li><strong>送信ボタン</strong>: フォーム送信ボタンのクリック状況</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="フォーム最適化">フォーム最適化<a href="#フォーム最適化" class="hash-link" aria-label="フォーム最適化 への直接リンク" title="フォーム最適化 への直接リンク">​</a></h4>
+<ul>
+<li><strong>離脱ポイント</strong>: フォーム内での離脱ポイント</li>
+<li><strong>エラー発生</strong>: エラーが発生しやすい箇所</li>
+<li><strong>完了率</strong>: フォーム完了率の分析</li>
+<li><strong>時間分析</strong>: フォーム入力にかかる時間</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="コンテンツ分析">コンテンツ分析<a href="#コンテンツ分析" class="hash-link" aria-label="コンテンツ分析 への直接リンク" title="コンテンツ分析 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="コンテンツエンゲージメント">コンテンツエンゲージメント<a href="#コンテンツエンゲージメント" class="hash-link" aria-label="コンテンツエンゲージメント への直接リンク" title="コンテンツエンゲージメント への直接リンク">​</a></h4>
+<ul>
+<li><strong>読了率</strong>: コンテンツの読了率</li>
+<li><strong>スキップ率</strong>: コンテンツをスキップする率</li>
+<li><strong>戻り読み</strong>: コンテンツを戻って読む行動</li>
+<li><strong>共有行動</strong>: コンテンツの共有行動</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="視覚要素">視覚要素<a href="#視覚要素" class="hash-link" aria-label="視覚要素 への直接リンク" title="視覚要素 への直接リンク">​</a></h4>
+<ul>
+<li><strong>画像注目度</strong>: 画像への注目度</li>
+<li><strong>動画再生</strong>: 動画コンテンツの再生状況</li>
+<li><strong>インフォグラフィック</strong>: インフォグラフィックの効果</li>
+<li><strong>広告エリア</strong>: 広告エリアへの注目度</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="改善提案と最適化">改善提案と最適化<a href="#改善提案と最適化" class="hash-link" aria-label="改善提案と最適化 への直接リンク" title="改善提案と最適化 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ユーザーエクスペリエンス改善">ユーザーエクスペリエンス改善<a href="#ユーザーエクスペリエンス改善" class="hash-link" aria-label="ユーザーエクスペリエンス改善 への直接リンク" title="ユーザーエクスペリエンス改善 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="レイアウト最適化">レイアウト最適化<a href="#レイアウト最適化" class="hash-link" aria-label="レイアウト最適化 への直接リンク" title="レイアウト最適化 への直接リンク">​</a></h4>
+<ol>
+<li><strong>重要要素の配置</strong>: 高クリック率エリアへの重要要素配置</li>
+<li><strong>視線の流れ</strong>: 自然な視線の流れに沿ったレイアウト</li>
+<li><strong>余白の活用</strong>: 適切な余白による視認性向上</li>
+<li><strong>階層構造</strong>: 明確な情報階層の構築</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ナビゲーション改善">ナビゲーション改善<a href="#ナビゲーション改善" class="hash-link" aria-label="ナビゲーション改善 への直接リンク" title="ナビゲーション改善 への直接リンク">​</a></h4>
+<ol>
+<li><strong>メニュー最適化</strong>: 使用頻度に基づくメニュー構成</li>
+<li><strong>検索機能</strong>: 検索機能の配置と機能改善</li>
+<li><strong>内部リンク</strong>: 効果的な内部リンク戦略</li>
+<li><strong>パンくず</strong>: 分かりやすいパンくずナビゲーション</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="コンテンツ最適化">コンテンツ最適化<a href="#コンテンツ最適化" class="hash-link" aria-label="コンテンツ最適化 への直接リンク" title="コンテンツ最適化 への直接リンク">​</a></h4>
+<ol>
+<li><strong>コンテンツ配置</strong>: 読了率の高いエリアへのコンテンツ配置</li>
+<li><strong>見出し構成</strong>: 効果的な見出し構成</li>
+<li><strong>画像配置</strong>: 注目度の高いエリアへの画像配置</li>
+<li><strong>CTA 配置</strong>: コンバージョン率の高い CTA 配置</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="コンバージョン最適化">コンバージョン最適化<a href="#コンバージョン最適化" class="hash-link" aria-label="コンバージョン最適化 への直接リンク" title="コンバージョン最適化 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ランディングページ最適化">ランディングページ最適化<a href="#ランディングページ最適化" class="hash-link" aria-label="ランディングページ最適化 への直接リンク" title="ランディングページ最適化 への直接リンク">​</a></h4>
+<ol>
+<li><strong>ファーストビュー</strong>: 効果的なファーストビューの設計</li>
+<li><strong>価値提案</strong>: 明確な価値提案の配置</li>
+<li><strong>信頼要素</strong>: 信頼性を高める要素の配置</li>
+<li><strong>行動喚起</strong>: 効果的な行動喚起の設計</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="フォーム最適化-1">フォーム最適化<a href="#フォーム最適化-1" class="hash-link" aria-label="フォーム最適化 への直接リンク" title="フォーム最適化 への直接リンク">​</a></h4>
+<ol>
+<li><strong>項目削減</strong>: 不要な入力項目の削除</li>
+<li><strong>エラー改善</strong>: ユーザーフレンドリーなエラー表示</li>
+<li><strong>進捗表示</strong>: フォーム進捗の可視化</li>
+<li><strong>自動入力</strong>: 入力支援機能の実装</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="データの活用方法">データの活用方法<a href="#データの活用方法" class="hash-link" aria-label="データの活用方法 への直接リンク" title="データの活用方法 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="定期的な分析">定期的な分析<a href="#定期的な分析" class="hash-link" aria-label="定期的な分析 への直接リンク" title="定期的な分析 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="週次分析">週次分析<a href="#週次分析" class="hash-link" aria-label="週次分析 への直接リンク" title="週次分析 への直接リンク">​</a></h4>
+<ul>
+<li><strong>トレンド確認</strong>: 週ごとの行動トレンド確認</li>
+<li><strong>異常検知</strong>: 通常と異なる行動パターンの検知</li>
+<li><strong>改善効果</strong>: 実施した改善の効果測定</li>
+<li><strong>新たな課題</strong>: 新たに発見された課題の特定</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="月次分析">月次分析<a href="#月次分析" class="hash-link" aria-label="月次分析 への直接リンク" title="月次分析 への直接リンク">​</a></h4>
+<ul>
+<li><strong>総合評価</strong>: 月間の総合的なユーザビリティ評価</li>
+<li><strong>改善計画</strong>: 次月の改善計画策定</li>
+<li><strong>ROI 測定</strong>: 改善施策の投資収益率測定</li>
+<li><strong>ベンチマーク</strong>: 業界ベンチマークとの比較</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="継続的改善">継続的改善<a href="#継続的改善" class="hash-link" aria-label="継続的改善 への直接リンク" title="継続的改善 への直接リンク">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="pdca-サイクル">PDCA サイクル<a href="#pdca-サイクル" class="hash-link" aria-label="PDCA サイクル への直接リンク" title="PDCA サイクル への直接リンク">​</a></h4>
+<ol>
+<li><strong>Plan</strong>: ヒートマップデータに基づく改善計画</li>
+<li><strong>Do</strong>: 改善施策の実装</li>
+<li><strong>Check</strong>: 改善効果の測定</li>
+<li><strong>Act</strong>: 結果に基づく次の改善アクション</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ab-テスト連携">A/B テスト連携<a href="#ab-テスト連携" class="hash-link" aria-label="A/B テスト連携 への直接リンク" title="A/B テスト連携 への直接リンク">​</a></h4>
+<ol>
+<li><strong>仮説設定</strong>: ヒートマップから得られた仮説</li>
+<li><strong>テスト設計</strong>: 効果的な A/B テストの設計</li>
+<li><strong>結果分析</strong>: テスト結果のヒートマップ分析</li>
+<li><strong>実装判断</strong>: データに基づく実装判断</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="レポートと共有">レポートと共有<a href="#レポートと共有" class="hash-link" aria-label="レポートと共有 への直接リンク" title="レポートと共有 への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="レポート生成">レポート生成<a href="#レポート生成" class="hash-link" aria-label="レポート生成 への直接リンク" title="レポート生成 への直接リンク">​</a></h3>
+<ul>
+<li><strong>ページ別レポート</strong>: 個別ページのヒートマップレポート</li>
+<li><strong>期間比較レポート</strong>: 期間を比較したレポート</li>
+<li><strong>セグメント別レポート</strong>: ユーザーセグメント別のレポート</li>
+<li><strong>改善提案レポート</strong>: 具体的な改善提案を含むレポート</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="チーム共有">チーム共有<a href="#チーム共有" class="hash-link" aria-label="チーム共有 への直接リンク" title="チーム共有 への直接リンク">​</a></h3>
+<ul>
+<li><strong>デザイナー向け</strong>: デザイン改善のためのインサイト</li>
+<li><strong>開発者向け</strong>: 技術的改善のためのデータ</li>
+<li><strong>マーケター向け</strong>: マーケティング最適化のためのデータ</li>
+<li><strong>経営陣向け</strong>: ビジネス影響を示すサマリーレポート</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="トラブルシューティング">トラブルシューティング<a href="#トラブルシューティング" class="hash-link" aria-label="トラブルシューティング への直接リンク" title="トラブルシューティング への直接リンク">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ヒートマップが表示されない">ヒートマップが表示されない<a href="#ヒートマップが表示されない" class="hash-link" aria-label="ヒートマップが表示されない への直接リンク" title="ヒートマップが表示されない への直接リンク">​</a></h3>
+<p><strong>症状</strong>: ヒートマップデータが表示されない</p>
+<p><strong>解決方法</strong>:</p>
+<ol>
+<li>十分なデータが蓄積されているか確認（最低30-50クリック）</li>
+<li>追跡コードが正しく設置されているか確認</li>
+<li>JavaScript エラーがないかブラウザコンソールで確認</li>
+<li>キャッシュプラグインでスクリプトが除外されているか確認</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="データが不正確">データが不正確<a href="#データが不正確" class="hash-link" aria-label="データが不正確 への直接リンク" title="データが不正確 への直接リンク">​</a></h3>
+<p><strong>症状</strong>: 表示されるヒートマップが実際の行動と異なる</p>
+<p><strong>解決方法</strong>:</p>
+<ol>
+<li>管理者アクセスが除外されているか確認</li>
+<li>ボットトラフィックが除外されているか確認</li>
+<li>重複計測がないか確認</li>
+<li>デバイス別の設定を確認</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="パフォーマンスの問題">パフォーマンスの問題<a href="#パフォーマンスの問題" class="hash-link" aria-label="パフォーマンスの問題 への直接リンク" title="パフォーマンスの問題 への直接リンク">​</a></h3>
+<p><strong>症状</strong>: ヒートマップの読み込みが遅い</p>
+<p><strong>解決方法</strong>:</p>
+<ol>
+<li>表示期間を短縮</li>
+<li>セグメントを絞り込み</li>
+<li>ブラウザキャッシュをクリア</li>
+<li>サーバーリソースを確認</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="関連機能">関連機能<a href="#関連機能" class="hash-link" aria-label="関連機能 への直接リンク" title="関連機能 への直接リンク">​</a></h2>
+<ul>
+<li><a href="/ja/docs/user-manual/screens-and-operations/dashboard">ダッシュボード</a> - 総合的な分析データ</li>
+<li><a href="/ja/docs/user-manual/screens-and-operations/all-pages">全ページ</a> - ページ別の詳細分析</li>
+<li><a href="/ja/docs/user-manual/screens-and-operations/settings">設定</a> - ヒートマップ設定の調整</li>
 </ul>
 <hr>
-<p>Need help? Contact <a href="mailto:support@quarka.org" target="_blank" rel="noopener noreferrer">support@quarka.org</a></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/quarka-org/docs.quarka.org/tree/main/docs/user-manual/2-screens-and-operations/heatmaps.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>このページを編集</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="ドキュメントページ"><a class="pagination-nav__link pagination-nav__link--prev" href="/ja/docs/user-manual/screens-and-operations/brains"><div class="pagination-nav__sublabel">前へ</div><div class="pagination-nav__label">ブレインズ</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/ja/docs/user-manual/screens-and-operations"><div class="pagination-nav__sublabel">次へ</div><div class="pagination-nav__label">画面と操作</div></a></nav></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">ドキュメント</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ja/docs/user-manual">ユーザーガイド</a></li><li class="footer__item"><a class="footer__link-item" href="/ja/docs/developer-manual">開発者ガイド</a></li><li class="footer__item"><a class="footer__link-item" href="/ja/docs/faq">よくある質問</a></li></ul></div><div class="col footer__col"><div class="footer__title">コミュニティ</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/quarka-org" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">その他</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ja/blog">ブログ</a></li><li class="footer__item"><a class="footer__link-item" href="/ja/docs/release-notes">リリースノート</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Quarka Organization. Docusaurus で構築されています。</div></div></div></footer></div>
+<p>ヒートマップ分析を活用して、ユーザーの実際の行動を理解し、データドリブンなユーザーエクスペリエンス改善を実現してください。</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/quarka-org/docs.quarka.org/tree/main/docs/user-manual/2-screens-and-operations/heatmaps.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>このページを編集</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="ドキュメントページ"><a class="pagination-nav__link pagination-nav__link--prev" href="/ja/docs/user-manual/screens-and-operations/all-pages"><div class="pagination-nav__sublabel">前へ</div><div class="pagination-nav__label">全ページ</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/ja/docs/user-manual/screens-and-operations/goals"><div class="pagination-nav__sublabel">次へ</div><div class="pagination-nav__label">ゴール</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#ヒートマップへのアクセス" class="table-of-contents__link toc-highlight">ヒートマップへのアクセス</a></li><li><a href="#主要な機能" class="table-of-contents__link toc-highlight">主要な機能</a><ul><li><a href="#ヒートマップの種類" class="table-of-contents__link toc-highlight">ヒートマップの種類</a></li><li><a href="#デバイス別分析" class="table-of-contents__link toc-highlight">デバイス別分析</a></li></ul></li><li><a href="#詳細分析機能" class="table-of-contents__link toc-highlight">詳細分析機能</a><ul><li><a href="#セグメント別分析" class="table-of-contents__link toc-highlight">セグメント別分析</a></li><li><a href="#ab-テスト分析" class="table-of-contents__link toc-highlight">A/B テスト分析</a></li></ul></li><li><a href="#ユーザビリティ分析" class="table-of-contents__link toc-highlight">ユーザビリティ分析</a><ul><li><a href="#ナビゲーション分析" class="table-of-contents__link toc-highlight">ナビゲーション分析</a></li><li><a href="#フォーム分析" class="table-of-contents__link toc-highlight">フォーム分析</a></li><li><a href="#コンテンツ分析" class="table-of-contents__link toc-highlight">コンテンツ分析</a></li></ul></li><li><a href="#改善提案と最適化" class="table-of-contents__link toc-highlight">改善提案と最適化</a><ul><li><a href="#ユーザーエクスペリエンス改善" class="table-of-contents__link toc-highlight">ユーザーエクスペリエンス改善</a></li><li><a href="#コンバージョン最適化" class="table-of-contents__link toc-highlight">コンバージョン最適化</a></li></ul></li><li><a href="#データの活用方法" class="table-of-contents__link toc-highlight">データの活用方法</a><ul><li><a href="#定期的な分析" class="table-of-contents__link toc-highlight">定期的な分析</a></li><li><a href="#継続的改善" class="table-of-contents__link toc-highlight">継続的改善</a></li></ul></li><li><a href="#レポートと共有" class="table-of-contents__link toc-highlight">レポートと共有</a><ul><li><a href="#レポート生成" class="table-of-contents__link toc-highlight">レポート生成</a></li><li><a href="#チーム共有" class="table-of-contents__link toc-highlight">チーム共有</a></li></ul></li><li><a href="#トラブルシューティング" class="table-of-contents__link toc-highlight">トラブルシューティング</a><ul><li><a href="#ヒートマップが表示されない" class="table-of-contents__link toc-highlight">ヒートマップが表示されない</a></li><li><a href="#データが不正確" class="table-of-contents__link toc-highlight">データが不正確</a></li><li><a href="#パフォーマンスの問題" class="table-of-contents__link toc-highlight">パフォーマンスの問題</a></li></ul></li><li><a href="#関連機能" class="table-of-contents__link toc-highlight">関連機能</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">ドキュメント</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ja/docs/user-manual">ユーザーガイド</a></li><li class="footer__item"><a class="footer__link-item" href="/ja/docs/developer-manual">開発者ガイド</a></li><li class="footer__item"><a class="footer__link-item" href="/ja/docs/faq">よくある質問</a></li></ul></div><div class="col footer__col"><div class="footer__title">コミュニティ</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/quarka-org" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">その他</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ja/blog">ブログ</a></li><li class="footer__item"><a class="footer__link-item" href="/ja/docs/release-notes">リリースノート</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Quarka Organization. Docusaurus で構築されています。</div></div></div></footer></div>
 </body>
 </html>
