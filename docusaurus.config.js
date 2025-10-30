@@ -19,7 +19,7 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja', 'es', 'fr', 'de', 'pt', 'it', 'pl', 'nl'],
+    locales: ['en', 'ja'],
     localeConfigs: {
       en: {
         htmlLang: 'en-US',
@@ -27,34 +27,6 @@ const config = {
       ja: {
         htmlLang: 'ja',
         label: '日本語',
-      },
-      es: {
-        htmlLang: 'es',
-        label: 'Español',
-      },
-      fr: {
-        htmlLang: 'fr',
-        label: 'Français',
-      },
-      de: {
-        htmlLang: 'de',
-        label: 'Deutsch',
-      },
-      pt: {
-        htmlLang: 'pt',
-        label: 'Português',
-      },
-      it: {
-        htmlLang: 'it',
-        label: 'Italiano',
-      },
-      pl: {
-        htmlLang: 'pl',
-        label: 'Polski',
-      },
-      nl: {
-        htmlLang: 'nl',
-        label: 'Nederlands',
       },
     },
   },
@@ -85,7 +57,7 @@ const config = {
     [
       require.resolve('docusaurus-lunr-search'),
       {
-        languages: ['en', 'ja', 'es', 'fr', 'de', 'pt', 'it', 'nl']
+        languages: ['en', 'ja']
       }
     ]
   ],
