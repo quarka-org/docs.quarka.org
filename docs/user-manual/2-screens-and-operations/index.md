@@ -1,10 +1,10 @@
 ---
 sidebar_position: 2
-title: Reports
-sidebar_label: Reports
+title: Menu Overview
+sidebar_label: Menu Overview
 ---
 
-# Reports
+# Menu Overview
 
 A compact guide to the QA Assistant reports and where to find key metrics.
 
