@@ -4,150 +4,296 @@ sidebar_position: 1
 
 # 開発者マニュアル
 
-QA Assistant 開発者マニュアルへようこそ。ここでは、プログラマティックアクセスを通じてデータ駆動アシスタントの可能性を最大限に引き出す方法を学べます。
+QA Assistant 開発者マニュアルへようこそ。ここでは、QAL（Query Assistant Language）を通してデータ駆動アシスタントの可能性を最大限に引き出す方法をお伝えします。
 
 ---
 
 ## アナリティクスの未来：データと対話する
 
-Webサイトのデータに自然言語で質問することを想像してみてください：
+Webサイトのデータに自然言語で質問できることを想像してみてください。
 
 > 「先週モバイルユーザーが訪問した上位10ページを表示して」
 
-ダッシュボードをクリックする代わりに、データに**クエリ**するだけです。これが**データ駆動アシスタント**としてのQA Assistantのビジョンです — アナリティクスがレポートではなく、会話になる世界です。
+ダッシュボードをクリックする代わりに、データに**質問**するだけです。これが**データ駆動アシスタント**としてのQA Assistantのビジョンです — アナリティクスがレポートではなく、会話になる世界です。
 
 ---
 
 ## QA Assistant API（プレビュー版）のご紹介
 
-すべてのアナリティクスデータへのプログラマティックアクセスを提供するREST APIを開発中です。カスタムダッシュボードの構築、AIツールとの統合、レポートの自動化など、APIがあなたのゲートウェイになります。
+すべてのアナリティクスデータへのアクセスを提供するREST APIを開発中です。カスタムダッシュボードの構築、AIツールとの統合、レポートの自動化など、APIがあなたのゲートウェイになります。
 
 ### なぜ重要なのか
 
 **開発者の方へ：**
-- アプリにカスタムアナリティクスを組み込む
+- データ駆動アシスタントを作成する（プラグインで追加可能）
 - データエクスポートとレポートを自動化
 - クライアント向けのパーソナライズされたダッシュボードを作成
 
 **AI愛好家の方へ：**
 - QA AssistantをClaude、ChatGPT、その他のAIツールに接続
 - AIにトラフィックパターンを分析させ、改善を提案させる
-- Webサイトの動作を理解するインテリジェントエージェントを構築
+- Webサイトの動作を理解し、自動で稼働するAIデータ駆動アシスタントを構築
 
 **パワーユーザーの方へ：**
-- UIなしでプログラマティックにデータをクエリ
+- BigQueryやLooker Studioに接続する
 - QA Assistantデータを他のソースと組み合わせる
 - スクリプトで自動化されたレポートをスケジュール
 
 ---
 
-## QAL（Query Analytics Language）との出会い
+## QAL（Query Assistant Language）とは？
 
-APIの中核にあるのは**QAL**（Query Analytics Language）です — アナリティクスデータをリクエストするためのシンプルで構造化された方法です。
+APIの中核にあるのは**QAL**（Query Assistant Language）です — データ駆動アシスタントがデータを自由に扱うための言語です。QALはSQLのような自由度の高い言語ではなく、QAの列指向構造に特化して設計されています。
+
+**QALの設計思想：**
+- **経路の明示**：データの参照経路（マテリアル→ビュー→結果）を明確に記述
+- **決定性**：同じクエリは必ず同じ結果を返す
+- **最小仕様**：AIも人間も誤解しない、必要最小限の構文
+
+### QALの基本構造
+
+QALクエリは以下の4つの要素で構成されます：
+
+1. **materials**：元となるデータソース（マテリアル）を指定
+2. **time**：分析期間を明示的に指定（相対的な指定は不可）
+3. **make**：マテリアルから中間ビューを段階的に構築
+4. **result**：最終的に返すビューを指定
 
 ### QALの一例
 
-ページビューデータをリクエストする方法は次のとおりです：
+ブログページのページビュー集計をリクエストする方法は次のとおりです：
 
 ```json
 {
-  "tracking_id": "your-site",
-  "materials": [{"name": "allpv"}],
+  "tracking_id": "your-site-id",
+  "materials": [
+    { "name": "qa_pv_log" }
+  ],
   "time": {
     "start": "2025-10-01T00:00:00",
-    "end": "2025-10-30T00:00:00",
+    "end": "2025-10-31T00:00:00",
     "tz": "Asia/Tokyo"
   },
   "make": {
-    "top_pages": {
-      "from": ["allpv"],
-      "keep": ["allpv.url", "allpv.title", "allpv.device_type"]
+    "blog_pages": {
+      "from": ["qa_pv_log"],
+      "filter": {
+        "and": [
+          { "like": { "col": "qa_pv_log.url", "val": "%/blog/%" } },
+          { "eq": { "col": "qa_pv_log.device_type", "val": "smp" } }
+        ]
+      },
+      "keep": ["qa_pv_log.url", "qa_pv_log.title"],
+      "calc": {
+        "pageviews": "COUNT(qa_pv_log.pv_id)",
+        "sessions": "COUNTUNIQUE(qa_pv_log.reader_id)"
+      }
     }
   },
   "result": {
-    "use": "top_pages",
+    "use": "blog_pages",
+    "sort": [{ "by": "pageviews", "dir": "desc" }],
     "limit": 10
   }
 }
 ```
 
-**QALの特徴：**
+**このクエリの動作：**
+1. `qa_pv_log`マテリアルから2025年10月のデータを取得
+2. URLに「/blog/」を含み、デバイスタイプがモバイル（smp）のデータにフィルタ
+3. URL別にページビュー数とセッション数を集計
+4. ページビュー数の降順で上位10件を返す
 
-- **人間が読みやすい**：プログラマーでなくても理解しやすい
-- **AI対応**：AIツールによる生成と修正を前提とした設計
-- **構造化**：明確で曖昧さのない、予測可能な結果をもたらすクエリ
-- **組み合わせ可能**：シンプルな構成要素から複雑なクエリを構築
+---
+
+## QALの特徴
+
+### 1. 明示的な時間指定
+
+QALでは相対的な時間指定（「昨日」「先週」など）は使えません。必ず具体的な日時を指定します：
+
+```json
+"time": {
+  "start": "2025-10-01T00:00:00",
+  "end": "2025-10-31T00:00:00",
+  "tz": "Asia/Tokyo"
+}
+```
+
+これにより、クエリの実行時期に関わらず、常に同じ結果が得られます。
+
+### 2. データの経路を明示
+
+QALでは、データの流れを段階的に構築します：
+
+```json
+"make": {
+  "step1": {
+    "from": ["qa_pv_log"],
+    "keep": ["qa_pv_log.url", "qa_pv_log.reader_id"],
+    "filter": {
+      "and": [
+        { "like": { "col": "qa_pv_log.url", "val": "%/blog/%" } }
+      ]
+    }
+  },
+  "step2": {
+    "from": ["step1"],
+    "keep": ["step1.url"],
+    "calc": {
+      "sessions": "COUNTUNIQUE(step1.reader_id)"
+    }
+  }
+}
+```
+
+### 3. 制限された集計関数
+
+QALで使える集計関数は以下の6つのみです：
+
+- `COUNT(column)` - 行数をカウント
+- `COUNTUNIQUE(column)` - ユニーク値をカウント
+- `SUM(column)` - 合計値を計算
+- `AVERAGE(column)` - 平均値を計算
+- `MIN(column)` - 最小値を取得
+- `MAX(column)` - 最大値を取得
+
+### 4. 完全修飾名の使用
+
+列名は常に `<マテリアル名>.<列名>` または `<ビュー名>.<列名>` の形式で指定します：
+
+```json
+"keep": ["qa_pv_log.url", "qa_pv_log.title"],
+"calc": {
+  "pageviews": "COUNT(qa_pv_log.pv_id)"
+}
+```
 
 ---
 
 ## 実際のユースケース
 
-### 1. カスタムダッシュボード
+### 1. デバイス別トラフィック分析
 
-必要なメトリクスだけを表示するリアルタイムダッシュボードを構築：
+モバイルとデスクトップのトラフィックを比較：
 
-```javascript
-// Fetch today's mobile traffic
-const mobileTraffic = await qaAssistant.query({
-  material: 'allpv',
-  timeRange: 'today',
-  filter: { device_type: 'mobile' },
-  aggregate: { by: 'hour' }
-});
+```json
+{
+  "tracking_id": "your-site-id",
+  "materials": [{ "name": "qa_pv_log" }],
+  "time": {
+    "start": "2025-10-01T00:00:00",
+    "end": "2025-10-31T00:00:00",
+    "tz": "Asia/Tokyo"
+  },
+  "make": {
+    "device_stats": {
+      "from": ["qa_pv_log"],
+      "keep": ["qa_pv_log.device_type"],
+      "calc": {
+        "sessions": "COUNTUNIQUE(qa_pv_log.reader_id)",
+        "pageviews": "COUNT(qa_pv_log.pv_id)",
+        "avg_time": "AVERAGE(qa_pv_log.page_msec)"
+      }
+    }
+  },
+  "result": { "use": "device_stats" }
+}
 ```
 
-### 2. AI駆動のインサイト
+### 2. キャンペーン効果測定
 
-MCP（Model Context Protocol）経由でQA AssistantをClaudeに接続：
+UTMキャンペーン別のパフォーマンスを分析：
+
+```json
+{
+  "tracking_id": "your-site-id",
+  "materials": [
+    { "name": "qa_pv_log" },
+    { "name": "qa_utm_campaigns" }
+  ],
+  "time": {
+    "start": "2025-10-01T00:00:00",
+    "end": "2025-10-31T00:00:00",
+    "tz": "Asia/Tokyo"
+  },
+  "make": {
+    "campaign_performance": {
+      "from": ["qa_pv_log"],
+      "join": {
+        "with": "qa_utm_campaigns",
+        "on": [
+          {
+            "left": "qa_pv_log.campaign_id",
+            "right": "qa_utm_campaigns.campaign_id"
+          }
+        ],
+        "if not match": "keep-left"
+      },
+      "keep": ["qa_utm_campaigns.utm_campaign", "qa_utm_campaigns.utm_source"],
+      "calc": {
+        "sessions": "COUNTUNIQUE(qa_pv_log.reader_id)",
+        "pageviews": "COUNT(qa_pv_log.pv_id)"
+      }
+    }
+  },
+  "result": {
+    "use": "campaign_performance",
+    "sort": [{ "by": "sessions", "dir": "desc" }],
+    "limit": 20
+  }
+}
+```
+
+### 3. AI駆動のインサイト
+
+MCP（Model Context Protocol）経由でQA AssistantをClaudeに接続すれば、自然言語でデータを分析できます：
 
 ```
-あなた: @qa-assistant 今月最もオーガニックトラフィックを獲得しているブログ投稿を教えて
-Claude: [データをクエリ] オーガニックトラフィックのトップ5投稿は...
+あなた: 今月最もオーガニックトラフィックを獲得しているブログ投稿を教えて
+Claude: [QALクエリを生成して実行] 
+        オーガニックトラフィックのトップ5投稿は...
 ```
 
-### 3. 自動化されたレポート
-
-シンプルなスクリプトで週次レポートをスケジュール：
-
-```python
-# Weekly top pages report
-data = qa_assistant.query(
-    material='allpv',
-    time_range='last_7_days',
-    group_by='url',
-    order_by='pageviews'
-)
-send_email(to='team@example.com', report=data)
-```
+AIアシスタントはQALを生成し、結果を自然な言葉で説明してくれます。
 
 ---
 
-## 利用可能なデータ
+## 利用可能なマテリアル（データソース）
 
-APIが提供するデータへのアクセス：
+QALでアクセスできる主なマテリアル：
 
-**📊 ページビューデータ（`allpv`）**
+### 📊 ページビューログ（`qa_pv_log`）
+
+基本的なページビューデータ：
 - URL、タイトル、リファラー
 - デバイスタイプ、ブラウザ、OS
-- UTMパラメータ
-- セッション情報
+- セッション情報、読者ID
+- ページ滞在時間
 - タイムスタンプ
 
-**🔍 Search Consoleデータ（`gsc`）**
+### 🎯 UTMキャンペーン（`qa_utm_campaigns`）
+
+マーケティングキャンペーンデータ：
+- UTMパラメータ（source, medium, campaign）
+- キャンペーンID
+- 流入元情報
+
+### 🔍 Search Consoleデータ（`gsc`）
+
+検索パフォーマンスデータ：
 - キーワードとクエリ
 - クリック数、インプレッション数、CTR
 - 検索での表示形式
 - 経時的なランキング
 
-**🎯 カスタムデータ**
-- サイト固有のゴールとイベント
-- 定義したカスタムディメンション
+これらは初期リリースでアクセスできるマテリアルですが、今後ページ内でユーザーが迷ったスコアや、精読率など、どんどん使えるデータが増えていきます。QA Assistantはプライバシーに配慮した上で、ページ改善に役立つデータを大量に保有しています。
 
 ---
 
-## ビジョン：データ駆動アシスタンス
+## データ駆動アシスタントの未来
 
-これは単なるAPIではありません — **真のデータ駆動アシスタンス**への一歩です。
+QA AssistantとQALが実現する未来：
 
 **今日：** レポートを確認して何が起こったかを理解する
 
@@ -155,12 +301,74 @@ APIが提供するデータへのアクセス：
 
 **未来：** アシスタントが何が起こるかを予測し、アクションを提案する
 
-APIはこの未来を可能にする基盤です。データへのプログラマティックアクセスを開放することで、以下を実現します：
+### プラグインで拡張可能
+
+QA Assistantは、プラグインで自由にアシスタントを増やすことができます。これにより、毎回大変だったレポート作業を会話形式で簡単に終わらせることができるようになります。
+
+**QALとAPIが可能にすること：**
 
 - **AI統合**：言語モデルにアナリティクスを分析させる
 - **自動化**：データパターンに応答するワークフローを構築
 - **カスタマイゼーション**：正確なニーズに合わせた体験を作成
 - **イノベーション**：まだ想像もしていないツールを構築
+
+---
+
+## レスポンス形式
+
+QAL APIは、データの返却形式を柔軟に選択できます：
+
+### JSON形式（インライン）
+
+小規模なデータセット（最大5万行）の場合：
+
+```json
+{
+  "data": [
+    {
+      "url": "/blog/article-1",
+      "pageviews": 1250,
+      "sessions": 890
+    },
+    {
+      "url": "/blog/article-2",
+      "pageviews": 980,
+      "sessions": 720
+    }
+  ],
+  "meta": {
+    "truncated": false,
+    "row_count": 2
+  }
+}
+```
+
+### ファイル形式（CSV/Parquet）
+
+大規模なデータセットの場合、ファイルURLが返されます：
+
+```json
+{
+  "data_url": "https://api.qa-assistant.com/results/abc123.csv",
+  "meta": {
+    "truncated": false,
+    "row_count": 125000,
+    "format": "csv"
+  }
+}
+```
+
+`result`セクションで形式を指定：
+
+```json
+"result": {
+"use": "my_view",
+"return": {
+"mode": "FILE",
+"format": "CSV"
+}
+}
+```
 
 ---
 
@@ -177,33 +385,17 @@ APIは現在**積極的に開発中**です。設計の改良、初期ユーザ�
 
 **早期アクセスをご希望ですか？**
 
-早期テスターに興味がある方、または特定のユースケースをお持ちの方は、ぜひお知らせください。[GitHub Issues](https://github.com/quarka-org)またはお好みのサポートチャネルからご連絡ください。
-
----
-
-## 可能性を垣間見る
-
-以下のようなものを構築することを想像してみてください：
-
-- **AI駆動のコンテンツアシスタント**：検索トレンドに基づいて、どのトピックについて書くべきかを提案
-- **モバイルアプリ用のカスタムアナリティクスウィジェット**
-- **自動化されたA/Bテストレポート**：結果が有意になったときにメールで通知
-- **会話型インターフェース**：アナリティクスとチャット
-- **クロスプラットフォームダッシュボード**：QA Assistantデータを売上、CRM、その他のソースと組み合わせ
-
-APIはこれらすべてを可能にします — あなたが何を構築するのか、とても楽しみです。
+早期テスターに興味がある方、または特定のユースケースをお持ちの方は、ぜひお知らせください。[GitHub Issues](https://github.com/quarka-org)または[QA Assistant Meetup](https://www.meetup.com/ja-jp/qa-analytics-meetup/)にご参加ください。
 
 ---
 
 ## 最新情報をチェック
 
-このセクションは開発の進捗に応じて定期的に更新されます。このページをブックマークして、以下をチェックしてください：
+この開発者マニュアルは開発の進捗に応じて定期的に更新されます。このページをブックマークして、以下をチェックしてください：
 
-- APIデザインの更新
+- QAL仕様の更新とベストプラクティス
 - コード例とチュートリアル
 - 早期アクセスのお知らせ
-- 統合ガイド
+- 統合ガイドとMCPサーバー情報
 
-アナリティクスの未来は、会話型でプログラマブル、そしてAIによって駆動されます。QA Assistant APIは、その未来への道のりです。
-
-**質問やアイデアがありますか？** コミュニティで共有してください。あなたのフィードバックがAPIの未来を形作ります。
+**質問やアイデアがありますか？** [GitHub Issues](https://github.com/quarka-org)または[QA Assistant Meetup](https://www.meetup.com/ja-jp/qa-analytics-meetup/)で共有ください。あなたのフィードバックがデータ駆動アシスタントの未来を形作ります。

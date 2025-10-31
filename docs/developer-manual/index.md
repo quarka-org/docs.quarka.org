@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Developer Manual
 
-Welcome to the QA Assistant Developer Manual. Here you'll discover how to unlock the full potential of your data-driven assistant through programmatic access.
+Welcome to the QA Assistant Developer Manual. Here you'll discover how to unlock the full potential of your data-driven assistant through QAL (Query Assistant Language).
 
 ---
 
@@ -25,142 +25,350 @@ We're developing a REST API that gives you programmatic access to all your analy
 ### Why This Matters
 
 **For Developers:**
-- Build custom analytics into your apps
+- Create data-driven assistants (extensible via plugins)
 - Automate data exports and reports
-- Create personalized dashboards for clients
+- Build personalized dashboards for clients
 
 **For AI Enthusiasts:**
 - Connect QA Assistant to Claude, ChatGPT, or other AI tools
 - Let AI analyze your traffic patterns and suggest improvements
-- Build intelligent agents that understand your website's behavior
+- Build AI-powered data-driven assistants that understand your website's behavior and operate autonomously
 
 **For Power Users:**
-- Query data programmatically without the UI
+- Connect to BigQuery or Looker Studio
 - Combine QA Assistant data with other sources
 - Schedule automated reports via scripts
 
 ---
 
-## Meet QAL: Query Analytics Language
+## What is QAL (Query Assistant Language)?
 
-At the heart of the API is **QAL** (Query Analytics Language) — a simple, structured way to ask for analytics data.
+At the heart of the API is **QAL** (Query Assistant Language) — a language that empowers data-driven assistants to freely manipulate data. QAL is not a flexible language like SQL; it's specifically designed for QA's column-oriented structure.
 
-### A Glimpse of QAL
+**QAL Design Philosophy:**
+- **Explicit Paths**: Clearly describe the data reference path (Material → View → Result)
+- **Deterministic**: The same query always returns the same result
+- **Minimal Specification**: Minimal syntax that neither AI nor humans can misunderstand
 
-Here's how you might request page view data:
+### QAL Basic Structure
+
+A QAL query consists of four elements:
+
+1. **materials**: Specify the source data (materials)
+2. **time**: Explicitly specify the analysis period (relative specifications not allowed)
+3. **make**: Build intermediate views step by step from materials
+4. **result**: Specify the final view to return
+
+### A QAL Example
+
+Here's how you request page view aggregation for blog pages:
 
 ```json
 {
-  "tracking_id": "your-site",
-  "materials": [{"name": "allpv"}],
+  "tracking_id": "your-site-id",
+  "materials": [
+    { "name": "qa_pv_log" }
+  ],
   "time": {
     "start": "2025-10-01T00:00:00",
-    "end": "2025-10-30T00:00:00",
+    "end": "2025-10-31T00:00:00",
     "tz": "Asia/Tokyo"
   },
   "make": {
-    "top_pages": {
-      "from": ["allpv"],
-      "keep": ["allpv.url", "allpv.title", "allpv.device_type"]
+    "blog_pages": {
+      "from": ["qa_pv_log"],
+      "filter": {
+        "and": [
+          { "like": { "col": "qa_pv_log.url", "val": "%/blog/%" } },
+          { "eq": { "col": "qa_pv_log.device_type", "val": "smp" } }
+        ]
+      },
+      "keep": ["qa_pv_log.url", "qa_pv_log.title"],
+      "calc": {
+        "pageviews": "COUNT(qa_pv_log.pv_id)",
+        "sessions": "COUNTUNIQUE(qa_pv_log.reader_id)"
+      }
     }
   },
   "result": {
-    "use": "top_pages",
+    "use": "blog_pages",
+    "sort": [{ "by": "pageviews", "dir": "desc" }],
     "limit": 10
   }
 }
 ```
 
-**What makes QAL special:**
+**How This Query Works:**
+1. Retrieve data from October 2025 using the `qa_pv_log` material
+2. Filter for data where URL contains "/blog/" and device type is mobile (smp)
+3. Aggregate page views and sessions by URL
+4. Return top 10 results sorted by page views in descending order
 
-- **Human-readable**: Easy to understand, even for non-programmers
-- **AI-friendly**: Designed to be generated and modified by AI tools
-- **Structured**: Clear, unambiguous queries with predictable results
-- **Composable**: Build complex queries from simple building blocks
+---
+
+## QAL Features
+
+### 1. Explicit Time Specification
+
+QAL does not allow relative time specifications (like "yesterday" or "last week"). You must always specify concrete dates and times:
+
+```json
+"time": {
+  "start": "2025-10-01T00:00:00",
+  "end": "2025-10-31T00:00:00",
+  "tz": "Asia/Tokyo"
+}
+```
+
+This ensures that the same results are always obtained regardless of when the query is executed.
+
+### 2. Explicit Data Paths
+
+In QAL, you build the data flow step by step:
+
+```json
+"make": {
+  "step1": {
+    "from": ["qa_pv_log"],
+    "keep": ["qa_pv_log.url", "qa_pv_log.reader_id"],
+    "filter": {
+      "and": [
+        { "like": { "col": "qa_pv_log.url", "val": "%/blog/%" } }
+      ]
+    }
+  },
+  "step2": {
+    "from": ["step1"],
+    "keep": ["step1.url"],
+    "calc": {
+      "sessions": "COUNTUNIQUE(step1.reader_id)"
+    }
+  }
+}
+```
+
+### 3. Limited Aggregation Functions
+
+QAL supports only the following six aggregation functions:
+
+- `COUNT(column)` - Count rows
+- `COUNTUNIQUE(column)` - Count unique values
+- `SUM(column)` - Calculate sum
+- `AVERAGE(column)` - Calculate average
+- `MIN(column)` - Get minimum value
+- `MAX(column)` - Get maximum value
+
+### 4. Fully Qualified Names
+
+Column names must always be specified in the format `<material_name>.<column_name>` or `<view_name>.<column_name>`:
+
+```json
+"keep": ["qa_pv_log.url", "qa_pv_log.title"],
+"calc": {
+  "pageviews": "COUNT(qa_pv_log.pv_id)"
+}
+```
 
 ---
 
 ## Real-World Use Cases
 
-### 1. Custom Dashboards
+### 1. Device Traffic Analysis
 
-Build a real-time dashboard that shows exactly the metrics you care about:
+Compare mobile and desktop traffic:
 
-```javascript
-// Fetch today's mobile traffic
-const mobileTraffic = await qaAssistant.query({
-  material: 'allpv',
-  timeRange: 'today',
-  filter: { device_type: 'mobile' },
-  aggregate: { by: 'hour' }
-});
+```json
+{
+  "tracking_id": "your-site-id",
+  "materials": [{ "name": "qa_pv_log" }],
+  "time": {
+    "start": "2025-10-01T00:00:00",
+    "end": "2025-10-31T00:00:00",
+    "tz": "Asia/Tokyo"
+  },
+  "make": {
+    "device_stats": {
+      "from": ["qa_pv_log"],
+      "keep": ["qa_pv_log.device_type"],
+      "calc": {
+        "sessions": "COUNTUNIQUE(qa_pv_log.reader_id)",
+        "pageviews": "COUNT(qa_pv_log.pv_id)",
+        "avg_time": "AVERAGE(qa_pv_log.page_msec)"
+      }
+    }
+  },
+  "result": { "use": "device_stats" }
+}
 ```
 
-### 2. AI-Powered Insights
+### 2. Campaign Performance Measurement
 
-Connect QA Assistant to Claude via MCP (Model Context Protocol):
+Analyze performance by UTM campaign:
+
+```json
+{
+  "tracking_id": "your-site-id",
+  "materials": [
+    { "name": "qa_pv_log" },
+    { "name": "qa_utm_campaigns" }
+  ],
+  "time": {
+    "start": "2025-10-01T00:00:00",
+    "end": "2025-10-31T00:00:00",
+    "tz": "Asia/Tokyo"
+  },
+  "make": {
+    "campaign_performance": {
+      "from": ["qa_pv_log"],
+      "join": {
+        "with": "qa_utm_campaigns",
+        "on": [
+          {
+            "left": "qa_pv_log.campaign_id",
+            "right": "qa_utm_campaigns.campaign_id"
+          }
+        ],
+        "if not match": "keep-left"
+      },
+      "keep": ["qa_utm_campaigns.utm_campaign", "qa_utm_campaigns.utm_source"],
+      "calc": {
+        "sessions": "COUNTUNIQUE(qa_pv_log.reader_id)",
+        "pageviews": "COUNT(qa_pv_log.pv_id)"
+      }
+    }
+  },
+  "result": {
+    "use": "campaign_performance",
+    "sort": [{ "by": "sessions", "dir": "desc" }],
+    "limit": 20
+  }
+}
+```
+
+### 3. AI-Powered Insights
+
+By connecting QA Assistant to Claude via MCP (Model Context Protocol), you can analyze data in natural language:
 
 ```
-You: @qa-assistant Show me which blog posts are getting the most organic traffic this month
-Claude: [Queries your data] Your top 5 posts by organic traffic are...
+You: Show me the blog posts that are getting the most organic traffic this month
+Claude: [Generates and executes QAL query]
+        The top 5 posts by organic traffic are...
 ```
 
-### 3. Automated Reports
-
-Schedule weekly reports via a simple script:
-
-```python
-# Weekly top pages report
-data = qa_assistant.query(
-    material='allpv',
-    time_range='last_7_days',
-    group_by='url',
-    order_by='pageviews'
-)
-send_email(to='team@example.com', report=data)
-```
+The AI assistant generates QAL and explains the results in natural language.
 
 ---
 
-## What's Available
+## Available Materials (Data Sources)
 
-The API will provide access to:
+Main materials accessible in QAL:
 
-**📊 Page View Data (`allpv`)**
+### 📊 Page View Log (`qa_pv_log`)
+
+Basic page view data:
 - URL, title, referrer
 - Device type, browser, OS
-- UTM parameters
-- Session information
+- Session information, reader ID
+- Page dwell time
 - Timestamps
 
-**🔍 Search Console Data (`gsc`)**
+### 🎯 UTM Campaigns (`qa_utm_campaigns`)
+
+Marketing campaign data:
+- UTM parameters (source, medium, campaign)
+- Campaign ID
+- Traffic source information
+
+### 🔍 Search Console Data (`gsc`)
+
+Search performance data:
 - Keywords and queries
 - Clicks, impressions, CTR
 - Search appearance
 - Rankings over time
 
-**🎯 Custom Data**
-- Site-specific goals and events
-- Custom dimensions you've defined
+These are the materials accessible in the initial release, but more data will become available over time, such as user confusion scores on pages and reading depth. QA Assistant holds a wealth of data useful for page improvement while respecting privacy.
 
 ---
 
-## The Vision: Data-Driven Assistance
+## The Future of Data-Driven Assistance
 
-This isn't just an API — it's a step toward **true data-driven assistance**.
+The future that QA Assistant and QAL will realize:
 
-**Today:** You check reports to understand what happened.
+**Today:** You check reports to understand what happened
 
-**Tomorrow:** Your assistant proactively tells you what's happening and why.
+**Tomorrow:** Your assistant proactively tells you what's happening and why
 
-**Future:** Your assistant predicts what will happen and suggests actions.
+**Future:** Your assistant predicts what will happen and suggests actions
 
-The API is the foundation that makes this future possible. By opening up programmatic access to your data, we enable:
+### Extensible via Plugins
 
-- **AI integration**: Let language models analyze your analytics
+QA Assistant allows you to freely add assistants through plugins. This enables you to easily complete report work that was previously time-consuming through conversational interfaces.
+
+**What QAL and the API Enable:**
+
+- **AI Integration**: Let language models analyze your analytics
 - **Automation**: Build workflows that respond to data patterns
 - **Customization**: Create experiences tailored to your exact needs
 - **Innovation**: Build tools we haven't even imagined yet
+
+---
+
+## Response Formats
+
+The QAL API offers flexible data return formats:
+
+### JSON Format (Inline)
+
+For small datasets (up to 50,000 rows):
+
+```json
+{
+  "data": [
+    {
+      "url": "/blog/article-1",
+      "pageviews": 1250,
+      "sessions": 890
+    },
+    {
+      "url": "/blog/article-2",
+      "pageviews": 980,
+      "sessions": 720
+    }
+  ],
+  "meta": {
+    "truncated": false,
+    "row_count": 2
+  }
+}
+```
+
+### File Format (CSV/Parquet)
+
+For large datasets, a file URL is returned:
+
+```json
+{
+  "data_url": "https://api.qa-assistant.com/results/abc123.csv",
+  "meta": {
+    "truncated": false,
+    "row_count": 125000,
+    "format": "csv"
+  }
+}
+```
+
+Specify format in the `result` section:
+
+```json
+"result": {
+  "use": "my_view",
+  "return": {
+    "mode": "FILE",
+    "format": "CSV"
+  }
+}
+```
 
 ---
 
@@ -168,7 +376,7 @@ The API is the foundation that makes this future possible. By opening up program
 
 The API is currently in **active development**. We're refining the design, testing with early users, and preparing comprehensive documentation.
 
-**What's happening now:**
+**Current Progress:**
 - ✅ Core API design completed
 - ✅ QAL specification finalized
 - 🚧 Developer documentation in progress
@@ -177,33 +385,17 @@ The API is currently in **active development**. We're refining the design, testi
 
 **Want early access?**
 
-If you're interested in being an early tester or have specific use cases in mind, we'd love to hear from you. Reach out to us through [GitHub Issues](https://github.com/quarka-org) or your preferred support channel.
-
----
-
-## A Peek at the Possibilities
-
-Imagine building:
-
-- **An AI-powered content assistant** that suggests which topics to write about based on search trends
-- **A custom analytics widget** for your mobile app
-- **Automated A/B testing reports** that email you when results are significant
-- **A conversational interface** where you chat with your analytics
-- **Cross-platform dashboards** that combine QA Assistant data with sales, CRM, or other sources
-
-The API makes all of this possible — and we can't wait to see what you'll build.
+If you're interested in being an early tester or have specific use cases in mind, please let us know. Join us on [GitHub Issues](https://github.com/quarka-org) or [QA Assistant Meetup](https://www.meetup.com/ja-jp/qa-analytics-meetup/).
 
 ---
 
 ## Stay Updated
 
-This section will be regularly updated as development progresses. Bookmark this page and check back for:
+This developer manual will be regularly updated as development progresses. Bookmark this page and check back for:
 
-- API design updates
+- QAL specification updates and best practices
 - Code examples and tutorials
 - Early access announcements
-- Integration guides
+- Integration guides and MCP server information
 
-The future of analytics is conversational, programmable, and powered by AI. The QA Assistant API is how we get there.
-
-**Questions or ideas?** Share them with the community. Your feedback helps shape the API's future.
+**Questions or ideas?** Share them on [GitHub Issues](https://github.com/quarka-org) or [QA Assistant Meetup](https://www.meetup.com/ja-jp/qa-analytics-meetup/). Your feedback helps shape the future of data-driven assistance.
