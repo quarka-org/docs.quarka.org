@@ -267,6 +267,7 @@ QA Advisor のゴール機能は、ウェブサイトの重要な目標を設定
 
 ## 関連機能
 
+- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 総合的な分析データ
 - [オーディエンス](/docs/user-manual/screens-and-operations/audience) - ユーザーセグメント分析
 - [獲得](/docs/user-manual/screens-and-operations/acquisition) - トラフィック獲得分析
 

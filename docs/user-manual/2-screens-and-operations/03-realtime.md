@@ -10,7 +10,7 @@ The Realtime screen provides live monitoring of visitor activity on your website
 ## Accessing This Screen
 1. Log in to your WordPress admin panel
 2. Navigate to the left sidebar menu
-3. Click on "QA Assistant"
+3. Click on "QA Advisor"
 4. Select "Realtime" from the submenu
 
 ## Screen Layout
@@ -116,5 +116,6 @@ The Realtime screen displays:
 - **Check**: Verify that location services are not being blocked by privacy settings
 
 ## Related Documentation
+- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Overall analytics overview
 - [Audience](/docs/user-manual/screens-and-operations/audience) - Detailed visitor demographics
 - [Settings](/docs/user-manual/screens-and-operations/settings) - Configure real-time tracking options

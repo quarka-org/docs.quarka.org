@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "QA Assistant ドキュメント",
+    "message": "QA Advisor ドキュメント",
     "description": "The title in the navbar"
   },
   "item.label.User Guide": {
@@ -28,7 +28,7 @@
     "description": "Navbar item with label GitHub"
   },
   "logo.alt": {
-    "message": "QA Assistant Logo",
+    "message": "QA Advisor Logo",
     "description": "The alt text of navbar logo"
   }
 }

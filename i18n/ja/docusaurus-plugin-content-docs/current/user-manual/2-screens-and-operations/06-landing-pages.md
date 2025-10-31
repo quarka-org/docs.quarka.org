@@ -232,6 +232,7 @@ QA Advisor のランディングページ機能は、訪問者が最初にアク
 
 ## 関連機能
 
+- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 総合的な分析データ
 - [獲得](/docs/user-manual/screens-and-operations/acquisition) - トラフィックソース分析
 - [全ページ](/docs/user-manual/screens-and-operations/all-pages) - 全ページの詳細分析
 

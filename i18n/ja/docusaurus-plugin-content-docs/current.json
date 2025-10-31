@@ -19,13 +19,13 @@
   "sidebar.releaseNotesSidebar.category.Release Notes": {
     "message": "リリースノート"
   },
-  "sidebar.userManualSidebar.category.Using QA Assistant": {
-    "message": "Using QA Assistant",
-    "description": "The label for category Using QA Assistant in sidebar userManualSidebar"
+  "sidebar.userManualSidebar.category.Using QA Advisor": {
+    "message": "Using QA Advisor",
+    "description": "The label for category Using QA Advisor in sidebar userManualSidebar"
   },
-  "sidebar.userManualSidebar.category.Using QA Assistant.link.generated-index.description": {
-    "message": "Detailed guide to the QA Assistant interface and how to use each feature.",
-    "description": "The generated-index page description for category Using QA Assistant in sidebar userManualSidebar"
+  "sidebar.userManualSidebar.category.Using QA Advisor.link.generated-index.description": {
+    "message": "Detailed guide to the QA Advisor interface and how to use each feature.",
+    "description": "The generated-index page description for category Using QA Advisor in sidebar userManualSidebar"
   },
   "sidebar.releaseNotesSidebar.category.2025": {
     "message": "2025",

@@ -16,3 +16,6 @@ This section is currently being developed. It will include:
 - Exporting heatmap reports
 - Best practices for heatmap analysis
 
+---
+
+Need help? Contact support@quarka.org

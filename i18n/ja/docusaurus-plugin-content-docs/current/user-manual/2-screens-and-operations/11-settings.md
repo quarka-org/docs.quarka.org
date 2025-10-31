@@ -249,7 +249,9 @@ QA Advisor の設定画面は、プラグインの動作をカスタマイズし
 
 ## 関連機能
 
+- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 設定の効果確認
 - [ヘルプ](/docs/user-manual/screens-and-operations/help) - 設定に関するサポート
+- [ライセンス有効化](/docs/user-manual/screens-and-operations/license-activation) - ライセンス管理
 
 ---
 

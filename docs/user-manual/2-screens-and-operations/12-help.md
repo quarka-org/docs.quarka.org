@@ -5,12 +5,12 @@ sidebar_position: 12
 # Help
 
 ## Overview
-The Help screen provides comprehensive support resources, documentation links, troubleshooting guides, and contact information for QA Assistant plugin assistance. This section serves as your first stop for resolving issues, learning about features, and accessing professional support when needed.
+The Help screen provides comprehensive support resources, documentation links, troubleshooting guides, and contact information for QA Advisor plugin assistance. This section serves as your first stop for resolving issues, learning about features, and accessing professional support when needed.
 
 ## Accessing This Screen
 1. Log in to your WordPress admin panel
 2. Navigate to the left sidebar menu
-3. Click on "QA Assistant"
+3. Click on "QA Advisor"
 4. Select "Help" from the submenu
 
 ## Screen Layout
@@ -25,6 +25,12 @@ The Help screen includes:
 - **Community Resources**: Forums, knowledge base, and user community links
 
 ## Features and Functions
+
+### Quick Start Guide
+- **Purpose**: Provide immediate guidance for new users getting started with QA Advisor
+- **How to use**: Follow the step-by-step instructions for initial setup and configuration
+- **Options**: Basic setup, advanced configuration, and feature-specific guides
+- **Tips**: Complete the quick start guide before exploring advanced features
 
 ### Documentation Access
 - **Purpose**: Provide easy access to comprehensive documentation and tutorials
@@ -46,7 +52,7 @@ The Help screen includes:
 
 ## Common Tasks
 
-### Getting Started with QA Assistant
+### Getting Started with QA Advisor
 1. Access the Help screen and review the Quick Start Guide
 2. Follow the initial setup instructions step by step
 3. Configure basic tracking and privacy settings
@@ -120,4 +126,7 @@ The Help screen includes:
 
 ## Related Documentation
 - [Settings](/docs/user-manual/screens-and-operations/settings) - Configure plugin settings and preferences
-- External: Community forums
+- [License Activation](/docs/user-manual/screens-and-operations/license-activation) - Manage licensing and support access
+- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Main plugin interface and overview
+- External: Official QA Advisor documentation website
+- External: Community forums and knowledge base

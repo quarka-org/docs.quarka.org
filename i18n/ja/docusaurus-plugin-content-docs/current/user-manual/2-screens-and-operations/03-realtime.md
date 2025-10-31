@@ -184,6 +184,7 @@ QA Advisor のリアルタイム機能は、現在サイトを訪問している
 
 ## 関連機能
 
+- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 総合的な分析データ
 - [オーディエンス](/docs/user-manual/screens-and-operations/audience) - 詳細な訪問者分析
 - [設定](/docs/user-manual/screens-and-operations/settings) - 追跡設定の調整
 

@@ -10,7 +10,7 @@ The Acquisition screen shows you how visitors find and arrive at your website. T
 ## Accessing This Screen
 1. Log in to your WordPress admin panel
 2. Navigate to the left sidebar menu
-3. Click on "QA Assistant"
+3. Click on "QA Advisor"
 4. Select "Acquisition" from the submenu
 
 ## Screen Layout
@@ -116,6 +116,7 @@ The Acquisition screen displays:
 - **Check**: Ensure that campaign parameters are properly formatted and not being stripped
 
 ## Related Documentation
+- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Overall traffic overview
 - [Landing Pages](/docs/user-manual/screens-and-operations/landing-pages) - Entry point performance
 - [Goals](/docs/user-manual/screens-and-operations/goals) - Conversion tracking by traffic source
 - [Settings](/docs/user-manual/screens-and-operations/settings) - Configure acquisition tracking settings

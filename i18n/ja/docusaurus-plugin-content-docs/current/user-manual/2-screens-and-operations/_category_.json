@@ -1,8 +1,8 @@
 {
-  "label": "Using QA Assistant",
+  "label": "Using QA Advisor",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Detailed guide to the QA Assistant interface and how to use each feature."
+    "description": "Detailed guide to the QA Advisor interface and how to use each feature."
   }
 }

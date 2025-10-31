@@ -124,6 +124,7 @@ QA Advisor のライセンス有効化画面では、プラグインのライセ
 
 - [設定](/docs/user-manual/screens-and-operations/settings) - 基本設定の管理
 - [ヘルプ](/docs/user-manual/screens-and-operations/help) - サポートとヘルプ
+- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 機能の利用状況確認
 
 ---
 
