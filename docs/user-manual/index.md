@@ -4,11 +4,11 @@ sidebar_position: 0
 
 # User Guide
 
-Welcome to the QA Advisor User Guide. This comprehensive guide will help you get the most out of QA Advisor WordPress Analytics, from installation to advanced features.
+Welcome to the QA Assistant User Guide. This comprehensive guide will help you get the most out of QA Assistant, from installation to advanced features.
 
-## What is QA Advisor?
+## What is QA Assistant?
 
-QA Advisor (formerly QA Analytics) is a powerful WordPress analytics plugin that provides deep insights into user behavior through:
+QA Assistant (formerly QA Analytics) is a powerful WordPress plugin that provides deep insights into user behavior through:
 
 - **Visual Analytics**: Heatmaps, scroll depth tracking, and click maps
 - **Real-time Monitoring**: Live user activity tracking
@@ -20,12 +20,12 @@ QA Advisor (formerly QA Analytics) is a powerful WordPress analytics plugin that
 This guide is organized into the following sections:
 
 ### 📚 [1. Getting Started](/docs/user-manual/getting-started)
-Everything you need to begin using QA Advisor:
+Everything you need to begin using QA Assistant:
 - Installation guide
 - Initial setup and configuration
 - Frequently asked questions for beginners
 
-### 🖥️ [2. Using QA Advisor](/docs/user-manual/screens-and-operations)
+### 🖥️ [2. Using QA Assistant](/docs/user-manual/screens-and-operations)
 Detailed guides for each feature:
 - Dashboard
 - Heatmap
@@ -40,4 +40,4 @@ Detailed guides for each feature:
 
 ---
 
-*Thank you for choosing QA Advisor for your WordPress analytics needs!*
+*Thank you for choosing QA Assistant for your WordPress analytics needs!*
