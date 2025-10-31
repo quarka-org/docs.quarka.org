@@ -4,17 +4,17 @@ sidebar_position: 1
 
 # Developer Manual
 
-Welcome to the QA Assistant Developer Manual. Here you'll discover how to unlock the full potential of your data-driven assistant through QAL (Query Assistant Language).
+Welcome to the QA Assistant Developer Manual. Here you'll learn how to create data-driven plugins using QAL (Query Assistant Language).
 
 ---
 
-## The Future of Analytics: Talk to Your Data
+## Let's Build Data-Driven Plugins
 
-Imagine asking your website's data questions in natural language:
+You can create your own plugins using the website data collected by QA Assistant.
 
 > "Show me the top 10 pages visited by mobile users last week"
 
-Instead of clicking through dashboards, you simply **query** your data. This is the vision of QA Assistant as a **data-driven assistant** — where analytics becomes a conversation, not a report.
+Even without specialized knowledge, data can answer questions like this — this is the world of **data-driven assistants**. And you can create plugins that extend this world.
 
 ---
 
@@ -24,19 +24,22 @@ We're developing a REST API that gives you programmatic access to all your analy
 
 ### Why This Matters
 
-**For Developers:**
-- Create data-driven assistants (extensible via plugins)
-- Automate data exports and reports
-- Build personalized dashboards for clients
+**For Plugin Developers:**
+- Access all QA Assistant data
+- Create custom report generation plugins
+- Distribute on WordPress.org and monetize
+- Grow as part of the developer ecosystem
 
-**For AI Enthusiasts:**
-- Connect QA Assistant to Claude, ChatGPT, or other AI tools
-- Let AI analyze your traffic patterns and suggest improvements
-- Build AI-powered data-driven assistants that understand your website's behavior and operate autonomously
+**For AI Integration Enthusiasts:**
+- Connect Claude or ChatGPT to QA Assistant
+- Support integration via MCP (Model Context Protocol)
+- Analyze site data in natural language
+- Let AI analyze traffic patterns and suggest improvements
 
-**For Power Users:**
-- Connect to BigQuery or Looker Studio
+**For Data Utilization Enthusiasts:**
+- Integrate with BigQuery or Looker Studio
 - Combine QA Assistant data with other sources
+- Automate custom reports
 - Schedule automated reports via scripts
 
 ---
@@ -147,6 +150,8 @@ In QAL, you build the data flow step by step:
 }
 ```
 
+This step-by-step construction makes it easier to debug than complex SQL and easier for AI to generate.
+
 ### 3. Limited Aggregation Functions
 
 QAL supports only the following six aggregation functions:
@@ -157,6 +162,8 @@ QAL supports only the following six aggregation functions:
 - `AVERAGE(column)` - Calculate average
 - `MIN(column)` - Get minimum value
 - `MAX(column)` - Get maximum value
+
+This limitation ensures predictable and safe query execution.
 
 ### 4. Fully Qualified Names
 
@@ -256,7 +263,7 @@ Claude: [Generates and executes QAL query]
         The top 5 posts by organic traffic are...
 ```
 
-The AI assistant generates QAL and explains the results in natural language.
+The AI assistant generates QAL and explains the results in natural language. This allows anyone to interact with data.
 
 ---
 
@@ -296,30 +303,50 @@ Search performance data:
 - Search appearance
 - Rankings over time
 
-QA Assistant's design philosophy is to consolidate data into **one unified material** (`allpv`), eliminating the need for complex JOIN operations and providing an intuitive, easy-to-understand data structure. More user behavior metrics will continue to be added to `allpv` over time.
+**Design Philosophy:** QA Assistant's design philosophy is to consolidate data into **one unified material** (`allpv`), eliminating the need for complex JOIN operations and providing an intuitive, easy-to-understand data structure for developers. More user behavior metrics will continue to be added to `allpv` over time.
 
 ---
 
-## The Future of Data-Driven Assistance
+## Plugins You Can Build
 
-The future that QA Assistant and QAL will realize:
+Using QAL, you can create various data-driven plugins:
 
-**Today:** You check reports to understand what happened
+### 📈 Report Automation Plugins
+- Auto-generate and email weekly reports
+- Custom KPI dashboards
+- White-label reports for clients
 
-**Tomorrow:** Your assistant proactively tells you what's happening and why
+### 🤖 AI Assistant Plugins
+- Integrate with ChatGPT or Claude
+- Ask data questions in natural language
+- Auto-generate insights and improvement suggestions
 
-**Future:** Your assistant predicts what will happen and suggests actions
+### 📊 Visualization Plugins
+- Real-time dashboards
+- Custom charts and graphs
+- Interactive data exploration tools
 
-### Extensible via Plugins
+### 🔔 Alert Plugins
+- Traffic spike/drop notifications
+- Conversion anomaly detection
+- SEO ranking change alerts
 
-QA Assistant allows you to freely add assistants through plugins. This enables you to easily complete report work that was previously time-consuming through conversational interfaces.
+### 🎯 Personalization Plugins
+- Content recommendations based on user behavior
+- A/B test management
+- Dynamic content delivery
 
-**What QAL and the API Enable:**
+---
 
-- **AI Integration**: Let language models analyze your analytics
-- **Automation**: Build workflows that respond to data patterns
-- **Customization**: Create experiences tailored to your exact needs
-- **Innovation**: Build tools we haven't even imagined yet
+## QA Assistant's Approach
+
+QA Assistant offers a slightly different perspective on utilizing website data.
+
+Google Analytics 4 (GA4) and other excellent tools excel at detailed data analysis and strategic decision-making. QA Assistant, on the other hand, focuses on **daily website operations**, aiming to understand data and suggest specific next actions.
+
+For example, for everyday content updates or social media posting decisions, QA Assistant's concrete action suggestions might be helpful. At the same time, when developing business strategy, you might perform deeper analysis with GA4's exploration reports and custom dimensions — this kind of role division is one approach.
+
+**QA Assistant can be used in combination with existing tools like GA4.** We hope you'll consider it as one option for supporting your website's growth while leveraging each tool's strengths.
 
 ---
 
@@ -370,11 +397,13 @@ For large datasets, a file URL is returned:
 Specify format in the `result` section:
 
 ```json
-"result": {
-  "use": "my_view",
-  "return": {
-    "mode": "FILE",
-    "format": "CSV"
+{
+  "result": {
+    "use": "my_view",
+    "return": {
+      "mode": "FILE",
+      "format": "CSV"
+    }
   }
 }
 ```
