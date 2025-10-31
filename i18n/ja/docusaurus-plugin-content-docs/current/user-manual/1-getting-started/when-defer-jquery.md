@@ -5,11 +5,11 @@ title: jQuery 遅延読み込み時の対応
 
 # jQuery 遅延読み込み時の対応
 
-WordPress サイトのパフォーマンス最適化のために jQuery を遅延読み込み（defer）している場合、QA Advisor の追跡スクリプトが正常に動作しない可能性があります。このガイドでは、その対処方法をご説明します。
+WordPress サイトのパフォーマンス最適化のために jQuery を遅延読み込み（defer）している場合、QA Assistant の追跡スクリプトが正常に動作しない可能性があります。このガイドでは、その対処方法をご説明します。
 
 ## 問題の概要
 
-QA Advisor は jQuery ライブラリに依存して動作します。jQuery が遅延読み込みされている場合、以下の問題が発生する可能性があります：
+QA Assistant は jQuery ライブラリに依存して動作します。jQuery が遅延読み込みされている場合、以下の問題が発生する可能性があります：
 
 - 追跡スクリプトが jQuery の読み込み完了前に実行される
 - JavaScript エラーが発生し、データ収集が停止する
@@ -17,9 +17,9 @@ QA Advisor は jQuery ライブラリに依存して動作します。jQuery が
 
 ## 対処方法
 
-### 方法 1: QA Advisor スクリプトの除外（推奨）
+### 方法 1: QA Assistant スクリプトの除外（推奨）
 
-最も簡単な解決方法は、QA Advisor の追跡スクリプトを遅延読み込みの対象から除外することです。
+最も簡単な解決方法は、QA Assistant の追跡スクリプトを遅延読み込みの対象から除外することです。
 
 #### 一般的な最適化プラグインでの設定
 
@@ -57,11 +57,11 @@ jQuery 自体を遅延読み込みの対象から除外する方法：
 
 ### 方法 3: カスタムコードでの対応
 
-テーマの `functions.php` ファイルに以下のコードを追加して、QA Advisor スクリプトの読み込み順序を制御できます：
+テーマの `functions.php` ファイルに以下のコードを追加して、QA Assistant スクリプトの読み込み順序を制御できます：
 
 ```php
 function qa_advisor_script_priority() {
-    // QA Advisor スクリプトの優先度を下げる
+    // QA Assistant スクリプトの優先度を下げる
     wp_dequeue_script('qahm-frontend');
     wp_enqueue_script('qahm-frontend', 
         plugin_dir_url(__FILE__) . 'path/to/qahm-script.js', 
@@ -80,12 +80,12 @@ add_action('wp_enqueue_scripts', 'qa_advisor_script_priority', 20);
 1. サイトのフロントエンドにアクセス
 2. ブラウザで F12 キーを押して開発者ツールを開く
 3. **コンソール** タブでエラーがないことを確認
-4. **ネットワーク** タブで QA Advisor スクリプトが正常に読み込まれていることを確認
+4. **ネットワーク** タブで QA Assistant スクリプトが正常に読み込まれていることを確認
 
-### 2. QA Advisor 管理画面での確認
+### 2. QA Assistant 管理画面での確認
 
 1. WordPress 管理画面にログイン
-2. **QA Advisor** → **リアルタイム** に移動
+2. **QA Assistant** → **リアルタイム** に移動
 3. 別のブラウザまたはシークレットモードでサイトにアクセス
 4. リアルタイムビューにアクティビティが表示されることを確認
 
@@ -96,45 +96,38 @@ add_action('wp_enqueue_scripts', 'qa_advisor_script_priority', 20);
    ```html
    <script src="...qa-heatmap-analytics..."></script>
    ```
-3. jQuery が QA Advisor スクリプトより前に読み込まれていることを確認
+3. jQuery が QA Assistant スクリプトより前に読み込まれていることを確認
 
 ## よくある問題と解決方法
 
 ### 問題: コンソールに「$ is not defined」エラーが表示される
 
 **解決方法:**
-- jQuery が QA Advisor スクリプトより後に読み込まれています
-- jQuery を除外リストから削除するか、QA Advisor スクリプトの読み込み順序を調整してください
+- jQuery が QA Assistant スクリプトより後に読み込まれています
+- jQuery を除外リストから削除するか、QA Assistant スクリプトの読み込み順序を調整してください
 
 ### 問題: ヒートマップが表示されない
 
 **解決方法:**
 1. ブラウザキャッシュをクリア
-2. QA Advisor スクリプトが除外設定に含まれていることを確認
-3. **QA Advisor** → **設定** でヒートマップ機能が有効になっていることを確認
+2. QA Assistant スクリプトが除外設定に含まれていることを確認
+3. **QA Assistant** → **設定** でヒートマップ機能が有効になっていることを確認
 
 ### 問題: クリック追跡が動作しない
 
 **解決方法:**
 1. JavaScript エラーがないことを確認
-2. QA Advisor スクリプトが正常に読み込まれていることを確認
+2. QA Assistant スクリプトが正常に読み込まれていることを確認
 3. 必要に応じて最適化プラグインの設定を見直し
 
 ## パフォーマンスへの影響
 
-QA Advisor スクリプトを遅延読み込みから除外することによるパフォーマンスへの影響は最小限です：
+QA Assistant スクリプトを遅延読み込みから除外することによるパフォーマンスへの影響は最小限です：
 
-- QA Advisor スクリプトは軽量（通常 10KB 未満）
+- QA Assistant スクリプトは軽量（通常 10KB 未満）
 - 非同期で動作するため、ページ読み込みをブロックしません
 - 必要最小限の処理のみを実行
 
-## サポート
-
-設定に関してご不明な点がございましたら：
-
-- [よくある質問](/docs/faq) をご確認ください
-- support@quarka.org までお問い合わせください
-
 ---
 
-次は [データ制限の設定](/docs/user-manual/getting-started/set-data-limit-wpconfig) について学びましょう。
+次は [データ制限の設定](/docs/user-manual/getting-started/configure-qa-config) について学びましょう。
