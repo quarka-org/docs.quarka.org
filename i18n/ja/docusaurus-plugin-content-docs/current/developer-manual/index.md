@@ -67,7 +67,7 @@ QALクエリは以下の4つの要素で構成されます：
 {
   "tracking_id": "your-site-id",
   "materials": [
-    { "name": "qa_pv_log" }
+    { "name": "allpv" }
   ],
   "time": {
     "start": "2025-10-01T00:00:00",
@@ -76,17 +76,17 @@ QALクエリは以下の4つの要素で構成されます：
   },
   "make": {
     "blog_pages": {
-      "from": ["qa_pv_log"],
+      "from": ["allpv"],
       "filter": {
         "and": [
-          { "like": { "col": "qa_pv_log.url", "val": "%/blog/%" } },
-          { "eq": { "col": "qa_pv_log.device_type", "val": "smp" } }
+          { "like": { "col": "allpv.url", "val": "%/blog/%" } },
+          { "eq": { "col": "allpv.device_type", "val": "smp" } }
         ]
       },
-      "keep": ["qa_pv_log.url", "qa_pv_log.title"],
+      "keep": ["allpv.url", "allpv.title"],
       "calc": {
-        "pageviews": "COUNT(qa_pv_log.pv_id)",
-        "sessions": "COUNTUNIQUE(qa_pv_log.reader_id)"
+        "pageviews": "COUNT(allpv.pv_id)",
+        "sessions": "COUNTUNIQUE(allpv.reader_id)"
       }
     }
   },
@@ -99,7 +99,7 @@ QALクエリは以下の4つの要素で構成されます：
 ```
 
 **このクエリの動作：**
-1. `qa_pv_log`マテリアルから2025年10月のデータを取得
+1. `allpv`マテリアルから2025年10月のデータを取得
 2. URLに「/blog/」を含み、デバイスタイプがモバイル（smp）のデータにフィルタ
 3. URL別にページビュー数とセッション数を集計
 4. ページビュー数の降順で上位10件を返す
@@ -129,11 +129,11 @@ QALでは、データの流れを段階的に構築します：
 ```json
 "make": {
   "step1": {
-    "from": ["qa_pv_log"],
-    "keep": ["qa_pv_log.url", "qa_pv_log.reader_id"],
+    "from": ["allpv"],
+    "keep": ["allpv.url", "allpv.reader_id"],
     "filter": {
       "and": [
-        { "like": { "col": "qa_pv_log.url", "val": "%/blog/%" } }
+        { "like": { "col": "allpv.url", "val": "%/blog/%" } }
       ]
     }
   },
@@ -163,9 +163,9 @@ QALで使える集計関数は以下の6つのみです：
 列名は常に `<マテリアル名>.<列名>` または `<ビュー名>.<列名>` の形式で指定します：
 
 ```json
-"keep": ["qa_pv_log.url", "qa_pv_log.title"],
+"keep": ["allpv.url", "allpv.title"],
 "calc": {
-  "pageviews": "COUNT(qa_pv_log.pv_id)"
+  "pageviews": "COUNT(allpv.pv_id)"
 }
 ```
 
@@ -180,7 +180,7 @@ QALで使える集計関数は以下の6つのみです：
 ```json
 {
   "tracking_id": "your-site-id",
-  "materials": [{ "name": "qa_pv_log" }],
+  "materials": [{ "name": "allpv" }],
   "time": {
     "start": "2025-10-01T00:00:00",
     "end": "2025-10-31T00:00:00",
@@ -188,12 +188,12 @@ QALで使える集計関数は以下の6つのみです：
   },
   "make": {
     "device_stats": {
-      "from": ["qa_pv_log"],
-      "keep": ["qa_pv_log.device_type"],
+      "from": ["allpv"],
+      "keep": ["allpv.device_type"],
       "calc": {
-        "sessions": "COUNTUNIQUE(qa_pv_log.reader_id)",
-        "pageviews": "COUNT(qa_pv_log.pv_id)",
-        "avg_time": "AVERAGE(qa_pv_log.page_msec)"
+        "sessions": "COUNTUNIQUE(allpv.reader_id)",
+        "pageviews": "COUNT(allpv.pv_id)",
+        "avg_time": "AVERAGE(allpv.page_msec)"
       }
     }
   },
@@ -209,8 +209,7 @@ UTMキャンペーン別のパフォーマンスを分析：
 {
   "tracking_id": "your-site-id",
   "materials": [
-    { "name": "qa_pv_log" },
-    { "name": "qa_utm_campaigns" }
+    { "name": "allpv" }
   ],
   "time": {
     "start": "2025-10-01T00:00:00",
@@ -219,21 +218,17 @@ UTMキャンペーン別のパフォーマンスを分析：
   },
   "make": {
     "campaign_performance": {
-      "from": ["qa_pv_log"],
-      "join": {
-        "with": "qa_utm_campaigns",
-        "on": [
-          {
-            "left": "qa_pv_log.campaign_id",
-            "right": "qa_utm_campaigns.campaign_id"
-          }
-        ],
-        "if not match": "keep-left"
+      "from": ["allpv"],
+      "filter": {
+        "and": [
+          { "like": { "col": "allpv.utm_campaign", "val": "%sale%" } }
+        ]
       },
-      "keep": ["qa_utm_campaigns.utm_campaign", "qa_utm_campaigns.utm_source"],
+      "keep": ["allpv.utm_campaign", "allpv.utm_source"],
       "calc": {
-        "sessions": "COUNTUNIQUE(qa_pv_log.reader_id)",
-        "pageviews": "COUNT(qa_pv_log.pv_id)"
+        "sessions": "COUNTUNIQUE(allpv.reader_id)",
+        "pageviews": "COUNT(allpv.pv_id)",
+        "avg_time": "AVERAGE(allpv.page_msec)"
       }
     }
   },
@@ -244,6 +239,12 @@ UTMキャンペーン別のパフォーマンスを分析：
   }
 }
 ```
+
+**このクエリの動作：**
+1. `allpv`マテリアルから2025年10月のデータを取得
+2. UTMキャンペーンに「sale」を含むトラフィックをフィルタ
+3. キャンペーンとソース別にセッション数、ページビュー数、平均滞在時間を集計
+4. セッション数の降順で上位20件を返す
 
 ### 3. AI駆動のインサイト
 
@@ -263,21 +264,29 @@ AIアシスタントはQALを生成し、結果を自然な言葉で説明して
 
 QALでアクセスできる主なマテリアル：
 
-### 📊 ページビューログ（`qa_pv_log`）
+### 📊 統合ページビューログ（`allpv`）
 
-基本的なページビューデータ：
+QA Assistantの中核となる統合データソースです。ページビュー、セッション、UTMキャンペーン、デバイス情報など、Webサイトの行動データがすべて含まれています：
+
+**基本情報：**
 - URL、タイトル、リファラー
-- デバイスタイプ、ブラウザ、OS
-- セッション情報、読者ID
-- ページ滞在時間
+- ページ滞在時間、スクロール深度
 - タイムスタンプ
 
-### 🎯 UTMキャンペーン（`qa_utm_campaigns`）
+**訪問者情報：**
+- 読者ID、セッションID
+- デバイスタイプ、ブラウザ、OS
+- 国、地域情報
 
-マーケティングキャンペーンデータ：
-- UTMパラメータ（source, medium, campaign）
+**マーケティング情報：**
+- UTMパラメータ（utm_source, utm_medium, utm_campaign）
 - キャンペーンID
-- 流入元情報
+- 流入元チャネル
+
+**エンゲージメント指標：**
+- ページビュー、セッション
+- 精読率、迷いスコア（今後追加予定）
+- コンバージョンイベント
 
 ### 🔍 Search Consoleデータ（`gsc`）
 
@@ -287,7 +296,7 @@ QALでアクセスできる主なマテリアル：
 - 検索での表示形式
 - 経時的なランキング
 
-これらは初期リリースでアクセスできるマテリアルですが、今後ページ内でユーザーが迷ったスコアや、精読率など、どんどん使えるデータが増えていきます。QA Assistantはプライバシーに配慮した上で、ページ改善に役立つデータを大量に保有しています。
+QA Assistantの設計思想として、データを**1つの統合されたマテリアル**（`allpv`）に集約することで、複雑なJOIN操作を不要にし、ユーザーにとって直感的で理解しやすいデータ構造を実現しています。今後もユーザー行動に関する様々な指標が`allpv`に追加されていきます。
 
 ---
 

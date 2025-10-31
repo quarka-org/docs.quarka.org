@@ -67,7 +67,7 @@ Here's how you request page view aggregation for blog pages:
 {
   "tracking_id": "your-site-id",
   "materials": [
-    { "name": "qa_pv_log" }
+    { "name": "allpv" }
   ],
   "time": {
     "start": "2025-10-01T00:00:00",
@@ -76,17 +76,17 @@ Here's how you request page view aggregation for blog pages:
   },
   "make": {
     "blog_pages": {
-      "from": ["qa_pv_log"],
+      "from": ["allpv"],
       "filter": {
         "and": [
-          { "like": { "col": "qa_pv_log.url", "val": "%/blog/%" } },
-          { "eq": { "col": "qa_pv_log.device_type", "val": "smp" } }
+          { "like": { "col": "allpv.url", "val": "%/blog/%" } },
+          { "eq": { "col": "allpv.device_type", "val": "smp" } }
         ]
       },
-      "keep": ["qa_pv_log.url", "qa_pv_log.title"],
+      "keep": ["allpv.url", "allpv.title"],
       "calc": {
-        "pageviews": "COUNT(qa_pv_log.pv_id)",
-        "sessions": "COUNTUNIQUE(qa_pv_log.reader_id)"
+        "pageviews": "COUNT(allpv.pv_id)",
+        "sessions": "COUNTUNIQUE(allpv.reader_id)"
       }
     }
   },
@@ -99,7 +99,7 @@ Here's how you request page view aggregation for blog pages:
 ```
 
 **How This Query Works:**
-1. Retrieve data from October 2025 using the `qa_pv_log` material
+1. Retrieve data from October 2025 using the `allpv` material
 2. Filter for data where URL contains "/blog/" and device type is mobile (smp)
 3. Aggregate page views and sessions by URL
 4. Return top 10 results sorted by page views in descending order
@@ -129,11 +129,11 @@ In QAL, you build the data flow step by step:
 ```json
 "make": {
   "step1": {
-    "from": ["qa_pv_log"],
-    "keep": ["qa_pv_log.url", "qa_pv_log.reader_id"],
+    "from": ["allpv"],
+    "keep": ["allpv.url", "allpv.reader_id"],
     "filter": {
       "and": [
-        { "like": { "col": "qa_pv_log.url", "val": "%/blog/%" } }
+        { "like": { "col": "allpv.url", "val": "%/blog/%" } }
       ]
     }
   },
@@ -163,9 +163,9 @@ QAL supports only the following six aggregation functions:
 Column names must always be specified in the format `<material_name>.<column_name>` or `<view_name>.<column_name>`:
 
 ```json
-"keep": ["qa_pv_log.url", "qa_pv_log.title"],
+"keep": ["allpv.url", "allpv.title"],
 "calc": {
-  "pageviews": "COUNT(qa_pv_log.pv_id)"
+  "pageviews": "COUNT(allpv.pv_id)"
 }
 ```
 
@@ -180,7 +180,7 @@ Compare mobile and desktop traffic:
 ```json
 {
   "tracking_id": "your-site-id",
-  "materials": [{ "name": "qa_pv_log" }],
+  "materials": [{ "name": "allpv" }],
   "time": {
     "start": "2025-10-01T00:00:00",
     "end": "2025-10-31T00:00:00",
@@ -188,12 +188,12 @@ Compare mobile and desktop traffic:
   },
   "make": {
     "device_stats": {
-      "from": ["qa_pv_log"],
-      "keep": ["qa_pv_log.device_type"],
+      "from": ["allpv"],
+      "keep": ["allpv.device_type"],
       "calc": {
-        "sessions": "COUNTUNIQUE(qa_pv_log.reader_id)",
-        "pageviews": "COUNT(qa_pv_log.pv_id)",
-        "avg_time": "AVERAGE(qa_pv_log.page_msec)"
+        "sessions": "COUNTUNIQUE(allpv.reader_id)",
+        "pageviews": "COUNT(allpv.pv_id)",
+        "avg_time": "AVERAGE(allpv.page_msec)"
       }
     }
   },
@@ -209,8 +209,7 @@ Analyze performance by UTM campaign:
 {
   "tracking_id": "your-site-id",
   "materials": [
-    { "name": "qa_pv_log" },
-    { "name": "qa_utm_campaigns" }
+    { "name": "allpv" }
   ],
   "time": {
     "start": "2025-10-01T00:00:00",
@@ -219,21 +218,17 @@ Analyze performance by UTM campaign:
   },
   "make": {
     "campaign_performance": {
-      "from": ["qa_pv_log"],
-      "join": {
-        "with": "qa_utm_campaigns",
-        "on": [
-          {
-            "left": "qa_pv_log.campaign_id",
-            "right": "qa_utm_campaigns.campaign_id"
-          }
-        ],
-        "if not match": "keep-left"
+      "from": ["allpv"],
+      "filter": {
+        "and": [
+          { "like": { "col": "allpv.utm_campaign", "val": "%sale%" } }
+        ]
       },
-      "keep": ["qa_utm_campaigns.utm_campaign", "qa_utm_campaigns.utm_source"],
+      "keep": ["allpv.utm_campaign", "allpv.utm_source"],
       "calc": {
-        "sessions": "COUNTUNIQUE(qa_pv_log.reader_id)",
-        "pageviews": "COUNT(qa_pv_log.pv_id)"
+        "sessions": "COUNTUNIQUE(allpv.reader_id)",
+        "pageviews": "COUNT(allpv.pv_id)",
+        "avg_time": "AVERAGE(allpv.page_msec)"
       }
     }
   },
@@ -244,6 +239,12 @@ Analyze performance by UTM campaign:
   }
 }
 ```
+
+**How This Query Works:**
+1. Retrieve data from October 2025 using the `allpv` material
+2. Filter for traffic where UTM campaign contains "sale"
+3. Aggregate sessions, page views, and average dwell time by campaign and source
+4. Return top 20 results sorted by sessions in descending order
 
 ### 3. AI-Powered Insights
 
@@ -263,21 +264,29 @@ The AI assistant generates QAL and explains the results in natural language.
 
 Main materials accessible in QAL:
 
-### 📊 Page View Log (`qa_pv_log`)
+### 📊 Integrated Page View Log (`allpv`)
 
-Basic page view data:
+The core unified data source of QA Assistant. This integrated material contains all website behavioral data including page views, sessions, UTM campaigns, device information, and more:
+
+**Basic Information:**
 - URL, title, referrer
-- Device type, browser, OS
-- Session information, reader ID
-- Page dwell time
+- Page dwell time, scroll depth
 - Timestamps
 
-### 🎯 UTM Campaigns (`qa_utm_campaigns`)
+**Visitor Information:**
+- Reader ID, session ID
+- Device type, browser, OS
+- Country, region information
 
-Marketing campaign data:
-- UTM parameters (source, medium, campaign)
+**Marketing Information:**
+- UTM parameters (utm_source, utm_medium, utm_campaign)
 - Campaign ID
-- Traffic source information
+- Traffic source channel
+
+**Engagement Metrics:**
+- Page views, sessions
+- Reading depth, confusion scores (coming soon)
+- Conversion events
 
 ### 🔍 Search Console Data (`gsc`)
 
@@ -287,7 +296,7 @@ Search performance data:
 - Search appearance
 - Rankings over time
 
-These are the materials accessible in the initial release, but more data will become available over time, such as user confusion scores on pages and reading depth. QA Assistant holds a wealth of data useful for page improvement while respecting privacy.
+QA Assistant's design philosophy is to consolidate data into **one unified material** (`allpv`), eliminating the need for complex JOIN operations and providing an intuitive, easy-to-understand data structure. More user behavior metrics will continue to be added to `allpv` over time.
 
 ---
 
