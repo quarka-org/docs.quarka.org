@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'QA Assistant Documentation',
-  tagline: 'User and Developer Documentation for QA Assistant WordPress Analytics',
+  tagline: 'User and developer documentation for QA Assistant, a WordPress plugin',
   favicon: 'img/favicon.ico',
 
   url: 'https://docs.quarka.org',

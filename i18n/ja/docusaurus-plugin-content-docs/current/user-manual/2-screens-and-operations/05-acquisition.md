@@ -225,7 +225,6 @@ QA Advisor の獲得機能は、ウェブサイトへのトラフィックがど
 
 ## 関連機能
 
-- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 総合的な分析データ
 - [オーディエンス](/docs/user-manual/screens-and-operations/audience) - 訪問者の詳細分析
 - [ゴール](/docs/user-manual/screens-and-operations/goals) - コンバージョン追跡
 

@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # 画面と操作
 
-QA Advisor プラグインのすべての画面とその操作に関する包括的なドキュメントです。
+QA Assistant プラグインのすべての画面とその操作に関する包括的なドキュメントです。
 
 ## 概要
 
-このセクションでは、QA Advisor WordPress プラグインの各画面について詳細なガイドを提供します。各画面のドキュメントには以下が含まれます：
+このセクションでは、QA Assistant WordPress プラグインの各画面について詳細なガイドを提供します。各画面のドキュメントには以下が含まれます：
 
 - **目的と機能** - 画面の役割と使用する理由
 - **ナビゲーション手順** - 画面へのアクセス方法
@@ -21,7 +21,6 @@ QA Advisor プラグインのすべての画面とその操作に関する包括
 
 ### アナリティクス (Analytics) と監視
 
-- [ダッシュボード (Dashboard)](/docs/user-manual/screens-and-operations/dashboard) - メインアナリティクス概要と主要パフォーマンス指標
 - [リアルタイム](/docs/user-manual/screens-and-operations/realtime) - ライブ訪問者アクティビティ監視とリアルタイムアナリティクス
 - [オーディエンス (Audience)](/docs/user-manual/screens-and-operations/audience) - 訪問者の人口統計、行動パターン、ユーザーセグメンテーション
 - [獲得 (Acquisition)](/docs/user-manual/screens-and-operations/acquisition) - トラフィックソース、キャンペーン追跡、リファラル分析
@@ -34,21 +33,18 @@ QA Advisor プラグインのすべての画面とその操作に関する包括
 
 ### 高度な機能
 
-- [ブレインズ (Brains)](/docs/user-manual/screens-and-operations/brains) - AI 搭載インサイトと推奨エンジン
 - [ゴール (Goals)](/docs/user-manual/screens-and-operations/goals) - コンバージョン追跡設定と最適化ツール
 - [ヒートマップ (Heatmaps)](/docs/user-manual/screens-and-operations/heatmaps) - ビジュアルアナリティクスとユーザーインタラクション追跡
 
 ### 設定とサポート
 
 - [設定](/docs/user-manual/screens-and-operations/settings) - 追跡、プライバシー、統合の設定ハブ
-- [ライセンス有効化](/docs/user-manual/screens-and-operations/license-activation) - プラグインライセンス管理と有効化
 - [ヘルプ](/docs/user-manual/screens-and-operations/help) - サポートリソース、ドキュメントアクセス、トラブルシューティング
 
 ## はじめに
 
-QA Advisor を初めて使用する場合は、以下から始めることをお勧めします：
+QA Assistant を初めて使用する場合は、以下から始めることをお勧めします：
 
-1. **[ダッシュボード (Dashboard)](/docs/user-manual/screens-and-operations/dashboard)** - メインインターフェースに慣れる
 2. **[設定](/docs/user-manual/screens-and-operations/settings)** - 追跡設定を構成する
 3. **[オーディエンス (Audience)](/docs/user-manual/screens-and-operations/audience)** - 訪問者を理解する
 4. **[ヒートマップ (Heatmaps)](/docs/user-manual/screens-and-operations/heatmaps)** - ビジュアルアナリティクスを設定する
@@ -57,7 +53,6 @@ QA Advisor を初めて使用する場合は、以下から始めることをお
 
 各画面のドキュメントにはトラブルシューティングセクションが含まれていますが、追加サポートが必要な場合：
 
-- 📧 **メールサポート**: support@quarka.org
 - 📖 **はじめにガイド**: [インストールとセットアップ](/docs/user-manual/getting-started)
 - 🐛 **バグ報告**: [GitHub Issues](https://github.com/qa-advisor/issues)
 
