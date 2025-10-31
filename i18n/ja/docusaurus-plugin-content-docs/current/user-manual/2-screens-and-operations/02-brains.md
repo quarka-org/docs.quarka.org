@@ -186,7 +186,6 @@ QA Advisor のブレインズ機能は、AI を活用してウェブサイトの
 
 ## 関連機能
 
-- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 基本的な分析データ
 - [ゴール](/docs/user-manual/screens-and-operations/goals) - コンバージョン追跡
 - [設定](/docs/user-manual/screens-and-operations/settings) - アドバンスモードの有効化
 

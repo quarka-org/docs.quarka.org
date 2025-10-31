@@ -10,7 +10,7 @@ The All Pages screen provides a comprehensive overview of every page on your web
 ## Accessing This Screen
 1. Log in to your WordPress admin panel
 2. Navigate to the left sidebar menu
-3. Click on "QA Advisor"
+3. Click on "QA Assistant"
 4. Select "All Pages" from the submenu
 
 ## Screen Layout
@@ -116,7 +116,6 @@ The All Pages screen includes:
 - **Check**: Verify that the export format is supported and data size is within limits
 
 ## Related Documentation
-- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Overall site performance overview
 - [Landing Pages](/docs/user-manual/screens-and-operations/landing-pages) - Entry point analysis
 - [Top Growing](/docs/user-manual/screens-and-operations/top-growing) - Trending content identification
 - [Settings](/docs/user-manual/screens-and-operations/settings) - Configure page tracking and display options

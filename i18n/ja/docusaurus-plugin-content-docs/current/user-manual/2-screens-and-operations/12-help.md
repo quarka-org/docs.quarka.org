@@ -59,12 +59,6 @@ QA Advisor のヘルプ画面は、プラグインの使用に関するサポー
 
 #### サポート連絡方法
 
-##### メールサポート
-- **サポートアドレス**: support@quarka.org
-- **チケット作成**: サポートチケットの作成方法
-- **情報提供**: 効果的な問題報告の方法
-- **回答時間**: 回答時間の目安
-
 ##### コミュニティフォーラム
 - **フォーラムアクセス**: コミュニティフォーラムへのアクセス
 - **質問投稿**: 効果的な質問の投稿方法
@@ -263,8 +257,6 @@ QA Advisor のヘルプ画面は、プラグインの使用に関するサポー
 ## 関連機能
 
 - [設定](/docs/user-manual/screens-and-operations/settings) - 基本設定とカスタマイズ
-- [ライセンス有効化](/docs/user-manual/screens-and-operations/license-activation) - ライセンス管理
-- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - メイン分析画面
 
 ---
 

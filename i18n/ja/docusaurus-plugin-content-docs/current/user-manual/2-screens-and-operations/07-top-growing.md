@@ -246,7 +246,6 @@ QA Advisor のトップ成長機能は、急速に成長しているコンテン
 
 ## 関連機能
 
-- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 総合的な成長データ
 - [全ページ](/docs/user-manual/screens-and-operations/all-pages) - 全ページの詳細分析
 - [獲得](/docs/user-manual/screens-and-operations/acquisition) - トラフィック獲得分析
 

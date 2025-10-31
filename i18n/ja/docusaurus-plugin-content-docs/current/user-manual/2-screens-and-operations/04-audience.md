@@ -201,7 +201,6 @@ QA Advisor のオーディエンス機能は、ウェブサイトの訪問者に
 
 ## 関連機能
 
-- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 基本的な訪問者データ
 - [獲得](/docs/user-manual/screens-and-operations/acquisition) - トラフィックソース分析
 - [ゴール](/docs/user-manual/screens-and-operations/goals) - コンバージョン分析
 

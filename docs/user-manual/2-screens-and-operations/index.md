@@ -1,62 +1,69 @@
 ---
 sidebar_position: 2
+title: Menu Overview
+sidebar_label: Menu Overview
 ---
 
-# Screens and Operations
+# Menu Overview
 
-Comprehensive documentation for all QA Advisor plugin screens and their operations.
+A compact guide to the QA Assistant reports and where to find key metrics.
 
-## Overview
-
-This section provides detailed guides for each screen in the QA Advisor WordPress plugin. Each screen documentation includes:
-
-- **Purpose and functionality** - What the screen does and why you'd use it
-- **Navigation instructions** - How to access the screen
-- **Feature explanations** - Detailed breakdown of all capabilities
-- **Common workflows** - Step-by-step guides for typical tasks
-- **Configuration options** - Available settings and customizations
-- **Troubleshooting** - Solutions for common issues
-
-## Available Screens
-
-### Analytics and Monitoring
-- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Main analytics overview and key performance indicators
-- [Realtime](/docs/user-manual/screens-and-operations/realtime) - Live visitor activity monitoring and real-time analytics
-- [Audience](/docs/user-manual/screens-and-operations/audience) - Visitor demographics, behavior patterns, and user segmentation
-- [Acquisition](/docs/user-manual/screens-and-operations/acquisition) - Traffic sources, campaign tracking, and referral analysis
-
-### Content Analysis
-- [Landing Pages](/docs/user-manual/screens-and-operations/landing-pages) - Page performance analysis and optimization insights
-- [Top Growing](/docs/user-manual/screens-and-operations/top-growing) - Trending content identification and growth metrics
-- [All Pages](/docs/user-manual/screens-and-operations/all-pages) - Comprehensive page-level analytics and performance data
-
-### Advanced Features
-- [Brains](/docs/user-manual/screens-and-operations/brains) - AI-powered insights and recommendations engine
-- [Goals](/docs/user-manual/screens-and-operations/goals) - Conversion tracking setup and optimization tools
-- [Heatmaps](/docs/user-manual/screens-and-operations/heatmaps) - Visual analytics and user interaction tracking
-
-### Configuration and Support
-- [Settings](/docs/user-manual/screens-and-operations/settings) - Configuration hub for tracking, privacy, and integrations
-- [License Activation](/docs/user-manual/screens-and-operations/license-activation) - Plugin licensing management and activation
-- [Help](/docs/user-manual/screens-and-operations/help) - Support resources, documentation access, and troubleshooting
-
-## Getting Started
-
-If you're new to QA Advisor, we recommend starting with:
-
-1. **[Dashboard](/docs/user-manual/screens-and-operations/dashboard)** - Get familiar with the main interface
-2. **[Settings](/docs/user-manual/screens-and-operations/settings)** - Configure your tracking preferences
-3. **[Audience](/docs/user-manual/screens-and-operations/audience)** - Understand your visitors
-4. **[Heatmaps](/docs/user-manual/screens-and-operations/heatmaps)** - Set up visual analytics
-
-## Need Help?
-
-Each screen documentation includes troubleshooting sections, but if you need additional support:
-
-- 📧 **Email Support**: support@quarka.org
-- 📖 **Getting Started Guide**: [Installation and Setup](/docs/user-manual/getting-started)
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/qa-advisor/issues)
+> **Display modes control which menus appear.**  
+> **Simple (default)** shows: **Assistants / Realtime / Audience / Settings / Help**  
+> **Advanced** adds: **Acquisition / Landing Pages / Top Growing / All Pages / Goals**  
+> To enable Advanced Mode: **Settings → Advanced Mode**.
 
 ---
 
-*Choose a screen from the sidebar to learn more about its specific features and capabilities.*
+## Menu at a glance
+
+| Menu | Simple | Advanced | What it shows |
+|---|:---:|:---:|---|
+| **Realtime** | ✔ | ✔ | Live sessions and recent activity; quick checks using Session Replay |
+| **Audience** | ✔ | ✔ | Site-wide audience and sessions; Segment and compare trends |
+| **Acquisition** |  | ✔ | Sources, campaigns, and referral performance |
+| **Landing Pages** |  | ✔ | Entry-page performance and first-touch outcomes |
+| **Top Growing** |  | ✔ | Pages with notable growth (discover rising content) |
+| **All Pages** |  | ✔ | Compare all pages side by side; find outliers quickly |
+| **Goals** |  | ✔ | Conversions and goal completion, with page-level context |
+| **Assistants** | ✔ | ✔ | Task-focused helpers that suggest next actions from your data |
+| **Settings** | ✔ | ✔ | Configuration (incl. Advanced Mode) |
+| **Help** | ✔ | ✔ | Documentation, Support Forum, and Debug Info links |
+
+---
+
+## Quick navigation
+
+- **Realtime** — Live visits and Session Replay  
+  → `/docs/user-manual/screens-and-operations/realtime`
+
+- **Audience** — Overall audience trends (Simple & Advanced)  
+  → `/docs/user-manual/screens-and-operations/audience`
+
+- **Acquisition** — Sources & campaigns (Advanced)  
+  → `/docs/user-manual/screens-and-operations/acquisition`
+
+- **Landing Pages** — Entry page performance (Advanced)  
+  → `/docs/user-manual/screens-and-operations/landing-pages`
+
+- **Top Growing** — Rising pages (Advanced)  
+  → `/docs/user-manual/screens-and-operations/top-growing`
+
+- **All Pages** — Compare all pages (Advanced)  
+  → `/docs/user-manual/screens-and-operations/all-pages`
+
+- **Goals** — Conversions (Advanced)  
+  → `/docs/user-manual/screens-and-operations/goals`
+
+- **Assistants** — What they are & how to use them  
+  → `/docs/user-manual/assistants/overview`
+
+- **Settings** — Mode switch & options  
+  → `/docs/user-manual/settings`
+
+- **Help** — Docs / Support Forum / Debug Info  
+  → `/docs/user-manual/help`
+
+---
+
+*Tip:* If a menu item isn’t visible, enable **Advanced Mode** in **Settings**.
