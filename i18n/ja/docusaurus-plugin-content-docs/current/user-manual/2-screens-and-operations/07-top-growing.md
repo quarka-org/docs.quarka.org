@@ -5,12 +5,12 @@ title: トップ成長
 
 # トップ成長 (Top Growing)
 
-QA Advisor のトップ成長機能は、急速に成長しているコンテンツやページを特定し、トレンドを把握するための分析ツールです。成長率の高いページを発見することで、成功要因を分析し、他のコンテンツにも応用できるインサイトを得ることができます。
+QA Assistant のトップ成長機能は、急速に成長しているコンテンツやページを特定し、トレンドを把握するための分析ツールです。成長率の高いページを発見することで、成功要因を分析し、他のコンテンツにも応用できるインサイトを得ることができます。
 
 ## トップ成長へのアクセス
 
 1. WordPress 管理画面にログイン
-2. **QA Advisor** メニューをクリック
+2. **QA Assistant** メニューをクリック
 3. **トップ成長 (Top Growing)** を選択
 
 ## 主要な機能
@@ -246,7 +246,6 @@ QA Advisor のトップ成長機能は、急速に成長しているコンテン
 
 ## 関連機能
 
-- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 総合的な成長データ
 - [全ページ](/docs/user-manual/screens-and-operations/all-pages) - 全ページの詳細分析
 - [獲得](/docs/user-manual/screens-and-operations/acquisition) - トラフィック獲得分析
 

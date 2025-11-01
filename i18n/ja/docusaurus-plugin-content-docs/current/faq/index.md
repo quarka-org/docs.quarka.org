@@ -4,13 +4,13 @@ sidebar_position: 1
 
 # よくある質問
 
-QA Advisor WordPress Analytics に関するよくある質問とその回答をまとめています。
+QA Assistant WordPress Analytics に関するよくある質問とその回答をまとめています。
 
 ## インストールと設定
 
-### Q: QA Advisor をインストールするための最小要件は何ですか？
+### Q: QA Assistant をインストールするための最小要件は何ですか？
 
-**A:** QA Advisor を正常に動作させるには以下の要件を満たす必要があります：
+**A:** QA Assistant を正常に動作させるには以下の要件を満たす必要があります：
 
 - **WordPress**: バージョン 5.9 以上
 - **PHP**: バージョン 7.0 以上（推奨：7.4 以上）
@@ -24,7 +24,7 @@ QA Advisor WordPress Analytics に関するよくある質問とその回答を�
 **A:** アドバンスモードは、オーディエンス (Audience) インサイト、獲得 (Acquisition) レポート、ゴール (Goal) 追跡などの高度な機能を利用できるモードです。
 
 有効化手順：
-1. **QA Advisor** → **設定** に移動
+1. **QA Assistant** → **設定** に移動
 2. **アドバンスモード** オプションにチェック
 3. **変更を保存** をクリック
 
@@ -40,7 +40,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 10000);
 define('QAHM_MONTHLY_PV_LIMIT', 0);
 ```
 
-詳細は[データ制限の設定](/docs/user-manual/getting-started/set-data-limit-wpconfig)をご覧ください。
+詳細は[データ制限の設定](/docs/user-manual/getting-started/configure-qa-config)をご覧ください。
 
 ## データ追跡と表示
 
@@ -48,7 +48,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 **A:** データが表示されない場合、以下を確認してください：
 
-1. **追跡の確認**: **QA Advisor** → **リアルタイム** で即座のデータを確認
+1. **追跡の確認**: **QA Assistant** → **リアルタイム** で即座のデータを確認
 2. **ログインユーザー**: ログイン中の WordPress ユーザーはデフォルトで除外されます
 3. **キャッシュ**: ブラウザキャッシュをクリアして5-10分待機
 4. **JavaScript**: ブラウザコンソールでエラーがないか確認
@@ -63,14 +63,14 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 1. **十分なデータ**: ヒートマップ生成には最低限のクリックデータが必要
 2. **JavaScript エラー**: ブラウザコンソールでエラーを確認
-3. **除外設定**: QA Advisor スクリプトがキャッシュプラグインで除外されているか確認
+3. **除外設定**: QA Assistant スクリプトがキャッシュプラグインで除外されているか確認
 4. **設定確認**: **設定** でヒートマップ機能が有効になっているか確認
 
 ## パフォーマンスと互換性
 
-### Q: QA Advisor はサイトの速度に影響しますか？
+### Q: QA Assistant はサイトの速度に影響しますか？
 
-**A:** QA Advisor は軽量設計されており、サイトパフォーマンスへの影響は最小限です：
+**A:** QA Assistant は軽量設計されており、サイトパフォーマンスへの影響は最小限です：
 
 - スクリプトサイズは通常10KB未満
 - 非同期で動作し、ページ読み込みをブロックしません
@@ -78,24 +78,24 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: 他のプラグインとの競合はありますか？
 
-**A:** QA Advisor は多くのプラグインと互換性がありますが、以下のプラグインタイプで設定調整が必要な場合があります：
+**A:** QA Assistant は多くのプラグインと互換性がありますが、以下のプラグインタイプで設定調整が必要な場合があります：
 
 **キャッシュプラグイン**:
 - WP Rocket、W3 Total Cache、WP Super Cache
-- QA Advisor スクリプト（`qahm`、`qahmz`）を JavaScript 最適化から除外してください
+- QA Assistant スクリプト（`qahm`、`qahmz`）を JavaScript 最適化から除外してください
 
 **セキュリティプラグイン**:
 - Wordfence、Sucuri Security
-- QA Advisor のスクリプト読み込みがブロックされていないか確認してください
+- QA Assistant のスクリプト読み込みがブロックされていないか確認してください
 
 詳細は[環境セットアップ](/docs/user-manual/getting-started/environment-setup)をご覧ください。
 
 ### Q: jQuery を遅延読み込みしている場合の対処法は？
 
-**A:** jQuery を遅延読み込み（defer）している場合、QA Advisor スクリプトも同様に遅延させる必要があります。
+**A:** jQuery を遅延読み込み（defer）している場合、QA Assistant スクリプトも同様に遅延させる必要があります。
 
 **対処方法**:
-1. QA Advisor スクリプトをキャッシュプラグインの除外リストに追加
+1. QA Assistant スクリプトをキャッシュプラグインの除外リストに追加
 2. または jQuery 自体を遅延読み込みの対象から除外
 
 詳細は[jQuery 遅延読み込み時の対応](/docs/user-manual/getting-started/when-defer-jquery)をご確認ください。
@@ -114,7 +114,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 **A:** ゴール設定は**アドバンスモード**で利用可能です：
 
-1. **QA Advisor** → **ゴール (Goals)** に移動
+1. **QA Assistant** → **ゴール (Goals)** に移動
 2. **新しいゴールを追加** をクリック
 3. ゴールタイプを選択（ページビュー、イベント、時間など）
 4. 条件を設定して保存
@@ -133,18 +133,18 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: GDPR に準拠していますか？
 
-**A:** はい、QA Advisor は GDPR に準拠した設計になっています：
+**A:** はい、QA Assistant は GDPR に準拠した設計になっています：
 
 - **個人情報の匿名化**: IP アドレスの匿名化オプション
 - **データ保存期間**: 設定可能なデータ保存期間
 - **ユーザー同意**: Cookie 同意管理との連携
 - **データ削除**: ユーザーデータの削除機能
 
-詳細な設定は **QA Advisor** → **設定** → **プライバシー** で行えます。
+詳細な設定は **QA Assistant** → **設定** → **プライバシー** で行えます。
 
 ### Q: 収集されるデータの種類は何ですか？
 
-**A:** QA Advisor が収集するデータ：
+**A:** QA Assistant が収集するデータ：
 
 **匿名化されたデータ**:
 - ページビュー、クリック位置、スクロール深度
@@ -160,7 +160,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: 日本の個人情報保護法に対応していますか？
 
-**A:** はい、QA Advisor は日本の個人情報保護法に配慮した設定が可能です：
+**A:** はい、QA Assistant は日本の個人情報保護法に配慮した設定が可能です：
 
 - **匿名化処理**: 個人を特定できないよう IP アドレスを匿名化
 - **データ最小化**: 必要最小限のデータのみ収集
@@ -169,7 +169,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: 日本語サイトでの文字化けはありませんか？
 
-**A:** QA Advisor は UTF-8 に完全対応しており、日本語サイトでの文字化けは発生しません：
+**A:** QA Assistant は UTF-8 に完全対応しており、日本語サイトでの文字化けは発生しません：
 
 - **日本語ページタイトル**: 正しく表示・記録
 - **日本語 URL**: 適切に処理
@@ -178,7 +178,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: 日本のホスティングサービスとの互換性は？
 
-**A:** QA Advisor は主要な日本のホスティングサービスと互換性があります：
+**A:** QA Assistant は主要な日本のホスティングサービスと互換性があります：
 
 - **さくらインターネット**: 対応
 - **エックスサーバー**: 対応
@@ -194,7 +194,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 **A:** 月間データ収集制限に達した場合：
 
 1. **翌月まで待機**: 毎月1日に自動リセット
-2. **制限値の変更**: [データ制限の設定](/docs/user-manual/getting-started/set-data-limit-wpconfig)で上限を変更
+2. **制限値の変更**: [データ制限の設定](/docs/user-manual/getting-started/configure-qa-config)で上限を変更
 3. **リアルタイムデータ**: 制限に関係なく利用可能
 
 ### Q: 管理画面が表示されない場合は？
@@ -208,7 +208,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: データのエクスポートはできますか？
 
-**A:** はい、QA Advisor では以下の形式でデータをエクスポートできます：
+**A:** はい、QA Assistant では以下の形式でデータをエクスポートできます：
 
 - **CSV 形式**: 表形式データの出力
 - **PDF レポート**: プレゼンテーション用レポート
@@ -220,16 +220,15 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: サポートを受けるにはどうすればよいですか？
 
-**A:** QA Advisor のサポートは以下の方法で受けられます：
+**A:** QA Assistant のサポートは以下の方法で受けられます：
 
-- **メールサポート**: support@quarka.org
 - **ドキュメント**: [ユーザーガイド](/docs/user-manual)
 - **GitHub Issues**: [バグ報告・機能要望](https://github.com/qa-advisor/issues)
 - **コミュニティ**: [GitHub Discussions](https://github.com/qa-advisor/discussions)
 
 ### Q: アップデートはどのように行われますか？
 
-**A:** QA Advisor のアップデート：
+**A:** QA Assistant のアップデート：
 
 - **自動通知**: WordPress 管理画面でアップデート通知
 - **手動更新**: プラグイン画面から手動でアップデート
@@ -245,6 +244,4 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 - **設定維持**: 現在の設定は引き継がれます
 - **通知**: 正式版リリース時に通知を送信
 
----
 
-その他のご質問がございましたら、[サポート](mailto:support@quarka.org)までお気軽にお問い合わせください。

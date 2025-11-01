@@ -5,12 +5,12 @@ title: ランディングページ
 
 # ランディングページ (Landing Pages)
 
-QA Advisor のランディングページ機能は、訪問者が最初にアクセスするページのパフォーマンスを詳細に分析します。各ランディングページの効果を測定し、ユーザーエクスペリエンスとコンバージョン率の改善に役立つインサイトを提供します。
+QA Assistant のランディングページ機能は、訪問者が最初にアクセスするページのパフォーマンスを詳細に分析します。各ランディングページの効果を測定し、ユーザーエクスペリエンスとコンバージョン率の改善に役立つインサイトを提供します。
 
 ## ランディングページへのアクセス
 
 1. WordPress 管理画面にログイン
-2. **QA Advisor** メニューをクリック
+2. **QA Assistant** メニューをクリック
 3. **ランディングページ (Landing Pages)** を選択
 
 ## 主要な機能
@@ -232,7 +232,6 @@ QA Advisor のランディングページ機能は、訪問者が最初にアク
 
 ## 関連機能
 
-- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 総合的な分析データ
 - [獲得](/docs/user-manual/screens-and-operations/acquisition) - トラフィックソース分析
 - [全ページ](/docs/user-manual/screens-and-operations/all-pages) - 全ページの詳細分析
 

@@ -5,12 +5,12 @@ title: リアルタイム
 
 # リアルタイム
 
-QA Advisor のリアルタイム機能は、現在サイトを訪問しているユーザーの活動をリアルタイムで監視できます。この機能により、訪問者の行動を即座に把握し、サイトの現在の状況を詳細に分析することができます。
+QA Assistant のリアルタイム機能は、現在サイトを訪問しているユーザーの活動をリアルタイムで監視できます。この機能により、訪問者の行動を即座に把握し、サイトの現在の状況を詳細に分析することができます。
 
 ## リアルタイムへのアクセス
 
 1. WordPress 管理画面にログイン
-2. **QA Advisor** メニューをクリック
+2. **QA Assistant** メニューをクリック
 3. **リアルタイム** を選択
 
 ## 主要な機能
@@ -184,7 +184,6 @@ QA Advisor のリアルタイム機能は、現在サイトを訪問している
 
 ## 関連機能
 
-- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 総合的な分析データ
 - [オーディエンス](/docs/user-manual/screens-and-operations/audience) - 詳細な訪問者分析
 - [設定](/docs/user-manual/screens-and-operations/settings) - 追跡設定の調整
 
