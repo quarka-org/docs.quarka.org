@@ -5,12 +5,12 @@ title: ゴール
 
 # ゴール (Goals)
 
-QA Advisor のゴール機能は、ウェブサイトの重要な目標を設定し、その達成状況を追跡するための強力なツールです。コンバージョン追跡、目標設定、パフォーマンス測定を通じて、ビジネス目標の達成をサポートします。
+QA Assistant のゴール機能は、ウェブサイトの重要な目標を設定し、その達成状況を追跡するための強力なツールです。コンバージョン追跡、目標設定、パフォーマンス測定を通じて、ビジネス目標の達成をサポートします。
 
 ## ゴールへのアクセス
 
 1. WordPress 管理画面にログイン
-2. **QA Advisor** メニューをクリック
+2. **QA Assistant** メニューをクリック
 3. **ゴール (Goals)** を選択
 
 **注意**: ゴール機能は**アドバンスモード**でのみ利用可能です。
@@ -267,7 +267,6 @@ QA Advisor のゴール機能は、ウェブサイトの重要な目標を設定
 
 ## 関連機能
 
-- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 総合的な分析データ
 - [オーディエンス](/docs/user-manual/screens-and-operations/audience) - ユーザーセグメント分析
 - [獲得](/docs/user-manual/screens-and-operations/acquisition) - トラフィック獲得分析
 

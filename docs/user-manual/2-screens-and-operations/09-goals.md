@@ -10,7 +10,7 @@ The Goals screen allows you to set up, monitor, and analyze conversion tracking 
 ## Accessing This Screen
 1. Log in to your WordPress admin panel
 2. Navigate to the left sidebar menu
-3. Click on "QA Advisor"
+3. Click on "QA Assistant"
 4. Select "Goals" from the submenu
 
 ## Screen Layout
@@ -122,7 +122,6 @@ The Goals screen features:
 - **Check**: Verify that UTM parameters and referral data are being preserved
 
 ## Related Documentation
-- [Dashboard](/docs/user-manual/screens-and-operations/dashboard) - Overall conversion performance
 - [Acquisition](/docs/user-manual/screens-and-operations/acquisition) - Traffic source conversion analysis
 - [Landing Pages](/docs/user-manual/screens-and-operations/landing-pages) - Entry point conversion optimization
 - [Settings](/docs/user-manual/screens-and-operations/settings) - Configure goal tracking preferences

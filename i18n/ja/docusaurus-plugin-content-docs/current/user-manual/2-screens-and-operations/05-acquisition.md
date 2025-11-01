@@ -5,12 +5,12 @@ title: 獲得
 
 # 獲得 (Acquisition)
 
-QA Advisor の獲得機能は、ウェブサイトへのトラフィックがどこから来ているかを詳細に分析します。トラフィックソース、キャンペーン効果、リファラル分析を通じて、マーケティング活動の効果を測定し、最適化のためのインサイトを提供します。
+QA Assistant の獲得機能は、ウェブサイトへのトラフィックがどこから来ているかを詳細に分析します。トラフィックソース、キャンペーン効果、リファラル分析を通じて、マーケティング活動の効果を測定し、最適化のためのインサイトを提供します。
 
 ## 獲得へのアクセス
 
 1. WordPress 管理画面にログイン
-2. **QA Advisor** メニューをクリック
+2. **QA Assistant** メニューをクリック
 3. **獲得 (Acquisition)** を選択
 
 **注意**: 獲得機能は**アドバンスモード**でのみ利用可能です。
@@ -225,7 +225,6 @@ QA Advisor の獲得機能は、ウェブサイトへのトラフィックがど
 
 ## 関連機能
 
-- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - 総合的な分析データ
 - [オーディエンス](/docs/user-manual/screens-and-operations/audience) - 訪問者の詳細分析
 - [ゴール](/docs/user-manual/screens-and-operations/goals) - コンバージョン追跡
 

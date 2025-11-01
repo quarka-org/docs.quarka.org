@@ -5,12 +5,12 @@ title: 全ページ
 
 # 全ページ (All Pages)
 
-QA Advisor の全ページ機能は、ウェブサイトのすべてのページに関する包括的な分析データを提供します。個々のページのパフォーマンスを詳細に把握し、サイト全体の最適化に役立つインサイトを得ることができます。
+QA Assistant の全ページ機能は、ウェブサイトのすべてのページに関する包括的な分析データを提供します。個々のページのパフォーマンスを詳細に把握し、サイト全体の最適化に役立つインサイトを得ることができます。
 
 ## 全ページへのアクセス
 
 1. WordPress 管理画面にログイン
-2. **QA Advisor** メニューをクリック
+2. **QA Assistant** メニューをクリック
 3. **全ページ (All Pages)** を選択
 
 ## 主要な機能
@@ -243,7 +243,6 @@ QA Advisor の全ページ機能は、ウェブサイトのすべてのページ
 
 ## 関連機能
 
-- [ダッシュボード](/docs/user-manual/screens-and-operations/dashboard) - サイト全体の概要
 - [ランディングページ](/docs/user-manual/screens-and-operations/landing-pages) - 入口ページの分析
 - [トップ成長](/docs/user-manual/screens-and-operations/top-growing) - 成長ページの分析
 
