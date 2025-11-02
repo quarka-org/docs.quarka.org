@@ -8,8 +8,8 @@
     "description": "WordCamp Europe 2025 excitement message"
   },
   "homepage.wordcamp.description": {
-    "message": "QA Advisor は、ヒートマップ（heatmap）とインタラクション追跡を通じてユーザー行動を理解するための強力な分析ツールです。",
-    "description": "QA Advisor description"
+    "message": "QA Assistant は、ヒートマップ（heatmap）とインタラクション追跡を通じてユーザー行動を理解するための強力な分析ツールです。",
+    "description": "QA Assistant description"
   },
   "homepage.wordcamp.fullVersion": {
     "message": "完全版は2025年夏にリリース予定です！",
@@ -32,7 +32,7 @@
     "description": "User Guide feature title"
   },
   "homepage.features.userGuide.description": {
-    "message": "QA Advisor WordPress Analytics の使用に関する包括的なガイドです。WordPress サイトの追跡、分析、最適化の方法を学習できます。",
+    "message": "QA Assistant の使用に関する包括的なガイドです。WordPress サイトの追跡、分析、最適化の方法を学習できます。",
     "description": "User Guide feature description"
   },
   "homepage.features.developerGuide.title": {
@@ -40,7 +40,7 @@
     "description": "Developer Guide feature title"
   },
   "homepage.features.developerGuide.description": {
-    "message": "QA Advisor を使用する開発者向けの技術文書です。API リファレンス、統合ガイド、カスタマイズオプションを提供します。",
+    "message": "QA Assistant を使用する開発者向けの技術文書です。API リファレンス、統合ガイド、カスタマイズオプションを提供します。",
     "description": "Developer Guide feature description"
   },
   "homepage.features.privacyFocused.title": {
@@ -48,7 +48,7 @@
     "description": "Privacy-Focused feature title"
   },
   "homepage.features.privacyFocused.description": {
-    "message": "QA Advisor はプライバシーを重視して設計されており、Cookie を使用せずにユーザーのプライバシーを尊重した分析を提供します。",
+    "message": "QA Assistant はプライバシーを重視して設計されており、Cookie を使用せずにユーザーのプライバシーを尊重した分析を提供します。",
     "description": "Privacy-Focused feature description"
   },
   "theme.ErrorPageContent.title": {
