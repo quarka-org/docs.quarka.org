@@ -4,13 +4,13 @@ sidebar_position: 1
 
 # よくある質問
 
-QA Assistant WordPress Analytics に関するよくある質問とその回答をまとめています。
+QA Assistants WordPress Analytics に関するよくある質問とその回答をまとめています。
 
 ## インストールと設定
 
-### Q: QA Assistant をインストールするための最小要件は何ですか？
+### Q: QA Assistants をインストールするための最小要件は何ですか？
 
-**A:** QA Assistant を正常に動作させるには以下の要件を満たす必要があります：
+**A:** QA Assistants を正常に動作させるには以下の要件を満たす必要があります：
 
 - **WordPress**: バージョン 5.9 以上
 - **PHP**: バージョン 7.0 以上（推奨：7.4 以上）
@@ -24,7 +24,7 @@ QA Assistant WordPress Analytics に関するよくある質問とその回答�
 **A:** アドバンスモードは、オーディエンス (Audience) インサイト、獲得 (Acquisition) レポート、ゴール (Goal) 追跡などの高度な機能を利用できるモードです。
 
 有効化手順：
-1. **QA Assistant** → **設定** に移動
+1. **QA Assistants** → **設定** に移動
 2. **アドバンスモード** オプションにチェック
 3. **変更を保存** をクリック
 
@@ -48,7 +48,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 **A:** データが表示されない場合、以下を確認してください：
 
-1. **追跡の確認**: **QA Assistant** → **リアルタイム** で即座のデータを確認
+1. **追跡の確認**: **QA Assistants** → **リアルタイム** で即座のデータを確認
 2. **ログインユーザー**: ログイン中の WordPress ユーザーはデフォルトで除外されます
 3. **キャッシュ**: ブラウザキャッシュをクリアして5-10分待機
 4. **JavaScript**: ブラウザコンソールでエラーがないか確認
@@ -63,14 +63,14 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 1. **十分なデータ**: ヒートマップ生成には最低限のクリックデータが必要
 2. **JavaScript エラー**: ブラウザコンソールでエラーを確認
-3. **除外設定**: QA Assistant スクリプトがキャッシュプラグインで除外されているか確認
+3. **除外設定**: QA Assistants スクリプトがキャッシュプラグインで除外されているか確認
 4. **設定確認**: **設定** でヒートマップ機能が有効になっているか確認
 
 ## パフォーマンスと互換性
 
-### Q: QA Assistant はサイトの速度に影響しますか？
+### Q: QA Assistants はサイトの速度に影響しますか？
 
-**A:** QA Assistant は軽量設計されており、サイトパフォーマンスへの影響は最小限です：
+**A:** QA Assistants は軽量設計されており、サイトパフォーマンスへの影響は最小限です：
 
 - スクリプトサイズは通常10KB未満
 - 非同期で動作し、ページ読み込みをブロックしません
@@ -78,24 +78,24 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: 他のプラグインとの競合はありますか？
 
-**A:** QA Assistant は多くのプラグインと互換性がありますが、以下のプラグインタイプで設定調整が必要な場合があります：
+**A:** QA Assistants は多くのプラグインと互換性がありますが、以下のプラグインタイプで設定調整が必要な場合があります：
 
 **キャッシュプラグイン**:
 - WP Rocket、W3 Total Cache、WP Super Cache
-- QA Assistant スクリプト（`qahm`、`qahmz`）を JavaScript 最適化から除外してください
+- QA Assistants スクリプト（`qahm`、`qahmz`）を JavaScript 最適化から除外してください
 
 **セキュリティプラグイン**:
 - Wordfence、Sucuri Security
-- QA Assistant のスクリプト読み込みがブロックされていないか確認してください
+- QA Assistants のスクリプト読み込みがブロックされていないか確認してください
 
 詳細は[環境セットアップ](/docs/user-manual/getting-started/environment-setup)をご覧ください。
 
 ### Q: jQuery を遅延読み込みしている場合の対処法は？
 
-**A:** jQuery を遅延読み込み（defer）している場合、QA Assistant スクリプトも同様に遅延させる必要があります。
+**A:** jQuery を遅延読み込み（defer）している場合、QA Assistants スクリプトも同様に遅延させる必要があります。
 
 **対処方法**:
-1. QA Assistant スクリプトをキャッシュプラグインの除外リストに追加
+1. QA Assistants スクリプトをキャッシュプラグインの除外リストに追加
 2. または jQuery 自体を遅延読み込みの対象から除外
 
 詳細は[jQuery 遅延読み込み時の対応](/docs/user-manual/getting-started/when-defer-jquery)をご確認ください。
@@ -114,7 +114,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 **A:** ゴール設定は**アドバンスモード**で利用可能です：
 
-1. **QA Assistant** → **ゴール (Goals)** に移動
+1. **QA Assistants** → **ゴール (Goals)** に移動
 2. **新しいゴールを追加** をクリック
 3. ゴールタイプを選択（ページビュー、イベント、時間など）
 4. 条件を設定して保存
@@ -133,18 +133,18 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: GDPR に準拠していますか？
 
-**A:** はい、QA Assistant は GDPR に準拠した設計になっています：
+**A:** はい、QA Assistants は GDPR に準拠した設計になっています：
 
 - **個人情報の匿名化**: IP アドレスの匿名化オプション
 - **データ保存期間**: 設定可能なデータ保存期間
 - **ユーザー同意**: Cookie 同意管理との連携
 - **データ削除**: ユーザーデータの削除機能
 
-詳細な設定は **QA Assistant** → **設定** → **プライバシー** で行えます。
+詳細な設定は **QA Assistants** → **設定** → **プライバシー** で行えます。
 
 ### Q: 収集されるデータの種類は何ですか？
 
-**A:** QA Assistant が収集するデータ：
+**A:** QA Assistants が収集するデータ：
 
 **匿名化されたデータ**:
 - ページビュー、クリック位置、スクロール深度
@@ -160,7 +160,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: 日本の個人情報保護法に対応していますか？
 
-**A:** はい、QA Assistant は日本の個人情報保護法に配慮した設定が可能です：
+**A:** はい、QA Assistants は日本の個人情報保護法に配慮した設定が可能です：
 
 - **匿名化処理**: 個人を特定できないよう IP アドレスを匿名化
 - **データ最小化**: 必要最小限のデータのみ収集
@@ -169,7 +169,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: 日本語サイトでの文字化けはありませんか？
 
-**A:** QA Assistant は UTF-8 に完全対応しており、日本語サイトでの文字化けは発生しません：
+**A:** QA Assistants は UTF-8 に完全対応しており、日本語サイトでの文字化けは発生しません：
 
 - **日本語ページタイトル**: 正しく表示・記録
 - **日本語 URL**: 適切に処理
@@ -178,7 +178,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: 日本のホスティングサービスとの互換性は？
 
-**A:** QA Assistant は主要な日本のホスティングサービスと互換性があります：
+**A:** QA Assistants は主要な日本のホスティングサービスと互換性があります：
 
 - **さくらインターネット**: 対応
 - **エックスサーバー**: 対応
@@ -208,7 +208,7 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: データのエクスポートはできますか？
 
-**A:** はい、QA Assistant では以下の形式でデータをエクスポートできます：
+**A:** はい、QA Assistants では以下の形式でデータをエクスポートできます：
 
 - **CSV 形式**: 表形式データの出力
 - **PDF レポート**: プレゼンテーション用レポート
@@ -220,15 +220,13 @@ define('QAHM_MONTHLY_PV_LIMIT', 0);
 
 ### Q: サポートを受けるにはどうすればよいですか？
 
-**A:** QA Assistant のサポートは以下の方法で受けられます：
+**A:** QA Assistants のサポートは以下の方法で受けられます：
 
 - **ドキュメント**: [ユーザーガイド](/docs/user-manual)
-- **GitHub Issues**: [バグ報告・機能要望](https://github.com/qa-advisor/issues)
-- **コミュニティ**: [GitHub Discussions](https://github.com/qa-advisor/discussions)
 
 ### Q: アップデートはどのように行われますか？
 
-**A:** QA Assistant のアップデート：
+**A:** QA Assistants のアップデート：
 
 - **自動通知**: WordPress 管理画面でアップデート通知
 - **手動更新**: プラグイン画面から手動でアップデート

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Frequently Asked Questions
 
-This section contains answers to frequently asked questions about QA Assistant, a WordPress plugin.
+This section contains answers to frequently asked questions about QA Assistants, a WordPress plugin.
 
 **Coming Soon**
 

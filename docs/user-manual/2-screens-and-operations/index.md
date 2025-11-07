@@ -6,7 +6,7 @@ sidebar_label: Menu Overview
 
 # Menu Overview
 
-A compact guide to the QA Assistant reports and where to find key metrics.
+A compact guide to the QA Assistants reports and where to find key metrics.
 
 > **Display modes control which menus appear.**  
 > **Simple (default)** shows: **Assistants / Realtime / Audience / Settings / Help**  

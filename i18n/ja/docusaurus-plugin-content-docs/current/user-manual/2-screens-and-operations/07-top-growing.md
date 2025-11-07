@@ -1,17 +1,17 @@
 ---
 sidebar_position: 7
-title: トップ成長
+title: 急上昇ページ
 ---
 
-# トップ成長 (Top Growing)
+# 急上昇ページ (Top Growing)
 
-QA Assistant のトップ成長機能は、急速に成長しているコンテンツやページを特定し、トレンドを把握するための分析ツールです。成長率の高いページを発見することで、成功要因を分析し、他のコンテンツにも応用できるインサイトを得ることができます。
+QA Assistantsの「急上昇ページ」レポートは、急速に成長しているコンテンツやページを特定し、トレンドを把握するための分析ツールです。成長率の高いページを発見することで、成功要因を分析し、他のコンテンツにも応用できるインサイトを得ることができます。
 
-## トップ成長へのアクセス
+## 急上昇ページへのアクセス
 
 1. WordPress 管理画面にログイン
-2. **QA Assistant** メニューをクリック
-3. **トップ成長 (Top Growing)** を選択
+2. **QA Assistants** メニューをクリック
+3. **急上昇ページ (Top Growing)** を選択
 
 ## 主要な機能
 
@@ -246,8 +246,8 @@ QA Assistant のトップ成長機能は、急速に成長しているコンテ�
 
 ## 関連機能
 
-- [全ページ](/docs/user-manual/screens-and-operations/all-pages) - 全ページの詳細分析
-- [獲得](/docs/user-manual/screens-and-operations/acquisition) - トラフィック獲得分析
+- [すべてのページ](/docs/user-manual/screens-and-operations/all-pages) - すべてのページの詳細分析
+- [集客](/docs/user-manual/screens-and-operations/acquisition) - トラフィック集客分析
 
 ---
 

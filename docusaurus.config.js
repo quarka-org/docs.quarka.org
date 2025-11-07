@@ -3,8 +3,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'QA Assistant Documentation',
-  tagline: 'User and Developer Documentation for QA Assistant WordPress Analytics',
+  title: 'QA Assistants Documentation',
+  tagline: 'User and Developer Documentation for QA Assistants WordPress Analytics',
   favicon: 'img/favicon.ico',
 
   url: 'https://docs.quarka.org',
@@ -67,9 +67,9 @@ const config = {
     ({
       image: 'img/social-card.jpg',
       navbar: {
-        title: 'QA Assistant Documentation',
+        title: 'QA Assistants Documentation',
         logo: {
-          alt: 'QA Assistant Logo',
+          alt: 'QA Assistants Logo',
           src: 'img/qa-new-logo.png',
         },
         items: [

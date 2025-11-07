@@ -5,12 +5,12 @@ sidebar_position: 11
 # Settings
 
 ## Overview
-The Settings screen is the central configuration hub for the QA Assistant plugin, allowing you to customize tracking behavior, privacy settings, data collection preferences, and integration options. This section provides comprehensive control over how the plugin operates on your website and what data it collects.
+The Settings screen is the central configuration hub for the QA Assistants plugin, allowing you to customize tracking behavior, privacy settings, data collection preferences, and integration options. This section provides comprehensive control over how the plugin operates on your website and what data it collects.
 
 ## Accessing This Screen
 1. Log in to your WordPress admin panel
 2. Navigate to the left sidebar menu
-3. Click on "QA Assistant"
+3. Click on "QA Assistants"
 4. Select "Settings" from the submenu
 
 ## Screen Layout
@@ -45,7 +45,7 @@ The Settings screen is organized into several configuration sections:
 - **Tips**: Regularly review privacy settings to maintain compliance with evolving regulations
 
 ### Third-party Integrations
-- **Purpose**: Connect QA Assistant with other tools and services
+- **Purpose**: Connect QA Assistants with other tools and services
 - **How to use**: Configure API connections, data sharing, and external service integrations
 - **Options**: Google Analytics, social media platforms, email marketing tools, and CRM systems
 - **Tips**: Only enable integrations you actively use to minimize data sharing and complexity

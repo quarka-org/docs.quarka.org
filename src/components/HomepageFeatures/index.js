@@ -16,7 +16,7 @@ const FeatureList = [
       <Translate
         id="homepage.features.userGuide.description"
         description="User Guide feature description">
-        Comprehensive guides for using QA Assistant, a WordPress plugin.
+        Comprehensive guides for using QA Assistants, a WordPress plugin.
         Learn how to track, analyze, and optimize your WordPress site.
       </Translate>
     ),
@@ -33,7 +33,7 @@ const FeatureList = [
       <Translate
         id="homepage.features.developerGuide.description"
         description="Developer Guide feature description">
-        Technical documentation for developers working with QA Assistant.
+        Technical documentation for developers working with QA Assistants.
         API references, integration guides, and customization options.
       </Translate>
     ),
@@ -50,7 +50,7 @@ const FeatureList = [
       <Translate
         id="homepage.features.privacyFocused.description"
         description="Privacy-Focused feature description">
-        QA Assistant is designed with privacy in mind, providing analytics
+        QA Assistants is designed with privacy in mind, providing analytics
         without cookies and respecting user privacy.
       </Translate>
     ),

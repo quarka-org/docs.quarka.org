@@ -5,17 +5,17 @@ title: Environment Setup
 
 # Environment Setup
 
-To ensure accurate tracking and smooth performance with QA Assistant, we recommend adjusting the following server and plugin settings.
+To ensure accurate tracking and smooth performance with QA Assistants, we recommend adjusting the following server and plugin settings.
 
 ---
 
 ## 1. JavaScript Compression & Minification
 
-Do **not** compress, minify, or combine JavaScript files used by QA Assistant.  
+Do **not** compress, minify, or combine JavaScript files used by QA Assistants.  
 Some optimization plugins or themes may interfere with tracking scripts by modifying or delaying their execution.
 
 > ✅ Check your caching or optimization plugin settings  
-> ✅ Disable JS minification or defer/async for QA Assistant scripts
+> ✅ Disable JS minification or defer/async for QA Assistants scripts
 
 For more technical background, see [When jQuery is Deferred](/docs/user-manual/getting-started/when-defer-jquery).
 
@@ -23,7 +23,7 @@ For more technical background, see [When jQuery is Deferred](/docs/user-manual/g
 
 ## 2. PHP Memory Limit & Execution Time
 
-QA Assistant processes tracking data during daily aggregation, which can be memory-intensive on larger sites.
+QA Assistants processes tracking data during daily aggregation, which can be memory-intensive on larger sites.
 
 We recommend the following PHP settings:
 
@@ -37,7 +37,7 @@ We recommend the following PHP settings:
 
 ## 3. Plugin & Theme Compatibility
 
-QA Assistant works with most major plugins and themes. However, we recommend:
+QA Assistants works with most major plugins and themes. However, we recommend:
 
 - Disabling JavaScript defer/async for critical scripts
 - Ensuring your caching plugin allows output from `qa-heatmap-analytics`
@@ -50,7 +50,7 @@ QA Assistant works with most major plugins and themes. However, we recommend:
 If you're using a CDN (e.g., Cloudflare) or recently migrated your server:
 
 - Clear all caches (browser, plugin, CDN)
-- Confirm that QA Assistant scripts are not blocked or delayed
+- Confirm that QA Assistants scripts are not blocked or delayed
 - Make sure your server time zone is correct (used for data grouping)
 
 ---

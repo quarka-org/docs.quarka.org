@@ -93,7 +93,7 @@ define( 'QAHM_CONFIG_DATA_RETENTION_DAYS', 180 );
 
 ## 3) How to confirm
 
-1. In WordPress, go to **QA Assistant → Settings → General Settings**.
+1. In WordPress, go to **QA Assistants → Settings → General Settings**.
 2. Scroll to **Data retention & limits**.
    - Monthly PV Limit and Data retention shown there should match the numbers set in `wp-content/qa-zero-data/qa-config.php`.
 3. Reports will use these values:

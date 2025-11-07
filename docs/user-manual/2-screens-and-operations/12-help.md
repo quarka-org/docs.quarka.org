@@ -5,12 +5,12 @@ sidebar_position: 12
 # Help
 
 ## Overview
-The Help screen provides comprehensive support resources, documentation links, troubleshooting guides, and contact information for QA Assistant plugin assistance. This section serves as your first stop for resolving issues, learning about features, and accessing professional support when needed.
+The Help screen provides comprehensive support resources, documentation links, troubleshooting guides, and contact information for QA Assistants plugin assistance. This section serves as your first stop for resolving issues, learning about features, and accessing professional support when needed.
 
 ## Accessing This Screen
 1. Log in to your WordPress admin panel
 2. Navigate to the left sidebar menu
-3. Click on "QA Assistant"
+3. Click on "QA Assistants"
 4. Select "Help" from the submenu
 
 ## Screen Layout
@@ -46,7 +46,7 @@ The Help screen includes:
 
 ## Common Tasks
 
-### Getting Started with QA Assistant
+### Getting Started with QA Assistants
 1. Access the Help screen and review the Quick Start Guide
 2. Follow the initial setup instructions step by step
 3. Configure basic tracking and privacy settings

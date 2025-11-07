@@ -4,13 +4,13 @@ sidebar_position: 1
 
 # Developer Manual
 
-Welcome to the QA Assistant Developer Manual. Here you'll learn how to create data-driven plugins using QAL (Query Assistant Language).
+Welcome to the QA Assistants Developer Manual. Here you'll learn how to create data-driven plugins using QAL (Query Assistant Language).
 
 ---
 
 ## Let's Build Data-Driven Plugins
 
-You can create your own plugins using the website data collected by QA Assistant.
+You can create your own plugins using the website data collected by QA Assistants.
 
 > "Show me the top 10 pages visited by mobile users last week"
 
@@ -18,27 +18,27 @@ Even without specialized knowledge, data can answer questions like this — this
 
 ---
 
-## Introducing QA Assistant API (Preview)
+## Introducing QA Assistants API (Preview)
 
 We're developing a REST API that gives you programmatic access to all your analytics data. Whether you're building custom dashboards, integrating with AI tools, or automating reports, the API will be your gateway.
 
 ### Why This Matters
 
 **For Plugin Developers:**
-- Access all QA Assistant data
+- Access all QA Assistants data
 - Create custom report generation plugins
 - Distribute on WordPress.org and monetize
 - Grow as part of the developer ecosystem
 
 **For AI Integration Enthusiasts:**
-- Connect Claude or ChatGPT to QA Assistant
+- Connect Claude or ChatGPT to QA Assistants
 - Support integration via MCP (Model Context Protocol)
 - Analyze site data in natural language
 - Let AI analyze traffic patterns and suggest improvements
 
 **For Data Utilization Enthusiasts:**
 - Integrate with BigQuery or Looker Studio
-- Combine QA Assistant data with other sources
+- Combine QA Assistants data with other sources
 - Automate custom reports
 - Schedule automated reports via scripts
 
@@ -255,7 +255,7 @@ Analyze performance by UTM campaign:
 
 ### 3. AI-Powered Insights
 
-By connecting QA Assistant to Claude via MCP (Model Context Protocol), you can analyze data in natural language:
+By connecting QA Assistants to Claude via MCP (Model Context Protocol), you can analyze data in natural language:
 
 ```
 You: Show me the blog posts that are getting the most organic traffic this month
@@ -273,7 +273,7 @@ Main materials accessible in QAL:
 
 ### 📊 Integrated Page View Log (`allpv`)
 
-The core unified data source of QA Assistant. This integrated material contains all website behavioral data including page views, sessions, UTM campaigns, device information, and more:
+The core unified data source of QA Assistants. This integrated material contains all website behavioral data including page views, sessions, UTM campaigns, device information, and more:
 
 **Basic Information:**
 - URL, title, referrer
@@ -303,7 +303,7 @@ Search performance data:
 - Search appearance
 - Rankings over time
 
-**Design Philosophy:** QA Assistant's design philosophy is to consolidate data into **one unified material** (`allpv`), eliminating the need for complex JOIN operations and providing an intuitive, easy-to-understand data structure for developers. More user behavior metrics will continue to be added to `allpv` over time.
+**Design Philosophy:** QA Assistants' design philosophy is to consolidate data into **one unified material** (`allpv`), eliminating the need for complex JOIN operations and providing an intuitive, easy-to-understand data structure for developers. More user behavior metrics will continue to be added to `allpv` over time.
 
 ---
 
@@ -338,15 +338,15 @@ Using QAL, you can create various data-driven plugins:
 
 ---
 
-## QA Assistant's Approach
+## QA Assistants' Approach
 
-QA Assistant offers a slightly different perspective on utilizing website data.
+QA Assistants offers a slightly different perspective on utilizing website data.
 
-Google Analytics 4 (GA4) and other excellent tools excel at detailed data analysis and strategic decision-making. QA Assistant, on the other hand, focuses on **daily website operations**, aiming to understand data and suggest specific next actions.
+Google Analytics 4 (GA4) and other excellent tools excel at detailed data analysis and strategic decision-making. QA Assistants, on the other hand, focuses on **daily website operations**, aiming to understand data and suggest specific next actions.
 
-For example, for everyday content updates or social media posting decisions, QA Assistant's concrete action suggestions might be helpful. At the same time, when developing business strategy, you might perform deeper analysis with GA4's exploration reports and custom dimensions — this kind of role division is one approach.
+For example, for everyday content updates or social media posting decisions, QA Assistants' concrete action suggestions might be helpful. At the same time, when developing business strategy, you might perform deeper analysis with GA4's exploration reports and custom dimensions — this kind of role division is one approach.
 
-**QA Assistant can be used in combination with existing tools like GA4.** We hope you'll consider it as one option for supporting your website's growth while leveraging each tool's strengths.
+**QA Assistants can be used in combination with existing tools like GA4.** We hope you'll consider it as one option for supporting your website's growth while leveraging each tool's strengths.
 
 ---
 
@@ -423,7 +423,7 @@ The API is currently in **active development**. We're refining the design, testi
 
 **Want early access?**
 
-If you're interested in being an early tester or have specific use cases in mind, please let us know. Join us on [GitHub Issues](https://github.com/quarka-org) or [QA Assistant Meetup](https://www.meetup.com/ja-jp/qa-analytics-meetup/).
+If you're interested in being an early tester or have specific use cases in mind, please let us know. Join us on [GitHub Issues](https://github.com/quarka-org) or [QA Assistants Meetup](https://www.meetup.com/ja-jp/qa-analytics-meetup/).
 
 ---
 
@@ -436,4 +436,4 @@ This developer manual will be regularly updated as development progresses. Bookm
 - Early access announcements
 - Integration guides and MCP server information
 
-**Questions or ideas?** Share them on [GitHub Issues](https://github.com/quarka-org) or [QA Assistant Meetup](https://www.meetup.com/ja-jp/qa-analytics-meetup/). Your feedback helps shape the future of data-driven assistance.
+**Questions or ideas?** Share them on [GitHub Issues](https://github.com/quarka-org) or [QA Assistants Meetup](https://www.meetup.com/ja-jp/qa-analytics-meetup/). Your feedback helps shape the future of data-driven assistance.

@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # 画面と操作
 
-QA Assistant プラグインのすべての画面とその操作に関する包括的なドキュメントです。
+QA Assistants プラグインのすべての画面とその操作に関する包括的なドキュメントです。
 
 ## 概要
 
-このセクションでは、QA Assistant WordPress プラグインの各画面について詳細なガイドを提供します。各画面のドキュメントには以下が含まれます：
+このセクションでは、QA Assistants WordPress プラグインの各画面について詳細なガイドを提供します。各画面のドキュメントには以下が含まれます：
 
 - **目的と機能** - 画面の役割と使用する理由
 - **ナビゲーション手順** - 画面へのアクセス方法
@@ -43,7 +43,7 @@ QA Assistant プラグインのすべての画面とその操作に関する包�
 
 ## はじめに
 
-QA Assistant を初めて使用する場合は、以下から始めることをお勧めします：
+QA Assistants を初めて使用する場合は、以下から始めることをお勧めします：
 
 2. **[設定](/docs/user-manual/screens-and-operations/settings)** - 追跡設定を構成する
 3. **[オーディエンス (Audience)](/docs/user-manual/screens-and-operations/audience)** - 訪問者を理解する
