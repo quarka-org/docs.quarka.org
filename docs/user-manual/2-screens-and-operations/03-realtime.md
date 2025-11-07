@@ -10,7 +10,7 @@ The Realtime screen provides live monitoring of visitor activity on your website
 ## Accessing This Screen
 1. Log in to your WordPress admin panel
 2. Navigate to the left sidebar menu
-3. Click on "QA Assistant"
+3. Click on "QA Assistants"
 4. Select "Realtime" from the submenu
 
 ## Screen Layout

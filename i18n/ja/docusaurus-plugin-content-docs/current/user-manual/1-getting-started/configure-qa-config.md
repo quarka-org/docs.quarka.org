@@ -93,7 +93,7 @@ define( 'QAHM_CONFIG_DATA_RETENTION_DAYS', 180 );
 
 ## 3) 反映の確認方法
 
-1. WordPress 管理画面で **QA Assistant → Settings → General Settings** を開きます。
+1. WordPress 管理画面で **QA Assistants → Settings → General Settings** を開きます。
 2. **Data retention & limits** のセクションを確認します。
    - `wp-content/qa-zero-data/qa-config.php` で設定した **月間PV上限** と **データ保存期間** がここに表示されます。
 3. レポートへの反映について：

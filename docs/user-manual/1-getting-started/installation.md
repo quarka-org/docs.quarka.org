@@ -5,7 +5,7 @@ title: Installation
 
 # Installation Guide
 
-QA Assistant is the new name and improved version of our WordPress plugin previously known as **QA Analytics**.  
+QA Assistants is the new name and improved version of our WordPress plugin previously known as **QA Analytics**.  
 Currently available as a **public beta**, it introduces a redesigned interface and enhanced features -- while keeping the same plugin identifier: `qa-heatmap-analytics`.
 
 This guide will walk you through the steps to install the beta version on your WordPress site.
@@ -13,7 +13,7 @@ This guide will walk you through the steps to install the beta version on your W
 
 ## Prerequisites
 
-Before installing QA Assistant, ensure your system meets the following requirements:
+Before installing QA Assistants, ensure your system meets the following requirements:
 
 - **WordPress**: Version 5.9 or higher
 - **PHP**: Version 7.0 or higher
@@ -56,24 +56,24 @@ wp plugin install qa-heatmap-analytics.zip --activate
 
 ### Verify Installation
 
-Check that QA Assistant is working:
+Check that QA Assistants is working:
 1. Visit your site's frontend
 2. Return to WordPress admin
-3. Go to **QA Assistant** → **Realtime**
+3. Go to **QA Assistants** → **Realtime**
 4. You should see initial tracking data
 
 ### Enable Advanced Mode (Optional)
 
-QA Assistant offers an **Advanced Mode** that unlocks additional features such as Audience insights, Acquisition reports, and Goal tracking.  
+QA Assistants offers an **Advanced Mode** that unlocks additional features such as Audience insights, Acquisition reports, and Goal tracking.  
 To enable it:
 
-1. Go to **QA Assistant** → **Settings**  
+1. Go to **QA Assistants** → **Settings**  
 2. Check the **Advanced Mode** option  
 3. Click **Save Changes**
 
 ### (Optional) Customize Monthly Data Collection Limit
 
-By default, QA Assistant collects up to **10,000 pageviews per month**.  
+By default, QA Assistants collects up to **10,000 pageviews per month**.  
 You can change this limit by adding a line to your `qa-config.php` file.  
 [Learn how to configure the limit →](/docs/user-manual/getting-started/configure-qa-config)
 
@@ -93,7 +93,7 @@ If the plugin fails to activate, please check the following:
 If no data appears after installation, please consider the following:
 
 - Tracking data in the **Dashboard** (available in Advanced Mode) is updated only once a day, typically overnight.
-- To check if tracking is working immediately, go to **QA Assistant** → **Realtime** in the admin menu.
+- To check if tracking is working immediately, go to **QA Assistants** → **Realtime** in the admin menu.
 - Logged-in WordPress users are not tracked by default.
 - Clear your browser cache and wait 5–10 minutes after activation to allow the first data to appear.
 - If no activity is shown even in the **Realtime** view after visiting your site, the tracking script might not be loading correctly.

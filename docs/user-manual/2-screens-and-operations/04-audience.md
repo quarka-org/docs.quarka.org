@@ -10,7 +10,7 @@ The Audience screen provides comprehensive insights into your website visitors' 
 ## Accessing This Screen
 1. Log in to your WordPress admin panel
 2. Navigate to the left sidebar menu
-3. Click on "QA Assistant"
+3. Click on "QA Assistants"
 4. Select "Audience" from the submenu
 
 ## Screen Layout

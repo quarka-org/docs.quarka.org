@@ -1,6 +1,6 @@
-# QA Assistant Documentation
+# QA Assistants Documentation
 
-This repository contains the documentation website for QA Assistant WordPress Analytics, built with [Docusaurus](https://docusaurus.io/).
+This repository contains the documentation website for QA Assistants WordPress Analytics, built with [Docusaurus](https://docusaurus.io/).
 
 ## Contributing
 

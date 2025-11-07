@@ -4,19 +4,19 @@ sidebar_position: 1
 
 # Getting Started
 
-Welcome to QA Assistant! This section will guide you through the installation process to help you get started quickly.
+Welcome to QA Assistants! This section will guide you through the installation process to help you get started quickly.
 
 ## Quick Start Steps
 
 ### [Installation](/docs/user-manual/getting-started/installation)  
-Download and install QA Assistant on your WordPress site in just a few minutes.
+Download and install QA Assistants on your WordPress site in just a few minutes.
 
 ### [Environment Setup](/docs/user-manual/getting-started/environment-setup)  
 Make sure your server, plugins, and caching settings are optimized for accurate tracking.
 
 ## What You'll Learn
 
-- ✅ How to install QA Assistant on WordPress  
+- ✅ How to install QA Assistants on WordPress  
 - ✅ How to configure your environment for reliable tracking  
 - ✅ System requirements and compatibility  
 - ✅ Basic configuration and settings  

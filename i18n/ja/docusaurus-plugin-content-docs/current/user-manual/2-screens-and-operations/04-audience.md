@@ -1,19 +1,18 @@
 ---
 sidebar_position: 4
-title: オーディエンス
+title: 訪問レポート
 ---
 
-# オーディエンス (Audience)
+# 訪問レポート(Audience)
 
-QA Assistant のオーディエンス機能は、ウェブサイトの訪問者に関する詳細な分析を提供します。訪問者の属性、行動パターン、エンゲージメントを深く理解することで、より効果的なマーケティング戦略とユーザーエクスペリエンスの改善を実現できます。
+QA Assistants の「訪問レポート」は、ウェブサイトの訪問者に関する詳細な分析を提供します。訪問者の属性、行動パターン、エンゲージメントを深く理解することで、より効果的なマーケティング戦略とユーザーエクスペリエンスの改善を実現できます。
 
-## オーディエンスへのアクセス
+## 訪問レポートへのアクセス
 
 1. WordPress 管理画面にログイン
-2. **QA Assistant** メニューをクリック
-3. **オーディエンス (Audience)** を選択
+2. **QA Assistants** メニューをクリック
+3. **訪問レポート (Audience)** を選択
 
-**注意**: オーディエンス機能は**アドバンスモード**でのみ利用可能です。
 
 ## 主要な機能
 
@@ -201,7 +200,7 @@ QA Assistant のオーディエンス機能は、ウェブサイトの訪問者�
 
 ## 関連機能
 
-- [獲得](/docs/user-manual/screens-and-operations/acquisition) - トラフィックソース分析
+- [集客](/docs/user-manual/screens-and-operations/acquisition) - トラフィックソース分析
 - [ゴール](/docs/user-manual/screens-and-operations/goals) - コンバージョン分析
 
 ---

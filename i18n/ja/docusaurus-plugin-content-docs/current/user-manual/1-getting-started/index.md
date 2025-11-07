@@ -4,19 +4,19 @@ sidebar_position: 1
 
 # はじめに
 
-QA Assistant へようこそ！このセクションでは、インストールプロセスをガイドし、迅速に開始できるようサポートします。
+QA Assistants へようこそ！このセクションでは、インストールプロセスをガイドし、迅速に開始できるようサポートします。
 
 ## クイックスタート手順
 
 ### [インストール](/docs/user-manual/getting-started/installation)  
-わずか数分で WordPress サイトに QA Assistant をダウンロードしてインストールできます。
+わずか数分で WordPress サイトに QA Assistants をダウンロードしてインストールできます。
 
 ### [環境セットアップ](/docs/user-manual/getting-started/environment-setup)  
 正確な追跡のために、サーバー、プラグイン、キャッシュ設定が最適化されていることを確認します。
 
 ## 学習内容
 
-- ✅ WordPress に QA Assistant をインストールする方法  
+- ✅ WordPress に QA Assistants をインストールする方法  
 - ✅ 信頼性の高い追跡のための環境設定方法  
 - ✅ システム要件と互換性  
 - ✅ 基本設定とセッティング  

@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # User Guide
 
-Welcome to the QA Assistant User Guide. This guide helps you go from first install to confident, day-to-day use.
+Welcome to the QA Assistants User Guide. This guide helps you go from first install to confident, day-to-day use.
 
 ---
 

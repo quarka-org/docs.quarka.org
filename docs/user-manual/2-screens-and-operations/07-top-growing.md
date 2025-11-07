@@ -10,7 +10,7 @@ The Top Growing screen identifies pages and content on your website that are exp
 ## Accessing This Screen
 1. Log in to your WordPress admin panel
 2. Navigate to the left sidebar menu
-3. Click on "QA Assistant"
+3. Click on "QA Assistants"
 4. Select "Top Growing" from the submenu
 
 ## Screen Layout
