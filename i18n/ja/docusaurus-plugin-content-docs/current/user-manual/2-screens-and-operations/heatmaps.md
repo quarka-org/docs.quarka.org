@@ -259,10 +259,6 @@ QA Assistants のヒートマップ機能は、ウェブサイト上でのユー
 3. ブラウザキャッシュをクリア
 4. サーバーリソースを確認
 
-## 関連機能
-
-- [全ページ](/docs/user-manual/screens-and-operations/all-pages) - ページ別の詳細分析
-- [設定](/docs/user-manual/screens-and-operations/settings) - ヒートマップ設定の調整
 
 ---
 

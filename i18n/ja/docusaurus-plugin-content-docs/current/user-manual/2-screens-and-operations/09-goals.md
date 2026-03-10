@@ -265,10 +265,6 @@ QA Assistants の「ゴール」レポートは、ウェブサイトの重要な
 3. サーバーリソースを確認
 4. データベースの最適化
 
-## 関連機能
-
-- [オーディエンス](/docs/user-manual/screens-and-operations/audience) - ユーザーセグメント分析
-- [獲得](/docs/user-manual/screens-and-operations/acquisition) - トラフィック獲得分析
 
 ---
 

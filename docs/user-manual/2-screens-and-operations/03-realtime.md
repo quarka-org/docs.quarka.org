@@ -115,6 +115,3 @@ The Realtime screen displays:
 - **Solution**: Ensure geographic tracking is enabled in plugin settings
 - **Check**: Verify that location services are not being blocked by privacy settings
 
-## Related Documentation
-- [Audience](/docs/user-manual/screens-and-operations/audience) - Detailed visitor demographics
-- [Settings](/docs/user-manual/screens-and-operations/settings) - Configure real-time tracking options

@@ -182,10 +182,6 @@ QA Assistants のリアルタイム機能は、現在サイトを訪問してい
 3. キャッシュプラグインの設定確認
 4. 追跡コードの重複設置がないか確認
 
-## 関連機能
-
-- [オーディエンス](/docs/user-manual/screens-and-operations/audience) - 詳細な訪問者分析
-- [設定](/docs/user-manual/screens-and-operations/settings) - 追跡設定の調整
 
 ---
 
