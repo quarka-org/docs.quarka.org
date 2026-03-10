@@ -98,12 +98,4 @@ Audience / Acquisition / Landing Pages / Top Growing / All Pages / Goals / Realt
 本ドキュメント、サポートフォーラム、デバッグ情報へのリンク。  
 → /docs/user-manual/help
 
----
 
-## クイックリンク
-
-- 🚀 /docs/user-manual/getting-started/installation
-- ⚙️ /docs/user-manual/screens-and-operations/advanced-mode
-- 🤖 /docs/user-manual/assistants/overview
-- 🎥 /docs/user-manual/screens-and-operations/session-replay
-- 🔥 /docs/user-manual/screens-and-operations/heatmap
