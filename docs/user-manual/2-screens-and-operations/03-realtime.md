@@ -4,114 +4,89 @@ sidebar_position: 3
 
 # Realtime
 
-## Overview
-The Realtime screen provides live monitoring of visitor activity on your website. This feature allows you to see what's happening on your site right now, including active visitors, page views, traffic sources, and user interactions as they occur in real-time.
+A screen for monitoring your site's live activity.
 
 ## Accessing This Screen
+
 1. Log in to your WordPress admin panel
-2. Navigate to the left sidebar menu
-3. Click on "QA Assistants"
-4. Select "Realtime" from the submenu
+2. Click **QA Assistants** in the left sidebar
+3. Select **Realtime**
+
+> Realtime is available in both Simple mode and Advanced mode.
 
 ## Screen Layout
-![Realtime Overview](./images/screen-realtime-overview.png)
 
-The Realtime screen displays:
-- **Active Visitors Counter**: Shows the current number of visitors on your site
-- **Live Activity Feed**: Real-time stream of visitor actions and page views
-- **Geographic Map**: Visual representation of visitor locations
-- **Top Active Pages**: List of pages currently being viewed
-- **Traffic Sources**: Real-time breakdown of how visitors are arriving
-- **Device and Browser Information**: Live data about visitor technology
+The Realtime screen consists of two main sections:
 
-## Features and Functions
+1. **Realtime Activity** — Current user counts
+2. **Session Recordings** — List of completed sessions with session replay
 
-### Live Visitor Monitoring
-- **Purpose**: Track the exact number of people currently browsing your website
-- **How to use**: Monitor the active visitors counter for real-time engagement levels
-- **Options**: View detailed information about each active session
-- **Tips**: Use during marketing campaigns or content launches to gauge immediate response
+---
 
-### Real-time Activity Stream
-- **Purpose**: See individual visitor actions as they happen on your site
-- **How to use**: Watch the activity feed for page views, clicks, and interactions
-- **Options**: Filter activities by page, visitor type, or action
-- **Tips**: Identify popular content and user behavior patterns in real-time
+## Realtime Activity
 
-### Geographic Visitor Tracking
-- **Purpose**: Visualize where your current visitors are located geographically
-- **How to use**: View the interactive map showing visitor locations
-- **Options**: Zoom in on specific regions or countries
-- **Tips**: Useful for understanding global reach and timing content for different time zones
+### Users in the Last 30 Minutes
 
-### Live Page Performance
-- **Purpose**: Monitor which pages are currently most popular
-- **How to use**: Check the top active pages list to see current content performance
-- **Options**: View detailed metrics for each active page
-- **Tips**: Identify trending content and optimize high-traffic pages in real-time
+Displays the number of currently active sessions on your site.
 
-## Common Tasks
+Sessions that have had **any activity within the last 30 minutes** are counted. Activity includes not only page views and navigation, but also scrolling, clicking, and other interactions.
 
-### Monitoring Campaign Performance
-1. Launch a marketing campaign or publish new content
-2. Access the Realtime screen to monitor immediate response
-3. Watch for spikes in active visitors and traffic sources
-4. Track which pages are receiving the most attention
+### Active Users in the Last 1 Minute
 
-### Identifying Technical Issues
-1. Monitor the realtime feed for unusual patterns or errors
-2. Check if visitors are leaving specific pages quickly
-3. Look for geographic patterns that might indicate technical problems
-4. Use real-time data to quickly identify and resolve issues
+Of the users in the last 30 minutes, this shows the number who have had **any interaction within the last 60 seconds**.
 
-### Content Performance Analysis
-1. Publish new content or make site changes
-2. Monitor real-time visitor behavior on affected pages
-3. Track engagement metrics and user flow patterns
-4. Make immediate adjustments based on real-time feedback
+### Auto-refresh
 
-### Event and Launch Monitoring
-1. During special events or product launches, keep the Realtime screen open
-2. Monitor visitor spikes and geographic distribution
-3. Track traffic sources to see which promotional channels are most effective
-4. Respond quickly to unexpected traffic patterns or technical issues
+User counts are **automatically updated every 10 seconds**.
 
-## Settings and Configuration
+---
 
-### Real-time Data Refresh
-- Set the frequency of data updates (typically every 5-30 seconds)
-- Configure which metrics to display in real-time
-- Customize the activity feed to show relevant actions
+## Session Recordings
 
-### Geographic Display Options
-- Choose map style and zoom levels
-- Set up geographic filters or focus areas
-- Configure location tracking precision
+### Overview
 
-### Activity Feed Filters
-- Customize which visitor actions to display
-- Set up filters for specific pages or user segments
-- Configure notification thresholds for unusual activity
+This section displays a list of completed user sessions with their browsing data.
 
-## Troubleshooting
+Sessions with no activity for more than 30 minutes are processed as "completed." Only sessions that have dwell data (behavioral records such as scrolling) are added to this list.
 
-### No Real-time Data
-- **Issue**: Realtime screen shows no current visitors or activity
-- **Solution**: Verify that tracking code is properly installed and functioning
-- **Check**: Ensure your website has actual traffic and the data isn't being blocked
+The list holds a **maximum of 5,000 sessions**. As new sessions are added, the oldest ones are removed.
 
-### Delayed Data Updates
-- **Issue**: Real-time data appears to be delayed or not updating
-- **Solution**: Check your internet connection and refresh the browser
-- **Check**: Verify that JavaScript is enabled and not being blocked by ad blockers
+### Table Columns
 
-### Inaccurate Visitor Count
-- **Issue**: Active visitor count seems too high or too low
-- **Solution**: Check for duplicate tracking codes or bot traffic filtering
-- **Check**: Verify that session timeout settings are configured correctly
+| Column | Description |
+|---|---|
+| **Device** | Device type (PC / Smartphone / Tablet) |
+| **Exit Time** | Last access time of the session |
+| **Entry Page** | First page of the session (with link) |
+| **Exit Page** | Last page of the session (with link) |
+| **Referrer** | Traffic source ("direct" for direct access) |
+| **PVs** | Number of page views in the session |
+| **Duration** | Total session duration |
+| **Play** | Session replay button |
 
-### Geographic Data Missing
-- **Issue**: Visitor locations are not showing on the map
-- **Solution**: Ensure geographic tracking is enabled in plugin settings
-- **Check**: Verify that location services are not being blocked by privacy settings
+The table supports sorting, filtering, and CSV export. It displays 100 entries per page with pagination.
 
+### Session Replay
+
+Click the play button (video icon) to replay the user's browsing behavior as a movie-like playback in a new window.
+
+:::note
+- Sessions without dwell data do not appear in the list
+- Session replay is available for today's sessions. For past sessions, use the replay feature in [Visit Report](./04-reports.md)
+:::
+
+### Auto-refresh
+
+The session list is **automatically updated every 1 minute**.
+
+---
+
+## Auto-refresh Summary
+
+| Target | Refresh Interval |
+|---|---|
+| User counts (30 min / 1 min) | Every 10 seconds |
+| Session Recordings list | Every 1 minute |
+
+- Updates run only while the browser tab is active
+- When the tab becomes inactive, updates pause and resume immediately when you return to the tab
