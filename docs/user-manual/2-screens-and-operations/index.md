@@ -16,9 +16,9 @@ Quick reference for all QA Assistants menu screens. **Simple** and **Advanced** 
 | **Landing Pages** |  | ✔ | Entry page performance | ✔ | – | [Reports](./04-reports.md#landing-pages) |
 | **Top Growing** |  | ✔ | Rising content discovery | ✔ | – | [Reports](./04-reports.md#top-growing) |
 | **All Pages** |  | ✔ | All pages comparison | ✔ | – | [Reports](./04-reports.md#all-pages) |
-| **Goals** |  | ✔ | Conversions and goal tracking | ✔ | ✔ | [Goals](./09-goals.md) |
-| **Settings** | ✔ | ✔ | Configuration and mode switch | – | – | [Settings](./11-settings.md) |
-| **Help** | ✔ | ✔ | Docs, support, and debug info | – | – | [Help](./12-help.md) |
+| **Goals** |  | ✔ | Conversions and goal tracking | ✔ | ✔ | [Goals](./10-goal-report.md) |
+| **Settings** | ✔ | ✔ | Configuration and mode switch | – | – | [Settings](./90-settings.md) |
+| **Help** | ✔ | ✔ | Docs, support, and debug info | – | – | [Help](./91-help.md) |
 
 :::tip
 If a menu item isn’t visible, enable **Advanced Mode** in **Settings**.
