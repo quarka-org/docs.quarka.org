@@ -8,7 +8,7 @@ sidebar_label: Reports
 
 This page covers the report screens in QA Assistants: **Audience**, **Acquisition**, **Landing Pages**, **Top Growing**, and **All Pages**.
 
-For live monitoring, see [Realtime](./03-realtime.md). For conversion tracking, see [Goals](./09-goals.md).
+For live monitoring, see [Realtime](./03-realtime.md). For conversion tracking, see [Goals](./10-goal-report.md).
 
 :::tip Simple Mode vs Advanced Mode
 By default, QA Assistants runs in **Simple Mode**, showing only the **Audience** report.

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 90
 ---
 
 # Settings
@@ -134,5 +134,4 @@ The Settings screen is organized into several configuration sections:
 - **Check**: Verify that WordPress user has sufficient permissions to modify plugin settings
 
 ## Related Documentation
-- [Goals](/docs/user-manual/screens-and-operations/goals) - Configure conversion tracking settings
 - [Help](/docs/user-manual/screens-and-operations/help) - Get support for configuration issues
