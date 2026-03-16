@@ -1,137 +1,90 @@
 ---
 sidebar_position: 90
+title: Settings
 ---
 
 # Settings
 
-## Overview
-The Settings screen is the central configuration hub for the QA Assistants plugin, allowing you to customize tracking behavior, privacy settings, data collection preferences, and integration options. This section provides comprehensive control over how the plugin operates on your website and what data it collects.
+The Settings screen lets you manage the operating mode and tracking method of QA Assistants.
 
-## Accessing This Screen
-1. Log in to your WordPress admin panel
-2. Navigate to the left sidebar menu
-3. Click on "QA Assistants"
-4. Select "Settings" from the submenu
+## Tabs
 
-## Screen Layout
-![Settings Overview](./images/screen-settings-overview.png)
+The Settings screen contains the following tabs.
 
-The Settings screen is organized into several configuration sections:
-- **General Settings**: Basic plugin configuration and site information
-- **Tracking Settings**: Data collection and analytics preferences
-- **Privacy Settings**: GDPR compliance and user privacy controls
-- **Integration Settings**: Third-party service connections and API configurations
-- **Advanced Settings**: Technical configuration options for experienced users
-- **Data Management**: Import, export, and data retention settings
+| Tab | Description |
+|-----|-------------|
+| **General Settings** | Operating mode, tracking method, and data retention info (described on this page) |
+| **Goals** | Goal (conversion) setup → [How to Set Up Goals](./11-goal-setup.md) |
+| **Google Integration** | Google service integration (Coming soon) |
 
-## Features and Functions
+---
 
-### General Configuration
-- **Purpose**: Configure basic plugin settings and site identification
-- **How to use**: Set your site name, timezone, and basic tracking preferences
-- **Options**: Site identification, default date ranges, and display preferences
-- **Tips**: Ensure timezone settings match your business location for accurate reporting
+## General Settings
 
-### Tracking Configuration
-- **Purpose**: Control what data is collected and how it's processed
-- **How to use**: Enable or disable specific tracking features based on your needs
-- **Options**: Page views, user interactions, conversion tracking, and custom events
-- **Tips**: Balance comprehensive tracking with site performance and privacy requirements
+The General Settings tab contains two configuration options and one read-only information section. Click **Save** after making changes.
 
-### Privacy and Compliance
-- **Purpose**: Ensure compliance with privacy regulations like GDPR and CCPA
-- **How to use**: Configure consent management, data anonymization, and user rights
-- **Options**: Cookie consent, IP anonymization, data retention periods, and user opt-out
-- **Tips**: Regularly review privacy settings to maintain compliance with evolving regulations
+### Advanced Mode
 
-### Third-party Integrations
-- **Purpose**: Connect QA Assistants with other tools and services
-- **How to use**: Configure API connections, data sharing, and external service integrations
-- **Options**: Google Analytics, social media platforms, email marketing tools, and CRM systems
-- **Tips**: Only enable integrations you actively use to minimize data sharing and complexity
+| | |
+|---|---|
+| **Type** | Checkbox |
+| **Default** | OFF |
 
-## Common Tasks
+Enabling Advanced Mode adds detailed report menus to the left sidebar in the admin panel.
 
-### Initial Plugin Setup
-1. Access the Settings screen after plugin installation
-2. Configure basic site information and timezone settings
-3. Set up tracking preferences based on your analytics needs
-4. Configure privacy settings to comply with applicable regulations
-5. Test tracking functionality to ensure proper operation
+- **Audience** — Visitor reports
+- **Acquisition** — Traffic sources
+- **Behavior** — Pages and user actions
+- **Goals** — Goal conversions
 
-### Updating Privacy Settings
-1. Review current privacy and compliance settings
-2. Update consent management and data anonymization options
-3. Configure data retention periods according to your privacy policy
-4. Set up user opt-out mechanisms and data deletion procedures
-5. Document changes for compliance records
+:::tip OFF by default after installation
+We recommend getting familiar with the basic screens (Realtime, Reports, Heatmaps) first, then enabling Advanced Mode when needed.
+:::
 
-### Configuring Integrations
-1. Navigate to the Integration Settings section
-2. Select the third-party services you want to connect
-3. Enter API keys and authentication credentials
-4. Configure data sharing preferences and sync settings
-5. Test integrations to ensure proper data flow
+:::note Does not affect data collection volume
+Advanced Mode only adds more items to the admin interface. Enabling it does not increase the amount of data collected on your server.
+:::
 
-### Performance Optimization
-1. Review tracking settings for performance impact
-2. Disable unnecessary tracking features to improve site speed
-3. Configure data sampling for high-traffic sites
-4. Optimize database settings and data retention policies
-5. Monitor site performance after configuration changes
+---
 
-## Settings and Configuration
+### Enable Cookieless Tracking
 
-### Tracking Options
-- Enable or disable specific tracking features (page views, events, conversions)
-- Configure tracking code placement and loading behavior
-- Set up custom event tracking and goal definitions
-- Adjust data collection frequency and sampling rates
+| | |
+|---|---|
+| **Type** | Checkbox |
+| **Default** | ON (recommended) |
 
-### Privacy Controls
-- Configure cookie consent management and banner display
-- Set up IP address anonymization and data pseudonymization
-- Define data retention periods and automatic deletion schedules
-- Enable user data access and deletion request handling
+- **ON (recommended)**: Tracks visitors without using cookies by default. Cookies are only used when a cookie consent tool passes a "consented" value to the plugin.
+- **OFF**: Always uses cookies for tracking.
 
-### Performance Settings
-- Optimize tracking code loading and execution
-- Configure database query optimization and caching
-- Set up data archiving and storage management
-- Adjust real-time processing and batch processing settings
+---
 
-### Integration Management
-- Configure API connections and authentication methods
-- Set up data synchronization schedules and preferences
-- Manage webhook endpoints and data push notifications
-- Control data sharing permissions and access levels
+### Data retention & limits
 
-## Troubleshooting
+This section is **read-only**. The values cannot be changed from this screen.
 
-### Tracking Not Working
-- **Issue**: Analytics data is not being collected or appears incomplete
-- **Solution**: Verify tracking code installation and check for JavaScript errors
-- **Check**: Ensure tracking settings are properly configured and not blocked by ad blockers
+| Item | Description | Default |
+|------|-------------|---------|
+| **Data retention** | Number of days collected data is retained | 120 days |
+| **Monthly PV limit** | Maximum page views that can be collected per month | Defined in qa-config.php |
 
-### Privacy Compliance Issues
-- **Issue**: Plugin may not be compliant with privacy regulations
-- **Solution**: Review and update privacy settings, enable necessary consent mechanisms
-- **Check**: Verify that data collection practices match your privacy policy
+To change these values, edit `qa-config.php`.
+→ [How to Configure qa-config.php](../1-getting-started/configure-qa-config.md)
 
-### Integration Failures
-- **Issue**: Third-party integrations are not working or syncing data
-- **Solution**: Check API credentials, connection settings, and service status
-- **Check**: Verify that external services are operational and API limits are not exceeded
+:::caution When the monthly PV limit is reached
+Data collection pauses for the rest of the month and resumes automatically the following month. A notification email is sent to the admin email address.
+:::
 
-### Performance Problems
-- **Issue**: Plugin is slowing down website loading or causing performance issues
-- **Solution**: Optimize tracking settings, reduce data collection frequency, or enable caching
-- **Check**: Monitor server resources and database performance after configuration changes
+---
 
-### Configuration Not Saving
-- **Issue**: Settings changes are not being saved or are reverting to previous values
-- **Solution**: Check file permissions, database connectivity, and browser cache
-- **Check**: Verify that WordPress user has sufficient permissions to modify plugin settings
+## Google Integration
 
-## Related Documentation
-- [Help](/docs/user-manual/screens-and-operations/help) - Get support for configuration issues
+Integration with Google services is coming soon.
+
+---
+
+## Related Pages
+
+- [How to Set Up Goals](./11-goal-setup.md)
+- [How to Configure qa-config.php](../1-getting-started/configure-qa-config.md)
+- [Help](./91-help.md)

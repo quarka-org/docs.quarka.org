@@ -38,13 +38,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl:
-            'https://github.com/quarka-org/docs.quarka.org/tree/main/',
         },
         blog: {
           showReadingTime: true,
-          editUrl:
-            'https://github.com/quarka-org/docs.quarka.org/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
