@@ -1,6 +1,6 @@
 ---
 title: qa-config.php を設定する
-sidebar_position: 4
+sidebar_position: 30
 ---
 
 # 月間PV上限とデータ保存期間を変更する

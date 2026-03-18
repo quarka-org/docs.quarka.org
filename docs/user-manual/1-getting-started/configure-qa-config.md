@@ -1,6 +1,6 @@
 ---
 title: Configure qa-config.php
-sidebar_position: 4
+sidebar_position: 30
 ---
 
 # Change Monthly PV Limit and Data Retention
