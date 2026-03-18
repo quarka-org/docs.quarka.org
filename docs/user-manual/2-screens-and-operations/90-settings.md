@@ -55,7 +55,11 @@ Advanced Mode only adds more items to the admin interface. Enabling it does not 
 | **Default** | ON (recommended) |
 
 - **ON (recommended)**: Tracks visitors without using cookies by default. Cookies are only used when a cookie consent tool passes a "consented" value to the plugin.
-- **OFF**: Always uses cookies for tracking.
+- **OFF**: Always uses cookies for tracking.  
+
+
+If you use a cookie consent tool, you may need to configure it.  
+See [Cookie Consent Tool Setup](../1-getting-started/cookie-consent-setup.md).
 
 ---
 
