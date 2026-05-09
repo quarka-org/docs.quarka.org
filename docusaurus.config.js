@@ -40,7 +40,18 @@ const config = {
           sidebarPath: './sidebars.js',
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
+          blogTitle: 'Updates',
+          blogDescription: 'Release announcements and development updates for QA Assistants',
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
+          postsPerPage: 'ALL',
+          feedOptions: {
+            type: ['rss', 'atom'],
+            title: 'QA Assistants Updates',
+            description: 'Release announcements and development updates for QA Assistants',
+            copyright: `Copyright © ${new Date().getFullYear()} Quarka Organization`,
+          },
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -81,13 +92,7 @@ const config = {
             position: 'left',
             label: 'Developer Guide',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            type: 'docSidebar',
-            sidebarId: 'releaseNotesSidebar',
-            position: 'left',
-            label: 'Release Notes',
-          },
+          {to: '/blog', label: 'Updates', position: 'left'},
           {
             type: 'docSidebar',
             sidebarId: 'faqSidebar',
@@ -138,12 +143,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Updates',
                 to: '/blog',
-              },
-              {
-                label: 'Release Notes',
-                to: '/docs/release-notes',
               },
             ],
           },

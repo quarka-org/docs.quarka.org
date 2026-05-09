@@ -1,14 +1,14 @@
 {
   "title": {
-    "message": "Blog",
+    "message": "更新情報",
     "description": "The title for the blog used in SEO"
   },
   "description": {
-    "message": "Blog",
+    "message": "QA Assistants のリリース情報と開発の様子をお届けします",
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
-    "message": "Recent posts",
+    "message": "すべての投稿",
     "description": "The label for the left sidebar"
   }
 }
