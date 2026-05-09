@@ -11,13 +11,9 @@
     "message": "開発者ガイド",
     "description": "Navbar item with label Developer Guide"
   },
-  "item.label.Blog": {
-    "message": "ブログ",
-    "description": "Navbar item with label Blog"
-  },
-  "item.label.Release Notes": {
-    "message": "リリースノート",
-    "description": "Navbar item with label Release Notes"
+  "item.label.Updates": {
+    "message": "更新情報",
+    "description": "Navbar item with label Updates"
   },
   "item.label.FAQ": {
     "message": "よくある質問",
