@@ -7,9 +7,6 @@
     "message": "はじめに",
     "description": "The label for category Getting Started in sidebar userManualSidebar"
   },
-  "sidebar.faqSidebar.category.FAQ": {
-    "message": "よくある質問"
-  },
   "sidebar.developerManualSidebar.category.Developer Guide": {
     "message": "開発者ガイド"
   },
@@ -23,6 +20,18 @@
   "sidebar.userManualSidebar.category.Using QA Assistants.link.generated-index.description": {
     "message": "QA Assistants の各画面の機能と操作方法をまとめたガイドです。",
     "description": "The generated-index page description for category Using QA Assistants in sidebar userManualSidebar"
+  },
+  "sidebar.userManualSidebar.category.Assistants": {
+    "message": "Assistants",
+    "description": "The label for category Assistants in sidebar userManualSidebar"
+  },
+  "sidebar.userManualSidebar.category.General Behavior": {
+    "message": "基本仕様",
+    "description": "The label for category General Behavior in sidebar userManualSidebar"
+  },
+  "sidebar.userManualSidebar.category.Troubleshooting": {
+    "message": "トラブルシューティング",
+    "description": "The label for category Troubleshooting in sidebar userManualSidebar"
   },
   "sidebar.releaseNotesSidebar.category.2025": {
     "message": "2025",

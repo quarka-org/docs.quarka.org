@@ -51,7 +51,6 @@ This command generates static content into the `build` directory and can be serv
 - `/docs/developer-manual/` - Developer documentation
 - `/blog/` - Blog posts
 - `/docs/release-notes/` - Release notes
-- `/docs/faq/` - Frequently asked questions
 
 ## Deployment
 

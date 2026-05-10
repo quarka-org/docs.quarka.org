@@ -43,7 +43,7 @@ To enable Advanced Mode: **Settings → Advanced Mode**.
 **Assistants** are add-on, task-focused helpers you can enable from the **“Assistants”** menu.  
 They provide context-aware suggestions and next actions based on your site data.
 
-- 📌 [What are Assistants?](/docs/user-manual/assistants/overview)
+- 📌 [What are Assistants?](/docs/user-manual/assistants/)
 - 🧩 [Browse Assistants ↗︎ (official site)](https://quarka.org/en-assistants/)
 
 ---
@@ -60,7 +60,7 @@ How to read Audience / Acquisition / Landing Pages / Top Growing / All Pages / G
 
 ### 3) Assistants
 What they do, how to install, and practical examples.  
-→ /docs/user-manual/assistants/overview  
+→ /docs/user-manual/assistants/  
 - 🧩 [Browse Assistants ↗︎ (official site)](https://quarka.org/en-assistants/)
 
 ### 4) Help & Support
@@ -73,6 +73,6 @@ Links to this documentation, the Support Forum, and Debug Info.
 
 - 🚀 /docs/user-manual/getting-started/installation
 - ⚙️ /docs/user-manual/screens-and-operations/advanced-mode
-- 🤖 /docs/user-manual/assistants/overview
+- 🤖 /docs/user-manual/assistants/
 - 🎥 /docs/user-manual/screens-and-operations/session-replay
 - 🔥 /docs/user-manual/screens-and-operations/heatmap
