@@ -15,10 +15,6 @@
     "message": "更新情報",
     "description": "Navbar item with label Updates"
   },
-  "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Navbar item with label GitHub"
-  },
   "logo.alt": {
     "message": "QA Assistants Logo",
     "description": "The alt text of navbar logo"

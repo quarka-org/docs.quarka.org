@@ -3,104 +3,43 @@ sidebar_position: 10
 title: Installation
 ---
 
-# Installation Guide
+---
+sidebar_position: 10
+title: Installation
+---
 
-QA Assistants is the new name and improved version of our WordPress plugin previously known as **QA Analytics**.  
-Currently available as a **public beta**, it introduces a redesigned interface and enhanced features -- while keeping the same plugin identifier: `qa-heatmap-analytics`.
+# Installation
 
-This guide will walk you through the steps to install the beta version on your WordPress site.
+QA Assistants can be installed as a WordPress plugin.
 
-
-## Prerequisites
-
-Before installing QA Assistants, ensure your system meets the following requirements:
-
-- **WordPress**: Version 5.9 or higher
-- **PHP**: Version 7.0 or higher
-- **MySQL**: Version 5.7 or higher
-- **Browser**: Modern browser (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+)
-
-## Installation Methods
-
-### Step 1: Download the Plugin
-
-Download the latest `qa-heatmap-analytics.zip` file from the top page of this documentation site.  
-[Go to Documentation Top](/)
-
-### Step 2: Install via WordPress Admin (Recommended)
+## Installation
 
 1. Log in to your WordPress admin dashboard
-2. Navigate to **Plugins** → **Add New**
-3. Click the **Upload Plugin** button
-4. Select the downloaded `qa-heatmap-analytics.zip` file
-5. Click **Install Now**
-6. Once installed, click **Activate Plugin**
+2. Open **Plugins** → **Add New**
+3. Search for "QA Assistants"
+4. Click **Install Now**
+5. After installation, click **Activate**
 
-### (Optional) Install via FTP
+---
 
-1. Extract the `qa-heatmap-analytics.zip` file on your computer
-2. Use an FTP client to upload the extracted folder to `/wp-content/plugins/`
-3. Activate the plugin from the WordPress admin → **Plugins**
+## Verify Tracking
 
-### (Optional) Install via WP-CLI
+After installation, you can verify that tracking is working with the following steps:
 
-If you have WP-CLI installed:
+1. Access your site using a logged-out browser or a private window
+2. Return to the WordPress admin dashboard
+3. Open **QA Assistants** → **Realtime**
 
-```bash
-# Install from local file
-wp plugin install qa-heatmap-analytics.zip --activate
+If active visitor data appears, tracking is working correctly.
 
-```
+Logged-in WordPress users are excluded from tracking by default.
 
-## Post-Installation Steps
+---
 
-### Verify Installation
+## Advanced Mode (Optional)
 
-Check that QA Assistants is working:
-1. Visit your site's frontend
-2. Return to WordPress admin
-3. Go to **QA Assistants** → **Realtime**
-4. You should see initial tracking data
+Advanced Mode enables more detailed analytics menus and reports.
 
-### Enable Advanced Mode (Optional)
-
-QA Assistants offers an **Advanced Mode** that unlocks additional features such as Audience insights, Acquisition reports, and Goal tracking.  
-To enable it:
-
-1. Go to **QA Assistants** → **Settings**  
-2. Check the **Advanced Mode** option  
+1. Open **QA Assistants** → **Settings**
+2. Enable **Advanced Mode**
 3. Click **Save Changes**
-
-### (Optional) Customize Monthly Data Collection Limit
-
-By default, QA Assistants collects up to **10,000 pageviews per month**.  
-You can change this limit by adding a line to your `qa-config.php` file.  
-[Learn how to configure the limit →](/docs/user-manual/getting-started/configure-qa-config)
-
-
-## Troubleshooting
-
-### Plugin Won’t Activate?
-
-If the plugin fails to activate, please check the following:
-
-- Make sure PHP version is 7.0 or higher  
-- Ensure WordPress is up to date  
-- Disable other plugins to test for conflicts
-
-### No Data Showing?
-
-If no data appears after installation, please consider the following:
-
-- Tracking data in the **Dashboard** (available in Advanced Mode) is updated only once a day, typically overnight.
-- To check if tracking is working immediately, go to **QA Assistants** → **Realtime** in the admin menu.
-- Logged-in WordPress users are not tracked by default.
-- Clear your browser cache and wait 5–10 minutes after activation to allow the first data to appear.
-- If no activity is shown even in the **Realtime** view after visiting your site, the tracking script might not be loading correctly.
-
-### Performance Issues
-
-If your site slows down:
-1. Check server resources
-2. Optimize database tables
-

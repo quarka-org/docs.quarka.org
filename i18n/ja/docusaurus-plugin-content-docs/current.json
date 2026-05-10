@@ -22,7 +22,7 @@
     "description": "The generated-index page description for category Using QA Assistants in sidebar userManualSidebar"
   },
   "sidebar.userManualSidebar.category.Assistants": {
-    "message": "Assistants",
+    "message": "AIアシスタント",
     "description": "The label for category Assistants in sidebar userManualSidebar"
   },
   "sidebar.userManualSidebar.category.General Behavior": {

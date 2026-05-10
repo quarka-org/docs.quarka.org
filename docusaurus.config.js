@@ -97,11 +97,6 @@ const config = {
             type: 'localeDropdown',
             position: 'right',
           },
-          {
-            href: 'https://github.com/quarka-org/docs.quarka.org',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {

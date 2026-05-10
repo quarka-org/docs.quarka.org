@@ -1,9 +1,9 @@
 ---
-title: Assistants
-sidebar_label: Assistants
+title: AIアシスタント
+sidebar_label: AIアシスタント 
 ---
 
-# Assistants
+# AIアシスタント
 
 サイトのデータをもとに次に取るべきアクションを提案する、タスク特化型のアシスタント群です。
 
