@@ -94,18 +94,7 @@ const config = {
           },
           {to: '/blog', label: 'Updates', position: 'left'},
           {
-            type: 'docSidebar',
-            sidebarId: 'faqSidebar',
-            position: 'left',
-            label: 'FAQ',
-          },
-          {
             type: 'localeDropdown',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/quarka-org/docs.quarka.org',
-            label: 'GitHub',
             position: 'right',
           },
         ],
@@ -123,10 +112,6 @@ const config = {
               {
                 label: 'Developer Guide',
                 to: '/docs/developer-manual',
-              },
-              {
-                label: 'FAQ',
-                to: '/docs/faq',
               },
             ],
           },

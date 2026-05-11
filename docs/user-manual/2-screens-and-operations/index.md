@@ -6,7 +6,9 @@ sidebar_label: Menu Overview
 
 # Menu Overview
 
-Quick reference for all QA Assistants menu screens. **Simple** and **Advanced** columns show which display mode includes each menu. To switch modes: **Settings → Advanced Mode**.
+Quick reference for all QA Assistants menu screens.  
+**Simple** and **Advanced** columns show which display mode includes each menu.  
+To switch modes: **Settings → Advanced Mode**.
 
 | Menu | Simple | Advanced | What it shows | Heatmap | Session Replay | Docs |
 |---|:---:|:---:|---|:---:|:---:|---|

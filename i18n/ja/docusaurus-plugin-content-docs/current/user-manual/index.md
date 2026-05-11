@@ -21,7 +21,7 @@ sidebar_position: 0
 
 ### AIアシスタント（Assistants）
 用途別に**次アクション**を提案：ページ分析／急上昇の検出／ソーシャル示唆／要約 など。  
-→ `/docs/user-manual/assistants/overview`  
+→ `/docs/user-manual/assistants/`  
 → 公式カタログ: https://quarka.org/assistants/
 
 ### アナリティクス
@@ -72,7 +72,7 @@ sidebar_position: 0
 **AIアシスタント** は、**「AIアシスタント（Assistants）」メニュー** から有効化できる追加機能のアシスタント群です。  
 サイトのデータ状況に応じて、文脈に合った示唆や次に取るべきアクションを提案します。
 
-- 📌 [AIアシスタントとは？](/docs/user-manual/assistants/overview)
+- 📌 [AIアシスタントとは？](/docs/user-manual/assistants/)
 - 🧩 [AIアシスタントを探す ↗︎（公式サイト）](https://quarka.org/assistants/)
 
 ---
@@ -90,7 +90,7 @@ Audience / Acquisition / Landing Pages / Top Growing / All Pages / Goals / Realt
 ### 3) Assistants
 *coming soon*
 できること、導入方法、実践例。  
-→ /docs/user-manual/assistants/overview  
+→ /docs/user-manual/assistants/  
 
 - 🧩 [AIアシスタントを探す ↗︎（公式サイト）](https://quarka.org/assistants/)
 
