@@ -8,7 +8,7 @@ sidebar_label: Troubleshooting
 
 This page summarizes common issues and checkpoints when using QA Assistants.
 
-## No Data Appears
+## No data appears
 
 If no data appears, check the following:  
 
@@ -19,7 +19,21 @@ If no data appears, check the following:
 
 ---
 
-## Heatmap Is Not Displayed
+## Session data suddenly became 0 during the month
+
+Please check the following:
+
+- Verify that the monthly Pageview limit has not been reached  
+  After the limit is reached, additional data is not saved.  
+  → [Settings](/docs/user-manual/screens-and-operations/settings#data-retention--limits)
+
+- Check for server errors or memory shortage issues
+
+- Check whether JavaScript errors are stopping the tracking script
+
+---
+
+## Heatmap is not displayed
 
 If the Heatmap is not displayed, check the following:  
 
@@ -29,7 +43,7 @@ If the Heatmap is not displayed, check the following:
 
 ---
 
-## Cache and Deferred Loading
+## Cache and deferred loading
 
 Cache plugins and JavaScript deferred loading settings may prevent tracking scripts from working correctly.  
 
