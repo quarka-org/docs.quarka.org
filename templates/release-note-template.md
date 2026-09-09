@@ -1,3 +1,19 @@
+<!--
+【この形式は現在使っていません】
+
+リリース告知の投稿先は blog に移行しました（2026-05-09）。
+新しいリリースの告知は `blog-release-template.md` に従って以下へ置いてください。
+
+  - 英語版: blog/vX-X-X-X.md
+  - 日本語版: i18n/ja/docusaurus-plugin-content-blog/vX-X-X-X.md
+
+このテンプレートが対象にしている docs/release-notes/ は、navbar からも
+サイドバーからも外れており、URL 直打ち以外では到達できません。
+ここに書いてもサイト上には現れず、プラグインの「What's New」枠にも出ません。
+
+過去分（2025年の QA Advisor β）の保全のために残しているだけです。
+-->
+
 ---
 sidebar_position: [NUMBER]
 title: "[VERSION] - [RELEASE DATE]"
