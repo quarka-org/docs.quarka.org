@@ -2,12 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.quarka.org/ja/blog</id>
     <title>QA Assistants Updates</title>
-    <updated>2025-05-25T00:00:00.000Z</updated>
+    <updated>2026-09-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.quarka.org/ja/blog"/>
     <subtitle>Release announcements and development updates for QA Assistants</subtitle>
     <icon>https://docs.quarka.org/ja/img/favicon.ico</icon>
     <rights>Copyright © 2026 Quarka Organization</rights>
+    <entry>
+        <title type="html"><![CDATA[v5.3.0.0 — レポート画面をより見やすく、使いやすくしました]]></title>
+        <id>https://docs.quarka.org/ja/blog/v5-3-0-0</id>
+        <link href="https://docs.quarka.org/ja/blog/v5-3-0-0"/>
+        <updated>2026-09-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[レポート画面の見やすさと操作性を改善し、Google Search Consoleのデータ収集や、アシスタント機能の拡張に対応しました。]]></summary>
+        <content type="html"><![CDATA[<p>QA Assistants 5.3.0.0では、レポート画面の見やすさと操作性を改善しました。</p>
+<p>あわせて、Google Search Consoleのデータ収集への対応や、より多様なアシスタントを利用するための基盤拡張を行っています。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="レポート画面をより見やすく使いやすく">レポート画面をより見やすく、使いやすく<a href="https://docs.quarka.org/ja/blog/v5-3-0-0#%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E7%94%BB%E9%9D%A2%E3%82%92%E3%82%88%E3%82%8A%E8%A6%8B%E3%82%84%E3%81%99%E3%81%8F%E4%BD%BF%E3%81%84%E3%82%84%E3%81%99%E3%81%8F" class="hash-link" aria-label="レポート画面をより見やすく、使いやすく への直接リンク" title="レポート画面をより見やすく、使いやすく への直接リンク">​</a></h2>
+<p>レポート画面のグラフ、表、期間選択を見直しました。</p>
+<ul>
+<li>グラフの表示を刷新し、数値の変化を確認しやすくしました</li>
+<li>レポートの表に合計行を追加しました</li>
+<li>表示する列を選べるようにしました</li>
+<li>期間選択カレンダーを刷新し、年月の移動や期間の指定を行いやすくしました</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="google-search-consoleのデータ収集に対応">Google Search Consoleのデータ収集に対応<a href="https://docs.quarka.org/ja/blog/v5-3-0-0#google-search-console%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%8E%E9%9B%86%E3%81%AB%E5%AF%BE%E5%BF%9C" class="hash-link" aria-label="Google Search Consoleのデータ収集に対応 への直接リンク" title="Google Search Consoleのデータ収集に対応 への直接リンク">​</a></h2>
+<p>Google Search Consoleと連携し、API経由でデータを収集できるようになりました。</p>
+<p>連携設定を行い、データが収集された後は、対応するアシスタントで検索キーワード、表示回数、クリック数、掲載順位などを利用できます。</p>
+<p>現時点では、QA Assistants本体にSearch Consoleデータを直接閲覧するための専用レポート画面はありません。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="アシスタント機能の基盤を拡張">アシスタント機能の基盤を拡張<a href="https://docs.quarka.org/ja/blog/v5-3-0-0#%E3%82%A2%E3%82%B7%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD%E3%81%AE%E5%9F%BA%E7%9B%A4%E3%82%92%E6%8B%A1%E5%BC%B5" class="hash-link" aria-label="アシスタント機能の基盤を拡張 への直接リンク" title="アシスタント機能の基盤を拡張 への直接リンク">​</a></h2>
+<p>今後、アシスタントを通じてより多様な分析や情報表示を行えるよう、アシスタント機能の基盤を拡張しました。</p>
+<p>期間の選択、グラフやスコアカードによる結果表示など、アシスタントで扱える機能を増やしています。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="動作環境について">動作環境について<a href="https://docs.quarka.org/ja/blog/v5-3-0-0#%E5%8B%95%E4%BD%9C%E7%92%B0%E5%A2%83%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" class="hash-link" aria-label="動作環境について への直接リンク" title="動作環境について への直接リンク">​</a></h2>
+<p>QA Assistants 5.3.0.0から、必要なPHPの最低バージョンが7.4になりました。</p>
+<p>アップデート前に、ご利用のサーバーのPHPバージョンが7.4以上であることをご確認ください。</p>]]></content>
+        <category label="release" term="release"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[QA Advisorドキュメントへようこそ]]></title>
         <id>https://docs.quarka.org/ja/blog/welcome</id>

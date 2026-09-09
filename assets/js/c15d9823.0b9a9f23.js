@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkqa_advisor_documentation=self.webpackChunkqa_advisor_documentation||[]).push([[8146],{9328:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/blog","page":1,"postsPerPage":2,"totalPages":1,"totalCount":2,"blogDescription":"Release announcements and development updates for QA Assistants","blogTitle":"Updates"}}')}}]);

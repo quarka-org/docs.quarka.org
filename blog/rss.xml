@@ -4,11 +4,39 @@
         <title>QA Assistants Updates</title>
         <link>https://docs.quarka.org/blog</link>
         <description>Release announcements and development updates for QA Assistants</description>
-        <lastBuildDate>Sun, 25 May 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Sep 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2026 Quarka Organization</copyright>
+        <item>
+            <title><![CDATA[v5.3.0.0 — Reports Are Now Clearer and Easier to Use]]></title>
+            <link>https://docs.quarka.org/blog/v5-3-0-0</link>
+            <guid>https://docs.quarka.org/blog/v5-3-0-0</guid>
+            <pubDate>Wed, 09 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[This release improves report usability and adds support for collecting Google Search Console data and using a wider range of assistants.]]></description>
+            <content:encoded><![CDATA[<p>QA Assistants 5.3.0.0 improves the readability and usability of report screens.</p>
+<p>This release also adds support for collecting Google Search Console data and expands the foundation for using a wider range of assistants.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="clearer-and-easier-to-use-reports">Clearer and Easier-to-Use Reports<a href="https://docs.quarka.org/blog/v5-3-0-0#clearer-and-easier-to-use-reports" class="hash-link" aria-label="Direct link to Clearer and Easier-to-Use Reports" title="Direct link to Clearer and Easier-to-Use Reports">​</a></h2>
+<p>We have improved the charts, tables, and date range selection on report screens.</p>
+<ul>
+<li>Redesigned charts to make changes in your data easier to understand</li>
+<li>Added total rows to report tables</li>
+<li>Added controls for choosing which columns to display</li>
+<li>Redesigned the date range calendar to make navigating between months and years and selecting a period easier</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="support-for-collecting-google-search-console-data">Support for Collecting Google Search Console Data<a href="https://docs.quarka.org/blog/v5-3-0-0#support-for-collecting-google-search-console-data" class="hash-link" aria-label="Direct link to Support for Collecting Google Search Console Data" title="Direct link to Support for Collecting Google Search Console Data">​</a></h2>
+<p>QA Assistants can now connect to Google Search Console and collect data through its API.</p>
+<p>After you set up the connection and the data has been collected, compatible assistants can use search queries, impressions, clicks, average positions, and other Search Console data.</p>
+<p>At this time, QA Assistants does not include a dedicated report screen for viewing Search Console data directly.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="expanded-the-foundation-for-assistant-features">Expanded the Foundation for Assistant Features<a href="https://docs.quarka.org/blog/v5-3-0-0#expanded-the-foundation-for-assistant-features" class="hash-link" aria-label="Direct link to Expanded the Foundation for Assistant Features" title="Direct link to Expanded the Foundation for Assistant Features">​</a></h2>
+<p>We have expanded the foundation for assistant features to support a wider range of analysis and information displays in the future.</p>
+<p>Assistants can now support more capabilities, including date range selection, results displayed with charts and scorecards, and analysis using WordPress post data.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="system-requirements">System Requirements<a href="https://docs.quarka.org/blog/v5-3-0-0#system-requirements" class="hash-link" aria-label="Direct link to System Requirements" title="Direct link to System Requirements">​</a></h2>
+<p>Starting with QA Assistants 5.3.0.0, the minimum required PHP version is PHP 7.4.</p>
+<p>Before updating, please make sure that your server is running PHP 7.4 or later.</p>]]></content:encoded>
+            <category>release</category>
+        </item>
         <item>
             <title><![CDATA[Welcome to QA Advisor Documentation]]></title>
             <link>https://docs.quarka.org/blog/welcome</link>
