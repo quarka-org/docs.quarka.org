@@ -1,5 +1,17 @@
 # Release Notes Maintenance Guidelines
 
+> **【このガイドは現在使っていません】**
+>
+> リリース告知の投稿先は blog に移行しました（2026-05-09）。
+> 新しいリリースの告知は `blog-release-template.md` を参照してください。
+>
+> 以下が説明している `docs/release-notes/`（年フォルダ、`_category_.json`、
+> `index.md` の更新）は、navbar からもサイドバーからも外れており、
+> URL 直打ち以外では到達できません。ここを更新してもサイト上には現れず、
+> プラグインの「What's New」枠にも出ません。
+>
+> 過去分（2025年の QA Advisor β）の保全のために残しているだけです。
+
 ## Structure
 
 ```
