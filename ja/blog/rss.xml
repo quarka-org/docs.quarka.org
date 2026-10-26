@@ -4,11 +4,22 @@
         <title>QA Assistants Updates</title>
         <link>https://docs.quarka.org/ja/blog</link>
         <description>Release announcements and development updates for QA Assistants</description>
-        <lastBuildDate>Wed, 09 Sep 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Oct 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>Copyright © 2026 Quarka Organization</copyright>
+        <item>
+            <title><![CDATA[v5.3.0.2 — セキュリティ修正]]></title>
+            <link>https://docs.quarka.org/ja/blog/v5-3-0-2</link>
+            <guid>https://docs.quarka.org/ja/blog/v5-3-0-2</guid>
+            <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[セッションリプレイ画面に関するセキュリティ修正を行いました。お早めに最新バージョンへの更新をお願いいたします。]]></description>
+            <content:encoded><![CDATA[<p>QA Assistants 5.3.0.2では、セッションリプレイ画面に関するセキュリティ修正を行いました。</p>
+<p><strong>お早めに最新バージョンへの更新をお願いいたします。</strong></p>
+<p>WordPress管理画面の「プラグイン」から更新できます。</p>]]></content:encoded>
+            <category>release</category>
+        </item>
         <item>
             <title><![CDATA[v5.3.0.0 — レポート画面をより見やすく、使いやすくしました]]></title>
             <link>https://docs.quarka.org/ja/blog/v5-3-0-0</link>

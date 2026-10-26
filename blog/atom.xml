@@ -2,12 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.quarka.org/blog</id>
     <title>QA Assistants Updates</title>
-    <updated>2026-09-09T00:00:00.000Z</updated>
+    <updated>2026-10-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.quarka.org/blog"/>
     <subtitle>Release announcements and development updates for QA Assistants</subtitle>
     <icon>https://docs.quarka.org/img/favicon.ico</icon>
     <rights>Copyright © 2026 Quarka Organization</rights>
+    <entry>
+        <title type="html"><![CDATA[v5.3.0.2 — Security fix]]></title>
+        <id>https://docs.quarka.org/blog/v5-3-0-2</id>
+        <link href="https://docs.quarka.org/blog/v5-3-0-2"/>
+        <updated>2026-10-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This version includes a security fix for the session replay viewer. Please update to the latest version as soon as possible.]]></summary>
+        <content type="html"><![CDATA[<p>QA Assistants 5.3.0.2 includes a security fix for the session replay viewer.</p>
+<p><strong>Please update to the latest version as soon as possible.</strong></p>
+<p>You can update from the "Plugins" page in your WordPress admin area.</p>]]></content>
+        <category label="release" term="release"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v5.3.0.0 — Reports Are Now Clearer and Easier to Use]]></title>
         <id>https://docs.quarka.org/blog/v5-3-0-0</id>
