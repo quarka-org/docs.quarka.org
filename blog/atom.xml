@@ -2,12 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.quarka.org/blog</id>
     <title>QA Assistants Updates</title>
-    <updated>2026-10-23T00:00:00.000Z</updated>
+    <updated>2026-11-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.quarka.org/blog"/>
     <subtitle>Release announcements and development updates for QA Assistants</subtitle>
     <icon>https://docs.quarka.org/img/favicon.ico</icon>
     <rights>Copyright © 2026 Quarka Organization</rights>
+    <entry>
+        <title type="html"><![CDATA[v5.3.0.3 — Security fix]]></title>
+        <id>https://docs.quarka.org/blog/v5-3-0-3</id>
+        <link href="https://docs.quarka.org/blog/v5-3-0-3"/>
+        <updated>2026-11-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Security fixes for session replay and admin page rendering. Please update to the latest version as soon as possible.]]></summary>
+        <content type="html"><![CDATA[<p>QA Assistants 5.3.0.3 includes security fixes for session replay and admin page rendering.
+It also fixes an issue that could prevent reports from updating.</p>
+<p>Please update to the latest version as soon as possible.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fixed-an-issue-preventing-report-updates">Fixed an issue preventing report updates<a href="https://docs.quarka.org/blog/v5-3-0-3#fixed-an-issue-preventing-report-updates" class="hash-link" aria-label="Direct link to Fixed an issue preventing report updates" title="Direct link to Fixed an issue preventing report updates">​</a></h2>
+<p>On PHP 8, visits with certain URL parameter formats could stop nightly data processing and prevent reports from updating.
+This issue has been fixed.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changes-to-session-replay-display">Changes to session replay display<a href="https://docs.quarka.org/blog/v5-3-0-3#changes-to-session-replay-display" class="hash-link" aria-label="Direct link to Changes to session replay display" title="Direct link to Changes to session replay display">​</a></h2>
+<p>For improved security, page scripts are now restricted during replay.</p>
+<p>Some fonts or icons may display incorrectly, and some visual effects may not be reproduced.
+These changes affect playback only. Recorded data is not affected.</p>]]></content>
+        <category label="release" term="release"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v5.3.0.2 — Security fix]]></title>
         <id>https://docs.quarka.org/blog/v5-3-0-2</id>

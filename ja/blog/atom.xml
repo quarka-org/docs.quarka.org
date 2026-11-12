@@ -2,12 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.quarka.org/ja/blog</id>
     <title>QA Assistants Updates</title>
-    <updated>2026-10-23T00:00:00.000Z</updated>
+    <updated>2026-11-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.quarka.org/ja/blog"/>
     <subtitle>Release announcements and development updates for QA Assistants</subtitle>
     <icon>https://docs.quarka.org/ja/img/favicon.ico</icon>
     <rights>Copyright © 2026 Quarka Organization</rights>
+    <entry>
+        <title type="html"><![CDATA[v5.3.0.3 — セキュリティ修正]]></title>
+        <id>https://docs.quarka.org/ja/blog/v5-3-0-3</id>
+        <link href="https://docs.quarka.org/ja/blog/v5-3-0-3"/>
+        <updated>2026-11-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[セッションリプレイと管理画面の表示に関するセキュリティ修正を行いました。お早めに最新バージョンへの更新をお願いいたします。]]></summary>
+        <content type="html"><![CDATA[<p>QA Assistants 5.3.0.3では、セッションリプレイと管理画面の表示に関するセキュリティ修正を行いました。<br>
+<!-- -->あわせて、レポートの更新が止まる不具合を修正しました。</p>
+<p>安全にご利用いただくため、できるだけ早く最新バージョンへ更新をお願いいたします。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="レポートの更新が止まる不具合を修正">レポートの更新が止まる不具合を修正<a href="https://docs.quarka.org/ja/blog/v5-3-0-3#%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E6%9B%B4%E6%96%B0%E3%81%8C%E6%AD%A2%E3%81%BE%E3%82%8B%E4%B8%8D%E5%85%B7%E5%90%88%E3%82%92%E4%BF%AE%E6%AD%A3" class="hash-link" aria-label="レポートの更新が止まる不具合を修正 への直接リンク" title="レポートの更新が止まる不具合を修正 への直接リンク">​</a></h2>
+<p>PHP 8環境で、特定の形式のURLパラメータを含むアクセスがあると、夜間のデータ処理が停止し、レポートが更新されなくなる不具合を修正しました。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="セッションリプレイの表示について">セッションリプレイの表示について<a href="https://docs.quarka.org/ja/blog/v5-3-0-3#%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%AA%E3%83%97%E3%83%AC%E3%82%A4%E3%81%AE%E8%A1%A8%E7%A4%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" class="hash-link" aria-label="セッションリプレイの表示について への直接リンク" title="セッションリプレイの表示について への直接リンク">​</a></h2>
+<p>安全性を高めるため、リプレイ再生時にページ内のスクリプトの動作を制限するようにしました。</p>
+<p>この変更により、一部のフォントやアイコンが正しく表示されない場合や、ページの演出が再現されない場合があります。<br>
+<!-- -->これらは再生時の表示に関する変更であり、記録されたデータには影響しません。</p>]]></content>
+        <category label="release" term="release"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v5.3.0.2 — セキュリティ修正]]></title>
         <id>https://docs.quarka.org/ja/blog/v5-3-0-2</id>

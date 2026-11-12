@@ -4,11 +4,29 @@
         <title>QA Assistants Updates</title>
         <link>https://docs.quarka.org/blog</link>
         <description>Release announcements and development updates for QA Assistants</description>
-        <lastBuildDate>Fri, 23 Oct 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Nov 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2026 Quarka Organization</copyright>
+        <item>
+            <title><![CDATA[v5.3.0.3 — Security fix]]></title>
+            <link>https://docs.quarka.org/blog/v5-3-0-3</link>
+            <guid>https://docs.quarka.org/blog/v5-3-0-3</guid>
+            <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Security fixes for session replay and admin page rendering. Please update to the latest version as soon as possible.]]></description>
+            <content:encoded><![CDATA[<p>QA Assistants 5.3.0.3 includes security fixes for session replay and admin page rendering.
+It also fixes an issue that could prevent reports from updating.</p>
+<p>Please update to the latest version as soon as possible.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fixed-an-issue-preventing-report-updates">Fixed an issue preventing report updates<a href="https://docs.quarka.org/blog/v5-3-0-3#fixed-an-issue-preventing-report-updates" class="hash-link" aria-label="Direct link to Fixed an issue preventing report updates" title="Direct link to Fixed an issue preventing report updates">​</a></h2>
+<p>On PHP 8, visits with certain URL parameter formats could stop nightly data processing and prevent reports from updating.
+This issue has been fixed.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changes-to-session-replay-display">Changes to session replay display<a href="https://docs.quarka.org/blog/v5-3-0-3#changes-to-session-replay-display" class="hash-link" aria-label="Direct link to Changes to session replay display" title="Direct link to Changes to session replay display">​</a></h2>
+<p>For improved security, page scripts are now restricted during replay.</p>
+<p>Some fonts or icons may display incorrectly, and some visual effects may not be reproduced.
+These changes affect playback only. Recorded data is not affected.</p>]]></content:encoded>
+            <category>release</category>
+        </item>
         <item>
             <title><![CDATA[v5.3.0.2 — Security fix]]></title>
             <link>https://docs.quarka.org/blog/v5-3-0-2</link>
